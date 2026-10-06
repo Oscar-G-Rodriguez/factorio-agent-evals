@@ -1,4 +1,6 @@
 """Failure-oriented maintenance development evaluation, separate from construction."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import argparse
@@ -19,7 +21,7 @@ parser.add_argument('--wall-seconds', type=int, default=600)
 args = parser.parse_args()
 if not 2 <= args.minutes <= 20 or not 30 <= args.wall_seconds <= 1200:
     raise ValueError('Maintenance budget out of bounds')
-root = Path(os.environ.get('FACTORIO_PILOT_HOME', '/home/osci2/factorio-pilot')).expanduser()
+root = runtime_home()
 run = root/'runs'/f'A04-maintenance-{args.controller}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
 run.mkdir()
 print('RUN '+str(run), flush=True)

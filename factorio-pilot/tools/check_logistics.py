@@ -1,4 +1,6 @@
 """Scripted storage regression control; never a model evaluation."""
+from runtime_paths import runtime_home
+
 import hashlib
 import json
 import time
@@ -9,7 +11,7 @@ from fle.env import FactorioInstance
 from fle.commons.models.game_state import GameState
 from logistics_tools import LogisticsBridge
 
-root=Path('/home/osci2/factorio-pilot')
+root=runtime_home()
 artifact=root/'artifacts/logistics-control.json'
 instance=FactorioInstance(address='127.0.0.1',tcp_port=27000,fast=True,reset_speed=10,reset_paused=True)
 instance.reset(game_state=GameState.parse_raw((root/'artifacts/starting-state.json').read_text()))

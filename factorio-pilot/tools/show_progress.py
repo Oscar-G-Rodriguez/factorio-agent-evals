@@ -1,9 +1,11 @@
 """Read the latest decision log without touching the running experiment."""
+from runtime_paths import runtime_home
+
 import json
 import sys
 from pathlib import Path
 
-paths = list(Path('/home/osci2/factorio-pilot/runs').glob('*/steps.jsonl'))
+paths = list(runtime_home() / 'runs'.glob('*/steps.jsonl'))
 path = max(paths, key=lambda p:p.stat().st_mtime)
 events = [json.loads(line) for line in path.read_text().splitlines(keepends=True) if line.endswith('\n') and line.strip()]
 try:

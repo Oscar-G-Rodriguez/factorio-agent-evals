@@ -98,14 +98,15 @@ If Qwen survives this fixture, increase difficulty in a separately versioned tas
 
 ## Reproduction
 
-Start the existing pinned 2.0.73 server. Run only one controller at a time because each resets the same factory. From PowerShell:
+Start the existing pinned 2.0.73 server. Run only one controller at a time because each resets the same factory. From the repository root in Ubuntu/WSL:
 
-```powershell
-wsl -d Ubuntu-24.04 -u osci2 -- bash -lc 'cd /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools && /home/osci2/factorio-pilot/.venv/bin/python -m unittest test_maintenance test_logistics_tools test_cuda_review'
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/maintenance_agent.py --controller idle --minutes 20
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/maintenance_agent.py --controller scripted --minutes 20
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/maintenance_agent.py --controller model --minutes 20
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/export_evidence.py
+```bash
+export FACTORIO_PILOT_HOME="${{FACTORIO_PILOT_HOME:-$HOME/factorio-pilot}}"
+"$FACTORIO_PILOT_HOME/.venv/bin/python" -m unittest discover -s factorio-pilot/tools -p 'test_*.py'
+bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20
+bash factorio-pilot/setup/run-maintenance.sh --controller scripted --minutes 20
+bash factorio-pilot/setup/run-maintenance.sh --controller model --minutes 20
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/export_evidence.py
 ```
 
 Sources are preserved in the per-result snapshots above, with hashes verified against each configuration. Controls v1 and model v2 differ only in additional prompt/history logging and the first-low-window timestamp; the task, action cadence and endpoint are identical. Environment/model pins remain in the project README and saved artifacts. Previous construction, storage and kernel findings remain separate.

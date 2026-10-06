@@ -6,4 +6,4 @@ The export preserves every included run configuration, JSONL action trace, sourc
 
 The pinned model revision, FLE revision, server version, and package versions are in [runtime setup](factorio-pilot/README.md). Individual run configurations and source snapshots identify the code evaluated in each experiment. The [native review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md) and [reviewed benchmark](outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) record the C++/CUDA source hashes and measurement conditions. Rebuilding a manifest does not approve altered native source for GPU execution.
 
-The repository is public for inspection. No license for project-authored source or evidence has been granted yet; upstream packages, model weights, and the Factorio game retain their own terms.
+The project-authored repository contents are released under the [MIT License](LICENSE). Upstream packages, model weights, and the Factorio game retain their own terms.

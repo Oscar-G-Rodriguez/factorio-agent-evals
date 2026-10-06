@@ -4,7 +4,7 @@ This document starts with the original two-minute construction pilot, then recor
 
 ## Environment
 
-Execution uses Ubuntu 24.04.5 under WSL 2 on the Windows RTX 5070 Ti host. Native Docker Engine runs the local Factorio server. Python 3.12.3 and project packages live in `/home/osci2/factorio-pilot/.venv`. Linux project artifacts are exported to this Windows workspace; model weights remain in Linux storage.
+The recorded experiments used Ubuntu 24.04.5 under WSL 2 on an RTX 5070 Ti Windows host. Native Docker Engine ran the local Factorio server. Python 3.12.3 and project packages were in the host's `/home/osci2/factorio-pilot/.venv`. Model weights stayed in Linux storage. New runs can use another checkout and Linux account as described below; saved configurations retain the original host paths.
 
 Pinned dependencies:
 
@@ -21,7 +21,19 @@ Pinned dependencies:
 
 Complete package versions are in `evidence/artifacts/requirements-tested.txt`. The saved lab scenario has actual map seed 2859378883. Evaluated source and starting-state hashes are recorded per run. FLE uses structured tools; sprite images are unnecessary for this pilot. The installed graphical client is optional.
 
-## Reproduce on this host
+## Run from another checkout
+
+In Ubuntu/WSL, set `FACTORIO_PILOT_HOME` to a writable Linux directory containing `.venv`, `artifacts`, `runs`, and `cluster`. The default for an ordinary Linux user is `$HOME/factorio-pilot`. Launchers resolve Python source from their own location, so the repository can be cloned elsewhere. For example, from the repository root:
+
+```bash
+export FACTORIO_PILOT_HOME="$HOME/factorio-pilot"
+"$FACTORIO_PILOT_HOME/.venv/bin/python" -m unittest discover -s factorio-pilot/tools -p 'test_*.py'
+bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20
+```
+
+Root launchers restart the local Docker server and then run Python as the ordinary owner of `FACTORIO_PILOT_HOME`. Set `FACTORIO_PILOT_USER` when that owner cannot be inferred, and pass both variables through `sudo` if needed. The root-only Ubuntu bootstrap requires `FACTORIO_PILOT_USER` explicitly. `FACTORIO_WSL_DISTRO` selects a WSL distribution for the optional Windows sanitizer helper; it defaults to `Ubuntu-24.04`. A different checkout still needs the pinned FLE installation, model snapshot, Factorio server, Python packages, and CUDA 12.8 toolkit. The [tool map](tools/README.md) separates current runners and checks from one-off helpers.
+
+## Original host procedure
 
 Run these commands from PowerShell in the project parent (`igni`). They use root only for the Docker restart; agent and reference scripts run as ordinary Linux user `osci2`.
 
@@ -42,7 +54,7 @@ For a read-only progress snapshot while a run is active:
 wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/show_progress.py
 ```
 
-For a new machine, the bootstrap and package scripts under `setup` show installation steps, but paths and the ordinary Linux username must be adapted. Do not reinstall the GPU driver inside WSL; it uses the Windows driver. No registry adjustment is needed for ordinary inference or numerical CUDA tests.
+For a new machine, the bootstrap and package scripts under `setup` show the pinned installation steps. Set the runtime directory and ordinary Linux username before using them. Do not reinstall the GPU driver inside WSL; it uses the Windows driver. No registry adjustment is needed for ordinary inference or numerical CUDA tests.
 
 ## Interfaces and measurements
 
@@ -100,6 +112,6 @@ The guided expansion run produced 38 and 37 plates per measured minute after add
 
 `tools/maintenance_agent.py` gives a controller a prebuilt drill/furnace/chest, three coal per machine, and a verified 60-second warm-up. After that, EVERY decision advances exactly 15 simulated seconds, including invalid actions. There is no finish tool: two consecutive exact 60-second windows below 16 plates end the run as sustained failure. Otherwise it records survival through a 20-minute horizon or an incomplete wall-budget endpoint. Refills are limited to three coal per action; storage requires collection and transfer. These limits are disclosed benchmark rules.
 
-For a checkout at a different path, the active maintenance launcher resolves its Python source relative to itself. Set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts/starting-state.json`, and `runs`, then run `bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20` from the repository root. The pinned FLE installation and running server at `127.0.0.1:27000` are still required. Run controllers sequentially. The original host commands below remain the exact historical procedure and are not rewritten in saved configurations or source snapshots.
+The maintenance launcher resolves its Python source relative to the checkout. Set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts/starting-state.json`, and `runs`, then run `bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20` from the repository root. The pinned FLE installation and running server at `127.0.0.1:27000` are still required. Run controllers sequentially. Saved configurations and source snapshots retain the exact original host procedure.
 
 Run `--controller idle`, then `--controller scripted`, then `--controller model`, sequentially against the same server. All use the same frozen fixture and toolset. The model uses original PyTorch inference; integrating the reviewed C++/CUDA operator and measuring end-to-end acceleration are separate next steps. `../outputs/A04 - Maintenance - Results.md` contains commands, audited results and limits. New maintenance sources and their configurations remain separate from the earlier construction experiment.

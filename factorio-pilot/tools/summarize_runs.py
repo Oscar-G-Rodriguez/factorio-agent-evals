@@ -1,11 +1,13 @@
 """Summarize complete attempts; keep repeats separate and preserve negatives."""
+from runtime_paths import runtime_home
+
 import json
 import math
 import statistics
 from collections import Counter
 from pathlib import Path
 
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 results = []
 for summary_path in sorted(root.glob('runs/*/summary.json')):
     directory = summary_path.parent

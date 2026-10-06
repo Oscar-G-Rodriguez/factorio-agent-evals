@@ -1,9 +1,11 @@
 """Conservative audit for this development tool set's direct drill/furnace chain."""
+from runtime_paths import runtime_home
+
 import json
 import argparse
 from pathlib import Path
 
-root=Path('/home/osci2/factorio-pilot')
+root=runtime_home()
 parser=argparse.ArgumentParser()
 parser.add_argument('--include-logistics',action='store_true')
 args=parser.parse_args()

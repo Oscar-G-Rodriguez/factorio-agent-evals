@@ -1,4 +1,6 @@
 """Scaffolded development agent; never pooled with the frozen pilot."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import argparse
@@ -30,7 +32,7 @@ if not 1<=args.steps<=64 or not 0<=args.keep_visible_seconds<=600:
     raise ValueError('Invalid bounded development budget')
 if not args.logistics and args.target_plates_per_minute!=16:
     raise ValueError('Expansion targets require --logistics')
-root=Path('/home/osci2/factorio-pilot')
+root=runtime_home()
 artifacts=root/'artifacts'
 mode='logistics-development' if args.logistics else 'working-development'
 stage='A03' if args.logistics else 'A02'

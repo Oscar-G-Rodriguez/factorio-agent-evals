@@ -6,6 +6,11 @@ if [[ $(id -u) -ne 0 ]]; then
   echo 'Run this setup as root inside the project Ubuntu distribution.' >&2
   exit 1
 fi
+pilot_user="${FACTORIO_PILOT_USER:?Set FACTORIO_PILOT_USER to an ordinary Linux username}"
+if [[ "$pilot_user" == root ]]; then
+  echo 'FACTORIO_PILOT_USER must not be root.' >&2
+  exit 1
+fi
 source /etc/os-release
 if [[ ${ID:-} != ubuntu || ${VERSION_ID:-} != 24.04 ]]; then
   echo 'This setup is scoped to Ubuntu 24.04.' >&2
@@ -55,11 +60,13 @@ docker run --rm hello-world
 /usr/local/cuda-12.8/bin/nvcc --version
 /usr/local/cuda-12.8/bin/compute-sanitizer --version
 
-# Model-generated game programs will run under an ordinary Linux user.
-# No sudo membership, password exemption, or docker group access is added.
-if ! id osci2 >/dev/null 2>&1; then
-  useradd --create-home --shell /bin/bash osci2
+# Model-generated game programs run under an ordinary Linux user.
+# Set the user explicitly when invoking this root-only bootstrap.
+if ! id "$pilot_user" >/dev/null 2>&1; then
+  useradd --create-home --shell /bin/bash "$pilot_user"
 fi
-install -d -o osci2 -g osci2 /home/osci2/factorio-pilot
-runuser -u osci2 -- python3 -m venv /home/osci2/factorio-pilot/.venv
-echo 'Linux tools installed. Project virtual environment created for osci2.'
+pilot_user_home="$(getent passwd "$pilot_user" | cut -d: -f6)"
+pilot_home="${FACTORIO_PILOT_HOME:-$pilot_user_home/factorio-pilot}"
+install -d -o "$pilot_user" -g "$(id -gn "$pilot_user")" "$pilot_home"
+runuser -u "$pilot_user" -- python3 -m venv "$pilot_home/.venv"
+echo "Linux tools installed. Project virtual environment created at $pilot_home."

@@ -1,4 +1,6 @@
 """One local-model iron-production pilot with reproducible JSONL logs."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import argparse
@@ -23,7 +25,7 @@ parser.add_argument('--context-policy', choices=('history', 'structured-memory')
 args = parser.parse_args()
 if not 1 <= args.steps <= 64:
     raise ValueError('steps must be 1..64')
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 artifacts = root / 'artifacts'
 run = root / 'runs' / f'A01-{args.mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}-seed{args.seed}'
 run.mkdir(parents=True)

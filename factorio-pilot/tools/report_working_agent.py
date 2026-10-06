@@ -1,11 +1,13 @@
 """Package guided development results separately from the frozen context pilot."""
+from runtime_paths import runtime_home
+
 import hashlib
 import json
 import statistics
 from pathlib import Path
 
 project = Path(__file__).resolve().parents[2]
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 rows = []
 paths = list((root/'runs').glob('A02-working-development-*/summary.json'))
 paths.extend((root/'runs').glob('working-development-*/summary.json'))  # Original host records.
@@ -78,13 +80,14 @@ Recorded times exclude model loading and post-run viewing. The initial run chang
 
 ## Reproduce the fast run
 
-From PowerShell in the project directory, with the existing test server running:
+From the repository root in Ubuntu/WSL, with the configured test server running:
 
-```powershell
-wsl -d Ubuntu-24.04 -u osci2 -- bash /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/setup/run-working-agent.sh --visual --game-speed 10 --keep-visible-seconds 0
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/audit_working_agent.py
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/report_working_agent.py
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/export_evidence.py
+```bash
+export FACTORIO_PILOT_HOME="${{FACTORIO_PILOT_HOME:-$HOME/factorio-pilot}}"
+bash factorio-pilot/setup/run-working-agent.sh --visual --game-speed 10 --keep-visible-seconds 0
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/audit_working_agent.py
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/report_working_agent.py
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/export_evidence.py
 ```
 
 The runner defaults to 10× speed and zero viewing delay. Add `--require-viewer` only when a connected graphical client is required. It waits before loading FLE. A newly restarted server must accept the viewer before FLE installs tools: upstream runtime functions in Factorio storage can still prevent map saving and later joins. The private UDP relay and server should remain running during viewing.

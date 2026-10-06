@@ -1,5 +1,12 @@
 $ErrorActionPreference = 'Stop'
-$taskRoot = 'C:\Users\osci2\Documents\Codex\2026-10-05\igni'
+$taskRoot = if ($env:FACTORIO_PILOT_WORK) { $env:FACTORIO_PILOT_WORK } else { Join-Path $env:TEMP 'factorio-pilot-sanitizer-validation' }
+New-Item -ItemType Directory -Path (Join-Path $taskRoot 'work') -Force | Out-Null
+$taskDistro = if ($env:FACTORIO_WSL_DISTRO) { $env:FACTORIO_WSL_DISTRO } else { 'Ubuntu-24.04' }
+$taskUser = $env:FACTORIO_PILOT_USER
+if (-not $taskUser -or $taskUser -eq 'root') { throw 'Set FACTORIO_PILOT_USER to the ordinary WSL account before running.' }
+$taskScript = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot 'run-rmsnorm-sanitizers.sh')).Path
+$taskLinuxScript = (& wsl.exe -d $taskDistro -u $taskUser -- wslpath -a $taskScript).Trim()
+if ($LASTEXITCODE -ne 0 -or -not $taskLinuxScript) { throw 'Could not resolve the sanitizer script inside WSL.' }
 $taskStatus = Join-Path $taskRoot 'work\cuda-debugger-validation-status.json'
 $taskRegistry = 'HKLM:\SOFTWARE\NVIDIA Corporation\GPUDebugger'
 $taskName = 'EnableInterface'
@@ -26,7 +33,7 @@ try {
     $taskResult.status='running_sanitizers'
     $taskResult.enabled_value=Get-ItemPropertyValue -LiteralPath $taskRegistry -Name $taskName
     $taskResult | ConvertTo-Json | Set-Content -LiteralPath $taskStatus -Encoding UTF8
-    & wsl.exe -d Ubuntu-24.04 -u osci2 -- bash /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/setup/run-rmsnorm-sanitizers.sh *>&1 |
+    & wsl.exe -d $taskDistro -u $taskUser -- bash $taskLinuxScript *>&1 |
         Out-File -LiteralPath (Join-Path $taskRoot 'work\approved-rmsnorm-sanitizers.log') -Encoding utf8
     $taskResult.sanitizer_exit_code=$LASTEXITCODE
     $taskResult.status=if($LASTEXITCODE -eq 0){'sanitizers_passed'}else{'sanitizers_failed'}

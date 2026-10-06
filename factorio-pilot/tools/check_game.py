@@ -1,4 +1,6 @@
 """Scripted connection/reset/timing checks, separate from model evaluations."""
+from runtime_paths import runtime_home
+
 import json
 import time
 from pathlib import Path
@@ -6,7 +8,7 @@ from fle.env import FactorioInstance
 from fle.eval.tasks.task_factory import TaskFactory
 from fle.commons.models.game_state import GameState
 
-root = Path('/home/osci2/factorio-pilot/artifacts')
+root = runtime_home() / 'artifacts'
 root.mkdir(parents=True, exist_ok=True)
 instance = FactorioInstance(address='127.0.0.1', tcp_port=27000,
                             fast=True, reset_speed=10, reset_paused=True)

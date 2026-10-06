@@ -1,4 +1,6 @@
 """Time the unchanged installed RMSNorm on captured model tensors."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import json
@@ -8,7 +10,7 @@ from pathlib import Path
 import torch
 from transformers.models.qwen3.modeling_qwen3 import Qwen3RMSNorm
 
-root = Path('/home/osci2/factorio-pilot/artifacts')
+root = runtime_home() / 'artifacts'
 samples = torch.load(root / 'rmsnorm-real-inputs.pt', weights_only=True)
 results = []
 outputs = {}

@@ -1,9 +1,11 @@
 """Copy small experiment artifacts into this checkout using staged run names."""
+from runtime_paths import runtime_home
+
 import re
 import shutil
 from pathlib import Path
 
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 target = Path(__file__).resolve().parents[1] / 'evidence'
 
 

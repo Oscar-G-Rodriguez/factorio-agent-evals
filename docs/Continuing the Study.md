@@ -8,7 +8,7 @@ The public README explains the question and the measured findings. This guide id
 | --- | --- |
 | [`factorio-pilot/tools/`](../factorio-pilot/tools/) | Current Python controllers, validated game tools, checks, and reports. `maintenance_agent.py` is the active maintenance controller; `run_agent.py` belongs to the earlier construction pilot. |
 | [`factorio-pilot/cuda/`](../factorio-pilot/cuda/) | The active C++ binding and CUDA RMSNorm kernel. Changes here invalidate the recorded native review. |
-| [`factorio-pilot/setup/`](../factorio-pilot/setup/) | Launch and installation scripts. The maintenance launcher accepts `FACTORIO_PILOT_HOME`; older scripts still contain paths from the original host. |
+| [`factorio-pilot/setup/`](../factorio-pilot/setup/) | Launch and installation scripts. Launchers locate this checkout and accept `FACTORIO_PILOT_HOME` for the Linux runtime. |
 | [Saved-run index](../factorio-pilot/evidence/runs/README.md) | Folder naming, stage-to-run mapping, configurations, action traces, summaries, and partial records. |
 | [`factorio-pilot/evidence/artifacts/`](../factorio-pilot/evidence/artifacts/) | Environment pins, captured operator inputs, numerical checks, sanitizer receipts, and timing samples. |
 | [`factorio-pilot/source-snapshots/`](../factorio-pilot/source-snapshots/) | Frozen copies of code that produced earlier results. Read these for provenance; edit active source instead. |
@@ -49,4 +49,4 @@ Publish a `K02 - RMSNorm - Integrated Inference Results.md` report only after th
 
 This public repository has clean history. If development starts in a private checkout, review the specific changed files and copy an approved patch or artifact set onto a branch based on this public `main`. Do not merge or push the private repository's history. Check filenames and contents for credentials, correspondence, local-only artifacts, and third-party material before pushing. Preserve exact evaluated bytes and hashes when transferring evidence, and keep model weights and game binaries outside Git.
 
-The standalone RMSNorm speedups describe one operator against the installed eager CUDA reference. Integration into Qwen, whole-model speedup, and maintenance memory/retrieval comparisons still need separate implementations and measurements. The project currently has no license granting reuse of its original source or evidence.
+The standalone RMSNorm speedups describe one operator against the installed eager CUDA reference. Integration into Qwen, whole-model speedup, and maintenance memory/retrieval comparisons still need separate implementations and measurements. Project-authored repository contents are available under the [MIT License](../LICENSE); external components retain their own terms.

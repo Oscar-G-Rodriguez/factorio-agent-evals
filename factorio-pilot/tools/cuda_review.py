@@ -1,4 +1,6 @@
 """CPU-only source review gate. This never approves a changed source automatically."""
+from runtime_paths import runtime_home
+
 import argparse
 import hashlib
 import json
@@ -22,7 +24,7 @@ def assert_review_current(stage='runtime', root=None, correctness_path=None):
     if native_inventory(root) != record['source_hashes']:
         raise RuntimeError('Native source files changed or were added/removed. A fresh code review is required.')
     if stage == 'benchmark':
-        result_path = Path(correctness_path) if correctness_path else Path('/home/osci2/factorio-pilot/artifacts/rmsnorm-correctness.json')
+        result_path = Path(correctness_path) if correctness_path else runtime_home() / 'artifacts/rmsnorm-correctness.json'
         if not result_path.exists():
             raise RuntimeError('Run the reviewed bounded --tests-only suite before benchmarking.')
         result = json.loads(result_path.read_text())

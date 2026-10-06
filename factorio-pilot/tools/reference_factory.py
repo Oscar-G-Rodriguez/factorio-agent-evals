@@ -1,11 +1,13 @@
 """Reachability control using the same adapter; never a model evaluation."""
+from runtime_paths import runtime_home
+
 import json
 from pathlib import Path
 from fle.env import FactorioInstance
 from fle.commons.models.game_state import GameState
 from game_bridge import GameBridge
 
-root = Path('/home/osci2/factorio-pilot/artifacts')
+root = runtime_home() / 'artifacts'
 instance = FactorioInstance(address='127.0.0.1', tcp_port=27000, fast=True, reset_speed=10, reset_paused=True)
 instance.reset(game_state=GameState.parse_raw((root/'starting-state.json').read_text()))
 instance.game_control.pause()

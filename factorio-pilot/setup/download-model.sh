@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-/home/osci2/factorio-pilot/.venv/bin/python \
-  /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/download_model.py
+source "$(dirname -- "${BASH_SOURCE[0]}")/common.sh"
+"$FACTORIO_PILOT_HOME/.venv/bin/python" \
+  "$pilot_source"/tools/download_model.py

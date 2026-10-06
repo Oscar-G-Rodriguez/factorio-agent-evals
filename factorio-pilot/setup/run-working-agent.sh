@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd /home/osci2/factorio-pilot
+source "$(dirname -- "${BASH_SOURCE[0]}")/common.sh"
+cd "$FACTORIO_PILOT_HOME"
 export FLE_GETPATH_MAX_ATTEMPTS=20
-exec .venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/working_agent.py "$@"
+exec .venv/bin/python "$pilot_source"/tools/working_agent.py "$@"

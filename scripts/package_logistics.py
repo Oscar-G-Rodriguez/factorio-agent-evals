@@ -72,14 +72,15 @@ This demonstrates expansion in response to a higher goal and corrective feedback
 
 The full project-authored C++/CUDA source review preceded these runs. The revised operator passed 25 matching numerical/boundary/stream checks. The review gate rejects added, removed or changed native sources; the custom benchmark gate additionally requires matching correctness evidence. Sanitizer validation remains blocked by the previously unapproved Windows debugging-interface setting. See [the source review](CUDA%20and%20C%2B%2B%20Source%20Review.md).
 
-With the test server running, use these commands from PowerShell in the project directory:
+With the test server running, use these commands from the repository root in Ubuntu/WSL:
 
-```powershell
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/cuda_review.py
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/check_logistics.py
-wsl -d Ubuntu-24.04 -u osci2 -- bash /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/setup/run-working-agent.sh --logistics --target-plates-per-minute 32 --steps 32 --visual --game-speed 10 --keep-visible-seconds 0
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/audit_working_agent.py --include-logistics
-wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/export_evidence.py
+```bash
+export FACTORIO_PILOT_HOME="${{FACTORIO_PILOT_HOME:-$HOME/factorio-pilot}}"
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/cuda_review.py
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/check_logistics.py
+bash factorio-pilot/setup/run-working-agent.sh --logistics --target-plates-per-minute 32 --steps 32 --visual --game-speed 10 --keep-visible-seconds 0
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/audit_working_agent.py --include-logistics
+"$FACTORIO_PILOT_HOME/.venv/bin/python" factorio-pilot/tools/export_evidence.py
 ```
 
 Run sequentially because these commands reset or control the same server. New run folders preserve earlier evidence. The source snapshot is `factorio-pilot/source-snapshots/logistics-development-v3/tools`; the run config hashes verify its evaluated files. The earlier guided and context-pilot reports remain separate. Evaluation still pauses simulation during inference and uses 10× speed during advancement.

@@ -1,4 +1,6 @@
 """One local inference smoke check; not a Factorio baseline run."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import json
@@ -7,7 +9,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-root = Path('/home/osci2/factorio-pilot/artifacts')
+root = runtime_home() / 'artifacts'
 metadata = json.loads((root / 'model-revision.json').read_text())
 path = metadata['snapshot_path']
 free, total = torch.cuda.mem_get_info()

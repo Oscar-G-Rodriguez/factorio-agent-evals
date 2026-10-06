@@ -1,4 +1,6 @@
 """Forward correctness and alternating GPU benchmark; no model monkeypatch."""
+from runtime_paths import runtime_home
+
 import argparse
 import hashlib
 import json
@@ -15,7 +17,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--tests-only', action='store_true')
 args = parser.parse_args()
 assert_review_current('correctness' if args.tests_only else 'benchmark')
-project = Path('/home/osci2/factorio-pilot')
+project = runtime_home()
 source = Path(__file__).resolve().parent.parent / 'cuda'
 build = project/'build'/'rmsnorm'
 build.mkdir(parents=True, exist_ok=True)

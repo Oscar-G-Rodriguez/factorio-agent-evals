@@ -1,11 +1,13 @@
 """Generate one loopback-only server from the installed FLE resources."""
+from runtime_paths import runtime_home
+
 import json
 from pathlib import Path
 import shutil
 import yaml
 from fle.cluster.run_envs import ComposeGenerator
 
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 state = root / 'cluster'
 state.mkdir(parents=True, exist_ok=True)
 generator = ComposeGenerator(state_dir=state, work_dir=root)

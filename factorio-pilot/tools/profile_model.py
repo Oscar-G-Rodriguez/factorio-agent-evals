@@ -1,4 +1,6 @@
 """Separate diagnostic inference profile and real first-layer RMSNorm inputs."""
+from runtime_paths import runtime_home
+
 from cuda_review import assert_review_current
 assert_review_current()
 import json
@@ -7,7 +9,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 artifacts = root / 'artifacts'
 meta = json.loads((artifacts / 'model-revision.json').read_text())
 configs = list(root.glob('runs/A01-baseline-*/config.json'))

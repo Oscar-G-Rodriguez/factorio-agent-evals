@@ -1,10 +1,12 @@
 """Download one official model revision without loading it onto the GPU."""
+from runtime_paths import runtime_home
+
 import json
 from datetime import datetime, timezone
 from pathlib import Path
 from huggingface_hub import HfApi, snapshot_download
 
-root = Path('/home/osci2/factorio-pilot')
+root = runtime_home()
 artifacts = root / 'artifacts'
 artifacts.mkdir(parents=True, exist_ok=True)
 model_id = 'Qwen/Qwen3-4B-Instruct-2507'

@@ -1,4 +1,6 @@
 """Validate comparison controls and produce a report from saved evidence."""
+from runtime_paths import runtime_home
+
 import hashlib
 import json
 import math
@@ -6,7 +8,7 @@ from pathlib import Path
 import statistics
 from collections import Counter
 
-project = Path('/home/osci2/factorio-pilot')
+project = runtime_home()
 workspace = Path(__file__).resolve().parent.parent
 rows = []
 controls = []
