@@ -1,0 +1,1 @@
+PASS: all 1025 GPU sums match the CPU reference.

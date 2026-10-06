@@ -1,0 +1,26 @@
+{
+  "mode": "baseline",
+  "seed": 43,
+  "max_decisions": 32,
+  "wall_time_limit_seconds": 1800,
+  "sampling": {
+    "do_sample": false
+  },
+  "max_total_sequence_tokens": 8192,
+  "max_new_tokens": 1024,
+  "context_policy": "keep_system_and_latest_observation; drop_oldest_complete_action_feedback_pairs",
+  "interface": "one_validated_JSON_call_per_decision",
+  "system_prompt": "You control a Factorio factory using one JSON tool action per response.\nGoal: automatically produce at least 16 iron plates per game minute in two\nconsecutive unattended 60-second windows after a 60-second warm-up.\nUse the supplied mining drills, furnaces, inserters, chests, belts and coal.\nReturn exactly {\"tool\":\"tool_name\",\"args\":{...}} with no prose or Markdown.\nThe environment pauses during reasoning. Movement unpauses the world at 10x\nwhile the pathfinder runs; its actual ticks are logged. Each ordinary action\nis then followed by one game second. wait advances its requested seconds;\ndone triggers evaluation.\nPositions are {\"x\":number,\"y\":number}; directions are UP, RIGHT, DOWN, LEFT.\nentity arguments are prototype names without Prototype.; nearest's type is\nIronOre, Coal, or Stone. entities can be a list of prototype names.\nReturned entity objects have handles such as e1: insert_item target and\nrotate_entity/pickup_entity entity arguments use these handles.\nHandle positions and drill drop_position are in observations.\nmove_to supports position only. Do not craft or manually insert ore to inflate output.\nExtra tools: wait(seconds: integer 1..60), done(no arguments).\nAvailable prototypes: BurnerMiningDrill, StoneFurnace, BurnerInserter, WoodenChest, TransportBelt, Coal, IronOre, IronPlate\n\ninspect_inventory(entity=None, all_players: bool = False) -> Union[fle.env.entities.Inventory, List[fle.env.entities.Inventory]]\nCall self as a function.\n\nnearest(type: Union[fle.env.game_types.Prototype, fle.env.game_types.Resource]) -> fle.env.entities.Position\nCall self as a function.\n\nmove_to(position: fle.env.entities.Position, laying: fle.env.game_types.Prototype = None, leading: fle.env.game_types.Prototype = None) -> fle.env.entities.Position\nCall self as a function.\n\nplace_entity(entity: fle.env.game_types.Prototype, direction: fle.env.entities.Direction = Direction.UP, position: fle.env.entities.Position = Position(x=0.0, y=0.0), exact: bool = True) -> fle.env.entities.Entity\nCall self as a function.\n\nplace_entity_next_to(entity: fle.env.game_types.Prototype, reference_position: fle.env.entities.Position = Position(x=0.0, y=0.0), direction: fle.env.instance.DirectionInternal = <DirectionInternal.RIGHT: 4>, spacing: int = 0) -> fle.env.entities.Entity\nCall self as a function.\n\nget_entity(entity: fle.env.game_types.Prototype, position: fle.env.entities.Position) -> fle.env.entities.Entity\nCall self as a function.\n\nget_entities(entities: Union[Set[fle.env.game_types.Prototype], fle.env.game_types.Prototype] = set(), position: fle.env.entities.Position = None, radius: float = 1000) -> List[Union[fle.env.entities.Entity, fle.env.entities.EntityGroup]]\nCall self as a function.\n\ninsert_item(entity: fle.env.game_types.Prototype, target: Union[fle.env.entities.Entity, fle.env.entities.EntityGroup], quantity=5) -> fle.env.entities.Entity\nCall self as a function.\n\nrotate_entity(entity: fle.env.entities.Entity, direction: fle.env.instance.DirectionInternal = <DirectionInternal.UP: 0>) -> fle.env.entities.Entity\nCall self as a function.\n\ncan_place_entity(entity: fle.env.game_types.Prototype, direction: fle.env.entities.Direction = Direction.UP, position: fle.env.entities.Position = Position(x=0.0, y=0.0)) -> bool\nCall self as a function.\n\npickup_entity(entity: Union[fle.env.entities.Entity, fle.env.game_types.Prototype, fle.env.entities.EntityGroup], position: Optional[fle.env.entities.Position] = None) -> bool\nCall self as a function.",
+  "starting_state_sha256": "b6a3843a59801f23fc0978a2e8f7a3e6b434ccac015962849455d1fa13ab3862",
+  "model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "resolved_at_utc": "2026-10-06T00:39:31.517738+00:00",
+    "snapshot_path": "/home/osci2/factorio-pilot/model-cache/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "precision": "bfloat16",
+  "attention_backend": "sdpa",
+  "tick_policy": "paused_during_inference; movement_unpaused_at_10x_with_actual_ticks_logged; ordinary_actions_add_60_ticks; wait_exact_requested_ticks",
+  "greedy_seed_note": "Different seeds do not create sampling diversity with do_sample=false.",
+  "tool_subset_frozen_before_baseline": true
+}

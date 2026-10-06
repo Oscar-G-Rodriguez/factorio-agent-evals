@@ -1,0 +1,34 @@
+[1/3] /usr/local/cuda-12.8/bin/nvcc -MD -MF rmsnorm.cuda.o.d -DTORCH_EXTENSION_NAME=pilot_rmsnorm -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-12.8/include -isystem /usr/include/python3.12 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -O3 --fmad=false -lineinfo -std=c++17 -c /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/cuda/rmsnorm.cu -o rmsnorm.cuda.o 
+FAILED: rmsnorm.cuda.o 
+/usr/local/cuda-12.8/bin/nvcc -MD -MF rmsnorm.cuda.o.d -DTORCH_EXTENSION_NAME=pilot_rmsnorm -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-12.8/include -isystem /usr/include/python3.12 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_120,code=sm_120 --compiler-options '-fPIC' -O3 --fmad=false -lineinfo -std=c++17 -c /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/cuda/rmsnorm.cu -o rmsnorm.cuda.o 
+In file included from /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include/ATen/cuda/CUDAContext.h:4,
+                 from /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/cuda/rmsnorm.cu:2:
+/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include/ATen/cuda/CUDAContextLight.h:10:10: fatal error: cusparse.h: No such file or directory
+   10 | #include <cusparse.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+[2/3] c++ -MMD -MF rmsnorm.o.d -DTORCH_EXTENSION_NAME=pilot_rmsnorm -DTORCH_API_INCLUDE_EXTENSION_H -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include -isystem /home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda-12.8/include -isystem /usr/include/python3.12 -fPIC -std=c++17 -O3 -c /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/cuda/rmsnorm.cpp -o rmsnorm.o 
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2774, in _run_ninja_build
+    subprocess.run(
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v', '-j', '2']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/check_rmsnorm.py", line 22, in <module>
+    extension = load(name='pilot_rmsnorm', sources=[str(source/'rmsnorm.cpp'), str(source/'rmsnorm.cu')],
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 1818, in load
+    return _jit_compile(
+           ^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2268, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2429, in _write_ninja_file_and_build_library
+    _run_ninja_build(
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2791, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error building extension 'pilot_rmsnorm'

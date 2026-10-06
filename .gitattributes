@@ -1,0 +1,5 @@
+# Preserve experimental source bytes and their SHA-256 hashes across checkouts.
+* -text
+*.pt binary
+*.gz binary
+

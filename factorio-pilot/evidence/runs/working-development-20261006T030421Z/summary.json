@@ -1,0 +1,176 @@
+{
+  "mode": "working-development",
+  "steps": 8,
+  "failed_actions": 0,
+  "stop_reason": "verified_finish_request",
+  "wall_seconds": 49.15991907600005,
+  "measurement_windows": [
+    {
+      "actual_ticks": 3600,
+      "iron_plates": 19
+    },
+    {
+      "actual_ticks": 3600,
+      "iron_plates": 19
+    }
+  ],
+  "throughput_target_met": true,
+  "task_success": true,
+  "automated_supply_chain_check": "direct_chain_audit_passed",
+  "pre_evaluation_factory": {
+    "inventory": {
+      "wooden-chest": 10,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 400
+    },
+    "entities": [
+      {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 15.0,
+          "y": 70.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 47
+        },
+        "fuel": "coal=47",
+        "warnings": "['output blocked by item on the ground. There is no sink entity in place to accept the output.']",
+        "drop_position": {
+          "x": 16.5,
+          "y": 69.5
+        },
+        "fuel_inventory": "[{'name': 'coal', 'count': 47}]"
+      },
+      {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 17.0,
+          "y": 70.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 48
+        },
+        "fuel": "coal=48",
+        "warnings": "[]",
+        "fuel_inventory": "[{'name': 'coal', 'count': 48}]",
+        "furnace_source": "iron-ore=3",
+        "furnace_result": "iron-plate=17"
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 21,
+        "iron-plate": 17
+      },
+      "input": {
+        "coal": 5,
+        "iron-ore": 18
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "game_tick": 32800
+  },
+  "final_factory": {
+    "inventory": {
+      "wooden-chest": 10,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 400
+    },
+    "entities": [
+      {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 15.0,
+          "y": 70.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 40
+        },
+        "fuel": "coal=40",
+        "warnings": "['output blocked by item on the ground. There is no sink entity in place to accept the output.']",
+        "drop_position": {
+          "x": 16.5,
+          "y": 69.5
+        },
+        "fuel_inventory": "[{'name': 'coal', 'count': 40}]"
+      },
+      {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 17.0,
+          "y": 70.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 44
+        },
+        "fuel": "coal=44",
+        "warnings": "[]",
+        "fuel_inventory": "[{'name': 'coal', 'count': 44}]",
+        "furnace_source": "iron-ore=9",
+        "furnace_result": "iron-plate=74"
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 84,
+        "iron-plate": 74
+      },
+      "input": {
+        "coal": 16,
+        "iron-ore": 75
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "game_tick": 43600
+  }
+}

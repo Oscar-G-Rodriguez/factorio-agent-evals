@@ -1,0 +1,171 @@
+{
+  "complete_runs": [
+    {
+      "run": "baseline-20261006T005034Z-seed42",
+      "mode": "baseline",
+      "seed": 42,
+      "baseline_eligible": false,
+      "quality_notes": {
+        "baseline_eligible": false,
+        "reason": "Tool description extraction bug; map seed not frozen. Preserve as diagnostic attempts, not a controlled baseline."
+      },
+      "decisions": 32,
+      "failed_actions": 12,
+      "failed_actions_by_tool": {
+        "place_entity": 3,
+        "rotate_entity": 3,
+        "pickup_entity": 2,
+        "insert_item": 4
+      },
+      "iron_plates_per_window": [
+        0,
+        0
+      ],
+      "window_ticks": [
+        3600,
+        3600
+      ],
+      "task_success": false,
+      "response_median_seconds": 2.0201567729999965,
+      "response_p95_seconds_nearest_rank": 3.2739066089999938,
+      "total_input_tokens": 176231,
+      "total_output_tokens": 770,
+      "peak_torch_allocated_gib": 9.011061191558838,
+      "wall_seconds_including_final_evaluation": 112.81228518700004,
+      "stop_reason": "decision_limit",
+      "sampling_diversity": false
+    },
+    {
+      "run": "baseline-20261006T005249Z-seed43",
+      "mode": "baseline",
+      "seed": 43,
+      "baseline_eligible": false,
+      "quality_notes": {
+        "baseline_eligible": false,
+        "reason": "Tool description extraction bug; map seed not frozen. Preserve as diagnostic attempts, not a controlled baseline."
+      },
+      "decisions": 32,
+      "failed_actions": 11,
+      "failed_actions_by_tool": {
+        "place_entity": 3,
+        "rotate_entity": 2,
+        "pickup_entity": 3,
+        "insert_item": 3
+      },
+      "iron_plates_per_window": [
+        0,
+        0
+      ],
+      "window_ticks": [
+        3600,
+        3600
+      ],
+      "task_success": false,
+      "response_median_seconds": 1.6833508384999902,
+      "response_p95_seconds_nearest_rank": 4.901434645000052,
+      "total_input_tokens": 178150,
+      "total_output_tokens": 773,
+      "peak_torch_allocated_gib": 9.010217189788818,
+      "wall_seconds_including_final_evaluation": 99.19969009100004,
+      "stop_reason": "decision_limit",
+      "sampling_diversity": false
+    },
+    {
+      "run": "baseline-20261006T005745Z-seed42",
+      "mode": "baseline",
+      "seed": 42,
+      "baseline_eligible": true,
+      "quality_notes": {},
+      "decisions": 20,
+      "failed_actions": 9,
+      "failed_actions_by_tool": {
+        "place_entity": 3,
+        "insert_item": 5,
+        "rotate_entity": 1
+      },
+      "iron_plates_per_window": [
+        0,
+        0
+      ],
+      "window_ticks": [
+        3600,
+        3600
+      ],
+      "task_success": false,
+      "response_median_seconds": 1.69824749050008,
+      "response_p95_seconds_nearest_rank": 3.012373337999975,
+      "total_input_tokens": 90858,
+      "total_output_tokens": 466,
+      "peak_torch_allocated_gib": 9.008271217346191,
+      "wall_seconds_including_final_evaluation": 87.31466754999997,
+      "stop_reason": "model_done",
+      "sampling_diversity": false
+    },
+    {
+      "run": "baseline-20261006T005931Z-seed43",
+      "mode": "baseline",
+      "seed": 43,
+      "baseline_eligible": true,
+      "quality_notes": {},
+      "decisions": 32,
+      "failed_actions": 10,
+      "failed_actions_by_tool": {
+        "place_entity": 3,
+        "rotate_entity": 2,
+        "pickup_entity": 2,
+        "insert_item": 3
+      },
+      "iron_plates_per_window": [
+        0,
+        0
+      ],
+      "window_ticks": [
+        3600,
+        3600
+      ],
+      "task_success": false,
+      "response_median_seconds": 1.572336198500011,
+      "response_p95_seconds_nearest_rank": 2.20546285599994,
+      "total_input_tokens": 176606,
+      "total_output_tokens": 749,
+      "peak_torch_allocated_gib": 9.00154447555542,
+      "wall_seconds_including_final_evaluation": 103.57522012200002,
+      "stop_reason": "decision_limit",
+      "sampling_diversity": false
+    },
+    {
+      "run": "intervention-20261006T010421Z-seed42",
+      "mode": "intervention",
+      "seed": 42,
+      "baseline_eligible": true,
+      "quality_notes": {},
+      "decisions": 32,
+      "failed_actions": 9,
+      "failed_actions_by_tool": {
+        "insert_item": 5,
+        "pickup_entity": 4
+      },
+      "iron_plates_per_window": [
+        0,
+        0
+      ],
+      "window_ticks": [
+        3600,
+        3600
+      ],
+      "task_success": false,
+      "response_median_seconds": 1.5695289919999595,
+      "response_p95_seconds_nearest_rank": 1.9359096420000697,
+      "total_input_tokens": 187936,
+      "total_output_tokens": 716,
+      "peak_torch_allocated_gib": 9.023651123046875,
+      "wall_seconds_including_final_evaluation": 116.15236669399997,
+      "stop_reason": "decision_limit",
+      "sampling_diversity": false
+    }
+  ],
+  "memory_method": "PyTorch peak live allocated bytes; excludes memory owned by other applications.",
+  "repeat_limit": "Greedy repeats with different seeds are not independent sampling draws.",
+  "diagnostic_prompt_limitation": "The first two attempts lacked verified seed tracking and are excluded. The controlled baseline has signatures but empty tool descriptions. The intervention adds verified controller descriptions; this is a usability correction, not a novel algorithm.",
+  "research_claim": "Preliminary engineering pilot; no general model-ranking or novel memory claim."
+}

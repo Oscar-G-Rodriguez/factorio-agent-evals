@@ -1,0 +1,1 @@
+{"baseline_eligible":false,"manual_debug_tick_advances":[60,60],"reason":"Movement pathfinding stalled while paused. Two bounded tick advances were used to debug the development run. Corrected adapter is loaded only in subsequent processes."}

@@ -1,0 +1,40 @@
+# Factorio Agent Evals
+
+This project tests whether a local language model can keep a small Factorio factory producing iron plates over repeated decisions. It also measures a separately developed C++/CUDA RMSNorm operator on captured model inputs. The repository retains the action traces, configurations, source snapshots, and hashes needed to inspect each result.
+
+The agent loop uses [Factorio Learning Environment (FLE)](https://github.com/JackHopkins/factorio-learning-environment) to observe a CPU game server. Python presents the goal, current equipment and inventory, allowed tools, and action feedback to Qwen3-4B-Instruct-2507. The model returns one JSON action; the adapter validates it, executes it, advances the game, and logs the outcome. Qwen runs in BF16 on an RTX 5070 Ti. Factorio pauses during inference, so model latency affects wall time without changing the simulated decision interval.
+
+## Start with the maintenance episode
+
+The [trace walkthrough](docs/Maintenance%20Episode%20Walkthrough.md) follows the measured plate windows and the storage/fuel failures. The fixture starts with a burner drill, furnace, empty chest, and three coal in each machine. Every decision, including an invalid one, advances exactly 15 game seconds. Two consecutive 60-second windows below 16 plates end the episode. The 20-minute horizon is recorded as survival if the controller reaches it.
+
+| Controller | Result on this fixture |
+| --- | --- |
+| Scripted control | Survived 20 game minutes at 18–19 plates in every measured minute |
+| Qwen with ordinary history | Failed after 11 game minutes and 44 decisions, including 13 failed collection attempts |
+
+Qwen never stored its 100 carried plates. At the endpoint the drill was unfueled, although 461 coal remained in reserve. The scripted result shows this fixture is reachable with the permitted tools. These are single-fixture development runs, not a model ranking. [Methods and full results](outputs/Factorio%20Maintenance%20Results.md) preserve the logs and timing scope.
+
+## Other experiments and their boundaries
+
+| Record | What it established |
+| --- | --- |
+| [Original four-run context pilot](outputs/Factorio%20Pilot%20Preliminary%20Report.md) | Two history and two structured-memory runs produced zero plates under the original construction setup. |
+| [Guided construction](outputs/Working%20Factorio%20Agent%20Results.md) | A corrected tool interface and explicit factory procedure produced 19 plates in each measured minute with eight decisions and no failed actions. |
+| [Plate logistics and expansion](outputs/Factorio%20Storage%20and%20Expansion%20Results.md) | Separate development checks tested transfers and construction; they are not maintenance scores. |
+| [Offline storage probe](outputs/Factorio%20Storage%20Decision%20Diagnostic.md) | Replaying a saved decision with an explicit storage subgoal produced the correct proposed action. It was not executed in the game. |
+| [Reviewed RMSNorm](outputs/Reviewed%20RMSNorm%20Benchmark.md) | 25 correctness cases and bounded memcheck, racecheck, initcheck, and synccheck passed. The standalone operator was 5.21× faster for a captured 1,006-row prompt and 4.80× faster for a one-row token than the installed eager CUDA reference. |
+
+The custom operator is not integrated into Qwen; whole-model and episode speedups are unmeasured. A maintenance history/structured-memory/retrieval comparison is planned, with no result claimed yet. See the [evaluation plan](outputs/Factorio%20Agent%20Evaluation%20and%20CUDA%20Plan.md) and [native source review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md).
+
+## Inspect or reproduce
+
+The portable, CPU-only entry point is `python scripts/verify_maintenance_evidence.py`. Run it from any clone with Python 3.10 or newer; it checks the retained summaries and trace counts, then prints the measured plate windows. It needs no game, model, GPU, or private host paths. The source artifacts are under `factorio-pilot/evidence/runs/`; run-specific configurations and snapshots determine the evaluated code. The `factorio-pilot/tools` folder contains the controller, validated game tools, and CPU tests. [Provenance of this public snapshot](PROVENANCE.md) records what was preserved and omitted.
+
+For a new live experiment, follow [runtime setup and pinned versions](factorio-pilot/README.md). The maintenance launcher `factorio-pilot/setup/run-maintenance.sh` locates its source relative to the clone and accepts `FACTORIO_PILOT_HOME` for the Linux runtime directory. The older pilot and kernel scripts still use original Windows/WSL host paths; adapt those paths and install the listed dependencies before running elsewhere. Run only one controller against a server at a time because each controller resets its world. Before any GPU execution, inspect every project-authored C++/CUDA source and verify the exact source hashes as required by [AGENTS.md](AGENTS.md) and [factorio-pilot/AGENTS.md](factorio-pilot/AGENTS.md). Do not treat a fresh manifest as approval.
+
+## Credit and reuse
+
+This work builds on [FLE](https://github.com/JackHopkins/factorio-learning-environment) and its [paper](https://arxiv.org/abs/2503.09617), [Factorio](https://factorio.com/), [Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507), PyTorch, and Transformers. FLE supplies the game interface; the Factorio game, model weights, FLE installation, downloaded binaries, and a captured FLE system prompt are not bundled here. The maintenance fixture, adapter, evaluation records, and RMSNorm experiment were developed for this project. Upstream components retain their own licenses and terms.
+
+Contributions should keep the pilot, guided construction, logistics, maintenance, and offline probes separate; preserve original traces and exact evaluated source hashes; and document new configurations before interpreting results. Native changes require a new full source inspection before GPU runs. [Engineering conventions](CONVENTIONS.md) describe the validation gate. This repository is public for inspection; no license for project-authored material has been granted yet.

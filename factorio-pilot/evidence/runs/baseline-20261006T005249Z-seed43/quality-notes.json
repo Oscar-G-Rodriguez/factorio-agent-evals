@@ -1,0 +1,4 @@
+{
+  "baseline_eligible": false,
+  "reason": "Tool description extraction bug; map seed not frozen. Preserve as diagnostic attempts, not a controlled baseline."
+}

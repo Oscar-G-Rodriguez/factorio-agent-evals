@@ -1,0 +1,13 @@
+{
+  "source_snapshot": "working-agent-v1",
+  "source_hash_checks": {
+    "working_agent.py": true,
+    "factory_agent_tools.py": true,
+    "game_bridge.py": true
+  },
+  "simulation_speed": "started at 1x; switched to 10x during evaluation",
+  "timing_scope": "agent decisions and evaluation; excludes model loading and optional post-run viewing",
+  "is_controlled_speed_comparison": false,
+  "is_unassisted_planning": false,
+  "not_comparable_to_frozen_context_pilot": true
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "offline_matched_context_development_probe",
+  "source_run": "maintenance-model-20261006T044058Z",
+  "step": 23,
+  "source_event_sha256": "f97622c387dd5e6a4ce314e5b03d93c50ab5ca8c3271be435b685f26aae07511",
+  "model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "resolved_at_utc": "2026-10-06T00:39:31.517738+00:00",
+    "snapshot_path": "/home/osci2/factorio-pilot/model-cache/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "source_sha256": "00b881a63b3cc05ac892ae1840e489e9096452467b8c81cfafbca4132731c750",
+  "native_review_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "actual_game_actions_executed": 0,
+  "intervention": "explicit storage subgoal appended to fresh prompt",
+  "results": [
+    {
+      "condition": "explicit_storage_subgoal",
+      "input_tokens": 1450,
+      "response": "{\"tool\":\"store_plates\",\"args\":{\"chest_handle\":\"e1\",\"plate_count\":100}}",
+      "action": {
+        "tool": "store_plates",
+        "args": {
+          "chest_handle": "e1",
+          "plate_count": 100
+        }
+      },
+      "same_as_recorded_action": false,
+      "stores_into_observed_chest": true,
+      "response_seconds_single_unwarmed_sample_not_benchmark": 1.551920813999459
+    }
+  ],
+  "limits": "One observed state. History probe changes content and length together; cannot isolate token count from historical action bias. Explicit subgoal is assisted capability diagnosis, not autonomous maintenance success. Proposed actions are not executed or full-episode outcomes."
+}

@@ -1,0 +1,36 @@
+{
+  "custom_kernel_used": false,
+  "reference_results": [
+    {
+      "phase": "prefill",
+      "shape": [
+        1,
+        1006,
+        2560
+      ],
+      "dtype": "torch.bfloat16",
+      "reference": "installed_Qwen3RMSNorm_Transformers_4.57.6",
+      "accuracy_against_float64_reference": "passed_rtol_0.02_atol_1e-5_with_BF16_rounding",
+      "timing_method": "CUDA events around unchanged forward, 10 warmups and 100 samples",
+      "median_gpu_ms": 0.08755199983716011,
+      "p95_gpu_ms_nearest_rank": 0.2794240117073059,
+      "mean_gpu_ms": 0.10991839960217475
+    },
+    {
+      "phase": "decode",
+      "shape": [
+        1,
+        1,
+        2560
+      ],
+      "dtype": "torch.bfloat16",
+      "reference": "installed_Qwen3RMSNorm_Transformers_4.57.6",
+      "accuracy_against_float64_reference": "passed_rtol_0.02_atol_1e-5_with_BF16_rounding",
+      "timing_method": "CUDA events around unchanged forward, 10 warmups and 100 samples",
+      "median_gpu_ms": 0.09456000104546547,
+      "p95_gpu_ms_nearest_rank": 0.1536639928817749,
+      "mean_gpu_ms": 0.09842784022912383
+    }
+  ],
+  "full_response_speedup_measured": false
+}

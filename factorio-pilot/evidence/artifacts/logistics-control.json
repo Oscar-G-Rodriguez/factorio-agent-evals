@@ -1,0 +1,510 @@
+{
+  "kind": "scripted_logistics_validation_not_model",
+  "passed": true,
+  "checks": {
+    "partial_collection_never_creates_extra_plates": true,
+    "partial_storage_conserves_plates": true,
+    "uncollected_output_causes_real_production_stall": true,
+    "collection_restores_production": true,
+    "carrying_limit_rejects_without_loss": true,
+    "produced_equals_carried_plus_furnace_plus_chest": true,
+    "full_chest_rejects_without_loss": true,
+    "actual_chest_capacity_observed": true
+  },
+  "production_conservation_before_injected_fixture": {
+    "produced": 136,
+    "accounted_for": 136,
+    "storage": {
+      "agent_index": 1,
+      "carried_plates": 7,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4293,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 93,
+      "stores": [
+        {
+          "name": "wooden-chest",
+          "position": {
+            "y": 67.5,
+            "x": 12.5
+          },
+          "slots": 16,
+          "iron_plates": 117,
+          "free_plate_capacity": 1483
+        },
+        {
+          "name": "stone-furnace",
+          "position": {
+            "y": 71,
+            "x": 18
+          },
+          "slots": 1,
+          "iron_plates": 12,
+          "free_plate_capacity": 88
+        }
+      ]
+    }
+  },
+  "artificial_full_chest_fixture_excluded_from_production_and_model_results": {
+    "injected_plates": 1483,
+    "remaining_space": 0
+  },
+  "benchmark_carried_plate_limit": 100,
+  "wall_seconds": 87.40150189099995,
+  "events": [
+    {
+      "action": {
+        "tool": "find_iron",
+        "args": {}
+      },
+      "result": {
+        "x": 15.5,
+        "y": 70.5
+      },
+      "tick": 43600
+    },
+    {
+      "action": {
+        "tool": "move",
+        "args": {
+          "position": {
+            "x": 15.5,
+            "y": 70.5
+          }
+        }
+      },
+      "result": {
+        "x": 15.5,
+        "y": 70.5
+      },
+      "tick": 43962
+    },
+    {
+      "action": {
+        "tool": "place_drill",
+        "args": {
+          "position": {
+            "x": 15.5,
+            "y": 70.5
+          },
+          "direction": "RIGHT"
+        }
+      },
+      "result": {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.NO_FUEL",
+        "inventory": {},
+        "fuel": "",
+        "warnings": "['nothing to mine', 'out of fuel']",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "fuel_inventory": {},
+        "furnace_source": {}
+      },
+      "tick": 43962
+    },
+    {
+      "action": {
+        "tool": "place_furnace_at_output",
+        "args": {
+          "drill_handle": "e1"
+        }
+      },
+      "result": {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_FUEL",
+        "inventory": {},
+        "fuel": "",
+        "warnings": "['out of fuel', 'no ingredients to smelt']",
+        "fuel_inventory": {},
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      "tick": 43962
+    },
+    {
+      "action": {
+        "tool": "fuel",
+        "args": {
+          "building_handle": "e1",
+          "coal_count": 50
+        }
+      },
+      "result": {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 50
+        },
+        "fuel": "coal=50",
+        "warnings": "['nothing to mine', 'fuel source is full']",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "fuel_inventory": "[{'name': 'coal', 'count': 50}]",
+        "furnace_source": {}
+      },
+      "tick": 43962
+    },
+    {
+      "action": {
+        "tool": "fuel",
+        "args": {
+          "building_handle": "e2",
+          "coal_count": 50
+        }
+      },
+      "result": {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_INGREDIENTS",
+        "inventory": {
+          "coal": 50
+        },
+        "fuel": "coal=50",
+        "warnings": "['no ingredients to smelt', 'furnace fuel source is full']",
+        "fuel_inventory": "[{'name': 'coal', 'count': 50}]",
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      "tick": 43962
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 17
+      },
+      "tick": 47562
+    },
+    {
+      "action": {
+        "tool": "collect_output",
+        "args": {
+          "furnace_handle": "e2",
+          "plate_count": 100
+        }
+      },
+      "result": {
+        "requested": 100,
+        "transferred": 17,
+        "source_before": 17,
+        "source_after": 0,
+        "destination_before": 0,
+        "destination_after": 17,
+        "item": "iron-plate",
+        "quality": "normal",
+        "conserved": true
+      },
+      "tick": 47562
+    },
+    {
+      "action": {
+        "tool": "place_storage",
+        "args": {
+          "position": {
+            "x": 12.5,
+            "y": 67.5
+          }
+        }
+      },
+      "result": {
+        "handle": "e3",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "inventory": "",
+        "fuel": {},
+        "warnings": "[]"
+      },
+      "tick": 47562
+    },
+    {
+      "action": {
+        "tool": "store_plates",
+        "args": {
+          "chest_handle": "e3",
+          "plate_count": 100
+        }
+      },
+      "result": {
+        "requested": 100,
+        "transferred": 17,
+        "source_before": 17,
+        "source_after": 0,
+        "destination_before": 0,
+        "destination_after": 17,
+        "item": "iron-plate",
+        "quality": "normal",
+        "conserved": true
+      },
+      "tick": 47562
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 18
+      },
+      "tick": 51162
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 19
+      },
+      "tick": 54762
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 19
+      },
+      "tick": 58362
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 19
+      },
+      "tick": 61962
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 18
+      },
+      "tick": 65562
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 7
+      },
+      "tick": 69162
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 0
+      },
+      "tick": 72762
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 0
+      },
+      "tick": 76362
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 0
+      },
+      "tick": 79962
+    },
+    {
+      "action": {
+        "tool": "collect_output",
+        "args": {
+          "furnace_handle": "e2",
+          "plate_count": 100
+        }
+      },
+      "result": {
+        "requested": 100,
+        "transferred": 100,
+        "source_before": 100,
+        "source_after": 0,
+        "destination_before": 0,
+        "destination_after": 100,
+        "item": "iron-plate",
+        "quality": "normal",
+        "conserved": true
+      },
+      "tick": 79962
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 19
+      },
+      "tick": 83562
+    },
+    {
+      "action": {
+        "tool": "collect_output",
+        "args": {
+          "furnace_handle": "e2",
+          "plate_count": 100
+        }
+      },
+      "expected_error": "No plates moved: source is empty or destination/carrying capacity is full. Inspect storage and collect/store in a different order."
+    },
+    {
+      "action": {
+        "tool": "store_plates",
+        "args": {
+          "chest_handle": "e3",
+          "plate_count": 100
+        }
+      },
+      "result": {
+        "requested": 100,
+        "transferred": 100,
+        "source_before": 100,
+        "source_after": 0,
+        "destination_before": 17,
+        "destination_after": 117,
+        "item": "iron-plate",
+        "quality": "normal",
+        "conserved": true
+      },
+      "tick": 83562
+    },
+    {
+      "action": {
+        "tool": "collect_output",
+        "args": {
+          "furnace_handle": "e2",
+          "plate_count": 7
+        }
+      },
+      "result": {
+        "requested": 7,
+        "transferred": 7,
+        "source_before": 19,
+        "source_after": 12,
+        "destination_before": 0,
+        "destination_after": 7,
+        "item": "iron-plate",
+        "quality": "normal",
+        "conserved": true
+      },
+      "tick": 83562
+    },
+    {
+      "action": {
+        "tool": "store_plates",
+        "args": {
+          "chest_handle": "e3",
+          "plate_count": 7
+        }
+      },
+      "expected_error": "No plates moved: source is empty or destination/carrying capacity is full. Inspect storage and collect/store in a different order."
+    }
+  ],
+  "source_hashes": {
+    "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+    "check_logistics.py": "5891f251ee6bd79ccdbc19a0249f04097e7ad87853a2e8c81e65e9345c5240dd",
+    "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+    "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71"
+  }
+}

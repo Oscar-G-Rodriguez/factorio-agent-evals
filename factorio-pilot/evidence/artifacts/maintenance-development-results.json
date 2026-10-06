@@ -1,0 +1,174 @@
+[
+  {
+    "run": "maintenance-idle-20261006T043628Z",
+    "controller": "idle",
+    "stop_reason": "sustained_production_failure",
+    "game_seconds": 120.0,
+    "wall_seconds_excluding_load_and_setup": 21.179564473999562,
+    "decisions": 8,
+    "failed_actions": 0,
+    "window_plates": [
+      10,
+      0
+    ],
+    "successful_tool_counts": {
+      "wait": 8
+    },
+    "failure_indicators": {
+      "empty_and_expired_burners": [
+        "e2"
+      ],
+      "full_furnace_outputs": [],
+      "reserve_coal": 494,
+      "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+    },
+    "plate_conservation": {
+      "produced_including_warmup": 27,
+      "accounted": 27
+    },
+    "median_response_seconds": 0.0,
+    "source_snapshot": "source-snapshots/maintenance-controls-v1",
+    "timed_generation_seconds": 0,
+    "other_evaluation_wall_seconds": 21.179564473999562,
+    "history_pairs_trimmed": null,
+    "tokens": {
+      "input_total": 0,
+      "output_total": 0
+    },
+    "gpu_peak_allocated_bytes": null,
+    "observed_input_token_range": [
+      0,
+      0
+    ],
+    "first_low_window_end_seconds": 60.0,
+    "first_empty_and_expired_burner_seconds": 30.0,
+    "first_carrying_full_seconds": null,
+    "first_full_furnace_output_seconds": null,
+    "failed_tool_counts": {}
+  },
+  {
+    "run": "maintenance-model-20261006T044058Z",
+    "controller": "model",
+    "stop_reason": "sustained_production_failure",
+    "game_seconds": 660.0,
+    "wall_seconds_excluding_load_and_setup": 179.75799976600047,
+    "decisions": 44,
+    "failed_actions": 13,
+    "window_plates": [
+      18,
+      19,
+      19,
+      19,
+      14,
+      18,
+      19,
+      19,
+      18,
+      15,
+      0
+    ],
+    "successful_tool_counts": {
+      "fuel": 21,
+      "collect_output": 10
+    },
+    "failure_indicators": {
+      "empty_and_expired_burners": [
+        "e2"
+      ],
+      "full_furnace_outputs": [],
+      "reserve_coal": 461,
+      "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+    },
+    "plate_conservation": {
+      "produced_including_warmup": 195,
+      "accounted": 195
+    },
+    "median_response_seconds": 1.7463894715001516,
+    "source_snapshot": "source-snapshots/maintenance-development-v2",
+    "timed_generation_seconds": 73.9069867199978,
+    "other_evaluation_wall_seconds": 105.85101304600266,
+    "history_pairs_trimmed": 36,
+    "tokens": {
+      "input_total": 296446,
+      "output_total": 878
+    },
+    "gpu_peak_allocated_bytes": 9817654784,
+    "observed_input_token_range": [
+      1220,
+      7771
+    ],
+    "first_low_window_end_seconds": 300.0,
+    "first_empty_and_expired_burner_seconds": 270.0,
+    "first_carrying_full_seconds": 300.0,
+    "first_full_furnace_output_seconds": null,
+    "failed_tool_counts": {
+      "collect_output": 13
+    }
+  },
+  {
+    "run": "maintenance-scripted-20261006T043718Z",
+    "controller": "scripted",
+    "stop_reason": "survived_simulation_limit",
+    "game_seconds": 1200.0,
+    "wall_seconds_excluding_load_and_setup": 181.58463767800004,
+    "decisions": 80,
+    "failed_actions": 0,
+    "window_plates": [
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19,
+      18,
+      19,
+      19,
+      19
+    ],
+    "successful_tool_counts": {
+      "fuel": 25,
+      "wait": 43,
+      "collect_output": 6,
+      "store_plates": 6
+    },
+    "failure_indicators": {
+      "empty_and_expired_burners": [],
+      "full_furnace_outputs": [],
+      "reserve_coal": 419,
+      "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+    },
+    "plate_conservation": {
+      "produced_including_warmup": 392,
+      "accounted": 392
+    },
+    "median_response_seconds": 0.0,
+    "source_snapshot": "source-snapshots/maintenance-controls-v1",
+    "timed_generation_seconds": 0,
+    "other_evaluation_wall_seconds": 181.58463767800004,
+    "history_pairs_trimmed": null,
+    "tokens": {
+      "input_total": 0,
+      "output_total": 0
+    },
+    "gpu_peak_allocated_bytes": null,
+    "observed_input_token_range": [
+      0,
+      0
+    ],
+    "first_low_window_end_seconds": null,
+    "first_empty_and_expired_burner_seconds": null,
+    "first_carrying_full_seconds": null,
+    "first_full_furnace_output_seconds": null,
+    "failed_tool_counts": {}
+  }
+]

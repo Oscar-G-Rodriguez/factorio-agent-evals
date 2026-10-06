@@ -1,0 +1,15 @@
+[
+  {
+    "run": "logistics-development-20261006T035914Z",
+    "mode": "logistics-development",
+    "target_plates_per_minute": 32,
+    "passed": true,
+    "steps": 16,
+    "failures": 1,
+    "plates": [
+      38,
+      37
+    ],
+    "wall_seconds": 65.76269754499981
+  }
+]

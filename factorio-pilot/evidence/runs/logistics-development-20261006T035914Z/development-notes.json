@@ -1,0 +1,9 @@
+{
+  "source_snapshot": "logistics-development-v3",
+  "source_hashes_verified": true,
+  "is_unassisted_planning": false,
+  "storage_tools_used_in_model_run": false,
+  "expansion_followed_rejected_premature_finish_with_explicit_expansion_feedback": true,
+  "evaluation_scope": "guided expansion only; long-running collection and maintenance not yet evaluated",
+  "wall_time_scope": "after model loading, through evaluation; no viewing delay"
+}

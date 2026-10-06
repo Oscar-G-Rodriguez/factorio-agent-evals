@@ -1,0 +1,20 @@
+{
+  "kind": "local_inference_development_smoke",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "resolved_at_utc": "2026-10-06T00:39:31.517738+00:00",
+  "snapshot_path": "/home/osci2/factorio-pilot/model-cache/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554",
+  "torch_version": "2.11.0+cu128",
+  "precision": "bfloat16",
+  "attention_backend": "sdpa",
+  "loading_seconds": 6.179505155000015,
+  "input_tokens": 13,
+  "output_tokens": 2,
+  "response_seconds": 1.228475263000064,
+  "response": "READY",
+  "peak_allocated_bytes": 8057066496,
+  "peak_reserved_bytes": 8074035200,
+  "free_gpu_bytes_before_load": 15740174336,
+  "model_hidden_size": 2560,
+  "model_rms_norm_eps": 1e-06
+}

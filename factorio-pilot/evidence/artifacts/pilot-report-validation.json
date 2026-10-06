@@ -1,0 +1,116 @@
+{
+  "report": "/mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/outputs/Factorio Pilot Preliminary Report.md",
+  "context_runs": [
+    {
+      "run": "baseline-20261006T015013Z-seed42",
+      "context_policy": "history",
+      "decisions": 15,
+      "failed_actions": 5,
+      "failed_action_rate": 0.3333333333333333,
+      "plates": [
+        0,
+        0
+      ],
+      "median_response_seconds": 1.204829262000203,
+      "p95_response_seconds": 1.575229761999708,
+      "input_tokens": 55368,
+      "output_tokens": 341,
+      "responses_at_token_limit": 0,
+      "failure_classes": {
+        "ValueError": 3,
+        "Exception": 2
+      },
+      "environment_seconds": 5.167081221999979,
+      "wall_seconds_including_evaluation": 47.32859204599981,
+      "peak_allocated_gib": 8.876219749450684,
+      "max_memory_tokens": 0,
+      "history_messages_dropped": 0,
+      "stop_reason": "model_done",
+      "task_success": false
+    },
+    {
+      "run": "baseline-20261006T015320Z-seed42",
+      "context_policy": "history",
+      "decisions": 32,
+      "failed_actions": 19,
+      "failed_action_rate": 0.59375,
+      "plates": [
+        0,
+        0
+      ],
+      "median_response_seconds": 1.4230672920000416,
+      "p95_response_seconds": 32.909393434999856,
+      "input_tokens": 171949,
+      "output_tokens": 6657,
+      "responses_at_token_limit": 6,
+      "failure_classes": {
+        "ValueError": 6,
+        "Exception": 2,
+        "JSONDecodeError": 11
+      },
+      "environment_seconds": 39.021080340000935,
+      "wall_seconds_including_evaluation": 295.8866878409999,
+      "peak_allocated_gib": 9.002521514892578,
+      "max_memory_tokens": 0,
+      "history_messages_dropped": 46,
+      "stop_reason": "decision_limit",
+      "task_success": false
+    },
+    {
+      "run": "intervention-20261006T015125Z-seed42",
+      "context_policy": "structured-memory",
+      "decisions": 32,
+      "failed_actions": 17,
+      "failed_action_rate": 0.53125,
+      "plates": [
+        0,
+        0
+      ],
+      "median_response_seconds": 1.2666839550001896,
+      "p95_response_seconds": 1.6698801329998787,
+      "input_tokens": 178752,
+      "output_tokens": 555,
+      "responses_at_token_limit": 0,
+      "failure_classes": {
+        "ValueError": 6,
+        "Exception": 2,
+        "JSONDecodeError": 9
+      },
+      "environment_seconds": 24.75180087600029,
+      "wall_seconds_including_evaluation": 92.07304425100028,
+      "peak_allocated_gib": 9.012731075286865,
+      "max_memory_tokens": 452,
+      "history_messages_dropped": 38,
+      "stop_reason": "decision_limit",
+      "task_success": false
+    },
+    {
+      "run": "intervention-20261006T015904Z-seed42",
+      "context_policy": "structured-memory",
+      "decisions": 20,
+      "failed_actions": 6,
+      "failed_action_rate": 0.3,
+      "plates": [
+        0,
+        0
+      ],
+      "median_response_seconds": 1.3306166269999267,
+      "p95_response_seconds": 1.588871616000688,
+      "input_tokens": 95423,
+      "output_tokens": 437,
+      "responses_at_token_limit": 0,
+      "failure_classes": {
+        "ValueError": 5,
+        "Exception": 1
+      },
+      "environment_seconds": 14.373136440998678,
+      "wall_seconds_including_evaluation": 62.94147916299971,
+      "peak_allocated_gib": 9.011759281158447,
+      "max_memory_tokens": 452,
+      "history_messages_dropped": 16,
+      "stop_reason": "model_done",
+      "task_success": false
+    }
+  ],
+  "controls_match": true
+}

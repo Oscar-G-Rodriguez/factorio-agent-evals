@@ -1,0 +1,55 @@
+{
+  "status": "all_four_sanitizers_passed",
+  "source_hashes": {
+    "rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "registry_session": {
+    "user_authorized": true,
+    "enabled_value": 1,
+    "started_utc": "2026-10-06T04:33:46.8723742Z",
+    "finished_utc": "2026-10-06T04:34:16.3034050Z",
+    "status": "sanitizers_passed",
+    "registry_restored": true,
+    "sanitizer_exit_code": 0
+  },
+  "tools": [
+    {
+      "tool": "memcheck",
+      "summary": [
+        "========= ERROR SUMMARY: 0 errors"
+      ],
+      "correctness_cases_passed": 25,
+      "log": "evidence/artifacts/rmsnorm-memcheck.txt",
+      "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+    },
+    {
+      "tool": "racecheck",
+      "summary": [
+        "========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)"
+      ],
+      "correctness_cases_passed": 25,
+      "log": "evidence/artifacts/rmsnorm-racecheck.txt",
+      "log_sha256": "d001cf241583623652bc912348b9f113adf57f6b87106561cbd614ec8bb0b764"
+    },
+    {
+      "tool": "initcheck",
+      "summary": [
+        "========= ERROR SUMMARY: 0 errors"
+      ],
+      "correctness_cases_passed": 25,
+      "log": "evidence/artifacts/rmsnorm-initcheck.txt",
+      "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+    },
+    {
+      "tool": "synccheck",
+      "summary": [
+        "========= ERROR SUMMARY: 0 errors"
+      ],
+      "correctness_cases_passed": 25,
+      "log": "evidence/artifacts/rmsnorm-synccheck.txt",
+      "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+    }
+  ],
+  "scope": "reviewed bounded RMSNorm operator suite; not whole-model inference or native smoke binary"
+}

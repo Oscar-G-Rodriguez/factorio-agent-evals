@@ -1,0 +1,27 @@
+# Scratch work, unrelated projects, local state and downloaded software.
+/work/
+/tmp/
+/ROMULUS*
+/outputs/ROMULUS*
+**/__pycache__/
+*.py[cod]
+**/.venv/
+**/venv/
+**/model-cache/
+**/node_modules/
+*.env
+.env*
+*.pem
+*.key
+*.exe
+*.dll
+*.iso
+*.zip
+*.safetensors
+*.bin
+*.pdb
+*.obj
+*.so
+# Keep the compressed diagnostic trace instead of the 83 MB raw JSON.
+/factorio-pilot/evidence/artifacts/inference-profile.json
+

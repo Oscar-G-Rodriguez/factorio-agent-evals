@@ -1,0 +1,141 @@
+{
+  "mode": "maintenance_development",
+  "controller": "idle",
+  "stop_reason": "sustained_production_failure",
+  "failed_actions": 0,
+  "steps": 8,
+  "simulated_seconds": 120.0,
+  "wall_seconds": 21.179564473999562,
+  "time_to_sustained_failure_seconds": 120.0,
+  "survived_at_least_seconds": null,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 106512,
+      "end_tick": 110112,
+      "actual_ticks": 3600,
+      "iron_plates": 10,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 1,
+      "start_tick": 110112,
+      "end_tick": 113712,
+      "actual_ticks": 3600,
+      "iron_plates": 0,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 2
+    }
+  ],
+  "failure_indicators": {
+    "empty_and_expired_burners": [
+      "e2"
+    ],
+    "full_furnace_outputs": [],
+    "reserve_coal": 494,
+    "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+  },
+  "final_observation": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 494,
+      "iron-plate": 0,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 0,
+          "free_plate_capacity": 1600
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 0,
+          "currently_burning": false
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_INGREDIENTS",
+        "fuel": "coal=1",
+        "furnace_source": "",
+        "furnace_result": "iron-plate=27",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 27,
+          "free_plate_capacity": 73
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 1,
+          "remaining_burning_fuel_joules": 222300,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 27,
+        "iron-plate": 27
+      },
+      "input": {
+        "coal": 5,
+        "iron-ore": 27
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 0,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4100,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 100
+    },
+    "goal_plates_per_minute": 16
+  },
+  "tokens": {
+    "input_total": 0,
+    "output_total": 0
+  },
+  "median_response_seconds": 0.0,
+  "gpu_peak_allocated_bytes": null,
+  "custom_cuda_used": false,
+  "backend": "pytorch_reference_no_custom_kernel"
+}

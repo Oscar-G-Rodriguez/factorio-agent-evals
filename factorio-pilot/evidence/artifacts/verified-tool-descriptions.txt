@@ -1,0 +1,75 @@
+inspect_inventory(entity=None, all_players: bool = False) -> Union[fle.env.entities.Inventory, List[fle.env.entities.Inventory]]
+Inspects the inventory of the given entity. If no entity is given, inspect your own inventory.
+If all_players is True, returns a list of inventories for all players.
+:param entity: Entity to inspect
+:param all_players: If True, returns inventories for all players
+:return: Inventory of the given entity or list of inventories for all players
+
+nearest(type: Union[fle.env.game_types.Prototype, fle.env.game_types.Resource]) -> fle.env.entities.Position
+Find the nearest entity or resource to your position.
+:param type: Entity or resource type to find
+:return: Position of nearest entity or resource
+
+move_to(position: fle.env.entities.Position, laying: fle.env.game_types.Prototype = None, leading: fle.env.game_types.Prototype = None) -> fle.env.entities.Position
+Move to a position.
+:param position: Position to move to.
+:return: Your final position
+
+place_entity(entity: fle.env.game_types.Prototype, direction: fle.env.entities.Direction = Direction.UP, position: fle.env.entities.Position = Position(x=0.0, y=0.0), exact: bool = True) -> fle.env.entities.Entity
+Places an entity e at local position (x, y) if you have it in inventory.
+:param entity: Entity to place
+:param direction: Cardinal direction to place
+:param position: Position to place entity
+:param exact: If True, place entity at exact position, else place entity at nearest possible position
+:return: Entity object
+
+place_entity_next_to(entity: fle.env.game_types.Prototype, reference_position: fle.env.entities.Position = Position(x=0.0, y=0.0), direction: fle.env.instance.DirectionInternal = <DirectionInternal.RIGHT: 4>, spacing: int = 0) -> fle.env.entities.Entity
+Places an entity next to an existing entity, with an optional space in-between (0 space means adjacent).
+In order to place something with a gap, you must increase the spacing parameter.
+:param entity: Entity to place
+:param reference_position: Position of existing entity or position to place entity next to
+:param direction: Direction to place entity from reference_position
+:param spacing: Space between entity and reference_position
+:example: place_entity_next_to(Prototype.WoodenChest, Position(x=0, y=0), direction=Direction.UP, spacing=1)
+:return: Entity placed
+
+get_entity(entity: fle.env.game_types.Prototype, position: fle.env.entities.Position) -> fle.env.entities.Entity
+Retrieve a given entity object at position (x, y) if it exists on the world.
+:param entity: Entity prototype to get, e.g Prototype.StoneFurnace
+:param position: Position where to look
+:return: Entity object
+
+get_entities(entities: Union[Set[fle.env.game_types.Prototype], fle.env.game_types.Prototype] = set(), position: fle.env.entities.Position = None, radius: float = 1000) -> List[Union[fle.env.entities.Entity, fle.env.entities.EntityGroup]]
+Get entities within a radius of a given position.
+:param entities: Set of entity prototypes to filter by. If empty, all entities are returned.
+:param position: Position to search around. Can be a Position object or "player" for player's position.
+:param radius: Radius to search within.
+:param player_only: If True, only player entities are returned, otherwise terrain features too.
+:return: Found entities
+
+insert_item(entity: fle.env.game_types.Prototype, target: Union[fle.env.entities.Entity, fle.env.entities.EntityGroup], quantity=5) -> fle.env.entities.Entity
+Insert an item into a target entity's inventory
+:param entity: Type to insert from inventory
+:param target: Entity to insert into
+:param quantity: Quantity to insert
+:return: The target entity inserted into
+
+rotate_entity(entity: fle.env.entities.Entity, direction: fle.env.instance.DirectionInternal = <DirectionInternal.UP: 0>) -> fle.env.entities.Entity
+Rotate an entity to a specified direction
+:param entity: Entity to rotate
+:param direction: Direction to rotate
+:example rotate_entity(iron_chest, Direction.UP)
+:return: Returns the rotated entity
+
+can_place_entity(entity: fle.env.game_types.Prototype, direction: fle.env.entities.Direction = Direction.UP, position: fle.env.entities.Position = Position(x=0.0, y=0.0)) -> bool
+Tests to see if an entity can be placed at a given position
+:param entity: Entity to place from inventory
+:param direction: Cardinal direction to place entity
+:param position: Position to place entity
+:return: True if entity can be placed at position, else False
+
+pickup_entity(entity: Union[fle.env.entities.Entity, fle.env.game_types.Prototype, fle.env.entities.EntityGroup], position: Optional[fle.env.entities.Position] = None) -> bool
+Pick up an entity if it exists on the world at a given position.
+:param entity: Entity prototype to pickup, e.g Prototype.IronPlate
+:param position: Position to pickup entity
+:return: True if the entity was picked up successfully, False otherwise.

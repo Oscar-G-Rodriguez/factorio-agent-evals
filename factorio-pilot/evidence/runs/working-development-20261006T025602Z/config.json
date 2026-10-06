@@ -1,0 +1,28 @@
+{
+  "mode": "working-development",
+  "scaffold": "simplified_tools_plus_explicit_task_procedure_and_examples",
+  "is_unassisted_planning": false,
+  "not_comparable_to_frozen_pilot": true,
+  "model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "resolved_at_utc": "2026-10-06T00:39:31.517738+00:00",
+    "snapshot_path": "/home/osci2/factorio-pilot/model-cache/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554"
+  },
+  "max_decisions": 32,
+  "max_new_tokens": 256,
+  "max_total_tokens": 8192,
+  "do_sample": false,
+  "visual": true,
+  "keep_visible_seconds": 120,
+  "system_prompt": "You operate a Factorio factory. Return exactly ONE JSON object containing tool and args. No prose, no code fences, no second action.\nGoal: automatically produce at least 16 iron plates per simulated minute.\nThe player ALREADY HAS 500 coal, drills and furnaces. There is no need to visit a coal deposit.\nBasic factory knowledge: a burner mining drill on iron feeds ore from its output into an adjacent stone furnace. BOTH machines require coal. Supplied coal may be inserted; ore may NOT be inserted by hand.\nUse find_iron, move to its returned position, place a RIGHT-facing drill over iron, place_furnace_at_output with that drill handle, then fuel each machine separately with 50 coal. Choose coordinates based on observations; do not invent handles. Building requires standing nearby. Once fueled, wait 60 seconds to test production. If insufficient, inspect and repair or build an additional chain. finish is accepted only after a successful test.\nExamples of JSON SYNTAX (coordinates and handles are examples; use your actual observations):\n{\"tool\":\"find_iron\",\"args\":{}}\n{\"tool\":\"move\",\"args\":{\"position\":{\"x\":10,\"y\":20}}}\n{\"tool\":\"place_drill\",\"args\":{\"position\":{\"x\":10,\"y\":20},\"direction\":\"RIGHT\"}}\n{\"tool\":\"place_furnace_at_output\",\"args\":{\"drill_handle\":\"e1\"}}\n{\"tool\":\"fuel\",\"args\":{\"building_handle\":\"e1\",\"coal_count\":50}}\n{\"tool\":\"fuel\",\"args\":{\"building_handle\":\"e2\",\"coal_count\":50}}\n{\"tool\":\"wait\",\"args\":{\"seconds\":60}}\n{\"tool\":\"finish\",\"args\":{}}\nTool definitions:\nfind_iron: args=[], required=[]. Find the nearest iron deposit. Returns {x,y}.\nmove: args=['position'], required=['position']. Move close to a position before building. position is {x,y}.\nplace_drill: args=['position', 'direction'], required=['position', 'direction']. Place one supplied burner drill over iron. direction is RIGHT, LEFT, UP or DOWN; choose RIGHT for a simple layout. Position is {x,y}; placement snaps to valid nearby tiles.\nplace_furnace_at_output: args=['drill_handle'], required=['drill_handle']. Place one supplied furnace directly adjacent to the specified drill output. The adapter calculates the adjacent geometry. Use a returned drill handle such as e1.\nfuel: args=['building_handle', 'coal_count'], required=['building_handle', 'coal_count']. Insert supplied coal into the specified drill or furnace. coal_count is integer 1..50. You already have coal: do not mine it. Fuel EACH machine with 50 coal.\ncheck: args=[], required=[]. Read equipment, fuel, ore/plate inventory and production.\nwait: args=['seconds'], required=['seconds']. Advance 1..60 simulated seconds. After building/fueling, wait 60 to measure plate production.\nfinish: args=[], required=[]. Request completion. Accepted only when the latest 60-second wait produced at least 16 plates; the runner then independently evaluates two more windows.",
+  "starting_state_sha256": "b6a3843a59801f23fc0978a2e8f7a3e6b434ccac015962849455d1fa13ab3862",
+  "actual_map_seed": 2859378883,
+  "source_hashes": {
+    "working_agent.py": "17ce833c699ae5379a79581b4b592df1778d77234a125c058d2e712ede79cc25",
+    "factory_agent_tools.py": "3aac1a7beb340ad20bdc1373f5cac4a99f8d37240355635195ad998d637be657",
+    "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71"
+  },
+  "world_observation_clock": "elapsed_ticks_from_reset",
+  "wall_time_limit_seconds": 1800
+}

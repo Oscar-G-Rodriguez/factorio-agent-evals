@@ -1,0 +1,40 @@
+{
+  "kind": "scripted_development_smoke",
+  "task_key": "iron_plate_throughput",
+  "starting_inventory": {
+    "wooden-chest": 10,
+    "storage-tank": 10,
+    "transport-belt": 500,
+    "underground-belt": 100,
+    "burner-inserter": 50,
+    "inserter": 50,
+    "medium-electric-pole": 500,
+    "pipe": 500,
+    "pipe-to-ground": 100,
+    "boiler": 2,
+    "steam-engine": 2,
+    "burner-mining-drill": 50,
+    "electric-mining-drill": 50,
+    "offshore-pump": 2,
+    "pumpjack": 10,
+    "stone-furnace": 10,
+    "electric-furnace": 10,
+    "assembling-machine-2": 10,
+    "oil-refinery": 5,
+    "chemical-plant": 5,
+    "coal": 500
+  },
+  "valid_observation": "1: (Inventory(wooden-chest=10, storage-tank=10, transport-belt=500, underground-belt=100, burner-inserter=50, inserter=50, medium-electric-pole=500, pipe=500, pipe-to-ground=100, boiler=2, steam-engine=2, burner-mining-drill=50, electric-mining-drill=50, offshore-pump=2, pumpjack=10, stone-furnace=10, electric-furnace=10, assembling-machine-2=10, oil-refinery=5, chemical-plant=5, coal=500),)",
+  "pause_verified": true,
+  "requested_ticks": 60,
+  "actual_ticks": 60,
+  "reset_inventory_verified": true,
+  "system_prompt_characters": 117074,
+  "factorio_version": "{\"base\":\"2.0.73\"}",
+  "production_stats": {
+    "output": {},
+    "input": {},
+    "harvested": {},
+    "crafted": {}
+  }
+}

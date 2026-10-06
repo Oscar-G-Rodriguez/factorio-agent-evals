@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "status": "measured_pilot_complete_reviewed_rmsnorm_sanitizers_passed",
+  "purpose": "Experiment specification; not an executable FLE configuration",
+  "deadline": {
+    "maximum_days": 2
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "backend": "transformers_4.57.6_pytorch_2.11.0+cu128_sdpa",
+    "dtype": "bfloat16_verified",
+    "batch_size": 1,
+    "max_total_sequence_tokens": 8192,
+    "max_new_tokens": 1024,
+    "sampling_parameters": {
+      "do_sample": false,
+      "note": "Greedy decoding; distinct seeds do not imply independent sampling draws"
+    },
+    "budget_frozen": true
+  },
+  "environment": {
+    "framework": "factorio-learning-environment",
+    "release_or_commit": "e2a829d22a635a9a111d21bf5523e09e903ae145",
+    "server_version": "2.0.73",
+    "server_image_digest": "sha256:6471fbfb7eab3abf55bb53fed632606ecf17bf930891bccddff724afab9ed94c",
+    "task": "iron_plate_throughput",
+    "starting_state_path": "/home/osci2/factorio-pilot/artifacts/starting-state.json",
+    "starting_inventory": {
+      "wooden-chest": 10,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 50,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 10,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 500
+    },
+    "map_seed": 2859378883,
+    "pause_during_reasoning": true,
+    "advance_controlled_ticks": true,
+    "tool_time_semantics_verified": true,
+    "timing_note": "Pause during reasoning; movement unpauses at speed 10 for asynchronous pathfinding and logs actual ticks; other actions add 60 ticks; wait advances exact requested ticks. FLE logical elapsed ticks are recorded separately from real game.tick."
+  },
+  "task_proposal": {
+    "output": "automated_iron_plates",
+    "target_items_per_game_minute": 16,
+    "warmup_game_seconds": 60,
+    "unattended_windows": 2,
+    "window_game_seconds": 60,
+    "require_target_in_each_window": true,
+    "automated_supply_chain_check_required": true,
+    "exclude_handcrafting_and_stockpile_withdrawals": true
+  },
+  "baseline": {
+    "context_policy": "history_with_corrected_adapter_contract; drop_oldest_complete_action_feedback_pairs",
+    "historical_baselines": "signatures_only_runs_preserved_separately",
+    "max_model_decisions": 32,
+    "max_wall_time_minutes": 30,
+    "development_runs_are_separate": true,
+    "minimum_complete_recorded_attempts_day_1": 1,
+    "preferred_recorded_attempts_day_1": 2,
+    "repeat_same_starting_state": true,
+    "inference_seeds": [
+      42,
+      43
+    ]
+  },
+  "intervention": {
+    "status": "four_corrected_interface_runs_complete; all_zero_plates; no_reliable_memory_benefit_established",
+    "changes_per_comparison": 1,
+    "structured_memory_is_candidate": false,
+    "memory_token_limit": 512,
+    "conditions": [
+      "history",
+      "structured-memory"
+    ],
+    "repetitions_per_condition": 2
+  },
+  "reference_control": {
+    "target_met": true,
+    "iron_plates_per_window": [
+      38,
+      36
+    ],
+    "excluded_from_model_results": true,
+    "pickup_handle_invalidation_verified": true
+  },
+  "delivery": {
+    "report": "outputs/Factorio Pilot Preliminary Report.md",
+    "walkthrough": "outputs/Factorio Pilot Walkthrough.md",
+    "reproduction": "factorio-pilot/README.md",
+    "adapter_memory_tests_passed": 8,
+    "comparison_controls_match": true
+  },
+  "cuda_experiment": {
+    "required": true,
+    "toolchain_smoke_check_day": 1,
+    "candidate": "Qwen3RMSNorm_2560_channels_BF16",
+    "implementation": "C++_binding_and_custom_CUDA_forward_kernel",
+    "real_model_inputs_required": true,
+    "reference": "actual_existing_GPU_operator_and_readable_numerical_reference",
+    "full_inference_integration": "stretch_goal",
+    "speedup_guaranteed": false,
+    "reference_benchmark_path": "factorio-pilot/evidence/artifacts/rmsnorm-reference-benchmark.json",
+    "custom_benchmark_path": "factorio-pilot/evidence/artifacts/rmsnorm-custom-benchmark.json",
+    "numerical_checks_passed": 16,
+    "median_batch_speedup_prefill": 5.8304922372698575,
+    "median_batch_speedup_decode": 5.119941105325371,
+    "end_to_end_speedup_measured": false,
+    "sanitizer_status": "blocked_windows_debug_interface_permission_pending"
+  },
+  "record_metrics": [
+    "task_success",
+    "automatic_iron_output_each_game_time_window",
+    "failed_tool_actions",
+    "model_response_latency",
+    "environment_execution_latency",
+    "input_output_tokens",
+    "peak_gpu_memory_with_measurement_method",
+    "simulation_ticks",
+    "total_wall_time",
+    "stop_reason"
+  ],
+  "deferred": [
+    "multiple_models",
+    "science_tasks",
+    "fine_tuning",
+    "frontend",
+    "large_benchmark_suite"
+  ],
+  "working_agent_development": {
+    "status": "guided_agent_verified",
+    "simulation_speed": 10,
+    "keep_visible_seconds": 0,
+    "not_comparable_to_original_context_experiment": true,
+    "completed_runs": [
+      {
+        "run": "working-development-20261006T025602Z",
+        "speed": "started at 1x; switched to 10x during evaluation",
+        "source_snapshot": "working-agent-v1",
+        "success": true,
+        "decisions": 8,
+        "failed_actions": 0,
+        "plates": [
+          19,
+          19
+        ],
+        "actual_ticks": [
+          3600,
+          3600
+        ],
+        "wall_seconds": 115.68642842800003,
+        "median_response_seconds": 0.7909923805000005,
+        "input_tokens_total": 12972,
+        "output_tokens_total": 133
+      },
+      {
+        "run": "working-development-20261006T030421Z",
+        "speed": "10x throughout",
+        "source_snapshot": "working-agent-fast-v2",
+        "success": true,
+        "decisions": 8,
+        "failed_actions": 0,
+        "plates": [
+          19,
+          19
+        ],
+        "actual_ticks": [
+          3600,
+          3600
+        ],
+        "wall_seconds": 49.15991907600005,
+        "median_response_seconds": 0.8387028875000055,
+        "input_tokens_total": 12972,
+        "output_tokens_total": 133
+      }
+    ]
+  },
+  "native_source_review": {
+    "status": "static_review_complete",
+    "source_files_reviewed": 5,
+    "matching_correctness_checks_passed": 25,
+    "sanitizer": "reviewed_rmsnorm_passed_memcheck_racecheck_initcheck_synccheck",
+    "registry_restored": true
+  },
+  "logistics_development": {
+    "run": "logistics-development-20261006T035914Z",
+    "scripted_control_passed": true,
+    "expansion_task_success": true,
+    "target_plates_per_minute": 32,
+    "measured_plates": [
+      38,
+      37
+    ],
+    "model_storage_behavior_tested": false
+  },
+  "sanitizer_followup": {
+    "status": "all_four_sanitizers_passed",
+    "source_hashes": {
+      "rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+      "rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+    },
+    "registry_session": {
+      "user_authorized": true,
+      "enabled_value": 1,
+      "started_utc": "2026-10-06T04:33:46.8723742Z",
+      "finished_utc": "2026-10-06T04:34:16.3034050Z",
+      "status": "sanitizers_passed",
+      "registry_restored": true,
+      "sanitizer_exit_code": 0
+    },
+    "tools": [
+      {
+        "tool": "memcheck",
+        "summary": [
+          "========= ERROR SUMMARY: 0 errors"
+        ],
+        "correctness_cases_passed": 25,
+        "log": "evidence/artifacts/rmsnorm-memcheck.txt",
+        "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+      },
+      {
+        "tool": "racecheck",
+        "summary": [
+          "========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)"
+        ],
+        "correctness_cases_passed": 25,
+        "log": "evidence/artifacts/rmsnorm-racecheck.txt",
+        "log_sha256": "d001cf241583623652bc912348b9f113adf57f6b87106561cbd614ec8bb0b764"
+      },
+      {
+        "tool": "initcheck",
+        "summary": [
+          "========= ERROR SUMMARY: 0 errors"
+        ],
+        "correctness_cases_passed": 25,
+        "log": "evidence/artifacts/rmsnorm-initcheck.txt",
+        "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+      },
+      {
+        "tool": "synccheck",
+        "summary": [
+          "========= ERROR SUMMARY: 0 errors"
+        ],
+        "correctness_cases_passed": 25,
+        "log": "evidence/artifacts/rmsnorm-synccheck.txt",
+        "log_sha256": "14fa95f09f6de8df09f9a14fa2a093f6ec5f6570cffd4de748aa79dc77a825d1"
+      }
+    ],
+    "scope": "reviewed bounded RMSNorm operator suite; not whole-model inference or native smoke binary"
+  },
+  "maintenance_development": {
+    "results": [
+      {
+        "run": "maintenance-idle-20261006T043628Z",
+        "controller": "idle",
+        "stop_reason": "sustained_production_failure",
+        "game_seconds": 120.0,
+        "wall_seconds_excluding_load_and_setup": 21.179564473999562,
+        "decisions": 8,
+        "failed_actions": 0,
+        "window_plates": [
+          10,
+          0
+        ],
+        "successful_tool_counts": {
+          "wait": 8
+        },
+        "failure_indicators": {
+          "empty_and_expired_burners": [
+            "e2"
+          ],
+          "full_furnace_outputs": [],
+          "reserve_coal": 494,
+          "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+        },
+        "plate_conservation": {
+          "produced_including_warmup": 27,
+          "accounted": 27
+        },
+        "median_response_seconds": 0.0,
+        "source_snapshot": "source-snapshots/maintenance-controls-v1",
+        "timed_generation_seconds": 0,
+        "other_evaluation_wall_seconds": 21.179564473999562,
+        "history_pairs_trimmed": null,
+        "tokens": {
+          "input_total": 0,
+          "output_total": 0
+        },
+        "gpu_peak_allocated_bytes": null,
+        "observed_input_token_range": [
+          0,
+          0
+        ],
+        "first_low_window_end_seconds": 60.0,
+        "first_empty_and_expired_burner_seconds": 30.0,
+        "first_carrying_full_seconds": null,
+        "first_full_furnace_output_seconds": null,
+        "failed_tool_counts": {}
+      },
+      {
+        "run": "maintenance-model-20261006T044058Z",
+        "controller": "model",
+        "stop_reason": "sustained_production_failure",
+        "game_seconds": 660.0,
+        "wall_seconds_excluding_load_and_setup": 179.75799976600047,
+        "decisions": 44,
+        "failed_actions": 13,
+        "window_plates": [
+          18,
+          19,
+          19,
+          19,
+          14,
+          18,
+          19,
+          19,
+          18,
+          15,
+          0
+        ],
+        "successful_tool_counts": {
+          "fuel": 21,
+          "collect_output": 10
+        },
+        "failure_indicators": {
+          "empty_and_expired_burners": [
+            "e2"
+          ],
+          "full_furnace_outputs": [],
+          "reserve_coal": 461,
+          "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+        },
+        "plate_conservation": {
+          "produced_including_warmup": 195,
+          "accounted": 195
+        },
+        "median_response_seconds": 1.7463894715001516,
+        "source_snapshot": "source-snapshots/maintenance-development-v2",
+        "timed_generation_seconds": 73.9069867199978,
+        "other_evaluation_wall_seconds": 105.85101304600266,
+        "history_pairs_trimmed": 36,
+        "tokens": {
+          "input_total": 296446,
+          "output_total": 878
+        },
+        "gpu_peak_allocated_bytes": 9817654784,
+        "observed_input_token_range": [
+          1220,
+          7771
+        ],
+        "first_low_window_end_seconds": 300.0,
+        "first_empty_and_expired_burner_seconds": 270.0,
+        "first_carrying_full_seconds": 300.0,
+        "first_full_furnace_output_seconds": null,
+        "failed_tool_counts": {
+          "collect_output": 13
+        }
+      },
+      {
+        "run": "maintenance-scripted-20261006T043718Z",
+        "controller": "scripted",
+        "stop_reason": "survived_simulation_limit",
+        "game_seconds": 1200.0,
+        "wall_seconds_excluding_load_and_setup": 181.58463767800004,
+        "decisions": 80,
+        "failed_actions": 0,
+        "window_plates": [
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "successful_tool_counts": {
+          "fuel": 25,
+          "wait": 43,
+          "collect_output": 6,
+          "store_plates": 6
+        },
+        "failure_indicators": {
+          "empty_and_expired_burners": [],
+          "full_furnace_outputs": [],
+          "reserve_coal": 419,
+          "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+        },
+        "plate_conservation": {
+          "produced_including_warmup": 392,
+          "accounted": 392
+        },
+        "median_response_seconds": 0.0,
+        "source_snapshot": "source-snapshots/maintenance-controls-v1",
+        "timed_generation_seconds": 0,
+        "other_evaluation_wall_seconds": 181.58463767800004,
+        "history_pairs_trimmed": null,
+        "tokens": {
+          "input_total": 0,
+          "output_total": 0
+        },
+        "gpu_peak_allocated_bytes": null,
+        "observed_input_token_range": [
+          0,
+          0
+        ],
+        "first_low_window_end_seconds": null,
+        "first_empty_and_expired_burner_seconds": null,
+        "first_carrying_full_seconds": null,
+        "first_full_furnace_output_seconds": null,
+        "failed_tool_counts": {}
+      }
+    ],
+    "target": 16,
+    "decision_interval_ticks": 900,
+    "failure_rule": "two_consecutive_60_second_windows_below_16",
+    "max_game_seconds": 1200,
+    "max_decisions": 80,
+    "refill_max_coal": 3,
+    "carrying_benchmark_limit": 100,
+    "custom_cuda_used": false,
+    "memory_comparison_complete": false
+  }
+}

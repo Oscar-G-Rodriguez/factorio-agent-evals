@@ -1,0 +1,239 @@
+ Container cluster-factorio_0-1 Restarting 
+ Container cluster-factorio_0-1 Started 
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  2.55s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:09<00:05,  5.32s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:10<00:00,  3.43s/it]
+Sprites not found (searched from /home/osci2/factorio-pilot to root and fallback locations). Vision rendering will produce empty images. Run 'fle sprites' to download, or set FLE_SPRITES_DIR.
+Connected to 127.0.0.1 client at tcp/27000.
+27000: Loading action agent/get_entity/server.lua into game
+27000: Loading action agent/get_entities/server.lua into game
+27000: Loading action agent/harvest_resource/server.lua into game
+27000: Loading action agent/move_to/server.lua into game
+27000: Loading action admin/request_path/server.lua into game
+27000: Loading action admin/get_path/server.lua into game
+27000: Loading action agent/nearest/server.lua into game
+27000: Loading action agent/pickup_entity/server.lua into game
+27000: Loading action agent/place_entity_next_to/server.lua into game
+27000: Loading action agent/set_research/server.lua into game
+27000: Loading action agent/inspect_inventory/server.lua into game
+27000: Loading action agent/send_message/server.lua into game
+27000: Loading action admin/render_message/server.lua into game
+27000: Loading action agent/craft_item/server.lua into game
+27000: Loading action agent/get_prototype_recipe/server.lua into game
+27000: Loading action agent/insert_item/server.lua into game
+27000: Loading action agent/sleep/server.lua into game
+27000: Loading action agent/can_place_entity/server.lua into game
+27000: Loading action agent/nearest_buildable/server.lua into game
+27000: Loading action agent/rotate_entity/server.lua into game
+27000: Loading action agent/get_research_progress/server.lua into game
+27000: Loading action agent/extract_item/server.lua into game
+27000: Loading action agent/get_connection_amount/server.lua into game
+27000: Loading action agent/connect_entities/server.lua into game
+27000: Loading action admin/extend_collision_boxes/server.lua into game
+27000: Loading action admin/clear_collision_boxes/server.lua into game
+27000: Loading action agent/place_entity/server.lua into game
+27000: Loading action agent/launch_rocket/server.lua into game
+27000: Loading action agent/score/server.lua into game
+27000: Loading action admin/score/server.lua into game
+27000: Loading action agent/get_resource_patch/server.lua into game
+27000: Loading action agent/set_entity_recipe/server.lua into game
+27000: Loading action admin/regenerate_resources/server.lua into game
+27000: Loading action admin/get_factory_centroid/server2.lua into game
+27000: Loading action admin/get_factory_centroid/server.lua into game
+27000: Loading action admin/load_research_state/server.lua into game
+27000: Loading action admin/render_simple/server.lua into game
+27000: Loading action admin/reset/server.lua into game
+27000: Loading action admin/set_inventory/server.lua into game
+27000: Loading action admin/save_entity_state/server.lua into game
+27000: Loading action admin/save_blueprint/server.lua into game
+27000: Loading action admin/clear_entities/server.lua into game
+27000: Loading action admin/render/server.lua into game
+27000: Loading action admin/get_production_stats/server.lua into game
+27000: Loading action admin/load_entity_state/server.lua into game
+27000: Loading action admin/load_blueprint/server.lua into game
+27000: Loading action admin/save_research_state/server.lua into game
+27000: Loading action admin/create_agent_characters/server.lua into game
+RUN /home/osci2/factorio-pilot/runs/baseline-20261006T014442Z-seed42
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STEP 0: {"tool":"nearest","args":{"type":"IronOre"}} | error=None
+STEP 1: {"tool":"move_to","args":{"position":{"x":15.5,"y":70.5}}} | error=None
+STEP 2: {"tool":"place_entity","args":{"entity":"BurnerMiningDrill","position":{"x":15.5,"y":70.5},"direction":"UP"}} | error=None
+STEP 3: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 4: {"tool":"nearest","args":{"type":"Coal"}} | error=None
+STEP 5: {"tool":"move_to","args":{"position":{"x":17.5,"y":20.5}}} | error=None
+STEP 6: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 7: {"tool":"place_entity","args":{"entity":"StoneFurnace","position":{"x":16.0,"y":71.0},"direction":"UP"}} | error=Exception: Could not place stone-furnace at (16.0, 71.0), The target position is too far away to place the entity. The player position is 17.5, 20.5 and the target position is 16, 71. The distance is 50.52 and the max distance is 10. Move closer.
+STEP 8: {"tool":"move_to","args":{"position":{"x":16.0,"y":71.0}}} | error=None
+STEP 9: {"tool":"place_entity","args":{"entity":"StoneFurnace","position":{"x":16.0,"y":71.0},"direction":"UP"}} | error=Exception: Could not place stone-furnace at (16.0, 71.0), burner-mining-drill at x=16 y=71
+STEP 10: {"tool":"wait","args":{"seconds":60}} | error=None
+STEP 11: {"tool":"nearest","args":{"type":"Coal"}} | error=None
+STEP 12: {"tool":"move_to","args":{"position":{"x":15.5,"y":20.5}}} | error=None
+STEP 13: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 14: {"tool":"done","args":{}} | error=None
+SUMMARY {"mode": "baseline", "steps": 15, "failed_actions": 5, "stop_reason": "model_done", "wall_seconds": 59.38282364499992, "measurement_windows": [{"actual_ticks": 3600, "iron_plates": 0, "before_stats": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}, "after_stats": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}}, {"actual_ticks": 3600, "iron_plates": 0, "before_stats": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}, "after_stats": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}}], "throughput_target_met": false, "task_success": false, "automated_supply_chain_check": "throughput_target_not_met", "pre_evaluation_factory": {"inventory": {"wooden-chest": 10, "storage-tank": 10, "transport-belt": 500, "underground-belt": 100, "burner-inserter": 50, "inserter": 50, "medium-electric-pole": 500, "pipe": 500, "pipe-to-ground": 100, "boiler": 2, "steam-engine": 2, "burner-mining-drill": 49, "electric-mining-drill": 50, "offshore-pump": 2, "pumpjack": 10, "stone-furnace": 10, "electric-furnace": 10, "assembling-machine-2": 10, "oil-refinery": 5, "chemical-plant": 5, "coal": 500}, "entities": [{"handle": "e1", "name": "burner-mining-drill", "position": {"x": 16.0, "y": 71.0}, "direction": "Direction.UP", "status": "EntityStatus.NO_FUEL", "fuel": "", "warnings": "['out of fuel']", "drop_position": {"x": 15.5, "y": 69.5}}], "production": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}, "game_tick": 7796}, "final_factory": {"inventory": {"wooden-chest": 10, "storage-tank": 10, "transport-belt": 500, "underground-belt": 100, "burner-inserter": 50, "inserter": 50, "medium-electric-pole": 500, "pipe": 500, "pipe-to-ground": 100, "boiler": 2, "steam-engine": 2, "burner-mining-drill": 49, "electric-mining-drill": 50, "offshore-pump": 2, "pumpjack": 10, "stone-furnace": 10, "electric-furnace": 10, "assembling-machine-2": 10, "oil-refinery": 5, "chemical-plant": 5, "coal": 500}, "entities": [{"handle": "e1", "name": "burner-mining-drill", "position": {"x": 16.0, "y": 71.0}, "direction": "Direction.UP", "status": "EntityStatus.NO_FUEL", "fuel": "", "warnings": "['out of fuel']", "drop_position": {"x": 15.5, "y": 69.5}}], "production": {"output": {}, "input": {}, "harvested": {}, "crafted": {}}, "game_tick": 18596}}
+ Container cluster-factorio_0-1 Restarting 
+ Container cluster-factorio_0-1 Started 
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.03s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.58s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.21s/it]
+Sprites not found (searched from /home/osci2/factorio-pilot to root and fallback locations). Vision rendering will produce empty images. Run 'fle sprites' to download, or set FLE_SPRITES_DIR.
+Connected to 127.0.0.1 client at tcp/27000.
+27000: Loading action agent/get_entity/server.lua into game
+27000: Loading action agent/get_entities/server.lua into game
+27000: Loading action agent/harvest_resource/server.lua into game
+27000: Loading action agent/move_to/server.lua into game
+27000: Loading action admin/request_path/server.lua into game
+27000: Loading action admin/get_path/server.lua into game
+27000: Loading action agent/nearest/server.lua into game
+27000: Loading action agent/pickup_entity/server.lua into game
+27000: Loading action agent/place_entity_next_to/server.lua into game
+27000: Loading action agent/set_research/server.lua into game
+27000: Loading action agent/inspect_inventory/server.lua into game
+27000: Loading action agent/send_message/server.lua into game
+27000: Loading action admin/render_message/server.lua into game
+27000: Loading action agent/craft_item/server.lua into game
+27000: Loading action agent/get_prototype_recipe/server.lua into game
+27000: Loading action agent/insert_item/server.lua into game
+27000: Loading action agent/sleep/server.lua into game
+27000: Loading action agent/can_place_entity/server.lua into game
+27000: Loading action agent/nearest_buildable/server.lua into game
+27000: Loading action agent/rotate_entity/server.lua into game
+27000: Loading action agent/get_research_progress/server.lua into game
+27000: Loading action agent/extract_item/server.lua into game
+27000: Loading action agent/get_connection_amount/server.lua into game
+27000: Loading action agent/connect_entities/server.lua into game
+27000: Loading action admin/extend_collision_boxes/server.lua into game
+27000: Loading action admin/clear_collision_boxes/server.lua into game
+27000: Loading action agent/place_entity/server.lua into game
+27000: Loading action agent/launch_rocket/server.lua into game
+27000: Loading action agent/score/server.lua into game
+27000: Loading action admin/score/server.lua into game
+27000: Loading action agent/get_resource_patch/server.lua into game
+27000: Loading action agent/set_entity_recipe/server.lua into game
+27000: Loading action admin/regenerate_resources/server.lua into game
+27000: Loading action admin/get_factory_centroid/server2.lua into game
+27000: Loading action admin/get_factory_centroid/server.lua into game
+27000: Loading action admin/load_research_state/server.lua into game
+27000: Loading action admin/render_simple/server.lua into game
+27000: Loading action admin/reset/server.lua into game
+27000: Loading action admin/set_inventory/server.lua into game
+27000: Loading action admin/save_entity_state/server.lua into game
+27000: Loading action admin/save_blueprint/server.lua into game
+27000: Loading action admin/clear_entities/server.lua into game
+27000: Loading action admin/render/server.lua into game
+27000: Loading action admin/get_production_stats/server.lua into game
+27000: Loading action admin/load_entity_state/server.lua into game
+27000: Loading action admin/load_blueprint/server.lua into game
+27000: Loading action admin/save_research_state/server.lua into game
+27000: Loading action admin/create_agent_characters/server.lua into game
+RUN /home/osci2/factorio-pilot/runs/intervention-20261006T014614Z-seed42
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STEP 0: {"tool":"nearest","args":{"type":"IronOre"}} | error=None
+STEP 1: {"tool":"move_to","args":{"position":{"x":15.5,"y":70.5}}} | error=None
+STEP 2: {"tool":"place_entity","args":{"entity":"BurnerMiningDrill","position":{"x":15.5,"y":70.5},"direction":"DOWN"}} | error=None
+STEP 3: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 4: {"tool":"nearest","args":{"type":"Coal"}} | error=None
+STEP 5: {"tool":"move_to","args":{"position":{"x":17.5,"y":20.5}}} | error=None
+STEP 6: {"tool":"place_entity","args":{"entity":"StoneFurnace","position":{"x":16.5,"y":72.5},"direction":"UP"}} | error=Exception: Could not place stone-furnace at (16.5, 72.5), The target position is too far away to place the entity. The player position is 17.5, 20.5 and the target position is 16.5, 72.5. The distance is 52.01 and the max distance is 10. Move closer.
+STEP 7: {"tool":"move_to","args":{"position":{"x":16.5,"y":72.5}}} | error=None
+STEP 8: {"tool":"place_entity","args":{"entity":"StoneFurnace","position":{"x":16.5,"y":72.5},"direction":"UP"}} | error=None
+STEP 9: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 10: {"tool":"nearest","args":{"type":"Coal"}} | error=None
+STEP 11: {"tool":"move_to","args":{"position":{"x":18.5,"y":20.5}}} | error=None
+STEP 12: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 13: {"tool":"rotate_entity","args":{"entity":"e1","direction":"RIGHT"}} | error=None
+STEP 14: {"tool":"insert_item","args":{"entity":"e2","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 15: {"tool":"nearest","args":{"type":"IronOre"}} | error=None
+STEP 16: {"tool":"move_to","args":{"position":{"x":18.5,"y":70.5}}} | error=None
+STEP 17: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 18: {"tool":"wait","args":{"seconds":60}} | error=None
+STEP 19: {"tool":"nearest","args":{"type":"Coal"}} | error=None
+STEP 20: {"tool":"insert_item","args":{"entity":"e1","target":"coal","quantity":5}} | error=ValueError: This task permits supplied Coal insertion only; no manual ore insertion
+STEP 21: {"tool":"rotate_entity","args":{"entity":"e2","direction":"RIGHT"}} | error=Exception: Could not rotate stone-furnace.
+STEP 22: {"tool":"wait","args":{"seconds":60}} | error=None
+STEP 23: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+STEP 24: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+STEP 25: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+STEP 26: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+STEP 27: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+STEP 28: {"tool":"done",[]} | error=JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+Traceback (most recent call last):
+  File "/mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/tools/run_agent.py", line 116, in <module>
+    outputs = model.generate(**inputs, max_new_tokens=1024, do_sample=False,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2786, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 480, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 205, in forward
+    query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 116, in apply_rotary_pos_emb
+    k_embed = (k * cos) + (rotate_half(k) * sin)
+              ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+torch.AcceleratorError: CUDA error: unknown error
+Search for `cudaErrorUnknown' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

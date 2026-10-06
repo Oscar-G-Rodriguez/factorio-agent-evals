@@ -1,0 +1,233 @@
+{
+  "mode": "maintenance_development",
+  "controller": "model",
+  "stop_reason": "sustained_production_failure",
+  "failed_actions": 13,
+  "steps": 44,
+  "simulated_seconds": 660.0,
+  "wall_seconds": 179.75799976600047,
+  "time_to_sustained_failure_seconds": 660.0,
+  "first_low_window_end_seconds": 300.0,
+  "survived_at_least_seconds": null,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 193516,
+      "end_tick": 197116,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 1,
+      "start_tick": 197116,
+      "end_tick": 200716,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 2,
+      "start_tick": 200716,
+      "end_tick": 204316,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 3,
+      "start_tick": 204316,
+      "end_tick": 207916,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 4,
+      "start_tick": 207916,
+      "end_tick": 211516,
+      "actual_ticks": 3600,
+      "iron_plates": 14,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 5,
+      "start_tick": 211516,
+      "end_tick": 215116,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 6,
+      "start_tick": 215116,
+      "end_tick": 218716,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 7,
+      "start_tick": 218716,
+      "end_tick": 222316,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 8,
+      "start_tick": 222316,
+      "end_tick": 225916,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 9,
+      "start_tick": 225916,
+      "end_tick": 229516,
+      "actual_ticks": 3600,
+      "iron_plates": 15,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 10,
+      "start_tick": 229516,
+      "end_tick": 233116,
+      "actual_ticks": 3600,
+      "iron_plates": 0,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 2
+    }
+  ],
+  "failure_indicators": {
+    "empty_and_expired_burners": [
+      "e2"
+    ],
+    "full_furnace_outputs": [],
+    "reserve_coal": 461,
+    "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+  },
+  "final_observation": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 461,
+      "iron-plate": 100,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 0,
+          "free_plate_capacity": 1600
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 0,
+          "currently_burning": false
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_INGREDIENTS",
+        "fuel": "coal=3",
+        "furnace_source": "",
+        "furnace_result": "iron-plate=95",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 95,
+          "free_plate_capacity": 5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 3,
+          "remaining_burning_fuel_joules": 3837900,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 195,
+        "iron-plate": 195
+      },
+      "input": {
+        "coal": 36,
+        "iron-ore": 195
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 100,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4000,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 0
+    },
+    "goal_plates_per_minute": 16
+  },
+  "tokens": {
+    "input_total": 296446,
+    "output_total": 878
+  },
+  "median_response_seconds": 1.7463894715001516,
+  "gpu_peak_allocated_bytes": 9817654784,
+  "custom_cuda_used": false,
+  "backend": "pytorch_reference_no_custom_kernel",
+  "history_pairs_trimmed_total": 36
+}

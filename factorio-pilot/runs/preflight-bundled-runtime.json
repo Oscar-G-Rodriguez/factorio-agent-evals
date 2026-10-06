@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-10-06T00:17:13.691951+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.14",
+  "python_executable": "C:\\Users\\osci2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "disk_free_gib_at_working_directory": 12.85,
+  "commands": {
+    "gpu": {
+      "status": "ok",
+      "path": "C:\\Windows\\system32\\nvidia-smi.EXE",
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 5070 Ti, 16303 MiB, 591.86",
+      "stderr": ""
+    },
+    "docker": {
+      "status": "missing",
+      "command": [
+        "docker",
+        "version",
+        "--format",
+        "{{json .}}"
+      ]
+    },
+    "cuda_compiler": {
+      "status": "missing",
+      "command": [
+        "nvcc",
+        "--version"
+      ]
+    },
+    "cpp_compiler": {
+      "status": "missing",
+      "command": [
+        "g++",
+        "--version"
+      ]
+    },
+    "sanitizer": {
+      "status": "missing",
+      "command": [
+        "compute-sanitizer",
+        "--version"
+      ]
+    },
+    "git": {
+      "status": "ok",
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "returncode": 0,
+      "stdout": "git version 2.54.0.windows.1",
+      "stderr": ""
+    }
+  },
+  "packages": {
+    "torch": {
+      "status": "missing"
+    },
+    "transformers": {
+      "status": "missing"
+    },
+    "factorio-learning-environment": {
+      "status": "missing"
+    }
+  },
+  "torch_gpu_smoke_check": {
+    "status": "missing"
+  },
+  "not_verified_by_this_check": [
+    "custom_cpp_cuda_compilation",
+    "factorio_connection",
+    "model_loading"
+  ]
+}

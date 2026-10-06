@@ -1,0 +1,9 @@
+{
+  "original": "inference-profile.json",
+  "compressed": "inference-profile.json.gz",
+  "original_bytes": 83348798,
+  "compressed_bytes": 4928444,
+  "original_sha256": "25a7fc42a663da0875038e670401d0b19e3df04ba51bc8b73cc147cadaef6854",
+  "compressed_sha256": "603af6023f648799b1bd21d2a7d94270a75e72b4d28dc569d5949cbc0251b870",
+  "decompression_hash_verified": true
+}

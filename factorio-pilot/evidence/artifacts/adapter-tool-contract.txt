@@ -1,0 +1,21 @@
+inspect_inventory: allowed args=[]; required=[]. Read the player inventory. Takes no arguments.
+
+nearest: allowed args=['type']; required=['type']. Find the nearest resource: IronOre, Coal, or Stone. Returns a position.
+
+move_to: allowed args=['position']; required=['position']. Move the player to a position. No laying or leading arguments.
+
+place_entity: allowed args=['entity', 'direction', 'position', 'exact']; required=['entity', 'position']. Place a supplied building prototype. direction defaults UP; exact defaults true. Mining drills must cover ore; their direction determines the output side.
+
+place_entity_next_to: allowed args=['entity', 'reference_position', 'direction', 'spacing']; required=['entity', 'reference_position']. Place a building adjacent to the building at reference_position. direction is the placement side (default RIGHT); spacing is an integer gap, default 0. A furnace adjacent to a drill output can receive mined ore directly.
+
+get_entity: allowed args=['entity', 'position']; required=['entity', 'position']. Read a building by prototype name and position. Returns a fresh entity handle and status.
+
+get_entities: allowed args=['entities', 'position', 'radius']; required=[]. Read nearby buildings. entities is a prototype name or list (empty means all); optional position defaults to the player; radius defaults 100, maximum 500.
+
+insert_item: allowed args=['entity', 'target', 'quantity']; required=['entity', 'target']. Insert Coal from player inventory into a building handle such as e1. quantity is an integer 1..500 (default 5). Fuel drills, furnaces, and burner inserters. Manual ore insertion is forbidden for this task.
+
+rotate_entity: allowed args=['entity', 'direction']; required=['entity', 'direction']. Rotate an existing building handle such as e1 to UP, RIGHT, DOWN, or LEFT.
+
+can_place_entity: allowed args=['entity', 'position', 'direction']; required=['entity', 'position']. Check if a building can fit at a position. Optional direction defaults UP. Placement availability alone does not prove the presence of ore.
+
+pickup_entity: allowed args=['entity']; required=['entity']. Remove an existing building using its handle such as e1. This invalidates that handle. Cannot pick up loose ore or specify a prototype/position.

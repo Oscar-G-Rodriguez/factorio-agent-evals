@@ -1,0 +1,8 @@
+{
+  "baseline_eligible": false,
+  "comparison_eligible": false,
+  "reason": "Inference process interrupted by CUDA unknown error before final evaluation; see context-experiment-interrupted.txt. Custom kernel was not compiled or loaded.",
+  "complete_decisions": 29,
+  "production_result": "not_measured",
+  "hardware_root_cause": "unconfirmed; fresh-process numerical CUDA check passed"
+}

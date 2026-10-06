@@ -1,0 +1,61 @@
+{
+  "status": "static_review_complete",
+  "reviewer": "Codex; manual source inspection, not an independent review",
+  "reviewed_at_utc": "2026-10-06T03:48:12.242672+00:00",
+  "review_document": "outputs/CUDA and C++ Source Review.md",
+  "unresolved_launch_blockers": [],
+  "source_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "active_sources": [
+    "cuda/rmsnorm.cpp",
+    "cuda/rmsnorm.cu",
+    "cuda/smoke.cu"
+  ],
+  "historical_sources_not_approved_for_new_execution": [
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu"
+  ],
+  "sanitizer_status": "reviewed_rmsnorm_passed_memcheck_racecheck_initcheck_synccheck",
+  "dynamic_validation_status": "25_required_correctness_cases_passed_for_reviewed_sources",
+  "required_correctness_cases": [
+    "zero",
+    "near_zero",
+    "odd_rows",
+    "random",
+    "decode",
+    "prefill",
+    "empty_batch",
+    "cpu_input",
+    "wrong_dtype",
+    "wrong_width",
+    "noncontiguous",
+    "wrong_weight",
+    "nan_epsilon",
+    "zero_epsilon",
+    "negative_epsilon",
+    "infinite_epsilon",
+    "epsilon_underflow",
+    "epsilon_subnormal",
+    "weight_dtype",
+    "weight_noncontiguous",
+    "sparse_layout",
+    "negative_view",
+    "row_limit",
+    "requires_grad",
+    "nondefault_stream"
+  ],
+  "pilot_limits": {
+    "max_rows": 8192,
+    "features": 2560,
+    "block_threads": 256,
+    "max_output_mib": 40
+  },
+  "dynamic_validation_artifact": "evidence/artifacts/rmsnorm-correctness.json",
+  "cpu_unit_tests_passed": 20,
+  "sanitizer_validation_artifact": "evidence/artifacts/approved-sanitizer-validation.json"
+}

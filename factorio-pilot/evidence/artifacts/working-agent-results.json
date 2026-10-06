@@ -1,0 +1,28 @@
+[
+  {
+    "run": "working-development-20261006T025602Z",
+    "mode": "working-development",
+    "target_plates_per_minute": 16,
+    "passed": true,
+    "steps": 8,
+    "failures": 0,
+    "plates": [
+      19,
+      19
+    ],
+    "wall_seconds": 115.68642842800003
+  },
+  {
+    "run": "working-development-20261006T030421Z",
+    "mode": "working-development",
+    "target_plates_per_minute": 16,
+    "passed": true,
+    "steps": 8,
+    "failures": 0,
+    "plates": [
+      19,
+      19
+    ],
+    "wall_seconds": 49.15991907600005
+  }
+]

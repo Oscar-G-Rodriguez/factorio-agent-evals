@@ -1,0 +1,28 @@
+{
+  "run": "working-development-20261006T030421Z",
+  "passed": true,
+  "target_plates_per_minute": 16,
+  "checks": {
+    "two_exact_3600_tick_windows_meet_configured_target": true,
+    "only_audited_tools_successfully_executed": true,
+    "drill_output_inside_furnace_bounds": true,
+    "furnaces_contain_mined_iron_and_produced_plates": true,
+    "no_handcrafting_or_harvesting": true,
+    "restricted_fuel_actions_only": true,
+    "successful_coal_fuel_actions_for_drill_and_furnace": true
+  },
+  "connections": [
+    {
+      "drill": "e1",
+      "drop_position": {
+        "x": 16.5,
+        "y": 69.5
+      },
+      "receiving_furnaces": [
+        "e2"
+      ]
+    }
+  ],
+  "scope": "restricted-tool direct drill-to-furnace chain; not a general belt-network validator",
+  "method": "recorded actions, final inventories/geometry, crafting/harvesting counters and unattended throughput"
+}

@@ -1,0 +1,84 @@
+{
+  "checked_at_utc": "2026-10-06T00:39:15.370818+00:00",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python_version": "3.12.3",
+  "python_executable": "/home/osci2/factorio-pilot/.venv/bin/python",
+  "disk_free_gib_at_working_directory": 79.84,
+  "commands": {
+    "gpu": {
+      "status": "ok",
+      "path": "/usr/lib/wsl/lib/nvidia-smi",
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 5070 Ti, 16303 MiB, 591.86",
+      "stderr": ""
+    },
+    "docker": {
+      "status": "failed",
+      "path": "/usr/bin/docker",
+      "returncode": 1,
+      "stdout": "{\"Client\":{\"Platform\":{\"Name\":\"Docker Engine - Community\"},\"Version\":\"29.8.2\",\"ApiVersion\":\"1.56\",\"DefaultAPIVersion\":\"1.56\",\"GitCommit\":\"7fc2dff\",\"GoVersion\":\"go1.26.8\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Sep 30 19:32:28 2026\",\"Context\":\"default\"},\"Server\":null}",
+      "stderr": "permission denied while trying to connect to the docker API at unix:///var/run/docker.sock"
+    },
+    "cuda_compiler": {
+      "status": "ok",
+      "path": "/usr/local/cuda-12.8/bin/nvcc",
+      "returncode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0",
+      "stderr": ""
+    },
+    "cpp_compiler": {
+      "status": "ok",
+      "path": "/usr/bin/g++",
+      "returncode": 0,
+      "stdout": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+      "stderr": ""
+    },
+    "sanitizer": {
+      "status": "ok",
+      "path": "/usr/local/cuda-12.8/bin/compute-sanitizer",
+      "returncode": 0,
+      "stdout": "NVIDIA (R) Compute Sanitizer\nCopyright (c) 2020-2025 NVIDIA Corporation\nVersion 2025.1.0.0 (build 35583870) (public-release)",
+      "stderr": ""
+    },
+    "git": {
+      "status": "ok",
+      "path": "/usr/bin/git",
+      "returncode": 0,
+      "stdout": "git version 2.43.0",
+      "stderr": ""
+    }
+  },
+  "packages": {
+    "torch": {
+      "status": "installed",
+      "version": "2.11.0+cu128"
+    },
+    "transformers": {
+      "status": "installed",
+      "version": "4.57.6"
+    },
+    "factorio-learning-environment": {
+      "status": "installed",
+      "version": "0.4.8"
+    }
+  },
+  "torch_gpu_smoke_check": {
+    "status": "ok",
+    "version": "2.11.0+cu128",
+    "build_cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "device_capability": [
+      12,
+      0
+    ],
+    "bf16_supported": true,
+    "tiny_calculation_expected": 14.0,
+    "tiny_calculation_actual": 14.0,
+    "peak_allocated_bytes": 1536
+  },
+  "not_verified_by_this_check": [
+    "custom_cpp_cuda_compilation",
+    "factorio_connection",
+    "model_loading"
+  ]
+}

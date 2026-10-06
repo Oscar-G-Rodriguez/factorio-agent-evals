@@ -1,0 +1,172 @@
+{
+  "mode": "baseline",
+  "steps": 32,
+  "failed_actions": 19,
+  "stop_reason": "decision_limit",
+  "wall_seconds": 295.8866878409999,
+  "measurement_windows": [
+    {
+      "actual_ticks": 3600,
+      "iron_plates": 0,
+      "before_stats": {
+        "output": {},
+        "input": {},
+        "harvested": {},
+        "crafted": {}
+      },
+      "after_stats": {
+        "output": {},
+        "input": {},
+        "harvested": {},
+        "crafted": {}
+      }
+    },
+    {
+      "actual_ticks": 3600,
+      "iron_plates": 0,
+      "before_stats": {
+        "output": {},
+        "input": {},
+        "harvested": {},
+        "crafted": {}
+      },
+      "after_stats": {
+        "output": {},
+        "input": {},
+        "harvested": {},
+        "crafted": {}
+      }
+    }
+  ],
+  "throughput_target_met": false,
+  "task_success": false,
+  "automated_supply_chain_check": "throughput_target_not_met",
+  "pre_evaluation_factory": {
+    "inventory": {
+      "wooden-chest": 10,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 500
+    },
+    "entities": [
+      {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 21.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "warnings": "['out of fuel', 'no ingredients to smelt']",
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.DOWN",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "warnings": "['out of fuel']",
+        "drop_position": {
+          "x": 16.5,
+          "y": 72.5
+        }
+      }
+    ],
+    "production": {
+      "output": {},
+      "input": {},
+      "harvested": {},
+      "crafted": {}
+    },
+    "game_tick": 17936
+  },
+  "final_factory": {
+    "inventory": {
+      "wooden-chest": 10,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 500
+    },
+    "entities": [
+      {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 21.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "warnings": "['out of fuel', 'no ingredients to smelt']",
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.DOWN",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "warnings": "['out of fuel']",
+        "drop_position": {
+          "x": 16.5,
+          "y": 72.5
+        }
+      }
+    ],
+    "production": {
+      "output": {},
+      "input": {},
+      "harvested": {},
+      "crafted": {}
+    },
+    "game_tick": 28736
+  }
+}
