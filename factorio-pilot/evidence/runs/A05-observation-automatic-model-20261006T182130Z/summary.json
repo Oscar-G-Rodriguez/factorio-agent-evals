@@ -1,0 +1,167 @@
+{
+  "mode": "observation_policy_development",
+  "controller": "model",
+  "stop_reason": "sustained_production_failure",
+  "failed_actions": 0,
+  "steps": 16,
+  "simulated_seconds": 240.0,
+  "wall_seconds": 54.53395637699998,
+  "time_to_sustained_failure_seconds": 240.0,
+  "first_low_window_end_seconds": 180.0,
+  "survived_at_least_seconds": null,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 7214,
+      "end_tick": 10814,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 1,
+      "start_tick": 10814,
+      "end_tick": 14414,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 2,
+      "start_tick": 14414,
+      "end_tick": 18014,
+      "actual_ticks": 3600,
+      "iron_plates": 15,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 3,
+      "start_tick": 18014,
+      "end_tick": 21614,
+      "actual_ticks": 3600,
+      "iron_plates": 5,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 2
+    }
+  ],
+  "failure_indicators": {
+    "empty_and_expired_burners": [],
+    "full_furnace_outputs": [],
+    "reserve_coal": 482,
+    "note": "Observed bottleneck indicators, not a causal proof; fuel reserve exhaustion is distinct from missed refueling."
+  },
+  "final_observation": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 482,
+      "iron-plate": 0,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "fuel": {
+          "iron-plate": 69
+        },
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 69,
+          "free_plate_capacity": 1531
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "fuel": "",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 2999833.3333333335,
+          "currently_burning": null
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.WORKING",
+        "fuel": "",
+        "furnace_source": "iron-ore=28",
+        "furnace_result": "iron-plate=5",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 5,
+          "free_plate_capacity": 95
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 2649900,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 103,
+        "iron-plate": 74
+      },
+      "input": {
+        "coal": 18,
+        "iron-ore": 75
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 0,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4100,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 100
+    },
+    "goal_plates_per_minute": 16
+  },
+  "tokens": {
+    "input_total": 91136,
+    "output_total": 321
+  },
+  "median_response_seconds": 1.5442103224999641,
+  "gpu_peak_allocated_bytes": 9854640640,
+  "custom_cuda_used": false,
+  "observation_policy": "automatic",
+  "inspection_count": 0,
+  "maximum_observation_age_seconds": 0.0,
+  "backend": "pytorch_reference_no_custom_kernel",
+  "history_pairs_trimmed_total": 7
+}

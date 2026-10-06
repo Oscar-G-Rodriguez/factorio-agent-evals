@@ -129,3 +129,9 @@ bash factorio-pilot/setup/run-integrated-rmsnorm.sh --phase benchmark --include-
 ```
 
 Before either GPU command, inspect every native source and verify the exact-hash review gate and matching correctness artifact. Archive prior fixed-name operator artifacts before repeating correctness checks. The launcher uses this checkout's source and the external pinned model/environment; it does not restart a game server. Completed runs create new K02 folders in the runtime. The [result report](../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md) retains numerical differences, token/action agreement, coverage, cold compilation and 90 warm response samples per backend/prompt. First-pass validation latency and single GPU-phase diagnostics are not warm latency distributions. Prefix-cache reuse and live-episode acceleration remain unmeasured.
+
+## Observation delivery pilot
+
+Explicit `--observation-policy automatic` and `--observation-policy requested` modes create A05 runs. Both use timestamped snapshots and common filtered feedback; requested mode refreshes fuel, inventory, storage and production only after a successful check, after its 15-second interval. Raw tool results, evaluator observations and production windows remain in the trace without entering that prompt automatically. The default `legacy` mode retains the A04 prompt path.
+
+The [A05 report](../outputs/A05%20-%20Observation%20Policy%20-%20Pilot%20Results.md) contains executed results and exact commands. Start the local server before each sequential controller; each resets the world. A scripted inspection controller verified reachability before two Qwen episodes. No memory-policy change, prefix reuse, custom-kernel comparison or training was combined with this pilot. Portable replay checks use `python scripts/verify_a05_evidence.py` followed by the three completed A05 run IDs listed in the report.

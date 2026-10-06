@@ -1,0 +1,326 @@
+[
+  {
+    "run": "A05-observation-requested-scripted-20261006T181451Z",
+    "steps": 80,
+    "inspections": 40,
+    "visible_state_replay_passed": true,
+    "initial_observation": {
+      "inventory": {
+        "burner-mining-drill": 49,
+        "stone-furnace": 9,
+        "coal": 494,
+        "iron-plate": 0,
+        "wooden-chest": 9
+      },
+      "equipment": [
+        {
+          "handle": "e1",
+          "name": "wooden-chest",
+          "position": {
+            "x": 12.5,
+            "y": 67.5
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.NORMAL",
+          "output_storage": {
+            "slots": 16,
+            "iron_plates": 0,
+            "free_plate_capacity": 1600
+          }
+        },
+        {
+          "handle": "e2",
+          "name": "burner-mining-drill",
+          "position": {
+            "x": 16.0,
+            "y": 71.0
+          },
+          "direction": "Direction.RIGHT",
+          "status": "EntityStatus.WORKING",
+          "fuel": "",
+          "drop_position": {
+            "x": 17.5,
+            "y": 70.5
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 0,
+            "remaining_burning_fuel_joules": 2999833.3333333335,
+            "currently_burning": null
+          }
+        },
+        {
+          "handle": "e3",
+          "name": "stone-furnace",
+          "position": {
+            "x": 18.0,
+            "y": 71.0
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.WORKING",
+          "fuel": "coal=1",
+          "furnace_source": "iron-ore=1",
+          "furnace_result": "iron-plate=17",
+          "output_storage": {
+            "slots": 1,
+            "iron_plates": 17,
+            "free_plate_capacity": 83
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 1,
+            "remaining_burning_fuel_joules": 3034800,
+            "currently_burning": null
+          }
+        }
+      ],
+      "production": {
+        "output": {
+          "iron-ore": 19,
+          "iron-plate": 17
+        },
+        "input": {
+          "coal": 5,
+          "iron-ore": 18
+        },
+        "harvested": {},
+        "crafted": {}
+      },
+      "last_production_test": null,
+      "carrying": {
+        "agent_index": 1,
+        "carried_plates": 0,
+        "carried_chests": 9,
+        "inventory_slots": 90,
+        "physical_plate_space": 4100,
+        "benchmark_carried_plate_limit": 100,
+        "available_carry_space": 100
+      },
+      "goal_plates_per_minute": 16
+    },
+    "source_hashes": {
+      "maintenance_agent.py": "dbf66e95ee7c659e291471993b37a6eb69194b512c775d643fe87cc367a6ad25",
+      "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+      "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+      "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+      "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+      "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+      "qwen_rmsnorm_backend.py": "87822fd592f0be1cb5ec62a7f1ec5d4b0c64b7c77199b44aac6eaf8caaf6ce49",
+      "observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e"
+    }
+  },
+  {
+    "run": "A05-observation-automatic-model-20261006T182130Z",
+    "steps": 16,
+    "inspections": 0,
+    "visible_state_replay_passed": true,
+    "initial_observation": {
+      "inventory": {
+        "burner-mining-drill": 49,
+        "stone-furnace": 9,
+        "coal": 494,
+        "iron-plate": 0,
+        "wooden-chest": 9
+      },
+      "equipment": [
+        {
+          "handle": "e1",
+          "name": "wooden-chest",
+          "position": {
+            "x": 12.5,
+            "y": 67.5
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.NORMAL",
+          "output_storage": {
+            "slots": 16,
+            "iron_plates": 0,
+            "free_plate_capacity": 1600
+          }
+        },
+        {
+          "handle": "e2",
+          "name": "burner-mining-drill",
+          "position": {
+            "x": 16.0,
+            "y": 71.0
+          },
+          "direction": "Direction.RIGHT",
+          "status": "EntityStatus.WORKING",
+          "fuel": "",
+          "drop_position": {
+            "x": 17.5,
+            "y": 70.5
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 0,
+            "remaining_burning_fuel_joules": 2999833.3333333335,
+            "currently_burning": null
+          }
+        },
+        {
+          "handle": "e3",
+          "name": "stone-furnace",
+          "position": {
+            "x": 18.0,
+            "y": 71.0
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.WORKING",
+          "fuel": "coal=1",
+          "furnace_source": "iron-ore=1",
+          "furnace_result": "iron-plate=17",
+          "output_storage": {
+            "slots": 1,
+            "iron_plates": 17,
+            "free_plate_capacity": 83
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 1,
+            "remaining_burning_fuel_joules": 3034800,
+            "currently_burning": null
+          }
+        }
+      ],
+      "production": {
+        "output": {
+          "iron-ore": 19,
+          "iron-plate": 17
+        },
+        "input": {
+          "coal": 5,
+          "iron-ore": 18
+        },
+        "harvested": {},
+        "crafted": {}
+      },
+      "last_production_test": null,
+      "carrying": {
+        "agent_index": 1,
+        "carried_plates": 0,
+        "carried_chests": 9,
+        "inventory_slots": 90,
+        "physical_plate_space": 4100,
+        "benchmark_carried_plate_limit": 100,
+        "available_carry_space": 100
+      },
+      "goal_plates_per_minute": 16
+    },
+    "source_hashes": {
+      "maintenance_agent.py": "dbf66e95ee7c659e291471993b37a6eb69194b512c775d643fe87cc367a6ad25",
+      "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+      "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+      "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+      "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+      "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+      "qwen_rmsnorm_backend.py": "87822fd592f0be1cb5ec62a7f1ec5d4b0c64b7c77199b44aac6eaf8caaf6ce49",
+      "observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e"
+    }
+  },
+  {
+    "run": "A05-observation-requested-model-20261006T182355Z",
+    "steps": 60,
+    "inspections": 14,
+    "visible_state_replay_passed": true,
+    "initial_observation": {
+      "inventory": {
+        "burner-mining-drill": 49,
+        "stone-furnace": 9,
+        "coal": 494,
+        "iron-plate": 0,
+        "wooden-chest": 9
+      },
+      "equipment": [
+        {
+          "handle": "e1",
+          "name": "wooden-chest",
+          "position": {
+            "x": 12.5,
+            "y": 67.5
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.NORMAL",
+          "output_storage": {
+            "slots": 16,
+            "iron_plates": 0,
+            "free_plate_capacity": 1600
+          }
+        },
+        {
+          "handle": "e2",
+          "name": "burner-mining-drill",
+          "position": {
+            "x": 16.0,
+            "y": 71.0
+          },
+          "direction": "Direction.RIGHT",
+          "status": "EntityStatus.WORKING",
+          "fuel": "",
+          "drop_position": {
+            "x": 17.5,
+            "y": 70.5
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 0,
+            "remaining_burning_fuel_joules": 2999833.3333333335,
+            "currently_burning": null
+          }
+        },
+        {
+          "handle": "e3",
+          "name": "stone-furnace",
+          "position": {
+            "x": 18.0,
+            "y": 71.0
+          },
+          "direction": "Direction.UP",
+          "status": "EntityStatus.WORKING",
+          "fuel": "coal=1",
+          "furnace_source": "iron-ore=1",
+          "furnace_result": "iron-plate=17",
+          "output_storage": {
+            "slots": 1,
+            "iron_plates": 17,
+            "free_plate_capacity": 83
+          },
+          "burner": {
+            "coal_in_fuel_inventory": 1,
+            "remaining_burning_fuel_joules": 3034800,
+            "currently_burning": null
+          }
+        }
+      ],
+      "production": {
+        "output": {
+          "iron-ore": 19,
+          "iron-plate": 17
+        },
+        "input": {
+          "coal": 5,
+          "iron-ore": 18
+        },
+        "harvested": {},
+        "crafted": {}
+      },
+      "last_production_test": null,
+      "carrying": {
+        "agent_index": 1,
+        "carried_plates": 0,
+        "carried_chests": 9,
+        "inventory_slots": 90,
+        "physical_plate_space": 4100,
+        "benchmark_carried_plate_limit": 100,
+        "available_carry_space": 100
+      },
+      "goal_plates_per_minute": 16
+    },
+    "source_hashes": {
+      "maintenance_agent.py": "dbf66e95ee7c659e291471993b37a6eb69194b512c775d643fe87cc367a6ad25",
+      "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+      "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+      "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+      "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+      "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+      "qwen_rmsnorm_backend.py": "87822fd592f0be1cb5ec62a7f1ec5d4b0c64b7c77199b44aac6eaf8caaf6ce49",
+      "observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e"
+    }
+  }
+]

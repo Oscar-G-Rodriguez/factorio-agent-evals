@@ -41,6 +41,12 @@ The [K01 benchmark](../outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) 
 
 The maintenance runner defaults to `--inference-backend pytorch`; `custom-rmsnorm` is opt-in for model controllers. No live episode was run with that option. Experiments remain sequential. The [acceleration design](Inference%20Acceleration%20Design.md) specifies the unchanged contract and a subsequent exact-prefix cache comparison, while the [decision record](decisions/0001-controlled-inference-acceleration.md) preserves the choice. Prefix reuse, warm GPU-phase distributions, time to first token and episode speedup remain unmeasured. Keep those results separately identified and preserve K01/A01–A04 evidence.
 
+## A05: observation delivery
+
+The [observation-policy pilot](../outputs/A05%20-%20Observation%20Policy%20-%20Pilot%20Results.md) compares automatic snapshots with requested inspection on one fixture. `tools/observation_policy.py` owns the visible-state boundary; `maintenance_agent.py --observation-policy automatic|requested` selects an explicit A05 condition. The default remains legacy A04. Both new conditions share filtered feedback and timestamped snapshots, so the new automatic baseline must not be pooled with the historical A04 episode.
+
+The scripted requested-inspection controller survived its twenty-minute horizon. Qwen failed at four minutes with automatic stats and fifteen minutes with requested inspection, making fourteen checks. Thirty-six CPU tests and a full visible-state replay passed. Keep future fixture variants and held-out tasks separately identified before making a general improvement or fine-tuning claim. Native review is still required before model runs; training must use its own backend/autograd contract rather than assuming the forward-only custom kernel supports it.
+
 ## Move work from a private checkout
 
 This public repository has clean history. If development starts in a private checkout, review the specific changed files and copy an approved patch or artifact set onto a branch based on this public `main`. Do not merge or push the private repository's history. Check filenames and contents for credentials, correspondence, local-only artifacts, and third-party material before pushing. Preserve exact evaluated bytes and hashes when transferring evidence, and keep model weights and game binaries outside Git.

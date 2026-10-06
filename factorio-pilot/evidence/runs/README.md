@@ -1,6 +1,6 @@
 # Saved Factorio runs
 
-This directory retains 21 original agent run records and two later K02 offline inference records. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
+This directory retains 21 original agent run records, three later A05 observation-policy episodes and two K02 offline inference records. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
 
 ## Folder names
 
@@ -16,5 +16,7 @@ The existing folders keep their original runtime IDs after the stage prefix. Som
 | A04 — maintenance | 3 | `A04-maintenance-idle-20261006T043628Z`, `A04-maintenance-scripted-20261006T043718Z`, and `A04-maintenance-model-20261006T044058Z`. See the [A04 report](../../../outputs/A04%20-%20Maintenance%20-%20Results.md). |
 
 K02 records are `K02-integrated-20261006T082739Z` (initial eager/custom validation) and `K02-integrated-20261006T082927Z` (eager/custom/compiled validation and completed warm timing). Each contains `results.json`, a frozen `prompt-manifest.json`, evaluated Python snapshots and `export-sha256.json`. The latter verifies copied evidence bytes. These records execute inference on saved prompts, not Factorio actions; see the [K02 report](../../../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md).
+
+A05 contains `A05-observation-requested-scripted-20261006T181451Z`, `A05-observation-automatic-model-20261006T182130Z` and `A05-observation-requested-model-20261006T182355Z`. Their [pilot report](../../../outputs/A05%20-%20Observation%20Policy%20-%20Pilot%20Results.md) keeps the scripted reachability control separate from the two executed model conditions. Each export retains the evaluated Python files, byte hashes and agent-visible input per step. A fourth attempt failed to connect before gameplay; its ID and exclusion are recorded in the report.
 
 Each agent run's `config.json` records its protocol and evaluated source hashes. `steps.jsonl` holds individual decisions or attempts. Completed runs usually include `summary.json`; construction runs may also include `final-state.json` and an audit. Read the linked report and any quality or development notes before treating a run as comparable evidence. Future runs should keep this folder convention and add their report, configuration, raw trace, and source snapshot without changing older records.

@@ -2,6 +2,8 @@
 
 The current maintenance study starts with `maintenance_agent.py`. It uses `maintenance_tools.py` and the shared game, factory, and logistics bridges. The earlier construction runner is `run_agent.py`; guided construction and logistics use `working_agent.py`. Each stage has its own saved configuration and evaluated source snapshot in `../evidence/` and `../source-snapshots/`.
 
+`observation_policy.py` filters model-visible feedback and timestamps snapshots for the explicit A05 automatic/requested modes. `test_observation_policy.py` checks that private state cannot leak between inspections. The legacy A04 prompt path remains the default.
+
 The other files support these runs:
 
 | Purpose | Files |
