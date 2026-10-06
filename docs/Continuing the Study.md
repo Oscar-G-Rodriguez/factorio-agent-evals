@@ -35,15 +35,11 @@ For an immediate check from any clone, run `python scripts/verify_maintenance_ev
 
 ## Planned K02: integrated RMSNorm run
 
-The [K01 benchmark](../outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) measures one standalone operator. The maintenance agent still uses Qwen's original PyTorch RMSNorm. K02 will test whether using the custom operator inside Qwen reduces complete response and episode wall time while preserving useful model behavior. No integrated speedup has been measured yet.
+The [K01 benchmark](../outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) measures one standalone operator. The maintenance agent still uses Qwen's original RMSNorm. The [inference acceleration design](Inference%20Acceleration%20Design.md) is the canonical proposal for guarded integration, restoration, an optimized compiled-reference baseline, exact-prefix cache reuse and timing boundaries. The [decision record](decisions/0001-controlled-inference-acceleration.md) explains why these changes are separated from policy improvements.
 
-1. Save a matched baseline with the pinned Qwen revision, BF16 precision, hardware, decoding settings, and representative maintenance prompts. Record model and source hashes. Keep model loading and extension compilation outside warm inference timing.
-2. Add an optional backend that replaces only supported RMSNorm calls (contiguous BF16 CUDA inputs with 2,560 features); leave other calls on the original implementation and record how many modules were replaced. Fully review every project-authored C++/CUDA source before a GPU run, then repeat matching correctness and sanitizer checks for any changed native code.
-3. On the same saved prompts, compare original and custom backends for finite logits, numerical differences, greedy token sequences, valid JSON actions, prompt processing time, token generation time, complete response latency, and GPU memory. Record any changed action rather than assuming equivalent behavior.
-4. Alternate the order of warmed baseline and custom measurements across repeated batches, preserving raw timings and the exact inputs. Report the operator result separately from whole-model results.
-5. Only after the offline checks, run both backends on the same maintenance fixture and decision cadence. Save each run's configuration, actions, production windows, failure or survival endpoint, and total wall time. Compare outcomes and speed separately; do not infer an episode speedup from K01's operator ratio.
+The proposed integration changes only supported full-width norm calls, preserves the original forward for unsupported calls, and keeps the existing game cadence. Freeze parameters for every inference condition because the forward-only native binding rejects weights requiring gradients. Validate identical saved prompts and generated actions before comparing application timing. Existing source review and matching correctness gates remain mandatory.
 
-Publish a `K02 - RMSNorm - Integrated Inference Results.md` report only after these runs, with source hashes, sample counts, timing scope, and links to the new evidence. Keep K01 and the earlier agent episodes unchanged.
+Experiments are sequential. The acceleration design is being settled before further execution; no integrated, compiled-reference or prefix-cache measurements exist. A future measured K02 report belongs at `outputs/K02 - RMSNorm - Integrated Inference Results.md` and must record hashes, coverage, numerical/action checks, raw timing samples and the full timing scope. Cache reuse receives a separately identified comparison after its implementation is validated. Preserve K01 and the earlier agent episodes unchanged.
 
 ## Move work from a private checkout
 

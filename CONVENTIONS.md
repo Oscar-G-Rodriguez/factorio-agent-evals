@@ -6,7 +6,7 @@ Python implements inference orchestration and validated game tools. C++ validate
 
 ## Validation
 
-Follow [the native source review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md) and `factorio-pilot/AGENTS.md` before GPU entry points. Added or changed native sources invalidate the review; do not regenerate its manifest as automatic approval. Numerical evidence must match the reviewed source hashes before benchmarking. Empty, invalid and bounded small cases precede larger captured inputs. Whole-model integration requires separate numerical and behavioral checks.
+Follow [the native source review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md) and `factorio-pilot/AGENTS.md` before GPU entry points. Added or changed native sources invalidate the review; do not regenerate its manifest as automatic approval. Numerical evidence must match the reviewed source hashes before benchmarking. Empty, invalid and bounded small cases precede larger captured inputs. Whole-model integration requires separate numerical and behavioral checks. The proposed contracts and measurement boundaries live in [Inference acceleration design](docs/Inference%20Acceleration%20Design.md); backend names in that design are proposals until implemented. Keep kernel, compilation, prefix-cache and policy comparisons individually identifiable.
 
 For CPU tool/evaluation checks, use the configured Linux environment from the repository root:
 
