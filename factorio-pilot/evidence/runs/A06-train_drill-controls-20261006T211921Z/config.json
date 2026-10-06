@@ -1,0 +1,54 @@
+{
+  "protocol_id": "a06-qwen-sft-v1",
+  "fixture": {
+    "id": "train_drill",
+    "partition": "train",
+    "presets": {
+      "drill_coal": 0,
+      "drill_burning_joules": 1000000,
+      "furnace_coal": 3,
+      "furnace_burning_joules": 3000000,
+      "output_plates": 20,
+      "carried_plates": 0,
+      "chest_plates": 0,
+      "reserve_coal": 400
+    },
+    "preset_sha256": "85bb51a5f091bee995fc7adc87eaaaaf4facc62a1a36fd55d05e7850060d2f2b"
+  },
+  "protocol_sha256": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+  "task": {
+    "decision_interval_ticks": 900,
+    "window_ticks": 3600,
+    "target_new_plates_per_window": 16,
+    "consecutive_low_windows_to_fail": 2,
+    "max_simulated_seconds": 1200,
+    "max_decisions": 80,
+    "wall_time_limit_seconds": 600,
+    "game_speed": 10,
+    "carry_capacity": 100,
+    "furnace_capacity": 100,
+    "chest_capacity": 1600,
+    "max_refill_coal": 3,
+    "warmup_seconds": 60,
+    "min_warmup_new_plates": 16
+  },
+  "source_hashes": {
+    "a06_fixture_controls.py": "7dcfa1bfef43c36af259b46dc96a207814a954b0b2ff6bc60b34d33c7244e080",
+    "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+    "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+    "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+    "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+    "runtime_paths.py": "8be000c6701882247d8ee229670672d83c23850c104109568ebb3455431a1898",
+    "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f"
+  },
+  "native_source_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "scope": "one fixture, scripted/idle environment controls; no model or training",
+  "server_version_expected": "2.0.73",
+  "restore_mode": "complete_native_map_then_reconnect_without_initialise"
+}

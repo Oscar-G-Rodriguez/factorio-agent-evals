@@ -34,7 +34,7 @@ The custom operator is integrated through an opt-in adapter. K02 measures offlin
 
 ## Next experiment
 
-The [Qwen fine tuning protocol](outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Protocol.md) fixes four training, two validation and three test fixture recipes before data collection. It specifies automatic observations, at most two historical decision pairs, the action-only supervised target and fresh unchanged BF16/4-bit baselines. These new recipes still require executed reachability controls and saved-state validation. No A06 dataset or trained adapter exists yet. `python scripts/verify_a06_protocol.py` checks design consistency without running the game or GPU; it does not establish fixture solvability or dataset isolation.
+The [Qwen fine tuning protocol](outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Protocol.md) fixes four training, two validation and three test fixture recipes before data collection. It specifies automatic observations, at most two historical decision pairs, the action-only supervised target and fresh unchanged BF16/4-bit baselines. The [first fixture control](outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Fixture%20Control.md) verifies the low-drill-fuel training recipe: scripted maintenance survived 20 game minutes with 375 new plates, while idle failed at two minutes. Both restored the same physical state. Eight recipes still require these controls. No A06 dataset or trained adapter exists yet. `python scripts/verify_a06_protocol.py` checks design consistency without running the game or GPU; it does not establish fixture solvability or dataset isolation.
 
 ## Inspect or reproduce
 

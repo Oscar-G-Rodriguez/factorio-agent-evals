@@ -1,6 +1,6 @@
 # Saved Factorio runs
 
-This directory retains 21 original agent run records, three later A05 observation-policy episodes and two K02 offline inference records. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
+This directory retains 21 original agent run records, three later A05 observation-policy episodes two K02 offline inference records and one A06 fixture-control group. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
 
 ## Folder names
 
@@ -20,3 +20,7 @@ K02 records are `K02-integrated-20261006T082739Z` (initial eager/custom validati
 A05 contains `A05-observation-requested-scripted-20261006T181451Z`, `A05-observation-automatic-model-20261006T182130Z` and `A05-observation-requested-model-20261006T182355Z`. Their [pilot report](../../../outputs/A05%20-%20Observation%20Policy%20-%20Pilot%20Results.md) keeps the scripted reachability control separate from the two executed model conditions. Each export retains the evaluated Python files, byte hashes and agent-visible input per step. A fourth attempt failed to connect before gameplay; its ID and exclusion are recorded in the report.
 
 Each agent run's `config.json` records its protocol and evaluated source hashes. `steps.jsonl` holds individual decisions or attempts. Completed runs usually include `summary.json`; construction runs may also include `final-state.json` and an audit. Read the linked report and any quality or development notes before treating a run as comparable evidence. Future runs should keep this folder convention and add their report, configuration, raw trace, and source snapshot without changing older records.
+
+## A06 first fixture control
+
+`A06-train_drill-controls-20261006T211921Z` contains separate `scripted/` and `idle/` traces, exact restore receipts, source snapshots and export hashes. Its `preparation/` folder preserves native fixture preparation from `A06-train_drill-controls-20261006T211313Z`. The [report](../../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Fixture%20Control.md) records excluded setup attempts and the external save hash. This establishes reachability and failure for one training recipe; it contains no Qwen episode or audited training dataset.

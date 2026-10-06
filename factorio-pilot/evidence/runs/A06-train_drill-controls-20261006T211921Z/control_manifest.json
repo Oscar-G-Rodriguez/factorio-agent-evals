@@ -1,0 +1,11 @@
+{
+  "fixture_id": "train_drill",
+  "partition": "train",
+  "scripted_reachability_passed": true,
+  "idle_endpoint": "sustained_production_failure",
+  "idle_simulated_seconds": 120.0,
+  "native_save_filename": "a06_train_drill_20261006T211313Z.zip",
+  "restores_exactly_matched": true,
+  "dataset_ready": false,
+  "other_fixtures_validated": false
+}

@@ -15,3 +15,7 @@ The other files support these runs:
 | Shared runtime path | `runtime_paths.py`; set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts`, `runs`, and `cluster` |
 
 The [legacy folder](legacy/README.md) holds one-off development helpers that are not part of the supported run sequence. Historical source snapshots remain under `../source-snapshots/` and are never moved here.
+
+## A06 fixture controls
+
+`a06_fixture_controls.py` currently supports only `train_drill`, verifies post-warm-up presets and executes separate scripted and idle controls with exact native-state checks. `a06_save_helpers.py` and `a06_native_server.py` handle bounded helper preparation and external save restoration. Follow the explicit barriers and two-terminal sequence in the [fixture control report](../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Fixture%20Control.md). The game ZIP stays outside Git. `test_a06_fixture_controls.py` checks readback and reference-policy decisions without running the game.
