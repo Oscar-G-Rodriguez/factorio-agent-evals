@@ -1,6 +1,6 @@
 # Factorio local agent pilot
 
-This pilot evaluates one local Qwen model controlling Factorio, a bounded observed-fact memory supplement, and a custom C++/CUDA RMSNorm operator. It targets two unattended minutes of automated iron production. Failed agent runs and kernel slowdowns remain valid results. Full-model kernel integration is deferred.
+This document starts with the original two-minute construction pilot, then records the separate guided, logistics, and 20-minute maintenance development tasks below. For the current project overview and result boundaries, begin at the [repository README](../README.md); for the active-code and evidence map, see [Continuing the study](../docs/Continuing%20the%20Study.md). The original pilot evaluates one local Qwen model controlling Factorio, a bounded observed-fact memory supplement, and a custom C++/CUDA RMSNorm operator. Failed agent runs and kernel slowdowns remain valid results. Full-model kernel integration is deferred.
 
 ## Environment
 

@@ -1,6 +1,6 @@
 # Factorio Agent Evals
 
-Read `CONVENTIONS.md`, `factorio-pilot/AGENTS.md`, and the selected result/protocol before continuing. The user requires full review of all project-authored C++/CUDA sources before GPU runs; the exact-hash gate must remain in place. Never approve changed native code by regenerating a manifest without inspection.
+Read `docs/Continuing the Study.md`, `CONVENTIONS.md`, `factorio-pilot/AGENTS.md`, and the selected result/protocol before continuing. The user requires full review of all project-authored C++/CUDA sources before GPU runs; the exact-hash gate must remain in place. Never approve changed native code by regenerating a manifest without inspection.
 
 Keep original pilot, guided construction, logistics, maintenance and offline diagnostic results distinct. Preserve source hashes, numerical checks and previous evidence. Offline proposed actions are not executed gameplay results. Do not claim whole-model acceleration before integration and matched measurement.
 

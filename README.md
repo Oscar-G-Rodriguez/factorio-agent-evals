@@ -31,6 +31,8 @@ The custom operator is not integrated into Qwen; whole-model and episode speedup
 
 The portable, CPU-only entry point is `python scripts/verify_maintenance_evidence.py`. Run it from any clone with Python 3.10 or newer; it checks the retained summaries and trace counts, then prints the measured plate windows. It needs no game, model, GPU, or private host paths. The source artifacts are under `factorio-pilot/evidence/runs/`; run-specific configurations and snapshots determine the evaluated code. The `factorio-pilot/tools` folder contains the controller, validated game tools, and CPU tests. [Provenance of this public snapshot](PROVENANCE.md) records what was preserved and omitted.
 
+For continued work, [Continuing the study](docs/Continuing%20the%20Study.md) maps the active code, frozen evidence, checks, and the path from a private experiment to a public result.
+
 For a new live experiment, follow [runtime setup and pinned versions](factorio-pilot/README.md). The maintenance launcher `factorio-pilot/setup/run-maintenance.sh` locates its source relative to the clone and accepts `FACTORIO_PILOT_HOME` for the Linux runtime directory. The older pilot and kernel scripts still use original Windows/WSL host paths; adapt those paths and install the listed dependencies before running elsewhere. Run only one controller against a server at a time because each controller resets its world. Before any GPU execution, inspect every project-authored C++/CUDA source and verify the exact source hashes as required by [AGENTS.md](AGENTS.md) and [factorio-pilot/AGENTS.md](factorio-pilot/AGENTS.md). Do not treat a fresh manifest as approval.
 
 ## Credit and reuse
