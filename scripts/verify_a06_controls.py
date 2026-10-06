@@ -1,4 +1,4 @@
-"""CPU-only audit of the exported first A06 fixture controls."""
+"""CPU-only audit of an exported A06 fixture control group."""
 import argparse
 import hashlib
 import json
@@ -20,7 +20,7 @@ def verify_run(run: Path, root: Path) -> dict:
     if hashlib.sha256(protocol_path.read_bytes()).hexdigest() != config['protocol_sha256']:
         raise RuntimeError('Protocol does not match evaluated configuration')
     protocol = json.loads(protocol_path.read_text())
-    expected_fixture = next(f for f in protocol['fixtures'] if f['id'] == 'train_drill')
+    expected_fixture = next(f for f in protocol['fixtures'] if f['id'] == config['fixture']['id'])
     if config['fixture'] != expected_fixture or config['task'] != protocol['task']:
         raise RuntimeError('Wrong fixture or task')
     for name, digest in config['source_hashes'].items():
@@ -32,7 +32,7 @@ def verify_run(run: Path, root: Path) -> dict:
         if restore['expected'] != snapshot or restore['actual'] != snapshot or restore['exact_match'] is not True:
             raise RuntimeError('Control did not restore the same physical state')
     manifest = json.loads((run / 'control_manifest.json').read_text())
-    if manifest['fixture_id'] != 'train_drill' or manifest['partition'] != 'train' or manifest['dataset_ready'] or manifest['other_fixtures_validated']:
+    if manifest['fixture_id'] != expected_fixture['id'] or manifest['partition'] != expected_fixture['partition'] or manifest['dataset_ready'] or manifest['other_fixtures_validated']:
         raise RuntimeError('Control scope incorrectly labeled')
     preparation = run / 'preparation'
     if preparation.exists():

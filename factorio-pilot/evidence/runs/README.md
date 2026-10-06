@@ -1,6 +1,6 @@
 # Saved Factorio runs
 
-This directory retains 21 original agent run records, three later A05 observation-policy episodes two K02 offline inference records and one A06 fixture-control group. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
+This directory retains 21 original agent run records, three later A05 observation-policy episodes two K02 offline inference records and two A06 fixture-control groups. Folder names now connect each record to the experiment stages used by the [result reports](../../../README.md). No configuration, action trace, summary, or final-state file was edited during the rename.
 
 ## Folder names
 
@@ -24,3 +24,5 @@ Each agent run's `config.json` records its protocol and evaluated source hashes.
 ## A06 first fixture control
 
 `A06-train_drill-controls-20261006T211921Z` contains separate `scripted/` and `idle/` traces, exact restore receipts, source snapshots and export hashes. Its `preparation/` folder preserves native fixture preparation from `A06-train_drill-controls-20261006T211313Z`. The [report](../../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Fixture%20Control.md) records excluded setup attempts and the external save hash. This establishes reachability and failure for one training recipe; it contains no Qwen episode or audited training dataset.
+
+`A06-train_furnace-controls-20261006T223803Z` adds the low-furnace-fuel scripted and idle controls. Its [report](../../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Furnace%20Fixture%20Control.md) records presets, exact restores, minute windows and excluded setup events. Both A06 groups are environment controls, not Qwen evaluations or training datasets.
