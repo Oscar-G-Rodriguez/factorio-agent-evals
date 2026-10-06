@@ -31,6 +31,18 @@ Use `A## - Stage - Record.md` for Factorio agent work and `K## - Operator - Reco
 
 For an immediate check from any clone, run `python scripts/verify_maintenance_evidence.py` from the repository root. It uses only the Python standard library and reads the retained maintenance summaries and JSONL traces. The full CPU test suite requires the pinned project environment described in the [runtime README](../factorio-pilot/README.md). Live Factorio and Qwen runs additionally require the external FLE installation, game server, model snapshot, and runtime artifacts; cloning this repository alone does not recreate them.
 
+## Planned K02: integrated RMSNorm run
+
+The [K01 benchmark](../outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) measures one standalone operator. The maintenance agent still uses Qwen's original PyTorch RMSNorm. K02 will test whether using the custom operator inside Qwen reduces complete response and episode wall time while preserving useful model behavior. No integrated speedup has been measured yet.
+
+1. Save a matched baseline with the pinned Qwen revision, BF16 precision, hardware, decoding settings, and representative maintenance prompts. Record model and source hashes. Keep model loading and extension compilation outside warm inference timing.
+2. Add an optional backend that replaces only supported RMSNorm calls (contiguous BF16 CUDA inputs with 2,560 features); leave other calls on the original implementation and record how many modules were replaced. Fully review every project-authored C++/CUDA source before a GPU run, then repeat matching correctness and sanitizer checks for any changed native code.
+3. On the same saved prompts, compare original and custom backends for finite logits, numerical differences, greedy token sequences, valid JSON actions, prompt processing time, token generation time, complete response latency, and GPU memory. Record any changed action rather than assuming equivalent behavior.
+4. Alternate the order of warmed baseline and custom measurements across repeated batches, preserving raw timings and the exact inputs. Report the operator result separately from whole-model results.
+5. Only after the offline checks, run both backends on the same maintenance fixture and decision cadence. Save each run's configuration, actions, production windows, failure or survival endpoint, and total wall time. Compare outcomes and speed separately; do not infer an episode speedup from K01's operator ratio.
+
+Publish a `K02 - RMSNorm - Integrated Inference Results.md` report only after these runs, with source hashes, sample counts, timing scope, and links to the new evidence. Keep K01 and the earlier agent episodes unchanged.
+
 ## Move work from a private checkout
 
 This public repository has clean history. If development starts in a private checkout, review the specific changed files and copy an approved patch or artifact set onto a branch based on this public `main`. Do not merge or push the private repository's history. Check filenames and contents for credentials, correspondence, local-only artifacts, and third-party material before pushing. Preserve exact evaluated bytes and hashes when transferring evidence, and keep model weights and game binaries outside Git.

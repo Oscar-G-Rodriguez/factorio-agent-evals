@@ -28,7 +28,7 @@ Result filenames use `A##` for Factorio agent iterations and `K##` for kernel ex
 | [Offline storage probe](outputs/A04%20-%20Maintenance%20-%20Storage%20Decision%20Diagnostic.md) | Replaying a saved decision with an explicit storage subgoal produced the correct proposed action. It was not executed in the game. |
 | [Reviewed RMSNorm](outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) | 25 correctness cases and bounded memcheck, racecheck, initcheck, and synccheck passed. The standalone operator was 5.21× faster for a captured 1,006-row prompt and 4.80× faster for a one-row token than the installed eager CUDA reference. |
 
-The custom operator is not integrated into Qwen; whole-model and episode speedups are unmeasured. A maintenance history/structured-memory/retrieval comparison remains future work, with no result claimed yet. The [native source review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md) records the reviewed implementation.
+The custom operator is not integrated into Qwen; whole-model and episode speedups are unmeasured. The [planned K02 run](docs/Continuing%20the%20Study.md#planned-k02-integrated-rmsnorm-run) will test integration and complete-model timing. A maintenance history/structured-memory/retrieval comparison remains future work, with no result claimed yet. The [native source review](outputs/CUDA%20and%20C%2B%2B%20Source%20Review.md) records the reviewed implementation.
 
 ## Inspect or reproduce
 
