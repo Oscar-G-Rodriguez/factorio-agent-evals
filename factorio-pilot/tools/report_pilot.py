@@ -94,6 +94,6 @@ text += ['', '## Sources', '',
          '- [Qwen3 model](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507).',
          '- [PyTorch C++ and CUDA operators](https://docs.pytorch.org/tutorials/advanced/cpp_custom_ops.html).',
          '- [NVIDIA Compute Sanitizer](https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html#windows-specific-behavior).']
-out = workspace.parent/'outputs'/'Factorio Pilot Preliminary Report.md'
+out = workspace.parent/'outputs'/'A01 - Construction Pilot - Final Results.md'
 out.write_text('\n'.join(text)+'\n')
 print(json.dumps({'report':str(out),'context_runs':rows,'controls_match':True},indent=2))

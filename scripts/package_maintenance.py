@@ -123,5 +123,5 @@ wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt
 
 Sources are preserved in the per-result snapshots above, with hashes verified against each configuration. Controls v1 and model v2 differ only in additional prompt/history logging and the first-low-window timestamp; the task, action cadence and endpoint are identical. Environment/model pins remain in the project README and saved artifacts. Previous construction, storage and kernel findings remain separate.
 '''
-(root/'outputs/Factorio Maintenance Results.md').write_text(report, encoding='utf-8')
+(root/'outputs/A04 - Maintenance - Results.md').write_text(report, encoding='utf-8')
 print(json.dumps(rows, indent=2))

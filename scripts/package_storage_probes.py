@@ -44,5 +44,5 @@ Next experiments should compare factual memory of carrying capacity and recent f
 
 Evidence: `factorio-pilot/evidence/artifacts/storage-context-probe.json` and `storage-subgoal-probe.json`. Exact probe source snapshots were verified against each artifact's SHA-256. The probe imports the native-source review gate before GPU execution; no native sources changed. To reproduce under the current project layout, run `tools/probe_storage_context.py`, then run it with `--storage-subgoal-only`, using the existing WSL virtual environment. The referenced maintenance run and model snapshot must remain available.
 '''
-(root/'outputs/Factorio Storage Decision Diagnostic.md').write_text(report, encoding='utf-8')
+(root/'outputs/A04 - Maintenance - Storage Decision Diagnostic.md').write_text(report, encoding='utf-8')
 print(table)

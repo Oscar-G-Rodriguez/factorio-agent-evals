@@ -100,8 +100,7 @@
     "pickup_handle_invalidation_verified": true
   },
   "delivery": {
-    "report": "outputs/Factorio Pilot Preliminary Report.md",
-    "walkthrough": "outputs/Factorio Pilot Walkthrough.md",
+    "report": "outputs/A01 - Construction Pilot - Final Results.md",
     "reproduction": "factorio-pilot/README.md",
     "adapter_memory_tests_passed": 8,
     "comparison_controls_match": true

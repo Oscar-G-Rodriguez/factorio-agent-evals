@@ -90,5 +90,5 @@ Run sequentially because these commands reset or control the same server. New ru
 
 The next implementation checkpoint is a maintenance runner that continues after initial construction, exposes the same storage rules across memory conditions, and measures outages and recovery. Expansion should be its own explicit production target or task stage, so increasing capacity does not obscure maintenance failures.
 '''
-(project/'outputs/Factorio Storage and Expansion Results.md').write_text(report,encoding='utf-8')
+(project/'outputs/A03 - Storage and Expansion - Results.md').write_text(report,encoding='utf-8')
 print('Packaged review, storage and expansion evidence; source hashes verified.')

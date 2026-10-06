@@ -68,7 +68,7 @@ On October 6, with explicit user permission, the reviewed RMSNorm suite passed m
 
 `evidence/runs` contains configurations, prompts, step logs, summaries and final states. `evidence/artifacts` contains versions, reference factory results, captured tensors, profiles and raw kernel measurements. `source-snapshots/context-pilot` preserves the evaluated agent implementation. Original signatures-only diagnostic runs are retained separately and must not be pooled with the corrected-interface comparison.
 
-The report is `../outputs/Factorio Pilot Preliminary Report.md`. Longer runs, additional maps/models, recovery challenges and whole-model kernel integration belong to subsequent work.
+The report is `../outputs/A01 - Construction Pilot - Final Results.md`. Longer runs, additional maps/models, recovery challenges and whole-model kernel integration belong to subsequent work.
 
 ## Guided working agent
 
@@ -82,7 +82,7 @@ wsl -d Ubuntu-24.04 -u osci2 -- bash /mnt/c/Users/osci2/Documents/Codex/2026-10-
 
 `--visual` uses the viewer-compatible tick advancement; it does not slow the default speed or require a viewer. Add `--require-viewer` only when joining before the run is required. Join a fresh server before FLE loads tools, because its runtime functions in game storage can still prevent later map saving and joins. Keep the private relay and server sessions alive while watching.
 
-See `../outputs/Working Factorio Agent Results.md` for audited results, timing scope, source snapshots and packaging commands. The 49.16-second fast confirmation excludes model loading. Its exact simulation windows are unchanged.
+See `../outputs/A02 - Guided Construction - Results.md` for audited results, timing scope, source snapshots and packaging commands. The 49.16-second fast confirmation excludes model loading. Its exact simulation windows are unchanged.
 
 ## Source review and plate logistics
 
@@ -94,7 +94,7 @@ The opt-in `--logistics` mode provides `collect_output`, `place_storage` and `st
 wsl -d Ubuntu-24.04 -u osci2 -- bash /mnt/c/Users/osci2/Documents/Codex/2026-10-05/igni/factorio-pilot/setup/run-working-agent.sh --logistics --target-plates-per-minute 32 --steps 32 --visual --game-speed 10 --keep-visible-seconds 0
 ```
 
-The guided expansion run produced 38 and 37 plates per measured minute after adding a second chain in response to a rejected early completion request. It did not use storage tools. See `../outputs/Factorio Storage and Expansion Results.md` for the distinction, exact validation commands and the new source snapshot.
+The guided expansion run produced 38 and 37 plates per measured minute after adding a second chain in response to a rejected early completion request. It did not use storage tools. See `../outputs/A03 - Storage and Expansion - Results.md` for the distinction, exact validation commands and the new source snapshot.
 
 ## Failure-oriented maintenance
 
@@ -102,4 +102,4 @@ The guided expansion run produced 38 and 37 plates per measured minute after add
 
 For a checkout at a different path, the active maintenance launcher resolves its Python source relative to itself. Set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts/starting-state.json`, and `runs`, then run `bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20` from the repository root. The pinned FLE installation and running server at `127.0.0.1:27000` are still required. Run controllers sequentially. The original host commands below remain the exact historical procedure and are not rewritten in saved configurations or source snapshots.
 
-Run `--controller idle`, then `--controller scripted`, then `--controller model`, sequentially against the same server. All use the same frozen fixture and toolset. The model uses original PyTorch inference; integrating the reviewed C++/CUDA operator and measuring end-to-end acceleration are separate next steps. `../outputs/Factorio Maintenance Results.md` contains commands, audited results and limits. New maintenance sources and their configurations remain separate from the earlier construction experiment.
+Run `--controller idle`, then `--controller scripted`, then `--controller model`, sequentially against the same server. All use the same frozen fixture and toolset. The model uses original PyTorch inference; integrating the reviewed C++/CUDA operator and measuring end-to-end acceleration are separate next steps. `../outputs/A04 - Maintenance - Results.md` contains commands, audited results and limits. New maintenance sources and their configurations remain separate from the earlier construction experiment.

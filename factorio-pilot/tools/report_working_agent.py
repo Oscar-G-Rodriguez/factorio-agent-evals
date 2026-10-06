@@ -91,7 +91,7 @@ Configurations, actions, raw observations, final states, audits and development 
 
 Next, remove one piece of guidance at a time or test a small recovery challenge while preserving the same production checks. That will show which behavior the model can carry out with less assistance.
 '''
-(project/'outputs/Working Factorio Agent Results.md').write_text(text)
+(project/'outputs/A02 - Guided Construction - Results.md').write_text(text)
 protocol_path = project/'outputs/factorio-pilot-protocol.json'
 protocol = json.loads(protocol_path.read_text())
 protocol['working_agent_development'] = {'status':'guided_agent_verified','simulation_speed':10,'keep_visible_seconds':0,

@@ -12,10 +12,14 @@ The public README explains the question and the measured findings. This guide id
 | [`factorio-pilot/evidence/runs/`](../factorio-pilot/evidence/runs/) | Per-run configuration, action trace, summary, and observed final state. |
 | [`factorio-pilot/evidence/artifacts/`](../factorio-pilot/evidence/artifacts/) | Environment pins, captured operator inputs, numerical checks, sanitizer receipts, and timing samples. |
 | [`factorio-pilot/source-snapshots/`](../factorio-pilot/source-snapshots/) | Frozen copies of code that produced earlier results. Read these for provenance; edit active source instead. |
-| [`outputs/`](../outputs/) | Dated plans, methods, and result reports. Preserve an existing measurement when adding a new one. |
+| [`outputs/`](../outputs/) | Ordered agent (`A##`) and kernel (`K##`) reports, the native source review, and the pilot protocol. Preserve an existing measurement when adding a new one. |
 | [`scripts/`](../scripts/) | Evidence checks and packaging helpers, including the CPU-only maintenance verifier. |
 
 The [runtime README](../factorio-pilot/README.md) begins with the original two-minute construction pilot and later documents guided construction, logistics, and the 20-minute maintenance task. Those are different protocols. A command in a dated report reproduces that report's host setup; it is not a portable default for every checkout.
+
+## Report naming
+
+Use `A## - Stage - Record.md` for Factorio agent work and `K## - Operator - Record.md` for kernel work. Give a new experiment stage the next number in its track. Keep related records under one number: `A01` has a Day 1 snapshot and final pilot results; `A04` has the maintenance results and a separate offline decision diagnostic. The prefix groups evidence by protocol, while the final part names the kind of record. The native source review is an engineering review rather than a measured iteration, so it remains unnumbered.
 
 ## Add a result without changing an old one
 
