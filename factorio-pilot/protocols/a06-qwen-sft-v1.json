@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "protocol_id": "a06-qwen-sft-v1",
+  "experiment_stage": "A06",
+  "date": "2026-10-06",
+  "stage_status": "recipes_frozen_live_validation_pending",
+  "learning_method": "supervised_qlora",
+  "model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "tokenizer_revision": "same_as_model"
+  },
+  "task": {
+    "decision_interval_ticks": 900,
+    "window_ticks": 3600,
+    "target_new_plates_per_window": 16,
+    "consecutive_low_windows_to_fail": 2,
+    "max_simulated_seconds": 1200,
+    "max_decisions": 80,
+    "wall_time_limit_seconds": 600,
+    "game_speed": 10,
+    "carry_capacity": 100,
+    "furnace_capacity": 100,
+    "chest_capacity": 1600,
+    "max_refill_coal": 3,
+    "warmup_seconds": 60,
+    "min_warmup_new_plates": 16
+  },
+  "fixture_preparation": {
+    "starting_state_path": "factorio-pilot/evidence/artifacts/starting-state.json",
+    "starting_state_file_sha256": "b6a3843a59801f23fc0978a2e8f7a3e6b434ccac015962849455d1fa13ab3862",
+    "presets_applied": "paused_after_verified_warmup_before_measurement_origin",
+    "burning_energy_absolute_tolerance_joules": 1,
+    "preloaded_plates_count_as_production": false,
+    "live_validation_required": true,
+    "required_controls": [
+      "scripted_full_horizon",
+      "idle"
+    ],
+    "snapshots": "not_created"
+  },
+  "context": {
+    "guide_path": "factorio-pilot/protocols/a06-game-guide.txt",
+    "guide_sha256": "5574ed48855539d8e45f654da1894fab1ce929008c303643e71a1df4d8e4909a",
+    "observation_policy": "automatic",
+    "history_pairs": 2,
+    "max_total_tokens": 4096,
+    "max_prompt_tokens": 3840,
+    "max_new_tokens": 256,
+    "overflow": "remove_oldest_complete_history_pair_then_reject_if_essential_input_too_large",
+    "serializer": "utf8_sorted_keys_compact_json_finite_numbers",
+    "cross_decision_prefix_cache": false,
+    "retrieval": false
+  },
+  "dataset": {
+    "optimizer_partition": "train",
+    "checkpoint_selection_partition": "validation",
+    "final_evaluation_partition": "test",
+    "split_unit": "fixture_and_source_episode_lineage",
+    "required_row_fields": [
+      "schema_version",
+      "protocol_id",
+      "fixture_id",
+      "partition",
+      "episode_id",
+      "decision_index",
+      "messages",
+      "target_action",
+      "label_source",
+      "evidence",
+      "input_sha256"
+    ],
+    "accepted_label_sources": [
+      "executed_scripted",
+      "reviewed_replay"
+    ],
+    "loss_scope": "target_assistant_action_and_end_token_only",
+    "semantic_duplicate_exclusions": [
+      "handles",
+      "absolute_tick_origin",
+      "provenance_ids"
+    ],
+    "release_status": "not_collected"
+  },
+  "comparison": {
+    "conditions": [
+      "unchanged_bf16",
+      "unchanged_4bit",
+      "qlora_4bit"
+    ],
+    "primary_pair": [
+      "unchanged_4bit",
+      "qlora_4bit"
+    ],
+    "do_sample": false,
+    "normalization": "original_pytorch",
+    "attention": "sdpa_where_supported",
+    "custom_rmsnorm": false,
+    "pilot_training_seed": 42,
+    "expanded_training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "episodes_per_distinct_fixture_per_condition": 1,
+    "checkpoint_selection": [
+      "highest_validation_mean_restricted_survival",
+      "highest_new_plates",
+      "earliest_checkpoint"
+    ],
+    "test_reuse_after_tuning": "requires_new_reserved_test_set"
+  },
+  "fixtures": [
+    {
+      "id": "train_drill",
+      "partition": "train",
+      "presets": {
+        "drill_coal": 0,
+        "drill_burning_joules": 1000000,
+        "furnace_coal": 3,
+        "furnace_burning_joules": 3000000,
+        "output_plates": 20,
+        "carried_plates": 0,
+        "chest_plates": 0,
+        "reserve_coal": 400
+      },
+      "preset_sha256": "85bb51a5f091bee995fc7adc87eaaaaf4facc62a1a36fd55d05e7850060d2f2b"
+    },
+    {
+      "id": "train_furnace",
+      "partition": "train",
+      "presets": {
+        "drill_coal": 3,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 0,
+        "furnace_burning_joules": 1000000,
+        "output_plates": 20,
+        "carried_plates": 0,
+        "chest_plates": 0,
+        "reserve_coal": 400
+      },
+      "preset_sha256": "58bd51ceb074ff0d187cb4607e8d936854f228a01b5412dc9f4a79089945f094"
+    },
+    {
+      "id": "train_output",
+      "partition": "train",
+      "presets": {
+        "drill_coal": 3,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 3,
+        "furnace_burning_joules": 3000000,
+        "output_plates": 90,
+        "carried_plates": 0,
+        "chest_plates": 0,
+        "reserve_coal": 400
+      },
+      "preset_sha256": "0009f1ac32db2c5c4ddc3d08cb02252bcedc86516cc393a5eb390a7ea4cc4638"
+    },
+    {
+      "id": "train_carry",
+      "partition": "train",
+      "presets": {
+        "drill_coal": 3,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 3,
+        "furnace_burning_joules": 3000000,
+        "output_plates": 90,
+        "carried_plates": 100,
+        "chest_plates": 0,
+        "reserve_coal": 400
+      },
+      "preset_sha256": "cb39eed3962bfaf710f4719af7cb3b383a300d1adb3266cfa25280d268092d44"
+    },
+    {
+      "id": "validation_fuel",
+      "partition": "validation",
+      "presets": {
+        "drill_coal": 0,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 0,
+        "furnace_burning_joules": 3000000,
+        "output_plates": 30,
+        "carried_plates": 0,
+        "chest_plates": 200,
+        "reserve_coal": 300
+      },
+      "preset_sha256": "94ff1c5076b2772db34154c940e0374a14196426b2ca7ba1c559f259fcb36cdc"
+    },
+    {
+      "id": "validation_storage",
+      "partition": "validation",
+      "presets": {
+        "drill_coal": 2,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 2,
+        "furnace_burning_joules": 3000000,
+        "output_plates": 95,
+        "carried_plates": 100,
+        "chest_plates": 400,
+        "reserve_coal": 300
+      },
+      "preset_sha256": "7e2c39d20778f0cbb432bf2b8d80cf713e53c381932a389cea99865e5aea9584"
+    },
+    {
+      "id": "test_drill_storage",
+      "partition": "test",
+      "presets": {
+        "drill_coal": 0,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 1,
+        "furnace_burning_joules": 1500000,
+        "output_plates": 85,
+        "carried_plates": 100,
+        "chest_plates": 600,
+        "reserve_coal": 200
+      },
+      "preset_sha256": "894ad9358c52dcd645a5b85136c194255bedc2230533976303f64f094838914a"
+    },
+    {
+      "id": "test_furnace_output",
+      "partition": "test",
+      "presets": {
+        "drill_coal": 2,
+        "drill_burning_joules": 3000000,
+        "furnace_coal": 0,
+        "furnace_burning_joules": 2000000,
+        "output_plates": 98,
+        "carried_plates": 40,
+        "chest_plates": 800,
+        "reserve_coal": 200
+      },
+      "preset_sha256": "d5f308b812b452d104ecace37066e2ab39a8dc3bfd01923fc36796bd03d71722"
+    },
+    {
+      "id": "test_reserve_storage",
+      "partition": "test",
+      "presets": {
+        "drill_coal": 1,
+        "drill_burning_joules": 2000000,
+        "furnace_coal": 1,
+        "furnace_burning_joules": 2000000,
+        "output_plates": 75,
+        "carried_plates": 60,
+        "chest_plates": 1100,
+        "reserve_coal": 100
+      },
+      "preset_sha256": "1038ab4b36a6ffc38ebc4aa7b6a74ac5070bc915b532a31dc66d18394bfb5492"
+    }
+  ]
+}

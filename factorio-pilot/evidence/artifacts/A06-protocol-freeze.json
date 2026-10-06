@@ -1,0 +1,21 @@
+{
+  "protocol_id": "a06-qwen-sft-v1",
+  "fixture_counts": {
+    "train": 4,
+    "validation": 2,
+    "test": 3
+  },
+  "unique_recipes": 9,
+  "status": "design_consistency_passed",
+  "live_fixture_validation": "pending",
+  "dataset_validation": "pending",
+  "training": "not_started",
+  "files_sha256": {
+    "outputs/A06 - Qwen Fine Tuning - Protocol.md": "9f41fc468f592ee25dea8ccd205c13ca0dcba6d99268e94324cf7106d94e2863",
+    "factorio-pilot/protocols/a06-qwen-sft-v1.json": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+    "factorio-pilot/protocols/a06-game-guide.txt": "5574ed48855539d8e45f654da1894fab1ce929008c303643e71a1df4d8e4909a",
+    "scripts/verify_a06_protocol.py": "b007ecd1071ff93108a2dffe8dc92ddcb394304e20acfe83402db0ab359ad91e"
+  },
+  "date": "2026-10-06",
+  "scope": "Stage 1 experimental design only; no live game or GPU execution"
+}

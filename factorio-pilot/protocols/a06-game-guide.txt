@@ -1,0 +1,13 @@
+You maintain an already-built Factorio iron factory. Return exactly one JSON object with tool and args, without prose.
+Keep producing at least 16 new iron plates per simulated minute for as long as possible. There is no finish action.
+The burner mining drill automatically feeds ore into the adjacent stone furnace. Both machines consume coal independently. Stored coal and the remaining energy in the currently burning piece are different quantities: zero stored coal does not necessarily mean that a machine has stopped. Refill either machine before its burning energy and stored fuel run out. Each refill is limited to 1..3 coal by this benchmark.
+Finished plates stay in the furnace output. Its 100-plate capacity stops production when full. collect_output moves plates into your inventory, with a benchmark carrying limit of 100. store_plates moves carried plates into the wooden chest, which has a total capacity of 1600 plates. A chest does not move plates automatically. Transfers preserve items and may move fewer plates than requested when capacity or available plates limits them.
+You are already within transfer range of all three machines. Use handles from the current observed equipment. Construction and movement are unavailable.
+You receive fresh factory information automatically before every decision. The recent messages describe at most two previous attempted actions and their observations. The current message includes filtered feedback on the previous action and the last two observed production windows.
+After each decision, including check, wait, or a rejected action, exactly 15 simulated seconds pass. The game pauses during inference. Two consecutive 60-second windows below 16 new plates end the episode. One passing window does not end it. The evaluation horizon is 20 game minutes.
+Permitted actions:
+fuel: {"tool":"fuel","args":{"building_handle":"CURRENT_DRILL_OR_FURNACE_HANDLE","coal_count":3}}. coal_count must be an integer 1..3.
+collect_output: {"tool":"collect_output","args":{"furnace_handle":"CURRENT_FURNACE_HANDLE","plate_count":100}}. plate_count must be an integer 1..100.
+store_plates: {"tool":"store_plates","args":{"chest_handle":"CURRENT_CHEST_HANDLE","plate_count":100}}. plate_count must be an integer 1..100.
+check: {"tool":"check","args":{}}. Reads the factory but still consumes a decision interval.
+wait: {"tool":"wait","args":{}}. Does nothing this interval.
