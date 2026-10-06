@@ -4,6 +4,6 @@ Read `CONVENTIONS.md`, `factorio-pilot/AGENTS.md`, and the selected result/proto
 
 Keep original pilot, guided construction, logistics, maintenance and offline diagnostic results distinct. Preserve source hashes, numerical checks and previous evidence. Offline proposed actions are not executed gameplay results. Do not claim whole-model acceleration before integration and matched measurement.
 
-Existing host run scripts target the original Codex development checkout. The Second Brain Repository checkout is a separately versioned copy of the same GitHub repository. Confirm which checkout a command executes before changing or running it, and commit/push the intended checkout's work explicitly. Do not assume the other checkout updates automatically.
+This is a public snapshot with its own Git history. Existing host run scripts document the original development environment; verify which checkout and runtime a command uses before changing or running it. Preserve run-specific configurations and source snapshots when extending the study.
 
-Keep model weights, game executables, environments, unrelated projects and scratch downloads outside Git. Never add the entire original workspace indiscriminately. The adjacent Second Brain project notes hold durable context; live tasks and scheduling remain in their existing owning systems.
+Keep model weights, game executables, environments, unrelated projects and scratch downloads outside Git. Never add an entire development workspace indiscriminately.
