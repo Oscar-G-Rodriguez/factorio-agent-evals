@@ -6,7 +6,7 @@ from pathlib import Path
 project=Path(__file__).resolve().parents[1]
 root=project/'factorio-pilot'
 evidence=root/'evidence'
-run=evidence/'runs/logistics-development-20261006T035914Z'
+run=evidence/'runs/A03-logistics-development-20261006T035914Z'
 config=json.loads((run/'config.json').read_text())
 summary=json.loads((run/'summary.json').read_text())
 control=json.loads((evidence/'artifacts/logistics-control.json').read_text())
@@ -20,13 +20,9 @@ manifest['dynamic_validation_artifact']='evidence/artifacts/rmsnorm-correctness.
 manifest['cpu_unit_tests_passed']=20
 manifest_path.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
 snapshot=root/'source-snapshots/logistics-development-v3/tools'
-snapshot.mkdir(parents=True,exist_ok=True)
 for name,expected in config['source_hashes'].items():
-    content=(root/'tools'/name).read_bytes()
+    content=(snapshot/name).read_bytes()
     assert hashlib.sha256(content).hexdigest()==expected,name
-    (snapshot/name).write_bytes(content)
-for name in ('test_logistics_tools.py','check_logistics.py','audit_working_agent.py','test_cuda_review.py'):
-    shutil.copyfile(root/'tools'/name,snapshot/name)
 shutil.copyfile(project/'work/logistics-unit-tests.log',evidence/'artifacts/logistics-unit-tests.txt')
 shutil.copyfile(project/'work/reviewed-rmsnorm-correctness.log',evidence/'artifacts/reviewed-rmsnorm-correctness.txt')
 notes={'source_snapshot':'logistics-development-v3','source_hashes_verified':True,

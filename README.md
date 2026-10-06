@@ -32,7 +32,7 @@ The custom operator is not integrated into Qwen; whole-model and episode speedup
 
 ## Inspect or reproduce
 
-The portable, CPU-only entry point is `python scripts/verify_maintenance_evidence.py`. Run it from any clone with Python 3.10 or newer; it checks the retained summaries and trace counts, then prints the measured plate windows. It needs no game, model, GPU, or private host paths. The source artifacts are under `factorio-pilot/evidence/runs/`; run-specific configurations and snapshots determine the evaluated code. The `factorio-pilot/tools` folder contains the controller, validated game tools, and CPU tests. [Provenance of this public snapshot](PROVENANCE.md) records what was preserved and omitted.
+The portable, CPU-only entry point is `python scripts/verify_maintenance_evidence.py`. Run it from any clone with Python 3.10 or newer; it checks the retained summaries and trace counts, then prints the measured plate windows. It needs no game, model, GPU, or private host paths. The [saved-run index](factorio-pilot/evidence/runs/README.md) explains the staged folder names and which records support each report; run-specific configurations and snapshots determine the evaluated code. The `factorio-pilot/tools` folder contains the controller, validated game tools, and CPU tests. [Provenance of this public snapshot](PROVENANCE.md) records what was preserved and omitted.
 
 For continued work, [Continuing the study](docs/Continuing%20the%20Study.md) maps the active code, frozen evidence, checks, and the path from a private experiment to a public result.
 

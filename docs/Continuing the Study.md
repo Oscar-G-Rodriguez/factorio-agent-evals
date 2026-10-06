@@ -9,7 +9,7 @@ The public README explains the question and the measured findings. This guide id
 | [`factorio-pilot/tools/`](../factorio-pilot/tools/) | Current Python controllers, validated game tools, checks, and reports. `maintenance_agent.py` is the active maintenance controller; `run_agent.py` belongs to the earlier construction pilot. |
 | [`factorio-pilot/cuda/`](../factorio-pilot/cuda/) | The active C++ binding and CUDA RMSNorm kernel. Changes here invalidate the recorded native review. |
 | [`factorio-pilot/setup/`](../factorio-pilot/setup/) | Launch and installation scripts. The maintenance launcher accepts `FACTORIO_PILOT_HOME`; older scripts still contain paths from the original host. |
-| [`factorio-pilot/evidence/runs/`](../factorio-pilot/evidence/runs/) | Per-run configuration, action trace, summary, and observed final state. |
+| [Saved-run index](../factorio-pilot/evidence/runs/README.md) | Folder naming, stage-to-run mapping, configurations, action traces, summaries, and partial records. |
 | [`factorio-pilot/evidence/artifacts/`](../factorio-pilot/evidence/artifacts/) | Environment pins, captured operator inputs, numerical checks, sanitizer receipts, and timing samples. |
 | [`factorio-pilot/source-snapshots/`](../factorio-pilot/source-snapshots/) | Frozen copies of code that produced earlier results. Read these for provenance; edit active source instead. |
 | [`outputs/`](../outputs/) | Ordered agent (`A##`) and kernel (`K##`) reports, the native source review, and the pilot protocol. Preserve an existing measurement when adding a new one. |
@@ -20,6 +20,8 @@ The [runtime README](../factorio-pilot/README.md) begins with the original two-m
 ## Report naming
 
 Use `A## - Stage - Record.md` for Factorio agent work and `K## - Operator - Record.md` for kernel work. Give a new experiment stage the next number in its track. Keep related records under one number: `A01` has a Day 1 snapshot and final pilot results; `A04` has the maintenance results and a separate offline decision diagnostic. The prefix groups evidence by protocol, while the final part names the kind of record. The native source review is an engineering review rather than a measured iteration, so it remains unnumbered.
+
+Raw run folders use `A##-<condition>-<UTC timestamp>[-seedN]`; future kernel runs may use `K##` in the same form. The [saved-run index](../factorio-pilot/evidence/runs/README.md) maps the renamed historical folders to reports and explains legacy IDs inside their unchanged contents. New run creators and the evidence exporter apply the stage prefix. Preserve the same run ID in logs, summaries, and report links for each future record.
 
 ## Add a result without changing an old one
 

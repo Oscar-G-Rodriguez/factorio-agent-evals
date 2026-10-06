@@ -7,7 +7,9 @@ from pathlib import Path
 project = Path(__file__).resolve().parents[2]
 root = Path('/home/osci2/factorio-pilot')
 rows = []
-for path in sorted((root/'runs').glob('working-development-*/summary.json')):
+paths = list((root/'runs').glob('A02-working-development-*/summary.json'))
+paths.extend((root/'runs').glob('working-development-*/summary.json'))  # Original host records.
+for path in sorted(paths):
     summary = json.loads(path.read_text())
     config = json.loads((path.parent/'config.json').read_text())
     events = [json.loads(line) for line in (path.parent/'steps.jsonl').read_text().splitlines()]
@@ -87,7 +89,7 @@ wsl -d Ubuntu-24.04 -u osci2 -- /home/osci2/factorio-pilot/.venv/bin/python /mnt
 
 The runner defaults to 10× speed and zero viewing delay. Add `--require-viewer` only when a connected graphical client is required. It waits before loading FLE. A newly restarted server must accept the viewer before FLE installs tools: upstream runtime functions in Factorio storage can still prevent map saving and later joins. The private UDP relay and server should remain running during viewing.
 
-Configurations, actions, raw observations, final states, audits and development notes are under `factorio-pilot/evidence/runs/working-development-*`. Hash-verified sources are under `factorio-pilot/source-snapshots/working-agent-v1` and `working-agent-fast-v2`. The viewer-wait attempt has no model decisions or summary and is excluded. Pinned model, engine and package versions remain in the project README and each run configuration.
+Configurations, actions, raw observations, final states, audits and development notes are under `factorio-pilot/evidence/runs/A02-working-development-*`. Hash-verified sources are under `factorio-pilot/source-snapshots/working-agent-v1` and `working-agent-fast-v2`. The viewer-wait attempt has no model decisions or summary and is excluded. Pinned model, engine and package versions remain in the project README and each run configuration.
 
 Next, remove one piece of guidance at a time or test a small recovery challenge while preserving the same production checks. That will show which behavior the model can carry out with less assistance.
 '''

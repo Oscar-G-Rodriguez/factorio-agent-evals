@@ -2,6 +2,7 @@
 from cuda_review import assert_review_current
 assert_review_current()
 import json
+import re
 from pathlib import Path
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -9,7 +10,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 root = Path('/home/osci2/factorio-pilot')
 artifacts = root / 'artifacts'
 meta = json.loads((artifacts / 'model-revision.json').read_text())
-configs = sorted(root.glob('runs/baseline-*/config.json'))
+configs = list(root.glob('runs/A01-baseline-*/config.json'))
+configs.extend(root.glob('runs/baseline-*/config.json'))  # Original host records.
+configs.sort(key=lambda path: re.search(r'\d{8}T\d{6}Z', path.parent.name).group(0))
 if not configs:
     raise RuntimeError('Complete a baseline prompt configuration first')
 config = json.loads(configs[-1].read_text())

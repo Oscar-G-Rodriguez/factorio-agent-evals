@@ -7,9 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RUNS = ROOT / "factorio-pilot" / "evidence" / "runs"
 CASES = {
-    "idle": ("maintenance-idle-20261006T043628Z", 8, 120, "sustained_production_failure"),
-    "model": ("maintenance-model-20261006T044058Z", 44, 660, "sustained_production_failure"),
-    "scripted": ("maintenance-scripted-20261006T043718Z", 80, 1200, "survived_simulation_limit"),
+    "idle": ("A04-maintenance-idle-20261006T043628Z", 8, 120, "sustained_production_failure"),
+    "model": ("A04-maintenance-model-20261006T044058Z", 44, 660, "sustained_production_failure"),
+    "scripted": ("A04-maintenance-scripted-20261006T043718Z", 80, 1200, "survived_simulation_limit"),
 }
 
 

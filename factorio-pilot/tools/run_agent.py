@@ -25,7 +25,7 @@ if not 1 <= args.steps <= 64:
     raise ValueError('steps must be 1..64')
 root = Path('/home/osci2/factorio-pilot')
 artifacts = root / 'artifacts'
-run = root / 'runs' / f'{args.mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}-seed{args.seed}'
+run = root / 'runs' / f'A01-{args.mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}-seed{args.seed}'
 run.mkdir(parents=True)
 log = (run / 'steps.jsonl').open('w', buffering=1)
 metadata = json.loads((artifacts / 'model-revision.json').read_text())

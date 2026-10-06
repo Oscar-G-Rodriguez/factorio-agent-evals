@@ -6,16 +6,8 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 project = root/'factorio-pilot'
-runs = sorted((project/'evidence/runs').glob('maintenance-*'))
+runs = sorted((project/'evidence/runs').glob('A04-maintenance-*'))
 rows = []
-current = (project/'tools/maintenance_agent.py').read_text(encoding='utf-8')
-# The controls executed v1; v2 adds only prompt/history logging and the first
-# low-window timestamp. Verify the reconstructed bytes against their recorded
-# hash before preserving this exact control source.
-v1 = current.replace('history_pairs_trimmed = 0\n', '').replace('                history_pairs_trimmed += 1\n', '')
-v1 = v1.replace("                 'measurement_window': window, 'history_pairs_trimmed_total': history_pairs_trimmed,\n                 'prompt_messages': prompt_messages if args.controller == 'model' else None}", "                 'measurement_window': window}")
-v1 = v1.replace("           'first_low_window_end_seconds': (next((w['end_tick'] for w in monitor.windows if w['below_target']), origin)-origin)/60 if any(w['below_target'] for w in monitor.windows) else None,\n", '')
-v1 = v1.replace("summary['history_pairs_trimmed_total'] = history_pairs_trimmed\n", '')
 for run in runs:
     if not (run/'summary.json').exists(): continue
     config = json.loads((run/'config.json').read_text(encoding='utf-8'))
@@ -25,14 +17,9 @@ for run in runs:
     assert all(e['elapsed_ticks'] == (i+1)*900 for i, e in enumerate(events))
     assert all(w['actual_ticks'] == 3600 for w in summary['measurement_windows'])
     snapshot = project/'source-snapshots'/('maintenance-controls-v1' if config['controller'] != 'model' else 'maintenance-development-v2')/'tools'
-    snapshot.mkdir(parents=True, exist_ok=True)
     for name, expected in config['source_hashes'].items():
-        source = project/'tools'/name
-        data = source.read_bytes()
-        if name == 'maintenance_agent.py' and hashlib.sha256(data).hexdigest() != expected:
-            data = v1.encode('utf-8')
+        data = (snapshot/name).read_bytes()
         assert hashlib.sha256(data).hexdigest() == expected, (run.name, name, expected, hashlib.sha256(data).hexdigest())
-        (snapshot/name).write_bytes(data)
     # Produced plates remain in furnace output, actor inventory or chest.
     final = summary['final_observation']
     total = final['inventory']['iron-plate']+sum(e.get('output_storage', {}).get('iron_plates', 0) for e in final['equipment'])

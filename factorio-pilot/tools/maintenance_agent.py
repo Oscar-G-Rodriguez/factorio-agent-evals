@@ -20,7 +20,7 @@ args = parser.parse_args()
 if not 2 <= args.minutes <= 20 or not 30 <= args.wall_seconds <= 1200:
     raise ValueError('Maintenance budget out of bounds')
 root = Path(os.environ.get('FACTORIO_PILOT_HOME', '/home/osci2/factorio-pilot')).expanduser()
-run = root/'runs'/f'maintenance-{args.controller}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
+run = root/'runs'/f'A04-maintenance-{args.controller}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
 run.mkdir()
 print('RUN '+str(run), flush=True)
 model = tokenizer = metadata = None

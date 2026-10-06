@@ -66,7 +66,7 @@ On October 6, with explicit user permission, the reviewed RMSNorm suite passed m
 
 ## Evidence
 
-`evidence/runs` contains configurations, prompts, step logs, summaries and final states. `evidence/artifacts` contains versions, reference factory results, captured tensors, profiles and raw kernel measurements. `source-snapshots/context-pilot` preserves the evaluated agent implementation. Original signatures-only diagnostic runs are retained separately and must not be pooled with the corrected-interface comparison.
+The [saved-run index](evidence/runs/README.md) explains the stage-prefixed folders, configurations, prompts, step logs, summaries and final states. `evidence/artifacts` contains versions, reference factory results, captured tensors, profiles and raw kernel measurements. `source-snapshots/context-pilot` preserves the evaluated agent implementation. Original signatures-only diagnostic runs are retained separately and must not be pooled with the corrected-interface comparison.
 
 The report is `../outputs/A01 - Construction Pilot - Final Results.md`. Longer runs, additional maps/models, recovery challenges and whole-model kernel integration belong to subsequent work.
 

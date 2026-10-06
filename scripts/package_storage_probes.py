@@ -9,21 +9,9 @@ initial = json.loads((artifacts/'storage-context-probe.json').read_text(encoding
 subgoal = json.loads((artifacts/'storage-subgoal-probe.json').read_text(encoding='utf-8'))
 assert initial['actual_game_actions_executed'] == subgoal['actual_game_actions_executed'] == 0
 assert initial['source_event_sha256'] == subgoal['source_event_sha256']
-current = (project/'tools/probe_storage_context.py').read_text(encoding='utf-8')
-old = current.replace('import argparse\n', '')
-old = old.replace("parser = argparse.ArgumentParser()\nparser.add_argument('--storage-subgoal-only', action='store_true')\nargs = parser.parse_args()\n", '')
-start = old.index("conditions = [('recorded_history'")
-end = old.index('    inputs = tokenizer.apply_chat_template', start)
-old = old[:start]+"for condition, prompt in [('recorded_history', messages), ('fresh_context', [messages[0], messages[-1]])]:\n"+old[end:]
-old = old.replace("'intervention': 'explicit storage subgoal appended to fresh prompt' if args.storage_subgoal_only else 'remove older user/assistant messages; keep identical system instructions and latest observed state/feedback',", "'intervention': 'remove older user/assistant messages; keep identical system instructions and latest observed state/feedback',")
-old = old.replace("'results': results, 'limits': 'One observed state. History probe changes content and length together; cannot isolate token count from historical action bias. Explicit subgoal is assisted capability diagnosis, not autonomous maintenance success. Proposed actions are not executed or full-episode outcomes.'}", "'results': results, 'limits': 'One observed state and two greedy generations. Changes history content and length together; cannot isolate token count from historical action bias. Proposed actions are not executed or full-episode outcomes.'}")
-old = old.replace("name = 'storage-subgoal-probe.json' if args.storage_subgoal_only else 'storage-context-probe.json'\n(project/'evidence/artifacts'/name).write_text(json.dumps(report, indent=2)+'\\n')", "(project/'evidence/artifacts/storage-context-probe.json').write_text(json.dumps(report, indent=2)+'\\n')")
-for label, text, evidence in [('storage-context-probe-v1', old, initial), ('storage-subgoal-probe-v2', current, subgoal)]:
-    data = text.encode('utf-8')
+for label, evidence in [('storage-context-probe-v1', initial), ('storage-subgoal-probe-v2', subgoal)]:
+    data = (project/'source-snapshots'/label/'tools/probe_storage_context.py').read_bytes()
     assert hashlib.sha256(data).hexdigest() == evidence['source_sha256'], label
-    destination = project/'source-snapshots'/label/'tools'
-    destination.mkdir(parents=True, exist_ok=True)
-    (destination/'probe_storage_context.py').write_bytes(data)
 
 table = '\n'.join(f"| {item['condition']} | {item['input_tokens']} | `{item['action']['tool']}` |" for item in initial['results']+subgoal['results'])
 report = f'''# Storage tool-selection diagnostic

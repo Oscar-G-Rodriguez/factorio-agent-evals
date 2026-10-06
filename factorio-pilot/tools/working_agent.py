@@ -33,7 +33,8 @@ if not args.logistics and args.target_plates_per_minute!=16:
 root=Path('/home/osci2/factorio-pilot')
 artifacts=root/'artifacts'
 mode='logistics-development' if args.logistics else 'working-development'
-run=root/'runs'/f'{mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
+stage='A03' if args.logistics else 'A02'
+run=root/'runs'/f'{stage}-{mode}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
 run.mkdir()
 log=(run/'steps.jsonl').open('w',buffering=1)
 print('RUN '+str(run),flush=True)

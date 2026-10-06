@@ -148,7 +148,7 @@
     "not_comparable_to_original_context_experiment": true,
     "completed_runs": [
       {
-        "run": "working-development-20261006T025602Z",
+        "run": "A02-working-development-20261006T025602Z",
         "speed": "started at 1x; switched to 10x during evaluation",
         "source_snapshot": "working-agent-v1",
         "success": true,
@@ -168,7 +168,7 @@
         "output_tokens_total": 133
       },
       {
-        "run": "working-development-20261006T030421Z",
+        "run": "A02-working-development-20261006T030421Z",
         "speed": "10x throughout",
         "source_snapshot": "working-agent-fast-v2",
         "success": true,
@@ -197,7 +197,7 @@
     "registry_restored": true
   },
   "logistics_development": {
-    "run": "logistics-development-20261006T035914Z",
+    "run": "A03-logistics-development-20261006T035914Z",
     "scripted_control_passed": true,
     "expansion_task_success": true,
     "target_plates_per_minute": 32,
@@ -265,7 +265,7 @@
   "maintenance_development": {
     "results": [
       {
-        "run": "maintenance-idle-20261006T043628Z",
+        "run": "A04-maintenance-idle-20261006T043628Z",
         "controller": "idle",
         "stop_reason": "sustained_production_failure",
         "game_seconds": 120.0,
@@ -312,7 +312,7 @@
         "failed_tool_counts": {}
       },
       {
-        "run": "maintenance-model-20261006T044058Z",
+        "run": "A04-maintenance-model-20261006T044058Z",
         "controller": "model",
         "stop_reason": "sustained_production_failure",
         "game_seconds": 660.0,
@@ -371,7 +371,7 @@
         }
       },
       {
-        "run": "maintenance-scripted-20261006T043718Z",
+        "run": "A04-maintenance-scripted-20261006T043718Z",
         "controller": "scripted",
         "stop_reason": "survived_simulation_limit",
         "game_seconds": 1200.0,

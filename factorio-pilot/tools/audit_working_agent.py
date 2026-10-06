@@ -8,8 +8,11 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--include-logistics',action='store_true')
 args=parser.parse_args()
 reports=[]
-paths=list((root/'runs').glob('working-development-*/summary.json'))
-if args.include_logistics: paths.extend((root/'runs').glob('logistics-development-*/summary.json'))
+paths=list((root/'runs').glob('A02-working-development-*/summary.json'))
+paths.extend((root/'runs').glob('working-development-*/summary.json'))  # Original host records.
+if args.include_logistics:
+    paths.extend((root/'runs').glob('A03-logistics-development-*/summary.json'))
+    paths.extend((root/'runs').glob('logistics-development-*/summary.json'))
 for path in sorted(paths):
     summary=json.loads(path.read_text())
     config=json.loads((path.parent/'config.json').read_text())
