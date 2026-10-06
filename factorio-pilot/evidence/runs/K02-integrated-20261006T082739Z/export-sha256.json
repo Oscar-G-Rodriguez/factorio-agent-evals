@@ -1,0 +1,8 @@
+{
+  "results.json": "9ad3ce4e9b3a5d66cfe1fe25fb0969b59fb78dd8a754d771a1b1905d29e7058f",
+  "prompt-manifest.json": "f7ebb3be8f02fd36e116b47263fe9c61ff11adbbe1df077cb4e6fb348f0f320d",
+  "source/qwen_rmsnorm_backend.py": "87822fd592f0be1cb5ec62a7f1ec5d4b0c64b7c77199b44aac6eaf8caaf6ce49",
+  "source/cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+  "source/check_integrated_rmsnorm.py": "3f304596e677237364ca7db733c83801531d0a2d8faefca433780cb8b59f6695",
+  "source/runtime_paths.py": "8be000c6701882247d8ee229670672d83c23850c104109568ebb3455431a1898"
+}

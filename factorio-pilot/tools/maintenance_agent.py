@@ -16,24 +16,33 @@ from maintenance_tools import build_maintenance_fixture, ProductionMonitor
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--controller', choices=('model', 'scripted', 'idle'), default='model')
+parser.add_argument('--inference-backend', choices=('pytorch', 'custom-rmsnorm'), default='pytorch')
 parser.add_argument('--minutes', type=int, default=20)
 parser.add_argument('--wall-seconds', type=int, default=600)
 args = parser.parse_args()
+if args.inference_backend != 'pytorch' and args.controller != 'model':
+    raise ValueError('A custom inference backend requires the model controller')
 if not 2 <= args.minutes <= 20 or not 30 <= args.wall_seconds <= 1200:
     raise ValueError('Maintenance budget out of bounds')
 root = runtime_home()
 run = root/'runs'/f'A04-maintenance-{args.controller}-{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}'
 run.mkdir()
 print('RUN '+str(run), flush=True)
-model = tokenizer = metadata = None
+model = tokenizer = metadata = norm_dispatch = None
 if args.controller == 'model':
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, StoppingCriteria, StoppingCriteriaList
     metadata = json.loads((root/'artifacts/model-revision.json').read_text())
     torch.manual_seed(42)
     model = AutoModelForCausalLM.from_pretrained(metadata['snapshot_path'], torch_dtype=torch.bfloat16,
-        device_map='cuda', attn_implementation='sdpa', local_files_only=True, trust_remote_code=False, use_safetensors=True).eval()
+        device_map='cuda', attn_implementation='sdpa', local_files_only=True, trust_remote_code=False, use_safetensors=True).eval().requires_grad_(False)
     tokenizer = AutoTokenizer.from_pretrained(metadata['snapshot_path'], local_files_only=True)
+    if args.inference_backend == 'custom-rmsnorm':
+        # Retain instance-local forwards; standalone process cleanup restores them.
+        import atexit
+        from qwen_rmsnorm_backend import RMSNormDispatch, load_reviewed_extension
+        norm_dispatch = RMSNormDispatch(model, load_reviewed_extension().rmsnorm_forward)
+        atexit.register(norm_dispatch.restore)
 
     class StopAfterObject(StoppingCriteria):
         def __init__(self, start): self.start = start
@@ -66,7 +75,8 @@ Examples of syntax only (use actual observed handles):
 Tools:
 '''+bridge.prompt()
 config = {'controller': args.controller, 'mode': 'maintenance_development', 'not_comparable_to_construction': True,
-          'model': metadata, 'backend': 'pytorch_reference_no_custom_kernel', 'context_policy': 'history',
+          'model': metadata, 'backend': 'custom_rmsnorm' if norm_dispatch else 'pytorch_reference_no_custom_kernel',
+          'custom_norm_modules': norm_dispatch.module_names if norm_dispatch else [], 'context_policy': 'history',
           'max_total_tokens': 8192, 'max_new_tokens': 256, 'do_sample': False, 'decision_interval_ticks': 900,
           'max_simulated_seconds': args.minutes*60, 'max_decisions': args.minutes*4, 'wall_time_limit_seconds': args.wall_seconds,
           'warmup_seconds': 60, 'target_plates_per_minute': 16, 'failure_rule': 'two_consecutive_exact_60_second_windows_below_16',
@@ -74,7 +84,7 @@ config = {'controller': args.controller, 'mode': 'maintenance_development', 'not
           'carrying_limit': 100, 'system_prompt': system, 'fixture_origin_tick': origin,
           'starting_state_sha256': hashlib.sha256(state_text.encode()).hexdigest(),
           'source_hashes': {name: hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
-                            for name in ('maintenance_agent.py', 'maintenance_tools.py', 'logistics_tools.py', 'factory_agent_tools.py', 'game_bridge.py', 'cuda_review.py')}}
+                            for name in ('maintenance_agent.py', 'maintenance_tools.py', 'logistics_tools.py', 'factory_agent_tools.py', 'game_bridge.py', 'cuda_review.py', 'qwen_rmsnorm_backend.py')}}
 (run/'config.json').write_text(json.dumps(config, indent=2)+'\n')
 messages = [{'role': 'system', 'content': system}]
 latest = {'observation': bridge.observation(), 'elapsed_ticks': 0}

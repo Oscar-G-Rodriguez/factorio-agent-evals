@@ -1,6 +1,6 @@
 # 0001 - Separate inference acceleration from policy changes
 
-- Status: Proposed
+- Status: Accepted for guarded integration; prefix reuse remains planned
 - Date: 2026-10-06
 
 ## Context
@@ -26,3 +26,7 @@ This approach preserves the model weights and action interface while making cust
 ## Evidence
 
 [K01](../../outputs/K01%20-%20RMSNorm%20-%20Reviewed%20Benchmark.md) provides operator measurements and correctness evidence. [A04](../../outputs/A04%20-%20Maintenance%20-%20Results.md) separates generation time from other episode costs. Those reports do not establish integrated acceleration. Implementation and eventual results must preserve their evaluated sources and the [native review requirements](../../CONVENTIONS.md).
+
+## Adoption on October 6, 2026
+
+The guarded instance-local adapter and offline eager/custom/compiled comparison were implemented and measured in [K02](../../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md). The original proposal above records the reasoning at the time of decision. Five saved states retained identical tokens/actions; numerical differences and prompt-dependent timing remain explicit. This adoption does not establish live episode improvement or implement prefix reuse. Training, policy changes and parallel serving remain separate.

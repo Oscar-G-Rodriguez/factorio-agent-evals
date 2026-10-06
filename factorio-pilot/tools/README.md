@@ -7,7 +7,7 @@ The other files support these runs:
 | Purpose | Files |
 | --- | --- |
 | Setup and environment checks | `prepare_cluster.py`, `download_model.py`, `check_environment.py`, `check_game.py`, `check_model.py`, `check_logistics.py` |
-| Native review and measurements | `cuda_review.py`, `check_rmsnorm.py`, `benchmark_reference.py`, `profile_model.py` |
+| Native review and measurements | `cuda_review.py`, `check_rmsnorm.py`, `benchmark_reference.py`, `profile_model.py`, `qwen_rmsnorm_backend.py`, `check_integrated_rmsnorm.py` |
 | Evidence and reports | `export_evidence.py`, `report_pilot.py`, `report_working_agent.py`, `audit_working_agent.py`, `summarize_runs.py`, `show_progress.py`, `probe_storage_context.py` |
 | CPU checks | `test_*.py` |
 | Shared runtime path | `runtime_paths.py`; set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts`, `runs`, and `cluster` |

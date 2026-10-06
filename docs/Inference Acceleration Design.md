@@ -1,6 +1,6 @@
 # Inference acceleration design
 
-Design proposal dated October 6, 2026. This document specifies K02 and the subsequent prefix-cache comparison. The active maintenance runner still uses the original Qwen implementation. The backend names and interfaces below are proposed; they are not runnable commands. No integration, compilation or cache-reuse result is claimed here.
+Design dated October 6, 2026. Guarded RMSNorm dispatch and the eager/custom/compiled offline comparison are implemented. The [K02 result](../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md) records numerical diagnostics, identical tokens/actions on five saved states and warm complete-response measurements. The maintenance runner defaults to original PyTorch and exposes an opt-in custom backend; no new gameplay episode was run. Exact-prefix reuse remains proposed.
 
 ## Purpose and mental model
 
@@ -70,7 +70,7 @@ Pass only uncached suffix tokens for the forward work while preserving the same 
 
 ## Correctness and performance protocol
 
-Future validation begins with the full native source inspection and exact-hash gate required by [CONVENTIONS.md](../CONVENTIONS.md), followed by matching bounded operator checks. The existing operator thresholds remain `rtol=0.02`, `atol=1e-5`; these are operator thresholds, not an established whole-model logit tolerance.
+Every new validation begins with the full native source inspection and exact-hash gate required by [CONVENTIONS.md](../CONVENTIONS.md), followed by matching bounded operator checks. The existing operator thresholds remain `rtol=0.02`, `atol=1e-5`; these are operator thresholds, not an established whole-model logit tolerance.
 
 Freeze a prompt manifest from retained maintenance traces before timing: early short prompts, a full carrying inventory, near-expired fuel, repeated invalid actions and late prompts near the context limit. Record prompt hashes, token counts and source IDs. Validate all candidate backends on those same inputs: finite logits, maximum/mean absolute logit differences, reference next-token margins, exact greedy token agreement, valid JSON and exact parsed action agreement. The first K02 acceptance gate requires finite logits and identical greedy tokens/actions on the fixed manifest; logit differences are diagnostic measurements. An unexplained token/action disagreement blocks an equivalence claim and live integration; keep it as a finding. Any additional model-level numerical threshold must be declared before candidate scoring rather than copied from K01.
 
@@ -93,8 +93,8 @@ Only after offline equivalence checks may matched backends execute the same froz
 
 ## Implementation and evidence boundary
 
-The eventual backend adapter should be independently importable, with an explicit installation/restoration API and documented failure contract. The shared inference layer should own tokenization, generation and timings; the game adapter should retain its existing validation and tick rules. Runtime storage remains configurable through `FACTORIO_PILOT_HOME`; source locations resolve against the selected checkout. Add code docstrings and relevant tests with that implementation, preserving frozen snapshots.
+The implemented `tools/qwen_rmsnorm_backend.py` adapter is independently importable, with an explicit installation/restoration API and documented failure contract. The shared inference layer should own tokenization, generation and timings; the game adapter should retain its existing validation and tick rules. Runtime storage remains configurable through `FACTORIO_PILOT_HOME`; source locations resolve against the selected checkout. Add code docstrings and relevant tests with that implementation, preserving frozen snapshots.
 
-Implementation proceeds through guarded RMSNorm dispatch, offline validation/timing, the compiled reference, and exact-prefix cache reuse as separate changes. A combined condition is justified after its components have individual results. Report K02 in `outputs/K02 - RMSNorm - Integrated Inference Results.md` only after measurements exist. A later cache report receives the next kernel/performance-stage number and distinct run IDs according to [Continuing the study](Continuing%20the%20Study.md).
+Guarded RMSNorm dispatch, offline validation/timing and the compiled reference now have [K02 evidence](../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md). The offline harness measures warm complete-response distributions and single diagnostic prefill/eight-token decode segments. Warm GPU phase distributions, time to first token and matched live episodes remain unmeasured. Exact-prefix reuse is the next separately identified implementation; a combined condition requires individual component evidence. A later cache report receives the next kernel/performance-stage number and distinct run IDs according to [Continuing the study](Continuing%20the%20Study.md).
 
 Fine-tuning remains a separate proposal. Successful inference optimization can reveal available time and memory, but the custom forward-only kernel supplies no backward pass and establishes no training speedup. Training would need a dataset, held-out fixtures, an unchanged-model baseline and a recorded memory budget. This document does not schedule or authorize those runs.

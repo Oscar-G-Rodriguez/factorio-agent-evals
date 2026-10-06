@@ -72,7 +72,7 @@ The game pauses during inference. Movement temporarily advances at 10x for the p
 
 The kernel uses one 256-thread block per row, FP32 reduction, then BF16 rounding before weight multiplication and output rounding. It launches on PyTorch's current CUDA stream. The Python check compares captured real model tensors, zero/near-zero cases and random odd-row batches against installed Qwen RMSNorm and a float64 reference with BF16 rounding. A nondefault-stream case tests dispatch/dependencies.
 
-Performance is measured on captured prompt `[1,1006,2560]` and token `[1,1,2560]` inputs already on the GPU. Both reference and custom functions allocate outputs. Three batches contain ten warm-ups per implementation and 100 alternating pairs. Report operator latency and its raw distribution separately from whole-model response speed; this pilot does not replace layers in Qwen.
+Performance is measured on captured prompt `[1,1006,2560]` and token `[1,1,2560]` inputs already on the GPU. Both reference and custom functions allocate outputs. Three batches contain ten warm-ups per implementation and 100 alternating pairs. Report operator latency and its raw distribution separately from whole-model response speed; K01 does not replace layers in Qwen. The separately recorded K02 adapter integrates supported full-width norms.
 
 On October 6, with explicit user permission, the reviewed RMSNorm suite passed memcheck, racecheck, initcheck and synccheck with zero reported errors; each ran all 25 correctness cases. The temporary Windows debugger-interface value was restored to its prior absent state. Evidence is in `evidence/artifacts/approved-sanitizer-validation.json`. This validates the bounded operator suite, not whole-model integration. GPU clocks, power and TDR settings were unchanged.
 
@@ -80,7 +80,7 @@ On October 6, with explicit user permission, the reviewed RMSNorm suite passed m
 
 The [saved-run index](evidence/runs/README.md) explains the stage-prefixed folders, configurations, prompts, step logs, summaries and final states. `evidence/artifacts` contains versions, reference factory results, captured tensors, profiles and raw kernel measurements. `source-snapshots/context-pilot` preserves the evaluated agent implementation. Original signatures-only diagnostic runs are retained separately and must not be pooled with the corrected-interface comparison.
 
-The report is `../outputs/A01 - Construction Pilot - Final Results.md`. Longer runs, additional maps/models, recovery challenges and whole-model kernel integration belong to subsequent work.
+The report is `../outputs/A01 - Construction Pilot - Final Results.md`. Longer runs, additional maps/models, recovery challenges and matched live backend evaluations belong to subsequent work. K02 below records offline integration separately.
 
 ## Guided working agent
 
@@ -114,4 +114,18 @@ The guided expansion run produced 38 and 37 plates per measured minute after add
 
 The maintenance launcher resolves its Python source relative to the checkout. Set `FACTORIO_PILOT_HOME` to the Linux directory containing `.venv`, `artifacts/starting-state.json`, and `runs`, then run `bash factorio-pilot/setup/run-maintenance.sh --controller idle --minutes 20` from the repository root. The pinned FLE installation and running server at `127.0.0.1:27000` are still required. Run controllers sequentially. Saved configurations and source snapshots retain the exact original host procedure.
 
-Run `--controller idle`, then `--controller scripted`, then `--controller model`, sequentially against the same server. All use the same frozen fixture and toolset. The model uses original PyTorch inference; integrating the reviewed C++/CUDA operator and measuring end-to-end acceleration are separate next steps. `../outputs/A04 - Maintenance - Results.md` contains commands, audited results and limits. New maintenance sources and their configurations remain separate from the earlier construction experiment.
+Run `--controller idle`, then `--controller scripted`, then `--controller model`, sequentially against the same server. All use the same frozen fixture and toolset. The default model backend remains original PyTorch. The opt-in `--inference-backend custom-rmsnorm` uses the reviewed adapter for model controllers; K02 has validated and timed it offline, without a new maintenance episode. `../outputs/A04 - Maintenance - Results.md` contains commands, audited results and limits. New maintenance sources and their configurations remain separate from the earlier construction experiment.
+
+## Integrated RMSNorm offline evaluation
+
+K02 replays five frozen A04 prompts without connecting to Factorio. It loads one pinned BF16 Qwen instance and alternates eager, custom and compiled conditions. Custom dispatch supports only reviewed full-width norms; unsupported metadata uses the original forward, while load/native failures stop the requested condition. Parameters are frozen for every backend. Original forwards are restored between conditions.
+
+From this checkout's repository root, as the ordinary Linux runtime owner:
+
+```bash
+export FACTORIO_PILOT_HOME="${FACTORIO_PILOT_HOME:-$HOME/factorio-pilot}"
+bash factorio-pilot/setup/run-integrated-rmsnorm.sh --phase validate
+bash factorio-pilot/setup/run-integrated-rmsnorm.sh --phase benchmark --include-compiled
+```
+
+Before either GPU command, inspect every native source and verify the exact-hash review gate and matching correctness artifact. Archive prior fixed-name operator artifacts before repeating correctness checks. The launcher uses this checkout's source and the external pinned model/environment; it does not restart a game server. Completed runs create new K02 folders in the runtime. The [result report](../outputs/K02%20-%20RMSNorm%20-%20Integrated%20Inference%20Results.md) retains numerical differences, token/action agreement, coverage, cold compilation and 90 warm response samples per backend/prompt. First-pass validation latency and single GPU-phase diagnostics are not warm latency distributions. Prefix-cache reuse and live-episode acceleration remain unmeasured.
