@@ -1,0 +1,1610 @@
+{
+  "dataset": "A06-scripted-train-v1-20261007-r3",
+  "dataset_sha256": "ed79abf83120d68393d1a2d04e87ea757fb2cac6f1c7cf8fa7c160b23148f898",
+  "teacher_waits": 172,
+  "teacher_wait_predicate_met": 172,
+  "waits_with_positive_next_interval_production": 172,
+  "stored_fuel_min": 2,
+  "maximum_output_before_wait": 57,
+  "maximum_carried_before_wait": 0,
+  "next_interval_plate_range": [
+    4,
+    5
+  ],
+  "teacher_waits_by_fixture": {
+    "train_drill": 43,
+    "train_furnace": 43,
+    "train_output": 43,
+    "train_carry": 43
+  },
+  "wait_details": [
+    {
+      "fixture": "train_drill",
+      "step": 1,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 2,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 29,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 4,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 5,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 43,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 7,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 53,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 11,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 12,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 14,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 16,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 17,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 18,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 20,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 21,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 26,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 27,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 28,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 30,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 31,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 33,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 34,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 38,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 39,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 15,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 42,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 29,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 43,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 44,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 46,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 47,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 48,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 57,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 53,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 54,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 55,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 29,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 57,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 58,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 43,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 60,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 64,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 65,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 66,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 69,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 70,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 71,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 43,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 73,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 74,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 57,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_drill",
+      "step": 79,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 1,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 2,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 29,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 3,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 34,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 6,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 48,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 7,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 53,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 8,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 57,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 12,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 15,
+      "stored_fuel_min": 4,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 16,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 17,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 32,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 18,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 19,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 21,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 26,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 27,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 18,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 28,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 29,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 32,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 33,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 46,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 34,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 35,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 39,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 42,
+      "stored_fuel_min": 4,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 43,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 44,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 45,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 47,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 48,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 53,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 54,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 55,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 56,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 59,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 60,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 61,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 65,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 67,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 69,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 70,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 71,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 72,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 74,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_furnace",
+      "step": 79,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 2,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 3,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 5,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 7,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 8,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 10,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 11,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 12,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 17,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 18,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 18,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 19,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 21,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 22,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 24,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 28,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 29,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 31,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 33,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 32,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 34,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 35,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 37,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 38,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 43,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 18,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 44,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 45,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 47,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 48,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 49,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 46,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 51,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 55,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 56,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 58,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 60,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 61,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 63,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 64,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 65,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 70,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 71,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 72,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 74,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 75,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_output",
+      "step": 76,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 3,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 5,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 7,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 29,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 8,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 10,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 43,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 11,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 12,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 13,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 57,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 18,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 19,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 14,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 21,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 22,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 24,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 26,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 27,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 28,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 56,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 33,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 18,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 34,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 35,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 37,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 37,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 38,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 39,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 40,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 51,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 45,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 10,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 47,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 48,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 49,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 51,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 53,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 54,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 55,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 57,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 60,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 61,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 24,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 63,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 33,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 64,
+      "stored_fuel_min": 3,
+      "carried_plates": 0,
+      "furnace_output": 38,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 65,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 66,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 47,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 67,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 52,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 72,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 9,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 74,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 19,
+      "new_plates_next_interval": 4,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 75,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 23,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 76,
+      "stored_fuel_min": 2,
+      "carried_plates": 0,
+      "furnace_output": 28,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    },
+    {
+      "fixture": "train_carry",
+      "step": 79,
+      "stored_fuel_min": 4,
+      "carried_plates": 0,
+      "furnace_output": 42,
+      "new_plates_next_interval": 5,
+      "teacher_wait_predicate": true
+    }
+  ],
+  "interpretation": "All labels come from the scripted teacher, not Qwen. Predicate agreement and next-interval production support intentional idle scheduling; they do not prove the teacher is optimal.",
+  "historical_model_runs": [
+    {
+      "run": "A04-maintenance-model-20261006T044058Z",
+      "trace_sha256": "c93f903fc08e45baef9a74bd1f3b9b4b05408a2d5a867dbb4d2cb75d70418804",
+      "action_counts": {
+        "fuel": 21,
+        "collect_output": 23
+      },
+      "wait_review": [],
+      "recorded_response_seconds_median": 1.7463894715001516,
+      "scope": "Historical protocol only; not a matched A06 comparison or GPU bottleneck diagnosis"
+    },
+    {
+      "run": "A05-observation-automatic-model-20261006T182130Z",
+      "trace_sha256": "5c030cfc81f405967bcf738b21a5ddf9d3f89ffbd6f1e4a9af571060c161f8c9",
+      "action_counts": {
+        "fuel": 6,
+        "collect_output": 5,
+        "store_plates": 5
+      },
+      "wait_review": [],
+      "recorded_response_seconds_median": 1.5442103224999641,
+      "scope": "Historical protocol only; not a matched A06 comparison or GPU bottleneck diagnosis"
+    },
+    {
+      "run": "A05-observation-requested-model-20261006T182355Z",
+      "trace_sha256": "6e41e45d5522203b66e57a16e45ecb2030cd46a1aed5309cefb6bbf8f0015aea",
+      "action_counts": {
+        "fuel": 18,
+        "check": 14,
+        "collect_output": 14,
+        "store_plates": 14
+      },
+      "wait_review": [],
+      "recorded_response_seconds_median": 1.5598720414999434,
+      "scope": "Historical protocol only; not a matched A06 comparison or GPU bottleneck diagnosis"
+    }
+  ],
+  "diagnostic_source_sha256": "67a2fed87322162dc64f43301fda1e6c8e58d7dc5f94a6cbb51a89a990b5eb9e"
+}

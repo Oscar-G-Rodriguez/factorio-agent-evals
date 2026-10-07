@@ -23,3 +23,5 @@ The [legacy folder](legacy/README.md) holds one-off development helpers that are
 ## A06 context and dataset
 
 `a06_context.py` owns compact observed-state projection, chronological two-pair history, token trimming and target-only loss masking. `a06_dataset.py` renders the four executed train traces, records evidence and hashes, audits immutable releases and rejects reserved fixtures at the optimizer boundary. `load_optimizer_dataset` audits before returning encodings. `test_a06_context.py` covers visibility, chronology, capacities, handles, trimming, masking and partition isolation. The [dataset audit](../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Dataset%20Audit.md) gives exact commands; `scripts/verify_a06_dataset.py` verifies the pinned-tokenizer release on CPU. No game, model or GPU is loaded.
+
+The CPU-only `scripts/diagnose_a06_waiting.py` checks executed teacher waits and explicit waits in retained historical model traces. See the [waiting diagnostic](../../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Waiting%20Diagnostic.md) for observed findings and proposed causal checks. It does not change the renderer, labels or inference policy.
