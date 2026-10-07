@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "protocol_id": "a06-qwen-sft-v1",
+  "release_id": "A06-scripted-train-v1-20261007-r3",
+  "created_at_utc": "2026-10-07T11:31:39.644113+00:00",
+  "model": {
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "tokenizer_revision": "same_as_model"
+  },
+  "tokenizer_files": {
+    "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "transformers_version": "4.57.6",
+  "row_counts": {
+    "train": 320,
+    "validation": 0,
+    "test": 0
+  },
+  "fixture_counts": {
+    "train_drill": 80,
+    "train_furnace": 80,
+    "train_output": 80,
+    "train_carry": 80
+  },
+  "behavior_counts": {
+    "fuel:burner-mining-drill": 61,
+    "wait": 172,
+    "fuel:stone-furnace": 37,
+    "collect_output": 25,
+    "store_plates": 25
+  },
+  "episodes": [
+    "A06-train_carry-controls-20261007T022727Z/scripted",
+    "A06-train_drill-controls-20261006T211921Z/scripted",
+    "A06-train_furnace-controls-20261006T223803Z/scripted",
+    "A06-train_output-controls-20261007T022345Z/scripted"
+  ],
+  "excluded_rows": 0,
+  "token_lengths": {
+    "prompt_tokens": {
+      "count": 320,
+      "min": 802,
+      "median": 1676.0,
+      "p95": 1713,
+      "max": 1723
+    },
+    "target_tokens": {
+      "count": 320,
+      "min": 10,
+      "median": 10.0,
+      "p95": 24,
+      "max": 24
+    },
+    "total_tokens": {
+      "count": 320,
+      "min": 821,
+      "median": 1690.0,
+      "p95": 1730,
+      "max": 1741
+    }
+  },
+  "history_pairs_trimmed": 0,
+  "source_inputs_sha256": {
+    "factorio-pilot/protocols/a06-qwen-sft-v1.json": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+    "factorio-pilot/protocols/a06-game-guide.txt": "5574ed48855539d8e45f654da1894fab1ce929008c303643e71a1df4d8e4909a",
+    "factorio-pilot/evidence/runs/A06-train_drill-controls-20261006T211921Z/scripted/steps.jsonl": "5a6ed38415f52a9f9363ae9f4b1d977cbf4532dd7c5f70edec27ba7ca39031a7",
+    "factorio-pilot/evidence/runs/A06-train_drill-controls-20261006T211921Z/scripted/summary.json": "9fdd0aa9f1af9eeed17847cd046b135abf04fbdc37c0d3d162354299817cf32d",
+    "factorio-pilot/evidence/runs/A06-train_drill-controls-20261006T211921Z/fixture_snapshot.json": "95d6bfc35cb0236e58a7df70d17001f2526895ca723569add6ed7ddd542b3709",
+    "factorio-pilot/evidence/runs/A06-train_drill-controls-20261006T211921Z/config.json": "bc6b7763dc10e5f8ba694604d2df79253836ac5eaea827b3b41ae8e40ed6e360",
+    "factorio-pilot/evidence/runs/A06-train_drill-controls-20261006T211921Z/control_manifest.json": "38ceca339f2d80883d7243b5497158a87fe8bcd3a96df99c66ad842b8a890663",
+    "factorio-pilot/evidence/runs/A06-train_furnace-controls-20261006T223803Z/scripted/steps.jsonl": "15d38f223030ace1347a2747b8ab11e07145b1aac4ac970e83b5706c4284f86d",
+    "factorio-pilot/evidence/runs/A06-train_furnace-controls-20261006T223803Z/scripted/summary.json": "79abdcf7ee9d0f4f2a4aa3bd37470bab44c84edebd29578a9d45487de5181ef0",
+    "factorio-pilot/evidence/runs/A06-train_furnace-controls-20261006T223803Z/fixture_snapshot.json": "299848a77230a972db1891fd23315b5b2d94deb38273bb7aa97cbfa5c54acaa1",
+    "factorio-pilot/evidence/runs/A06-train_furnace-controls-20261006T223803Z/config.json": "c4238e8768a8d9fc8e171f605a173fe33c6d40c3288b0da8a860ef06ed26bdc0",
+    "factorio-pilot/evidence/runs/A06-train_furnace-controls-20261006T223803Z/control_manifest.json": "fa1051482cdb3a97abb9feee8e4bed1a627e3e4ace82b9fc7adcec3318671d22",
+    "factorio-pilot/evidence/runs/A06-train_output-controls-20261007T022345Z/scripted/steps.jsonl": "66930a5275c1073f70d34b992560df28e4d64bfd5990f915a9db41e197f42698",
+    "factorio-pilot/evidence/runs/A06-train_output-controls-20261007T022345Z/scripted/summary.json": "a72b3c6df823455654fc6ce70828cc527fbda4b82c8de5af4c8efef2a91cd84c",
+    "factorio-pilot/evidence/runs/A06-train_output-controls-20261007T022345Z/fixture_snapshot.json": "1ef5e73647d25ba1fa78266fefe81175c445e996f8d6f572a9900959c56273d7",
+    "factorio-pilot/evidence/runs/A06-train_output-controls-20261007T022345Z/config.json": "54bf48756262ce09011b25914408b58ef3a2356d139484f37dbdcce25efd54d0",
+    "factorio-pilot/evidence/runs/A06-train_output-controls-20261007T022345Z/control_manifest.json": "e79c1e6a7b1805d26a4e55c3b30e027a9048b9e46eaa0b5cc61c388fd1465a6e",
+    "factorio-pilot/evidence/runs/A06-train_carry-controls-20261007T022727Z/scripted/steps.jsonl": "2f837469d8f8d53c2baa72a9888338e4412b381313cf84db44c5fbf7776492ee",
+    "factorio-pilot/evidence/runs/A06-train_carry-controls-20261007T022727Z/scripted/summary.json": "f5c6e71cea1d7d2c03121b6c1bf4c1579b7ca53933c0f4becd127168ba90179f",
+    "factorio-pilot/evidence/runs/A06-train_carry-controls-20261007T022727Z/fixture_snapshot.json": "d445ba198244ccf5518fb9e460d32560bb63cf8caf8ea3c121f870a6c9b17986",
+    "factorio-pilot/evidence/runs/A06-train_carry-controls-20261007T022727Z/config.json": "a114cf90678758294e1f8c996890e54f8f6c20b0d21937bf3e6efc9fa40a8106",
+    "factorio-pilot/evidence/runs/A06-train_carry-controls-20261007T022727Z/control_manifest.json": "7e37d8f4869df7a78f7f50d6d4f67f4c1f8f010d35259dfea7e448fcd1ec1da6",
+    "scripts/verify_a06_controls.py": "a24c7075b82a683f6bdb09841c9dcb4f8a93fe6dc98310c351e17f4124ed5c19"
+  },
+  "renderer_builder_source_sha256": {
+    "a06_context.py": "f753e354c6ff64bdd6a79837d519418cbd3118ecef74fe8c2f2f1bb19ff0b997",
+    "a06_dataset.py": "932de5a4fc64c82b1ef5fbb0e9ce682a3254c9ed1d80cb809430175d79d30b19",
+    "observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e"
+  },
+  "files_sha256": {
+    "control-audits.json": "3d846f423be74bff2f15ad1f733cb068c06fa13396e01df7a00ca42af313fb8e",
+    "duplicate-audit.json": "b98c7cfb9394a1d13b24bc01a34baaeee1cb846055a564922ecd9ec70fc93656",
+    "exclusions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "source/a06_context.py": "f753e354c6ff64bdd6a79837d519418cbd3118ecef74fe8c2f2f1bb19ff0b997",
+    "source/a06_dataset.py": "932de5a4fc64c82b1ef5fbb0e9ce682a3254c9ed1d80cb809430175d79d30b19",
+    "source/observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e",
+    "source/verify_a06_controls.py": "a24c7075b82a683f6bdb09841c9dcb4f8a93fe6dc98310c351e17f4124ed5c19",
+    "token-lengths.json": "0d42bce21d5a91534f856254fd8ee9c42cb3b2724fee62fa19bc6c496ef57ab4",
+    "train.jsonl": "ed79abf83120d68393d1a2d04e87ea757fb2cac6f1c7cf8fa7c160b23148f898"
+  },
+  "scope": "Executed scripted demonstrations from four train fixtures; no model improvement or training claim"
+}

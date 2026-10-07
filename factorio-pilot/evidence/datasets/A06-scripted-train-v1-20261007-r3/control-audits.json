@@ -1,0 +1,202 @@
+{
+  "A06-train_drill-controls-20261006T211921Z": {
+    "run": "A06-train_drill-controls-20261006T211921Z",
+    "reference_reachability_passed": true,
+    "export_files_verified": 45,
+    "snapshot_exact_for_both_controls": true,
+    "step_plate_conservation_verified": true,
+    "controls": {
+      "scripted": {
+        "steps": 80,
+        "seconds": 1200.0,
+        "plate_windows": [
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 420,
+        "new_ore_consumed": 375
+      },
+      "idle": {
+        "steps": 8,
+        "seconds": 120.0,
+        "plate_windows": [
+          5,
+          0
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 3,
+        "new_ore_consumed": 4
+      }
+    },
+    "scope": "One fixture; no Qwen, training data or adapter evaluation"
+  },
+  "A06-train_furnace-controls-20261006T223803Z": {
+    "run": "A06-train_furnace-controls-20261006T223803Z",
+    "reference_reachability_passed": true,
+    "export_files_verified": 27,
+    "snapshot_exact_for_both_controls": true,
+    "step_plate_conservation_verified": true,
+    "controls": {
+      "scripted": {
+        "steps": 80,
+        "seconds": 1200.0,
+        "plate_windows": [
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 420,
+        "new_ore_consumed": 375
+      },
+      "idle": {
+        "steps": 8,
+        "seconds": 120.0,
+        "plate_windows": [
+          3,
+          0
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 37,
+        "new_ore_consumed": 3
+      }
+    },
+    "scope": "One fixture; no Qwen, training data or adapter evaluation"
+  },
+  "A06-train_output-controls-20261007T022345Z": {
+    "run": "A06-train_output-controls-20261007T022345Z",
+    "reference_reachability_passed": true,
+    "export_files_verified": 29,
+    "snapshot_exact_for_both_controls": true,
+    "step_plate_conservation_verified": true,
+    "controls": {
+      "scripted": {
+        "steps": 80,
+        "seconds": 1200.0,
+        "plate_windows": [
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 420,
+        "new_ore_consumed": 375
+      },
+      "idle": {
+        "steps": 8,
+        "seconds": 120.0,
+        "plate_windows": [
+          10,
+          0
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 37,
+        "new_ore_consumed": 10
+      }
+    },
+    "scope": "One fixture; no Qwen, training data or adapter evaluation"
+  },
+  "A06-train_carry-controls-20261007T022727Z": {
+    "run": "A06-train_carry-controls-20261007T022727Z",
+    "reference_reachability_passed": true,
+    "export_files_verified": 29,
+    "snapshot_exact_for_both_controls": true,
+    "step_plate_conservation_verified": true,
+    "controls": {
+      "scripted": {
+        "steps": 80,
+        "seconds": 1200.0,
+        "plate_windows": [
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19,
+          18,
+          19,
+          19,
+          19
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 420,
+        "new_ore_consumed": 375
+      },
+      "idle": {
+        "steps": 8,
+        "seconds": 120.0,
+        "plate_windows": [
+          10,
+          0
+        ],
+        "failed_actions": 0,
+        "new_ore_mined": 37,
+        "new_ore_consumed": 10
+      }
+    },
+    "scope": "One fixture; no Qwen, training data or adapter evaluation"
+  }
+}

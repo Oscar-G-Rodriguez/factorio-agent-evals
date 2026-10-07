@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "release_id": "A06-scripted-train-v1-20261007-r3",
+  "rows_verified": 320,
+  "manifest_sha256": "e3bb79740e1601cbc89150ff9ecb590c88c6dbc6df7f97a4096dde740a46b71f",
+  "source_reconstruction_exact": true,
+  "executed_actions_and_full_horizon_verified": true,
+  "reserved_optimizer_rows": 0,
+  "prompt_and_target_budget_verified": true,
+  "loss_mask_verified": true,
+  "target_json_roundtrip_verified": true,
+  "historical_assistant_targets_masked": 628,
+  "padding_mask_verified_for_rows": 320,
+  "reserved_fixture_spoof_cases_rejected": [
+    "validation_fuel",
+    "validation_storage",
+    "test_drill_storage",
+    "test_furnace_output",
+    "test_reserve_storage"
+  ],
+  "forbidden_visible_field_cases_rejected": 4,
+  "behavior_counts_verified": {
+    "fuel:burner-mining-drill": 61,
+    "wait": 172,
+    "fuel:stone-furnace": 37,
+    "collect_output": 25,
+    "store_plates": 25
+  },
+  "verifier_sha256": "bc8fac64807790cc77884296cdd27961c1dd77b9a9f67b361c43ad95a9af6c51",
+  "model_loaded": false,
+  "gpu_run": false,
+  "scope": "Training dataset and CPU input/loss contract; no Qwen policy evaluation or trained adapter"
+}

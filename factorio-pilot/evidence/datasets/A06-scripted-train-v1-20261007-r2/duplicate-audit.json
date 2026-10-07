@@ -1,0 +1,11 @@
+{
+  "exact_duplicate_pairs": [],
+  "semantic_duplicate_pairs": [],
+  "near_duplicate_screen": "Identical current physical whitelist after removing handles, history, timing, windows and feedback",
+  "near_duplicate_groups": [],
+  "approximate_cross_fixture_pairs_screened": 38400,
+  "approximate_cross_fixture_pairs": [],
+  "approximate_method": "Same geometry/status; maximum absolute normalized physical coordinate difference <=0.05. Coal/400, carried and furnace plates/100, chest plates/1600, stored fuel/6, burning joules/4000000. Timing/history/feedback excluded for screening only.",
+  "near_duplicate_review": "Repeated teacher trajectories share one geometry and deterministic policy; rows are correlated demonstrations, not independent task evidence. Keep episode split and report repeated states.",
+  "cross_partition_check": "Only registered train lineages extracted. Reserved actions never read by builder; validation/test optimizer rows rejected. Semantic cross-partition checks must also run when evaluation prompts are collected."
+}

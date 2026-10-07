@@ -1,0 +1,2562 @@
+[
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 0,
+    "prompt_tokens": 802,
+    "target_tokens": 19,
+    "total_tokens": 821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 1,
+    "prompt_tokens": 1119,
+    "target_tokens": 10,
+    "total_tokens": 1129,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 2,
+    "prompt_tokens": 1427,
+    "target_tokens": 10,
+    "total_tokens": 1437,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 3,
+    "prompt_tokens": 1430,
+    "target_tokens": 19,
+    "total_tokens": 1449,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 4,
+    "prompt_tokens": 1484,
+    "target_tokens": 10,
+    "total_tokens": 1494,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 5,
+    "prompt_tokens": 1534,
+    "target_tokens": 10,
+    "total_tokens": 1544,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 6,
+    "prompt_tokens": 1574,
+    "target_tokens": 19,
+    "total_tokens": 1593,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 7,
+    "prompt_tokens": 1589,
+    "target_tokens": 10,
+    "total_tokens": 1599,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 8,
+    "prompt_tokens": 1641,
+    "target_tokens": 19,
+    "total_tokens": 1660,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 9,
+    "prompt_tokens": 1692,
+    "target_tokens": 24,
+    "total_tokens": 1716,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 10,
+    "prompt_tokens": 1769,
+    "target_tokens": 23,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 11,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 12,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 13,
+    "prompt_tokens": 1761,
+    "target_tokens": 19,
+    "total_tokens": 1780,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 14,
+    "prompt_tokens": 1766,
+    "target_tokens": 10,
+    "total_tokens": 1776,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 15,
+    "prompt_tokens": 1766,
+    "target_tokens": 19,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 16,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 17,
+    "prompt_tokens": 1769,
+    "target_tokens": 10,
+    "total_tokens": 1779,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 18,
+    "prompt_tokens": 1761,
+    "target_tokens": 10,
+    "total_tokens": 1771,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 19,
+    "prompt_tokens": 1761,
+    "target_tokens": 19,
+    "total_tokens": 1780,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 20,
+    "prompt_tokens": 1761,
+    "target_tokens": 10,
+    "total_tokens": 1771,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 21,
+    "prompt_tokens": 1763,
+    "target_tokens": 10,
+    "total_tokens": 1773,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 22,
+    "prompt_tokens": 1755,
+    "target_tokens": 24,
+    "total_tokens": 1779,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 23,
+    "prompt_tokens": 1792,
+    "target_tokens": 19,
+    "total_tokens": 1811,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 24,
+    "prompt_tokens": 1801,
+    "target_tokens": 19,
+    "total_tokens": 1820,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 25,
+    "prompt_tokens": 1796,
+    "target_tokens": 23,
+    "total_tokens": 1819,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 26,
+    "prompt_tokens": 1802,
+    "target_tokens": 10,
+    "total_tokens": 1812,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 27,
+    "prompt_tokens": 1793,
+    "target_tokens": 10,
+    "total_tokens": 1803,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 28,
+    "prompt_tokens": 1781,
+    "target_tokens": 10,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 29,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 30,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 31,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 32,
+    "prompt_tokens": 1770,
+    "target_tokens": 19,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 33,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 34,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 35,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 36,
+    "prompt_tokens": 1772,
+    "target_tokens": 24,
+    "total_tokens": 1796,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 37,
+    "prompt_tokens": 1798,
+    "target_tokens": 23,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 38,
+    "prompt_tokens": 1814,
+    "target_tokens": 10,
+    "total_tokens": 1824,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 39,
+    "prompt_tokens": 1806,
+    "target_tokens": 10,
+    "total_tokens": 1816,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 40,
+    "prompt_tokens": 1782,
+    "target_tokens": 19,
+    "total_tokens": 1801,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 41,
+    "prompt_tokens": 1778,
+    "target_tokens": 19,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 42,
+    "prompt_tokens": 1787,
+    "target_tokens": 10,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 43,
+    "prompt_tokens": 1776,
+    "target_tokens": 10,
+    "total_tokens": 1786,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 44,
+    "prompt_tokens": 1769,
+    "target_tokens": 10,
+    "total_tokens": 1779,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 45,
+    "prompt_tokens": 1770,
+    "target_tokens": 19,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 46,
+    "prompt_tokens": 1781,
+    "target_tokens": 10,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 47,
+    "prompt_tokens": 1781,
+    "target_tokens": 10,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 48,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 49,
+    "prompt_tokens": 1774,
+    "target_tokens": 24,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 50,
+    "prompt_tokens": 1799,
+    "target_tokens": 19,
+    "total_tokens": 1818,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 51,
+    "prompt_tokens": 1809,
+    "target_tokens": 19,
+    "total_tokens": 1828,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 52,
+    "prompt_tokens": 1799,
+    "target_tokens": 23,
+    "total_tokens": 1822,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 53,
+    "prompt_tokens": 1805,
+    "target_tokens": 10,
+    "total_tokens": 1815,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 54,
+    "prompt_tokens": 1795,
+    "target_tokens": 10,
+    "total_tokens": 1805,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 55,
+    "prompt_tokens": 1787,
+    "target_tokens": 10,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 56,
+    "prompt_tokens": 1775,
+    "target_tokens": 19,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 57,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 58,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 59,
+    "prompt_tokens": 1773,
+    "target_tokens": 19,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 60,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 61,
+    "prompt_tokens": 1783,
+    "target_tokens": 19,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 62,
+    "prompt_tokens": 1784,
+    "target_tokens": 24,
+    "total_tokens": 1808,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 63,
+    "prompt_tokens": 1809,
+    "target_tokens": 23,
+    "total_tokens": 1832,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 64,
+    "prompt_tokens": 1825,
+    "target_tokens": 10,
+    "total_tokens": 1835,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 65,
+    "prompt_tokens": 1811,
+    "target_tokens": 10,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 66,
+    "prompt_tokens": 1786,
+    "target_tokens": 10,
+    "total_tokens": 1796,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 67,
+    "prompt_tokens": 1774,
+    "target_tokens": 19,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 68,
+    "prompt_tokens": 1777,
+    "target_tokens": 19,
+    "total_tokens": 1796,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 69,
+    "prompt_tokens": 1787,
+    "target_tokens": 10,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 70,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 71,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 72,
+    "prompt_tokens": 1775,
+    "target_tokens": 19,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 73,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 74,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 75,
+    "prompt_tokens": 1773,
+    "target_tokens": 24,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 76,
+    "prompt_tokens": 1799,
+    "target_tokens": 23,
+    "total_tokens": 1822,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 77,
+    "prompt_tokens": 1824,
+    "target_tokens": 19,
+    "total_tokens": 1843,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 78,
+    "prompt_tokens": 1820,
+    "target_tokens": 19,
+    "total_tokens": 1839,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_drill",
+    "decision_index": 79,
+    "prompt_tokens": 1805,
+    "target_tokens": 10,
+    "total_tokens": 1815,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 0,
+    "prompt_tokens": 802,
+    "target_tokens": 19,
+    "total_tokens": 821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 1,
+    "prompt_tokens": 1118,
+    "target_tokens": 10,
+    "total_tokens": 1128,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 2,
+    "prompt_tokens": 1428,
+    "target_tokens": 10,
+    "total_tokens": 1438,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 3,
+    "prompt_tokens": 1429,
+    "target_tokens": 10,
+    "total_tokens": 1439,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 4,
+    "prompt_tokens": 1481,
+    "target_tokens": 19,
+    "total_tokens": 1500,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 5,
+    "prompt_tokens": 1539,
+    "target_tokens": 19,
+    "total_tokens": 1558,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 6,
+    "prompt_tokens": 1598,
+    "target_tokens": 10,
+    "total_tokens": 1608,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 7,
+    "prompt_tokens": 1589,
+    "target_tokens": 10,
+    "total_tokens": 1599,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 8,
+    "prompt_tokens": 1632,
+    "target_tokens": 10,
+    "total_tokens": 1642,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 9,
+    "prompt_tokens": 1684,
+    "target_tokens": 19,
+    "total_tokens": 1703,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 10,
+    "prompt_tokens": 1744,
+    "target_tokens": 24,
+    "total_tokens": 1768,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 11,
+    "prompt_tokens": 1769,
+    "target_tokens": 23,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 12,
+    "prompt_tokens": 1785,
+    "target_tokens": 10,
+    "total_tokens": 1795,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 13,
+    "prompt_tokens": 1779,
+    "target_tokens": 19,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 14,
+    "prompt_tokens": 1771,
+    "target_tokens": 19,
+    "total_tokens": 1790,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 15,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 16,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 17,
+    "prompt_tokens": 1760,
+    "target_tokens": 10,
+    "total_tokens": 1770,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 18,
+    "prompt_tokens": 1762,
+    "target_tokens": 10,
+    "total_tokens": 1772,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 19,
+    "prompt_tokens": 1761,
+    "target_tokens": 10,
+    "total_tokens": 1771,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 20,
+    "prompt_tokens": 1763,
+    "target_tokens": 19,
+    "total_tokens": 1782,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 21,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 22,
+    "prompt_tokens": 1775,
+    "target_tokens": 19,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 23,
+    "prompt_tokens": 1775,
+    "target_tokens": 24,
+    "total_tokens": 1799,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 24,
+    "prompt_tokens": 1800,
+    "target_tokens": 23,
+    "total_tokens": 1823,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 25,
+    "prompt_tokens": 1816,
+    "target_tokens": 19,
+    "total_tokens": 1835,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 26,
+    "prompt_tokens": 1811,
+    "target_tokens": 10,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 27,
+    "prompt_tokens": 1788,
+    "target_tokens": 10,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 28,
+    "prompt_tokens": 1762,
+    "target_tokens": 10,
+    "total_tokens": 1772,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 29,
+    "prompt_tokens": 1763,
+    "target_tokens": 10,
+    "total_tokens": 1773,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 30,
+    "prompt_tokens": 1763,
+    "target_tokens": 19,
+    "total_tokens": 1782,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 31,
+    "prompt_tokens": 1778,
+    "target_tokens": 19,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 32,
+    "prompt_tokens": 1787,
+    "target_tokens": 10,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 33,
+    "prompt_tokens": 1777,
+    "target_tokens": 10,
+    "total_tokens": 1787,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 34,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 35,
+    "prompt_tokens": 1767,
+    "target_tokens": 10,
+    "total_tokens": 1777,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 36,
+    "prompt_tokens": 1768,
+    "target_tokens": 19,
+    "total_tokens": 1787,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 37,
+    "prompt_tokens": 1777,
+    "target_tokens": 24,
+    "total_tokens": 1801,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 38,
+    "prompt_tokens": 1803,
+    "target_tokens": 23,
+    "total_tokens": 1826,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 39,
+    "prompt_tokens": 1819,
+    "target_tokens": 10,
+    "total_tokens": 1829,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 40,
+    "prompt_tokens": 1805,
+    "target_tokens": 19,
+    "total_tokens": 1824,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 41,
+    "prompt_tokens": 1790,
+    "target_tokens": 19,
+    "total_tokens": 1809,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 42,
+    "prompt_tokens": 1786,
+    "target_tokens": 10,
+    "total_tokens": 1796,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 43,
+    "prompt_tokens": 1777,
+    "target_tokens": 10,
+    "total_tokens": 1787,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 44,
+    "prompt_tokens": 1763,
+    "target_tokens": 10,
+    "total_tokens": 1773,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 45,
+    "prompt_tokens": 1765,
+    "target_tokens": 10,
+    "total_tokens": 1775,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 46,
+    "prompt_tokens": 1766,
+    "target_tokens": 19,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 47,
+    "prompt_tokens": 1781,
+    "target_tokens": 10,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 48,
+    "prompt_tokens": 1782,
+    "target_tokens": 10,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 49,
+    "prompt_tokens": 1773,
+    "target_tokens": 19,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 50,
+    "prompt_tokens": 1783,
+    "target_tokens": 24,
+    "total_tokens": 1807,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 51,
+    "prompt_tokens": 1807,
+    "target_tokens": 23,
+    "total_tokens": 1830,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 52,
+    "prompt_tokens": 1823,
+    "target_tokens": 19,
+    "total_tokens": 1842,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 53,
+    "prompt_tokens": 1818,
+    "target_tokens": 10,
+    "total_tokens": 1828,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 54,
+    "prompt_tokens": 1795,
+    "target_tokens": 10,
+    "total_tokens": 1805,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 55,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 56,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 57,
+    "prompt_tokens": 1774,
+    "target_tokens": 19,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 58,
+    "prompt_tokens": 1782,
+    "target_tokens": 19,
+    "total_tokens": 1801,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 59,
+    "prompt_tokens": 1791,
+    "target_tokens": 10,
+    "total_tokens": 1801,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 60,
+    "prompt_tokens": 1772,
+    "target_tokens": 10,
+    "total_tokens": 1782,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 61,
+    "prompt_tokens": 1764,
+    "target_tokens": 10,
+    "total_tokens": 1774,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 62,
+    "prompt_tokens": 1764,
+    "target_tokens": 19,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 63,
+    "prompt_tokens": 1785,
+    "target_tokens": 24,
+    "total_tokens": 1809,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 64,
+    "prompt_tokens": 1810,
+    "target_tokens": 23,
+    "total_tokens": 1833,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 65,
+    "prompt_tokens": 1824,
+    "target_tokens": 10,
+    "total_tokens": 1834,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 66,
+    "prompt_tokens": 1810,
+    "target_tokens": 19,
+    "total_tokens": 1829,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 67,
+    "prompt_tokens": 1794,
+    "target_tokens": 10,
+    "total_tokens": 1804,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 68,
+    "prompt_tokens": 1784,
+    "target_tokens": 19,
+    "total_tokens": 1803,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 69,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 70,
+    "prompt_tokens": 1785,
+    "target_tokens": 10,
+    "total_tokens": 1795,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 71,
+    "prompt_tokens": 1776,
+    "target_tokens": 10,
+    "total_tokens": 1786,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 72,
+    "prompt_tokens": 1776,
+    "target_tokens": 10,
+    "total_tokens": 1786,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 73,
+    "prompt_tokens": 1776,
+    "target_tokens": 19,
+    "total_tokens": 1795,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 74,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 75,
+    "prompt_tokens": 1784,
+    "target_tokens": 19,
+    "total_tokens": 1803,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 76,
+    "prompt_tokens": 1778,
+    "target_tokens": 24,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 77,
+    "prompt_tokens": 1804,
+    "target_tokens": 23,
+    "total_tokens": 1827,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 78,
+    "prompt_tokens": 1819,
+    "target_tokens": 19,
+    "total_tokens": 1838,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_furnace",
+    "decision_index": 79,
+    "prompt_tokens": 1820,
+    "target_tokens": 10,
+    "total_tokens": 1830,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 0,
+    "prompt_tokens": 802,
+    "target_tokens": 24,
+    "total_tokens": 826,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 1,
+    "prompt_tokens": 1134,
+    "target_tokens": 23,
+    "total_tokens": 1157,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 2,
+    "prompt_tokens": 1468,
+    "target_tokens": 10,
+    "total_tokens": 1478,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 3,
+    "prompt_tokens": 1466,
+    "target_tokens": 10,
+    "total_tokens": 1476,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 4,
+    "prompt_tokens": 1495,
+    "target_tokens": 19,
+    "total_tokens": 1514,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 5,
+    "prompt_tokens": 1542,
+    "target_tokens": 10,
+    "total_tokens": 1552,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 6,
+    "prompt_tokens": 1592,
+    "target_tokens": 19,
+    "total_tokens": 1611,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 7,
+    "prompt_tokens": 1592,
+    "target_tokens": 10,
+    "total_tokens": 1602,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 8,
+    "prompt_tokens": 1644,
+    "target_tokens": 10,
+    "total_tokens": 1654,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 9,
+    "prompt_tokens": 1687,
+    "target_tokens": 19,
+    "total_tokens": 1706,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 10,
+    "prompt_tokens": 1747,
+    "target_tokens": 10,
+    "total_tokens": 1757,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 11,
+    "prompt_tokens": 1747,
+    "target_tokens": 10,
+    "total_tokens": 1757,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 12,
+    "prompt_tokens": 1738,
+    "target_tokens": 10,
+    "total_tokens": 1748,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 13,
+    "prompt_tokens": 1745,
+    "target_tokens": 24,
+    "total_tokens": 1769,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 14,
+    "prompt_tokens": 1776,
+    "target_tokens": 19,
+    "total_tokens": 1795,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 15,
+    "prompt_tokens": 1791,
+    "target_tokens": 19,
+    "total_tokens": 1810,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 16,
+    "prompt_tokens": 1789,
+    "target_tokens": 23,
+    "total_tokens": 1812,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 17,
+    "prompt_tokens": 1795,
+    "target_tokens": 10,
+    "total_tokens": 1805,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 18,
+    "prompt_tokens": 1789,
+    "target_tokens": 10,
+    "total_tokens": 1799,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 19,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 20,
+    "prompt_tokens": 1761,
+    "target_tokens": 19,
+    "total_tokens": 1780,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 21,
+    "prompt_tokens": 1771,
+    "target_tokens": 10,
+    "total_tokens": 1781,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 22,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 23,
+    "prompt_tokens": 1770,
+    "target_tokens": 19,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 24,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 25,
+    "prompt_tokens": 1779,
+    "target_tokens": 19,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 26,
+    "prompt_tokens": 1778,
+    "target_tokens": 24,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 27,
+    "prompt_tokens": 1803,
+    "target_tokens": 23,
+    "total_tokens": 1826,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 28,
+    "prompt_tokens": 1812,
+    "target_tokens": 10,
+    "total_tokens": 1822,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 29,
+    "prompt_tokens": 1799,
+    "target_tokens": 10,
+    "total_tokens": 1809,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 30,
+    "prompt_tokens": 1775,
+    "target_tokens": 19,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 31,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 32,
+    "prompt_tokens": 1779,
+    "target_tokens": 19,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 33,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 34,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 35,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 36,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 37,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 38,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 39,
+    "prompt_tokens": 1770,
+    "target_tokens": 24,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 40,
+    "prompt_tokens": 1795,
+    "target_tokens": 23,
+    "total_tokens": 1818,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 41,
+    "prompt_tokens": 1819,
+    "target_tokens": 19,
+    "total_tokens": 1838,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 42,
+    "prompt_tokens": 1813,
+    "target_tokens": 19,
+    "total_tokens": 1832,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 43,
+    "prompt_tokens": 1797,
+    "target_tokens": 10,
+    "total_tokens": 1807,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 44,
+    "prompt_tokens": 1772,
+    "target_tokens": 10,
+    "total_tokens": 1782,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 45,
+    "prompt_tokens": 1765,
+    "target_tokens": 10,
+    "total_tokens": 1775,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 46,
+    "prompt_tokens": 1766,
+    "target_tokens": 19,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 47,
+    "prompt_tokens": 1781,
+    "target_tokens": 10,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 48,
+    "prompt_tokens": 1782,
+    "target_tokens": 10,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 49,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 50,
+    "prompt_tokens": 1774,
+    "target_tokens": 19,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 51,
+    "prompt_tokens": 1782,
+    "target_tokens": 10,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 52,
+    "prompt_tokens": 1783,
+    "target_tokens": 19,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 53,
+    "prompt_tokens": 1783,
+    "target_tokens": 24,
+    "total_tokens": 1807,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 54,
+    "prompt_tokens": 1809,
+    "target_tokens": 23,
+    "total_tokens": 1832,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 55,
+    "prompt_tokens": 1825,
+    "target_tokens": 10,
+    "total_tokens": 1835,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 56,
+    "prompt_tokens": 1811,
+    "target_tokens": 10,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 57,
+    "prompt_tokens": 1787,
+    "target_tokens": 19,
+    "total_tokens": 1806,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 58,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 59,
+    "prompt_tokens": 1783,
+    "target_tokens": 19,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 60,
+    "prompt_tokens": 1777,
+    "target_tokens": 10,
+    "total_tokens": 1787,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 61,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 62,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 63,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 64,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 65,
+    "prompt_tokens": 1774,
+    "target_tokens": 10,
+    "total_tokens": 1784,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 66,
+    "prompt_tokens": 1774,
+    "target_tokens": 24,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 67,
+    "prompt_tokens": 1798,
+    "target_tokens": 23,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 68,
+    "prompt_tokens": 1823,
+    "target_tokens": 19,
+    "total_tokens": 1842,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 69,
+    "prompt_tokens": 1818,
+    "target_tokens": 19,
+    "total_tokens": 1837,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 70,
+    "prompt_tokens": 1804,
+    "target_tokens": 10,
+    "total_tokens": 1814,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 71,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 72,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 73,
+    "prompt_tokens": 1775,
+    "target_tokens": 19,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 74,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 75,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 76,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 77,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 78,
+    "prompt_tokens": 1778,
+    "target_tokens": 19,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_output",
+    "decision_index": 79,
+    "prompt_tokens": 1793,
+    "target_tokens": 24,
+    "total_tokens": 1817,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 0,
+    "prompt_tokens": 804,
+    "target_tokens": 23,
+    "total_tokens": 827,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 1,
+    "prompt_tokens": 1138,
+    "target_tokens": 24,
+    "total_tokens": 1162,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 2,
+    "prompt_tokens": 1473,
+    "target_tokens": 23,
+    "total_tokens": 1496,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 3,
+    "prompt_tokens": 1496,
+    "target_tokens": 10,
+    "total_tokens": 1506,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 4,
+    "prompt_tokens": 1522,
+    "target_tokens": 19,
+    "total_tokens": 1541,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 5,
+    "prompt_tokens": 1557,
+    "target_tokens": 10,
+    "total_tokens": 1567,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 6,
+    "prompt_tokens": 1595,
+    "target_tokens": 19,
+    "total_tokens": 1614,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 7,
+    "prompt_tokens": 1595,
+    "target_tokens": 10,
+    "total_tokens": 1605,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 8,
+    "prompt_tokens": 1647,
+    "target_tokens": 10,
+    "total_tokens": 1657,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 9,
+    "prompt_tokens": 1690,
+    "target_tokens": 19,
+    "total_tokens": 1709,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 10,
+    "prompt_tokens": 1750,
+    "target_tokens": 10,
+    "total_tokens": 1760,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 11,
+    "prompt_tokens": 1750,
+    "target_tokens": 10,
+    "total_tokens": 1760,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 12,
+    "prompt_tokens": 1741,
+    "target_tokens": 10,
+    "total_tokens": 1751,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 13,
+    "prompt_tokens": 1748,
+    "target_tokens": 10,
+    "total_tokens": 1758,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 14,
+    "prompt_tokens": 1754,
+    "target_tokens": 19,
+    "total_tokens": 1773,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 15,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 16,
+    "prompt_tokens": 1780,
+    "target_tokens": 24,
+    "total_tokens": 1804,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 17,
+    "prompt_tokens": 1796,
+    "target_tokens": 23,
+    "total_tokens": 1819,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 18,
+    "prompt_tokens": 1813,
+    "target_tokens": 10,
+    "total_tokens": 1823,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 19,
+    "prompt_tokens": 1798,
+    "target_tokens": 10,
+    "total_tokens": 1808,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 20,
+    "prompt_tokens": 1772,
+    "target_tokens": 19,
+    "total_tokens": 1791,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 21,
+    "prompt_tokens": 1771,
+    "target_tokens": 10,
+    "total_tokens": 1781,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 22,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 23,
+    "prompt_tokens": 1770,
+    "target_tokens": 19,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 24,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 25,
+    "prompt_tokens": 1779,
+    "target_tokens": 19,
+    "total_tokens": 1798,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 26,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 27,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 28,
+    "prompt_tokens": 1763,
+    "target_tokens": 10,
+    "total_tokens": 1773,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 29,
+    "prompt_tokens": 1764,
+    "target_tokens": 24,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 30,
+    "prompt_tokens": 1789,
+    "target_tokens": 19,
+    "total_tokens": 1808,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 31,
+    "prompt_tokens": 1804,
+    "target_tokens": 23,
+    "total_tokens": 1827,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 32,
+    "prompt_tokens": 1815,
+    "target_tokens": 19,
+    "total_tokens": 1834,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 33,
+    "prompt_tokens": 1803,
+    "target_tokens": 10,
+    "total_tokens": 1813,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 34,
+    "prompt_tokens": 1790,
+    "target_tokens": 10,
+    "total_tokens": 1800,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 35,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 36,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 37,
+    "prompt_tokens": 1778,
+    "target_tokens": 10,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 38,
+    "prompt_tokens": 1779,
+    "target_tokens": 10,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 39,
+    "prompt_tokens": 1770,
+    "target_tokens": 10,
+    "total_tokens": 1780,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 40,
+    "prompt_tokens": 1770,
+    "target_tokens": 10,
+    "total_tokens": 1780,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 41,
+    "prompt_tokens": 1770,
+    "target_tokens": 19,
+    "total_tokens": 1789,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 42,
+    "prompt_tokens": 1778,
+    "target_tokens": 19,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 43,
+    "prompt_tokens": 1786,
+    "target_tokens": 24,
+    "total_tokens": 1810,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 44,
+    "prompt_tokens": 1797,
+    "target_tokens": 23,
+    "total_tokens": 1820,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 45,
+    "prompt_tokens": 1815,
+    "target_tokens": 10,
+    "total_tokens": 1825,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 46,
+    "prompt_tokens": 1802,
+    "target_tokens": 19,
+    "total_tokens": 1821,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 47,
+    "prompt_tokens": 1793,
+    "target_tokens": 10,
+    "total_tokens": 1803,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 48,
+    "prompt_tokens": 1782,
+    "target_tokens": 10,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 49,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 50,
+    "prompt_tokens": 1774,
+    "target_tokens": 19,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 51,
+    "prompt_tokens": 1782,
+    "target_tokens": 10,
+    "total_tokens": 1792,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 52,
+    "prompt_tokens": 1783,
+    "target_tokens": 19,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 53,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 54,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 55,
+    "prompt_tokens": 1775,
+    "target_tokens": 10,
+    "total_tokens": 1785,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 56,
+    "prompt_tokens": 1775,
+    "target_tokens": 24,
+    "total_tokens": 1799,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 57,
+    "prompt_tokens": 1800,
+    "target_tokens": 19,
+    "total_tokens": 1819,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 58,
+    "prompt_tokens": 1809,
+    "target_tokens": 23,
+    "total_tokens": 1832,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 59,
+    "prompt_tokens": 1820,
+    "target_tokens": 19,
+    "total_tokens": 1839,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 60,
+    "prompt_tokens": 1803,
+    "target_tokens": 10,
+    "total_tokens": 1813,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 61,
+    "prompt_tokens": 1790,
+    "target_tokens": 10,
+    "total_tokens": 1800,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 62,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 63,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 64,
+    "prompt_tokens": 1784,
+    "target_tokens": 10,
+    "total_tokens": 1794,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 65,
+    "prompt_tokens": 1774,
+    "target_tokens": 10,
+    "total_tokens": 1784,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 66,
+    "prompt_tokens": 1774,
+    "target_tokens": 10,
+    "total_tokens": 1784,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 67,
+    "prompt_tokens": 1773,
+    "target_tokens": 10,
+    "total_tokens": 1783,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 68,
+    "prompt_tokens": 1774,
+    "target_tokens": 19,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 69,
+    "prompt_tokens": 1783,
+    "target_tokens": 19,
+    "total_tokens": 1802,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 70,
+    "prompt_tokens": 1793,
+    "target_tokens": 24,
+    "total_tokens": 1817,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 71,
+    "prompt_tokens": 1809,
+    "target_tokens": 23,
+    "total_tokens": 1832,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 72,
+    "prompt_tokens": 1824,
+    "target_tokens": 10,
+    "total_tokens": 1834,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 73,
+    "prompt_tokens": 1810,
+    "target_tokens": 19,
+    "total_tokens": 1829,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 74,
+    "prompt_tokens": 1794,
+    "target_tokens": 10,
+    "total_tokens": 1804,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 75,
+    "prompt_tokens": 1783,
+    "target_tokens": 10,
+    "total_tokens": 1793,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 76,
+    "prompt_tokens": 1768,
+    "target_tokens": 10,
+    "total_tokens": 1778,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 77,
+    "prompt_tokens": 1769,
+    "target_tokens": 19,
+    "total_tokens": 1788,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 78,
+    "prompt_tokens": 1778,
+    "target_tokens": 19,
+    "total_tokens": 1797,
+    "history_pairs_trimmed": 0
+  },
+  {
+    "fixture_id": "train_carry",
+    "decision_index": 79,
+    "prompt_tokens": 1793,
+    "target_tokens": 10,
+    "total_tokens": 1803,
+    "history_pairs_trimmed": 0
+  }
+]
