@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_drill-round1_4bit-20261007T143533341816Z",
+  "fixture_id": "train_drill",
+  "step": 17,
+  "target_action": {
+    "tool": "collect_output",
+    "args": {
+      "furnace_handle": "e3",
+      "plate_count": 100
+    }
+  },
+  "problem": "verified harmful wait",
+  "semantic_key": "7f1c09c7b57b1c5f8816241da1016f2e0980cc02ab1f8e8cf7e740b0267e0233",
+  "trace_sha256": "a8e8156eec7a694f6a9f6b04e8055c844b2094218d0376e0e734199b62f62608"
+}

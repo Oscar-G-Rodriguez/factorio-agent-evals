@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_train_furnace_correction_20261007T145226387900Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-train_furnace-controls-correction-20261007T145226387900Z/initial.zip",
+  "sha256": "486aec4fa7ba0190a255b498a17f3ad9d8c416a573c79980f4a5c8fc9ec52d51",
+  "bytes": 1079942,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

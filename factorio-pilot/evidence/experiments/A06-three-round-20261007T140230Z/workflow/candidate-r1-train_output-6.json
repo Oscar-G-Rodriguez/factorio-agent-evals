@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-round1_4bit-20261007T143837860969Z",
+  "fixture_id": "train_output",
+  "step": 6,
+  "target_action": {
+    "tool": "collect_output",
+    "args": {
+      "furnace_handle": "e3",
+      "plate_count": 100
+    }
+  },
+  "problem": "verified harmful wait",
+  "semantic_key": "cc677b7eea79c9f873d91b01e8818e0d932892f4f7b4d84f5c149b7ab7adb53d",
+  "trace_sha256": "c512c0b9b46704ef2ae430897944c266330ecd416b0bcd7006b882e9c5351231"
+}

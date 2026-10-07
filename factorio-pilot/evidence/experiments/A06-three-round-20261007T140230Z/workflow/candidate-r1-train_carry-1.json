@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_carry-round1_4bit-20261007T143926951057Z",
+  "fixture_id": "train_carry",
+  "step": 1,
+  "target_action": {
+    "tool": "store_plates",
+    "args": {
+      "chest_handle": "e1",
+      "plate_count": 100
+    }
+  },
+  "problem": "verified harmful wait",
+  "semantic_key": "2c4c4e6168bd63fc5456ff731c636adddb295bdc04293556525593fb555395ab",
+  "trace_sha256": "27c522e5172c9938430452719351093f6ce570f9c6d3bb03a44f94e038021583"
+}

@@ -1,0 +1,8 @@
+{
+  "master_archive": "native-fixtures/A06-train_output-controls-correction-20261007T162258834657Z/initial.zip",
+  "master_sha256": "647788207fb9e26ebed79139fae3947734f10c95e2270459563a63241696b5e6",
+  "working_directory": "native-work/A06-train_output-controls-correction-20261007T162258834657Z/20261007T162302814022Z",
+  "working_copy_sha256": "647788207fb9e26ebed79139fae3947734f10c95e2270459563a63241696b5e6",
+  "master_is_game_mount": false,
+  "source_sha256": "8aba963b70678b506d63e508dd59a47fca51a54dd888226decaa6ff1a9a8b400"
+}

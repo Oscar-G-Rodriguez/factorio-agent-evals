@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_train_drill_correction_20261007T161654686233Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-train_drill-controls-correction-20261007T161654686233Z/initial.zip",
+  "sha256": "786a77de6887e3b0064c709ae061e0ac820bbbd53562684728e4e4d3a2943ee1",
+  "bytes": 1087871,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

@@ -1,0 +1,66 @@
+BATCH /home/osci2/factorio-pilot/batches/A06-episodes-20261007T144003660426Z
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144009624336Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_drill-16.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144009624336Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144309539609Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_drill-17.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144309539609Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144626212270Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_drill-18.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144626212270Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144928635409Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_drill-20.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-correction-20261007T144928635409Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145226387900Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_furnace-16.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145226387900Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145536315792Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_furnace-17.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145536315792Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145837801194Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_furnace-18.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T145837801194Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T150145246787Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_furnace-19.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-correction-20261007T150145246787Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T150448037599Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_output-3.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T150448037599Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T150758268420Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_output-2.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T150758268420Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T151054617715Z", "accepted": false, "stop_reason": "sustained_production_failure"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_output-5.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T151054617715Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T151123254019Z", "accepted": false, "stop_reason": "sustained_production_failure"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_output-6.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-correction-20261007T151123254019Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151153629344Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_carry-0.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151153629344Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151456263724Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_carry-1.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151456263724Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151750141596Z", "accepted": true, "stop_reason": "survived_simulation_limit"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_carry-2.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151750141596Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+RESTORE_VERIFIED initial
+RESTORE_VERIFIED candidate
+CORRECTION_COMPLETE {"run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T152046375983Z", "accepted": false, "stop_reason": "sustained_production_failure"}
+JOB_DONE {"job": {"kind": "correction", "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_carry-3.json", "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z"}, "run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T152046375983Z", "exit_code": 0, "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"}
+BATCH_COMPLETE /home/osci2/factorio-pilot/batches/A06-episodes-20261007T144003660426Z

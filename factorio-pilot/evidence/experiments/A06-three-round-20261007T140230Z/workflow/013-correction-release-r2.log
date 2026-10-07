@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/osci2/Documents/Second Brain/Projects/Factorio Agent Evals/Public Repository/factorio-pilot/tools/a06_corrections.py", line 176, in <module>
+    print(json.dumps(build_release([Path(p) for p in read(args.verifications)],args.output,root,runtime,tokenizer,snapshot)))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/osci2/Documents/Second Brain/Projects/Factorio Agent Evals/Public Repository/factorio-pilot/tools/a06_corrections.py", line 163, in build_release
+    return audit_corrections(output,root,runtime,tokenizer,snapshot)[1]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/osci2/Documents/Second Brain/Projects/Factorio Agent Evals/Public Repository/factorio-pilot/tools/a06_corrections.py", line 137, in audit_corrections
+    raise ValueError('Insufficient verified corrective data')
+ValueError: Insufficient verified corrective data

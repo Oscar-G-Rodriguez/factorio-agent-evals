@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "fixture": "train_drill",
+      "decisions": 80,
+      "eligible_before_dedup": 2,
+      "distinct": 2,
+      "selected": 2,
+      "labels": {
+        "blocked transfer": 1,
+        "fuel neglect": 1
+      },
+      "trace_sha256": "6b711a72b8fd3487542c59a1018758e97cb306f245b9a0286e2384c34a82b4c3"
+    },
+    {
+      "fixture": "train_furnace",
+      "decisions": 80,
+      "eligible_before_dedup": 1,
+      "distinct": 1,
+      "selected": 1,
+      "labels": {
+        "fuel neglect": 1
+      },
+      "trace_sha256": "1afd4c55ae4b139f0cf2358bd358d5d6a7934c470b150ce73195ccb9bf51aac2"
+    },
+    {
+      "fixture": "train_output",
+      "decisions": 80,
+      "eligible_before_dedup": 2,
+      "distinct": 2,
+      "selected": 2,
+      "labels": {
+        "blocked transfer": 1,
+        "fuel neglect": 1
+      },
+      "trace_sha256": "4e5ca447097faa535f6fc780092b387f5d62af3e5b9bd29f5cfbd7e7f899a8ba"
+    },
+    {
+      "fixture": "train_carry",
+      "decisions": 80,
+      "eligible_before_dedup": 0,
+      "distinct": 0,
+      "selected": 0,
+      "labels": {},
+      "trace_sha256": "ed20259c1c4278be754ecf7329c1a5691c5fb64bf7600960ad96f993167418c5"
+    }
+  ],
+  "total_selected": 5,
+  "minimum_required": 8,
+  "cap_discarded_candidates": false,
+  "scope": "Recompute frozen eligibility and deduplication on all 320 round-two training decisions; this audits rule execution, not completeness of the heuristic."
+}

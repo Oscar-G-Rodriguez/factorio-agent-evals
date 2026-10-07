@@ -1,0 +1,8 @@
+{
+  "master_archive": "native-fixtures/A06-train_drill-controls-correction-20261007T144928635409Z/initial.zip",
+  "master_sha256": "7073174dd88063f7ce135cc54b58dbd825661d37832e7faaa0715aec8a099c00",
+  "working_directory": "native-work/A06-train_drill-controls-correction-20261007T144928635409Z/20261007T145015427093Z",
+  "working_copy_sha256": "7073174dd88063f7ce135cc54b58dbd825661d37832e7faaa0715aec8a099c00",
+  "master_is_game_mount": false,
+  "source_sha256": "8aba963b70678b506d63e508dd59a47fca51a54dd888226decaa6ff1a9a8b400"
+}

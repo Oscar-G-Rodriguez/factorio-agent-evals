@@ -1,0 +1,58 @@
+{
+  "candidate": {
+    "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-round1_4bit-20261007T143837860969Z",
+    "fixture_id": "train_output",
+    "step": 5,
+    "target_action": {
+      "tool": "collect_output",
+      "args": {
+        "furnace_handle": "e3",
+        "plate_count": 100
+      }
+    },
+    "problem": "verified harmful wait",
+    "semantic_key": "faeb7bbc5059786d7f041b50ac57ed6f7765ec2785873019f69296f16261d155",
+    "trace_sha256": "c512c0b9b46704ef2ae430897944c266330ecd416b0bcd7006b882e9c5351231"
+  },
+  "target_action": {
+    "tool": "collect_output",
+    "args": {
+      "furnace_handle": "e3",
+      "plate_count": 100
+    }
+  },
+  "exact_pre_action_restore": true,
+  "corrective_action_executed": true,
+  "observed_problem_addressed": true,
+  "full_horizon_survived": false,
+  "accepted": false,
+  "stop_reason": "sustained_production_failure",
+  "final_tick": 13383,
+  "origin_tick": 6183,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 6183,
+      "end_tick": 9783,
+      "actual_ticks": 3600,
+      "iron_plates": 10,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 1,
+      "start_tick": 9783,
+      "end_tick": 13383,
+      "actual_ticks": 3600,
+      "iron_plates": 15,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 2
+    }
+  ],
+  "continuation_sha256": "d465b73559d32f14fb214ac7782b2456758cbaf7185f34991076181a212b000f",
+  "action_receipt_sha256": "451b159f86c1c0929375b7a350028889d67f585c372019d872faee34814e7f90",
+  "candidate_restore_sha256": "c7fe44800d09c4a22ef274466e37b2f491ae732b38126e972a5e6db805a945f6",
+  "native_save_sha256": "f882ef33924c4177bf84b50f8b8a49f536786ff187db1fb41288ebcf29506a8b"
+}

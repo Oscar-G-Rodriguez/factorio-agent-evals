@@ -64,3 +64,11 @@ This public repository has clean history. If development starts in a private che
 The standalone RMSNorm speedups describe one operator against the installed eager CUDA reference. K02 measures integrated offline response latency; matched gameplay throughput and maintenance memory/retrieval comparisons still require separate measurements. Project-authored repository contents are available under the [MIT License](../LICENSE); external components retain their own terms.
 
 The [waiting diagnostic](../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Waiting%20Diagnostic.md) separates teacher idle labels from explicit model waits and wall latency. `python scripts/diagnose_a06_waiting.py` performs the read-only CPU trace audit. Future model runs need separately instrumented phase times and train-only repair replays; no root cause is inferred from wait frequency alone.
+
+## Three round supervised workflow
+
+The [three-round protocol](../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Three%20Round%20Protocol.md) and `a06-three-round-v1.json` extend A06 without replacing historical recipes or dataset releases. `a06_orchestrate.py` sequences the unchanged-model baseline, training, validation, train-only exact-state correction replays and final evaluation. `a06_status_v2.py` reads compact external state and checks process identity. Source snapshots and optimizer checkpoints are preserved; master maps are never writable game mounts. The 60-test CPU suite and separate GPU preflight precede the current baseline. Read current run evidence before claiming a completed round or improvement. Final resume statements require executed matched results.
+
+## Three round workflow stopped at its correction gate
+
+The October 7 workflow completed two actual training rounds, 22 model episodes, and 21 correction replays. Only five distinct round-two corrections were eligible and verified; the frozen protocol requires eight. No third round or final-test episode ran. The [partial results](../outputs/A06%20-%20Qwen%20Fine%20Tuning%20-%20Three%20Round%20Results%2020261007T140230Z.md) preserve this incomplete outcome. Any continuation requires an explicitly revised protocol; do not reuse reserved test fixtures for corrections or lower the gate silently.

@@ -1,0 +1,2747 @@
+{
+  "protocol_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16",
+  "final_test_used": false,
+  "selection": {
+    "selected_step": 40,
+    "scores": {
+      "20": {
+        "mean_survival": 120.0,
+        "new_plates": 15
+      },
+      "40": {
+        "mean_survival": 210.0,
+        "new_plates": 75
+      }
+    },
+    "test_used": false,
+    "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40",
+    "sha256": {
+      "adapter_config.json": "b2253f4db745504ffce03cd99a1c2c320a6e67bafd44ab75f8d90aca8089180f",
+      "adapter_model.safetensors": "9c065c57dc4b4b17f2cda1d6332cea3b3e6c934d4bc7213bcb7390cbac9c4e81"
+    }
+  },
+  "episodes": [
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_drill-unchanged_4bit-20261007T140239834884Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z",
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_drill",
+        "stop_reason": "sustained_production_failure",
+        "steps": 24,
+        "simulated_seconds": 360.0,
+        "wall_seconds": 64.89141223500002,
+        "new_iron_plates": 80,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 38221,
+        "output_tokens": 432,
+        "median_response_seconds": 0.8473752310000009,
+        "peak_allocated_bytes": 3084754944,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 6109,
+            "end_tick": 9709,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 9709,
+            "end_tick": 13309,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 13309,
+            "end_tick": 16909,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 16909,
+            "end_tick": 20509,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 20509,
+            "end_tick": 24109,
+            "actual_ticks": 3600,
+            "iron_plates": 6,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 5,
+            "start_tick": 24109,
+            "end_tick": 27709,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 27709,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 328
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 26,
+              "burning_joules": 249833.3333333335,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9127777777775494,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 30,
+              "burning_joules": 3739400,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 97,
+              "input_inventory": {
+                "iron-ore": 45
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "167e90685e797b472a0e9a1df3aa78e1d022eaeb822fbaf9b4cc6dabad082024",
+        "summary.json": "4ed837914fa8a60a78f4b6b0f4aea5aee81456f305e341703e9f1f978c08488c",
+        "steps.jsonl": "e8777c58fe4d9b39e320dba03f8d21ccabab2f47c395f2e78452f13d17f5d4c0"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_furnace-unchanged_4bit-20261007T140409622086Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z",
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_furnace",
+        "stop_reason": "sustained_production_failure",
+        "steps": 76,
+        "simulated_seconds": 1140.0,
+        "wall_seconds": 217.914582161,
+        "new_iron_plates": 312,
+        "failed_actions": 1,
+        "failed_action_rate": 0.013157894736842105,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 128881,
+        "output_tokens": 1522,
+        "median_response_seconds": 0.9691680029999361,
+        "peak_allocated_bytes": 3104321024,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 10119,
+            "end_tick": 13719,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 13719,
+            "end_tick": 17319,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 17319,
+            "end_tick": 20919,
+            "actual_ticks": 3600,
+            "iron_plates": 13,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 3,
+            "start_tick": 20919,
+            "end_tick": 24519,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 24519,
+            "end_tick": 28119,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 5,
+            "start_tick": 28119,
+            "end_tick": 31719,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 6,
+            "start_tick": 31719,
+            "end_tick": 35319,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 7,
+            "start_tick": 35319,
+            "end_tick": 38919,
+            "actual_ticks": 3600,
+            "iron_plates": 13,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 8,
+            "start_tick": 38919,
+            "end_tick": 42519,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 9,
+            "start_tick": 42519,
+            "end_tick": 46119,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 10,
+            "start_tick": 46119,
+            "end_tick": 49719,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 11,
+            "start_tick": 49719,
+            "end_tick": 53319,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 12,
+            "start_tick": 53319,
+            "end_tick": 56919,
+            "actual_ticks": 3600,
+            "iron_plates": 14,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 13,
+            "start_tick": 56919,
+            "end_tick": 60519,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 14,
+            "start_tick": 60519,
+            "end_tick": 64119,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 15,
+            "start_tick": 64119,
+            "end_tick": 67719,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 16,
+            "start_tick": 67719,
+            "end_tick": 71319,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 17,
+            "start_tick": 71319,
+            "end_tick": 74919,
+            "actual_ticks": 3600,
+            "iron_plates": 11,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 18,
+            "start_tick": 74919,
+            "end_tick": 78519,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 78519,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 280
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 24,
+              "burning_joules": 2249833.3333333335,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.2461111111104545,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 34,
+              "burning_joules": 2922400,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 329,
+              "input_inventory": {
+                "iron-ore": 84
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 232,
+              "free_plates": 1368
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "10e85980fd4557bfd114ba57f89c6a0d7c36a880755349e7570bc442d8646914",
+        "summary.json": "c93423108c5250b5cc35750085b5c4c26ea282caa66765c2e36cbc74d4436de1",
+        "steps.jsonl": "a31f86c0543a7fb577e72a0c3cdb7b15204a69c93cb8bc878c8981185e3bab58"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-unchanged_4bit-20261007T140816912373Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z",
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_output",
+        "stop_reason": "sustained_production_failure",
+        "steps": 36,
+        "simulated_seconds": 540.0,
+        "wall_seconds": 104.38967435199993,
+        "new_iron_plates": 149,
+        "failed_actions": 4,
+        "failed_action_rate": 0.1111111111111111,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 59158,
+        "output_tokens": 756,
+        "median_response_seconds": 0.9989366964999817,
+        "peak_allocated_bytes": 3103193600,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 6183,
+            "end_tick": 9783,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 9783,
+            "end_tick": 13383,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 13383,
+            "end_tick": 16983,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 16983,
+            "end_tick": 20583,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 20583,
+            "end_tick": 24183,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 5,
+            "start_tick": 24183,
+            "end_tick": 27783,
+            "actual_ticks": 3600,
+            "iron_plates": 15,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 6,
+            "start_tick": 27783,
+            "end_tick": 31383,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 7,
+            "start_tick": 31383,
+            "end_tick": 34983,
+            "actual_ticks": 3600,
+            "iron_plates": 9,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 8,
+            "start_tick": 34983,
+            "end_tick": 38583,
+            "actual_ticks": 3600,
+            "iron_plates": 14,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 38583,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 376
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 0,
+              "burning_joules": 749833.3333333335,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.7461111111108036,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 1,
+              "coal": 1,
+              "burning_joules": 3949900,
+              "burning_item": "coal",
+              "burner_heat": 1600,
+              "crafting_progress": 0.7090277777774563,
+              "products_finished": 166,
+              "input_inventory": {
+                "iron-ore": 26
+              },
+              "plates": 9,
+              "free_plates": 91
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 230,
+              "free_plates": 1370
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "d6ccde714025a6871288fe360e45e1a6e95be24a2fbe431f15b236d02948ed12",
+        "summary.json": "63ee8cbb506000c79cc647867cb0cc69c0e9e65a844b5c83a4db55b4c8ce2c3f",
+        "steps.jsonl": "a9ff5d637c19d0b51a90257ec2243ab185a82dd49ae829f287a0834285d7050f"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_carry-unchanged_4bit-20261007T141023055260Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z",
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_carry",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 21.973075608000045,
+        "new_iron_plates": 10,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 10936,
+        "output_tokens": 144,
+        "median_response_seconds": 0.8343002820000152,
+        "peak_allocated_bytes": 3052251648,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 17319,
+            "end_tick": 20919,
+            "actual_ticks": 3600,
+            "iron_plates": 10,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 20919,
+            "end_tick": 24519,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 24519,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 376,
+            "iron-plate": 100
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 14,
+              "burning_joules": 1000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333332334,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 11,
+              "burning_joules": 3899500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 27,
+              "input_inventory": {
+                "iron-ore": 33
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "6fe88632ac6be57b9b7bc339f4b9812725f97507e2028779a0d63b558baa5e51",
+        "summary.json": "0df10a9486c445522de3ae5df4c626ce8ad3d35dd873036e7ff1aabb82ed4a3b",
+        "steps.jsonl": "7ae2be9b2832bcd29db91bab362a27e95b3933fa0b3571d35d5da6fb5117934f"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_fuel-unchanged_4bit-20261007T141105668025Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_fuel-controls-20261007T023116Z",
+        "condition": "unchanged_4bit",
+        "purpose": "validation"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_fuel",
+        "stop_reason": "survived_simulation_limit",
+        "steps": 80,
+        "simulated_seconds": 1200.0,
+        "wall_seconds": 231.54629834900004,
+        "new_iron_plates": 327,
+        "failed_actions": 7,
+        "failed_action_rate": 0.0875,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 136380,
+        "output_tokens": 1654,
+        "median_response_seconds": 0.9751925264999386,
+        "peak_allocated_bytes": 3104884224,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 28433,
+            "end_tick": 32033,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 32033,
+            "end_tick": 35633,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 35633,
+            "end_tick": 39233,
+            "actual_ticks": 3600,
+            "iron_plates": 15,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 3,
+            "start_tick": 39233,
+            "end_tick": 42833,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 42833,
+            "end_tick": 46433,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 5,
+            "start_tick": 46433,
+            "end_tick": 50033,
+            "actual_ticks": 3600,
+            "iron_plates": 4,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 6,
+            "start_tick": 50033,
+            "end_tick": 53633,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 7,
+            "start_tick": 53633,
+            "end_tick": 57233,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 8,
+            "start_tick": 57233,
+            "end_tick": 60833,
+            "actual_ticks": 3600,
+            "iron_plates": 4,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 9,
+            "start_tick": 60833,
+            "end_tick": 64433,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 10,
+            "start_tick": 64433,
+            "end_tick": 68033,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 11,
+            "start_tick": 68033,
+            "end_tick": 71633,
+            "actual_ticks": 3600,
+            "iron_plates": 4,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 12,
+            "start_tick": 71633,
+            "end_tick": 75233,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 13,
+            "start_tick": 75233,
+            "end_tick": 78833,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 14,
+            "start_tick": 78833,
+            "end_tick": 82433,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 15,
+            "start_tick": 82433,
+            "end_tick": 86033,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 16,
+            "start_tick": 86033,
+            "end_tick": 89633,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 17,
+            "start_tick": 89633,
+            "end_tick": 93233,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 18,
+            "start_tick": 93233,
+            "end_tick": 96833,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 19,
+            "start_tick": 96833,
+            "end_tick": 100433,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 100433,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 228,
+            "iron-plate": 19
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 2,
+              "burning_joules": 2499833.3333333335,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.49611111111044115,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 1,
+              "coal": 4,
+              "burning_joules": 799900,
+              "burning_item": "coal",
+              "burner_heat": 1600,
+              "crafting_progress": 0.3128472222216106,
+              "products_finished": 344,
+              "input_inventory": {
+                "iron-ore": 77
+              },
+              "plates": 5,
+              "free_plates": 95
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 533,
+              "free_plates": 1067
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "391b454871a73ea13f399516d3a14a3278ae78b5da54701e33ba8c05ca93b318",
+        "summary.json": "d436adee80d1eec99d92ed763ada6e90190b6bf7d1d01d4ee40d84c9357bd034",
+        "steps.jsonl": "6d7edf4be1a845b441c1e7bde5bd42b1874d4c4a2a32ee145312180393b3ffe5"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_storage-unchanged_4bit-20261007T141527944768Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_storage-controls-20261007T023455Z",
+        "condition": "unchanged_4bit",
+        "purpose": "validation"
+      },
+      "summary": {
+        "condition": "unchanged_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_storage",
+        "stop_reason": "survived_simulation_limit",
+        "steps": 80,
+        "simulated_seconds": 1200.0,
+        "wall_seconds": 232.77299899900004,
+        "new_iron_plates": 353,
+        "failed_actions": 1,
+        "failed_action_rate": 0.0125,
+        "waits_during_maintenance_opportunity": 0,
+        "input_tokens": 136386,
+        "output_tokens": 1667,
+        "median_response_seconds": 1.0132142625000142,
+        "peak_allocated_bytes": 3106200064,
+        "peak_reserved_bytes": 4089446400,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 39649,
+            "end_tick": 43249,
+            "actual_ticks": 3600,
+            "iron_plates": 5,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 43249,
+            "end_tick": 46849,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 46849,
+            "end_tick": 50449,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 50449,
+            "end_tick": 54049,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 54049,
+            "end_tick": 57649,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 5,
+            "start_tick": 57649,
+            "end_tick": 61249,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 6,
+            "start_tick": 61249,
+            "end_tick": 64849,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 7,
+            "start_tick": 64849,
+            "end_tick": 68449,
+            "actual_ticks": 3600,
+            "iron_plates": 13,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 8,
+            "start_tick": 68449,
+            "end_tick": 72049,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 9,
+            "start_tick": 72049,
+            "end_tick": 75649,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 10,
+            "start_tick": 75649,
+            "end_tick": 79249,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 11,
+            "start_tick": 79249,
+            "end_tick": 82849,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 12,
+            "start_tick": 82849,
+            "end_tick": 86449,
+            "actual_ticks": 3600,
+            "iron_plates": 15,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 13,
+            "start_tick": 86449,
+            "end_tick": 90049,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 14,
+            "start_tick": 90049,
+            "end_tick": 93649,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 15,
+            "start_tick": 93649,
+            "end_tick": 97249,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 16,
+            "start_tick": 97249,
+            "end_tick": 100849,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 17,
+            "start_tick": 100849,
+            "end_tick": 104449,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 18,
+            "start_tick": 104449,
+            "end_tick": 108049,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 19,
+            "start_tick": 108049,
+            "end_tick": 111649,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 111649,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 213,
+            "iron-plate": 8
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 3,
+              "burning_joules": 2999833.3333333335,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.3294444444437609,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 1,
+              "coal": 19,
+              "burning_joules": 1330800,
+              "burning_item": "coal",
+              "burner_heat": 1600,
+              "crafting_progress": 0.24513888888863455,
+              "products_finished": 370,
+              "input_inventory": {
+                "iron-ore": 60
+              },
+              "plates": 13,
+              "free_plates": 87
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 927,
+              "free_plates": 673
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "98358e0f39235492c9c39fccd1138f3142cf0670577e4690328c60f3af512184",
+        "summary.json": "ec42fd4d489626156b92544ca19293094b2bd67f7f917763745a6c4aa1a1384f",
+        "steps.jsonl": "3c1906a828f4ca7878801775b6778d3b4399a18cf2621dca4c9d0bb9549f885b"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_fuel-round1_4bit-20261007T143147814234Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_fuel-controls-20261007T023116Z",
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-20"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_fuel",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 24.264684508999835,
+        "new_iron_plates": 10,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 8,
+        "input_tokens": 10662,
+        "output_tokens": 72,
+        "median_response_seconds": 0.8991986625001118,
+        "peak_allocated_bytes": 3186035200,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 28433,
+            "end_tick": 32033,
+            "actual_ticks": 3600,
+            "iron_plates": 10,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 32033,
+            "end_tick": 35633,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 35633,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 300
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 53,
+              "coal": 0,
+              "burning_joules": 0,
+              "burning_item": false,
+              "burner_heat": 0,
+              "mining_progress": 0.00027777777773319023,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 53,
+              "coal": 0,
+              "burning_joules": 0,
+              "burning_item": false,
+              "burner_heat": 0,
+              "crafting_progress": 0.6517361111110599,
+              "products_finished": 27,
+              "input_inventory": {},
+              "plates": 40,
+              "free_plates": 60
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 200,
+              "free_plates": 1400
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "392813cb99744495f9e2839cd2ef9c532e0b28c2189a8f4f551258f2dbd087b1",
+        "summary.json": "f7b6280a6785da5b89af02b6cdf4ccbb57c4cc3c4252b8b0c878a6a084a04b23",
+        "steps.jsonl": "2d9281619d41e334b6675375961358e1badd0cf5eca76bff3df48cac464d5345"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_storage-round1_4bit-20261007T143231970709Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_storage-controls-20261007T023455Z",
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-20"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_storage",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 23.77645454100002,
+        "new_iron_plates": 5,
+        "failed_actions": 1,
+        "failed_action_rate": 0.125,
+        "waits_during_maintenance_opportunity": 7,
+        "input_tokens": 10267,
+        "output_tokens": 89,
+        "median_response_seconds": 0.8756565380001575,
+        "peak_allocated_bytes": 3193818624,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 39649,
+            "end_tick": 43249,
+            "actual_ticks": 3600,
+            "iron_plates": 5,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 43249,
+            "end_tick": 46849,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 46849,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 300,
+            "iron-plate": 100
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 53,
+              "coal": 0,
+              "burning_joules": 0,
+              "burning_item": false,
+              "burner_heat": 0,
+              "mining_progress": 0.33361111111103786,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 2,
+              "burning_joules": 1339500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 22,
+              "input_inventory": {
+                "iron-ore": 23
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 400,
+              "free_plates": 1200
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "27deed521a0c6dac6cbc74608326bdb82c383713e87d5c30192efd333c971741",
+        "summary.json": "341e0952900c78e9d96d4c65e9365d65a5e55b88cc6b038dca148a48970bd021",
+        "steps.jsonl": "6804369f4e7e58ff1098bcd0789e8b03a3f4d6ea9fe60540fe4e38f1457c42c1"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_fuel-round1_4bit-20261007T143318014792Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_fuel-controls-20261007T023116Z",
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_fuel",
+        "stop_reason": "sustained_production_failure",
+        "steps": 20,
+        "simulated_seconds": 300.0,
+        "wall_seconds": 61.12468670499993,
+        "new_iron_plates": 70,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 10,
+        "input_tokens": 30635,
+        "output_tokens": 243,
+        "median_response_seconds": 0.934109494500035,
+        "peak_allocated_bytes": 3237290496,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 28433,
+            "end_tick": 32033,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 32033,
+            "end_tick": 35633,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 35633,
+            "end_tick": 39233,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 39233,
+            "end_tick": 42833,
+            "actual_ticks": 3600,
+            "iron_plates": 14,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 4,
+            "start_tick": 42833,
+            "end_tick": 46433,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 46433,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 279
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 1,
+              "burning_joules": 2000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333331334,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 4,
+              "burning_joules": 2619500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 87,
+              "input_inventory": {
+                "iron-ore": 36
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 200,
+              "free_plates": 1400
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "923875b68916f99e0e9171f47a3c1bff63cd77c9832ca3eecab685db59693905",
+        "summary.json": "bd45ac2e45480cf70767c470ac8125d688db22bc6e4164e6eb5c3ef5f90d0ea3",
+        "steps.jsonl": "26034a8b3e6b3706b0da92ad660bc6b32a42eb3c4b467ef91e7fe464da75f29f"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_storage-round1_4bit-20261007T143445844239Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_storage-controls-20261007T023455Z",
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "validation",
+        "fixture_id": "validation_storage",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 25.001269930000035,
+        "new_iron_plates": 5,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 5,
+        "input_tokens": 10887,
+        "output_tokens": 99,
+        "median_response_seconds": 0.8972938800000065,
+        "peak_allocated_bytes": 3197280768,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 39649,
+            "end_tick": 43249,
+            "actual_ticks": 3600,
+            "iron_plates": 5,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 43249,
+            "end_tick": 46849,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 46849,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 291,
+            "iron-plate": 100
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 4,
+              "burning_joules": 1000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333332334,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 5,
+              "burning_joules": 1339500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 22,
+              "input_inventory": {
+                "iron-ore": 38
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 400,
+              "free_plates": 1200
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "4bdcb922cbedfc224636d59e571768fbb45f98ad59c55f769c4236b9c18b0e04",
+        "summary.json": "1cdeff7603999130f558855e785fd4ed00308ed455e1765feb99f2472e33d6fd",
+        "steps.jsonl": "9bbc04a6e5e1394fbac7e9e94d63c30ccc58424ab9a7e3f99c8cdec8bd15017e"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_drill-round1_4bit-20261007T143533341816Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z",
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_drill",
+        "stop_reason": "sustained_production_failure",
+        "steps": 24,
+        "simulated_seconds": 360.0,
+        "wall_seconds": 69.6396678189999,
+        "new_iron_plates": 80,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 12,
+        "input_tokens": 37134,
+        "output_tokens": 279,
+        "median_response_seconds": 0.8850315980000687,
+        "peak_allocated_bytes": 3232866304,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 6109,
+            "end_tick": 9709,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 9709,
+            "end_tick": 13309,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 13309,
+            "end_tick": 16909,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 16909,
+            "end_tick": 20509,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 20509,
+            "end_tick": 24109,
+            "actual_ticks": 3600,
+            "iron_plates": 5,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 5,
+            "start_tick": 24109,
+            "end_tick": 27709,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 27709,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 379
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 1,
+              "burning_joules": 3000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333331002,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 3,
+              "burning_joules": 3739500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 97,
+              "input_inventory": {
+                "iron-ore": 47
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "00916d4ead077abf4e4584029e0fdf9007bd74dc030cfb9ee0f58d625c80b6bf",
+        "summary.json": "225e7e18b9e1c84eb9d3b4d5da690cb2694faf0c6c026d89a20875df9fea6154",
+        "steps.jsonl": "a8e8156eec7a694f6a9f6b04e8055c844b2094218d0376e0e734199b62f62608"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_furnace-round1_4bit-20261007T143705029086Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z",
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_furnace",
+        "stop_reason": "sustained_production_failure",
+        "steps": 24,
+        "simulated_seconds": 360.0,
+        "wall_seconds": 72.27464308300023,
+        "new_iron_plates": 80,
+        "failed_actions": 0,
+        "failed_action_rate": 0.0,
+        "waits_during_maintenance_opportunity": 11,
+        "input_tokens": 37155,
+        "output_tokens": 279,
+        "median_response_seconds": 0.9356848099998842,
+        "peak_allocated_bytes": 3234631168,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 10119,
+            "end_tick": 13719,
+            "actual_ticks": 3600,
+            "iron_plates": 18,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 1,
+            "start_tick": 13719,
+            "end_tick": 17319,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 2,
+            "start_tick": 17319,
+            "end_tick": 20919,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 3,
+            "start_tick": 20919,
+            "end_tick": 24519,
+            "actual_ticks": 3600,
+            "iron_plates": 19,
+            "target": 16,
+            "below_target": false,
+            "consecutive_low_windows": 0
+          },
+          {
+            "index": 4,
+            "start_tick": 24519,
+            "end_tick": 28119,
+            "actual_ticks": 3600,
+            "iron_plates": 5,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 5,
+            "start_tick": 28119,
+            "end_tick": 31719,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 31719,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 379
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 2,
+              "burning_joules": 1000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333331002,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 3,
+              "burning_joules": 1739500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 97,
+              "input_inventory": {
+                "iron-ore": 47
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "681766c1d44b567bdf75ffb7597d7c68a1c0b0d18548218de521241796777338",
+        "summary.json": "16e581884a514cc57112251d4290c43a51daa74d4e8562e99575c91b1fe3485b",
+        "steps.jsonl": "c00b031a3d74ef29f294f24cfde33f3dc30ed1fd0ee7664db328c8d8ebe9d0a2"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-round1_4bit-20261007T143837860969Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z",
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_output",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 27.593438487000185,
+        "new_iron_plates": 10,
+        "failed_actions": 1,
+        "failed_action_rate": 0.125,
+        "waits_during_maintenance_opportunity": 6,
+        "input_tokens": 10877,
+        "output_tokens": 94,
+        "median_response_seconds": 0.9717742770001223,
+        "peak_allocated_bytes": 3203045888,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 6183,
+            "end_tick": 9783,
+            "actual_ticks": 3600,
+            "iron_plates": 10,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 9783,
+            "end_tick": 13383,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 13383,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 397
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 2,
+              "burning_joules": 1000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333332334,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 2,
+              "burning_joules": 3899500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 27,
+              "input_inventory": {
+                "iron-ore": 33
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "7d8821a1afaa06c78166ac09f8c1b301afc9e2cdda67527cceff0bbcd1c7d95b",
+        "summary.json": "56afb49421fea45a53b8e0b101ad14d92f6077fa25c1d5468c72718d3c21730c",
+        "steps.jsonl": "c512c0b9b46704ef2ae430897944c266330ecd416b0bcd7006b882e9c5351231"
+      }
+    },
+    {
+      "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_carry-round1_4bit-20261007T143926951057Z",
+      "job": {
+        "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z",
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-40"
+      },
+      "summary": {
+        "condition": "round1_4bit",
+        "purpose": "train-diagnostic",
+        "fixture_id": "train_carry",
+        "stop_reason": "sustained_production_failure",
+        "steps": 8,
+        "simulated_seconds": 120.0,
+        "wall_seconds": 23.466414909000378,
+        "new_iron_plates": 10,
+        "failed_actions": 1,
+        "failed_action_rate": 0.125,
+        "waits_during_maintenance_opportunity": 6,
+        "input_tokens": 10918,
+        "output_tokens": 95,
+        "median_response_seconds": 0.9325502564997805,
+        "peak_allocated_bytes": 3199009792,
+        "peak_reserved_bytes": 4217372672,
+        "measurement_windows": [
+          {
+            "index": 0,
+            "start_tick": 17319,
+            "end_tick": 20919,
+            "actual_ticks": 3600,
+            "iron_plates": 10,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 1
+          },
+          {
+            "index": 1,
+            "start_tick": 20919,
+            "end_tick": 24519,
+            "actual_ticks": 3600,
+            "iron_plates": 0,
+            "target": 16,
+            "below_target": true,
+            "consecutive_low_windows": 2
+          }
+        ],
+        "final_physical_snapshot": {
+          "tick": 24519,
+          "paused": true,
+          "ticks_to_run": 0,
+          "speed": 10,
+          "actor_position": {
+            "y": 72.5,
+            "x": 17.5
+          },
+          "actor_inventory": {
+            "wooden-chest": 9,
+            "storage-tank": 10,
+            "transport-belt": 500,
+            "underground-belt": 100,
+            "burner-inserter": 50,
+            "inserter": 50,
+            "medium-electric-pole": 500,
+            "pipe": 500,
+            "pipe-to-ground": 100,
+            "boiler": 2,
+            "steam-engine": 2,
+            "burner-mining-drill": 49,
+            "electric-mining-drill": 50,
+            "offshore-pump": 2,
+            "pumpjack": 10,
+            "stone-furnace": 9,
+            "electric-furnace": 10,
+            "assembling-machine-2": 10,
+            "oil-refinery": 5,
+            "chemical-plant": 5,
+            "coal": 397,
+            "iron-plate": 100
+          },
+          "entities": [
+            {
+              "name": "burner-mining-drill",
+              "position": {
+                "y": 71,
+                "x": 16
+              },
+              "direction": 4,
+              "status": 1,
+              "coal": 2,
+              "burning_joules": 1000000,
+              "burning_item": "coal",
+              "burner_heat": 2666.6666666666665,
+              "mining_progress": 0.9958333333332334,
+              "drop_position": {
+                "y": 70.5,
+                "x": 17.296875
+              }
+            },
+            {
+              "name": "stone-furnace",
+              "position": {
+                "y": 71,
+                "x": 18
+              },
+              "direction": 0,
+              "status": 27,
+              "coal": 2,
+              "burning_joules": 3899500,
+              "burning_item": "coal",
+              "burner_heat": 100,
+              "crafting_progress": 1,
+              "products_finished": 27,
+              "input_inventory": {
+                "iron-ore": 33
+              },
+              "plates": 100,
+              "free_plates": 0
+            },
+            {
+              "name": "wooden-chest",
+              "position": {
+                "y": 67.5,
+                "x": 12.5
+              },
+              "direction": 0,
+              "status": 2,
+              "plates": 0,
+              "free_plates": 1600
+            }
+          ]
+        },
+        "custom_cuda_used": false,
+        "inference_paused_game_time": true,
+        "no_manual_ore_insertion": true
+      },
+      "sha256": {
+        "config.json": "6b56aa4e8145487a372ee679aa91216d15ff2bc019ca79a6be8f31ec3b5712ce",
+        "summary.json": "66051fc2872336cc09fccd689609cafda30982bd3adcb9463275b4e40472458f",
+        "steps.jsonl": "27c522e5172c9938430452719351093f6ce570f9c6d3bb03a44f94e038021583"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "created_utc": "2026-10-07T14:25:46.011561+00:00",
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "factorio-pilot/tools",
+    "-p",
+    "test_*.py"
+  ],
+  "log_sha256": "baa209d68a7269060650125d94964ab8dd6d9555070b6db2d903c883bbb5acdf",
+  "test_source_sha256": {
+    "test_a06_context.py": "97f4d9fea437bb75bc3ec49173a1096f114b337e071e8c0a6b0af1ef14c78b9e",
+    "test_a06_execution.py": "f04d3ea347ffc1814efef1b6dd4bec884d0d04b580202898563300f18f765391",
+    "test_a06_fixture_controls.py": "8a78d977cea96451c639fbbb4f879634867fd4fb2b564b21ad9fe611b1e7233f",
+    "test_a06_workflow.py": "2b54ff6b67053c989077d9e6f368a116d3ab4ba802f16e5e680a7978a964ad30",
+    "test_context_memory.py": "3f4b0d8de2a17815e80c5b4844a4bde418675f964384473e2dde3fbcb7a646af",
+    "test_cuda_review.py": "dae0ac5f6b68c5452290bf75e512ff7c1dc8272da93ccc90b2381adb25ce0981",
+    "test_factory_agent_tools.py": "d753ae3437a1d6a2868018454fdf549c6b422558db0a7f201779435cfd32790f",
+    "test_game_bridge.py": "61cc56366e4a5014aca5472592afd943d3b3448dfa8e4e8ed202b2dd7c32fd81",
+    "test_logistics_tools.py": "91ac993e180c39141e541a765adfa21d09cecc169e7ed7c639fb7efffde7cf04",
+    "test_maintenance.py": "fd2fa73e332e4ec17007b12db1e0b5177bd27a3e0adc857055cdd3ef827dccdf",
+    "test_observation_policy.py": "a9c2595183f309c6b202aa64607aeefd259871c4a2563d6e77e3a3e6642fd738",
+    "test_qwen_rmsnorm_backend.py": "9acc9bc3209f1d3b880cb4731fc9b9a6e5939549c6ef45c8b79d4be8b7fe5d9c"
+  },
+  "scope": "Full CPU suite only; no GPU job or game controller launched"
+}

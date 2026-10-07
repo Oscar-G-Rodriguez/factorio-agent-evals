@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_drill-round2_4bit-20261007T155357694563Z",
+  "fixture_id": "train_drill",
+  "step": 54,
+  "target_action": {
+    "tool": "fuel",
+    "args": {
+      "building_handle": "e2",
+      "coal_count": 3
+    }
+  },
+  "problem": "fuel neglect",
+  "semantic_key": "5cb359b6ef3df7ca93dc1d8e57834f3b98ce50f67e84bf3d4996e98b258ebbc0",
+  "trace_sha256": "6b711a72b8fd3487542c59a1018758e97cb306f245b9a0286e2384c34a82b4c3"
+}

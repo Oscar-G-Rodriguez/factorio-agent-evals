@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "stage": "memory_probe",
+  "pid": 637,
+  "process_start_ticks": "43228",
+  "run": "/home/osci2/factorio-pilot/runs/A06-training-memory-probe-20261007T123754Z",
+  "log": "/home/osci2/factorio-pilot/artifacts/a06-memory-probe-worker.log",
+  "argv": [
+    "/home/osci2/factorio-pilot/.venv-a06-train/bin/python",
+    "-u",
+    "/mnt/c/Users/osci2/Documents/Second Brain/Projects/Factorio Agent Evals/Public Repository/factorio-pilot/tools/a06_train.py",
+    "--runtime-home",
+    "/home/osci2/factorio-pilot",
+    "--run",
+    "/home/osci2/factorio-pilot/runs/A06-training-memory-probe-20261007T123754Z",
+    "--round",
+    "1",
+    "--probe-optimizer-steps",
+    "3"
+  ],
+  "repo": "/mnt/c/Users/osci2/Documents/Second Brain/Projects/Factorio Agent Evals/Public Repository",
+  "next_stage": "if runtime probe passes with stable memory/timing, launch full fresh round1 using v2; then validation and corrections",
+  "rounds_required": 2,
+  "final_tests_opened": false,
+  "interrupted_attempt": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T123104Z"
+}

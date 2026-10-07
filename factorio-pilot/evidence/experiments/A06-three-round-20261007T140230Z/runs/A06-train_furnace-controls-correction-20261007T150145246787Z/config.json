@@ -1,0 +1,68 @@
+{
+  "fixture": {
+    "id": "train_furnace",
+    "partition": "train",
+    "presets": {
+      "drill_coal": 3,
+      "drill_burning_joules": 3000000,
+      "furnace_coal": 0,
+      "furnace_burning_joules": 1000000,
+      "output_plates": 20,
+      "carried_plates": 0,
+      "chest_plates": 0,
+      "reserve_coal": 400
+    },
+    "preset_sha256": "58bd51ceb074ff0d187cb4607e8d936854f228a01b5412dc9f4a79089945f094"
+  },
+  "protocol_sha256": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+  "candidate": {
+    "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_furnace-round1_4bit-20261007T143705029086Z",
+    "fixture_id": "train_furnace",
+    "step": 19,
+    "target_action": {
+      "tool": "collect_output",
+      "args": {
+        "furnace_handle": "e3",
+        "plate_count": 100
+      }
+    },
+    "problem": "verified harmful wait",
+    "semantic_key": "870f869391dfc1f7550a7c9d19b93ce41c830158625d8ea133c7f8e3d990a923",
+    "trace_sha256": "c00b031a3d74ef29f294f24cfde33f3dc30ed1fd0ee7664db328c8d8ebe9d0a2"
+  },
+  "task": {
+    "decision_interval_ticks": 900,
+    "window_ticks": 3600,
+    "target_new_plates_per_window": 16,
+    "consecutive_low_windows_to_fail": 2,
+    "max_simulated_seconds": 1200,
+    "max_decisions": 80,
+    "wall_time_limit_seconds": 600,
+    "game_speed": 10,
+    "carry_capacity": 100,
+    "furnace_capacity": 100,
+    "chest_capacity": 1600,
+    "max_refill_coal": 3,
+    "warmup_seconds": 60,
+    "min_warmup_new_plates": 16
+  },
+  "model_loaded": false,
+  "native_source_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "source_hashes": {
+    "a06_correction_replay.py": "f9af4f2f9c2f975d43ff16184ee710d2d3f5f773dc64e032f8a7fdf3879fa93d",
+    "a06_fixture_controls.py": "ca53099ddd7ace815f29b9692c181535bbb63c436e452c02e54c78a967ed266d",
+    "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+    "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+    "a06_corrections.py": "1a5bd612d791cbe0ee32fc165cf5e8284a359cde90ec08c02874faf3409f4ccb",
+    "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+    "a06_workflow.py": "f2eb3bec6d57d18acef7dd96e4d424313eb5a073a8b06c1be1557076c7d25ebb",
+    "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+    "a06_context.py": "f753e354c6ff64bdd6a79837d519418cbd3118ecef74fe8c2f2f1bb19ff0b997"
+  }
+}

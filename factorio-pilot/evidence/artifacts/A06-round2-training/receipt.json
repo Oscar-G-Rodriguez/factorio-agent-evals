@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "round": 2,
+  "completed_optimizer_updates": 40,
+  "verified_micro_updates": 320,
+  "elapsed_seconds": 657.739330933,
+  "trainable_parameters": 16515072,
+  "mean_loss": 0.03696336276835836,
+  "first_group_loss": 0.07625870779156685,
+  "last_group_loss": 0.00795449763245415,
+  "gameplay_improvement_claimed": false,
+  "files_sha256": {
+    "config.json": "bdd11d61d89c79b32bdc3757881ad7054b0cc98c59528bdd9616a87585825f7d",
+    "summary.json": "bc8da4a3b783762aaf1426d48dcf83764481e077991ca8b6659a116cb2080955",
+    "training-curves.csv": "7e59ac76bcadbf378e240974f2ecbcb52ed0d49f26b79aeecf5d1a4e384a4469",
+    "training-curves.svg": "19c8f56abbe500d2041de393a39fd8b99742b6b3c7d0b8ab0b875cedbf48090d",
+    "training.jsonl": "dee22ac97cd11799d47f0fae65be8308a4c90739b16d54f606a894ee200b2985"
+  }
+}

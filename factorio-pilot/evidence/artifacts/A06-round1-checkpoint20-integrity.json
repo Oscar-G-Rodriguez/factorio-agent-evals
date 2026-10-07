@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "round": 1,
+  "optimizer_step": 20,
+  "checkpoint": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-20",
+  "checkpoint_receipt_sha256": "e632d57f29b38721894f1bee70cd25e23060a227563158cc89220ef272b5fd57",
+  "file_checks": {
+    "README.md": true,
+    "adapter_config.json": true,
+    "adapter_model.safetensors": true,
+    "optimizer.pt": true
+  },
+  "scope": "CPU checksum verification only; no adapter reload or gameplay claim"
+}

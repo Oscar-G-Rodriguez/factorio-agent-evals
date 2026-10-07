@@ -1,0 +1,1 @@
+{"passed": true, "rows": 13, "fixtures": ["train_carry", "train_drill", "train_furnace", "train_output"], "manifest_sha256": "9381d555b1a908abca609ca8de796787a6bed07e57bbb084480037fa40cdca03"}

@@ -1,0 +1,62 @@
+{
+  "independently_checked": 8,
+  "verified_actions": [
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144009624336Z",
+      "fixture": "train_drill",
+      "step": 16,
+      "transferred": 95,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144309539609Z",
+      "fixture": "train_drill",
+      "step": 17,
+      "transferred": 99,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144626212270Z",
+      "fixture": "train_drill",
+      "step": 18,
+      "transferred": 100,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144928635409Z",
+      "fixture": "train_drill",
+      "step": 20,
+      "transferred": 100,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_furnace-controls-correction-20261007T145226387900Z",
+      "fixture": "train_furnace",
+      "step": 16,
+      "transferred": 95,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_furnace-controls-correction-20261007T145536315792Z",
+      "fixture": "train_furnace",
+      "step": 17,
+      "transferred": 99,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_furnace-controls-correction-20261007T145837801194Z",
+      "fixture": "train_furnace",
+      "step": 18,
+      "transferred": 100,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_furnace-controls-correction-20261007T150145246787Z",
+      "fixture": "train_furnace",
+      "step": 19,
+      "transferred": 100,
+      "full_horizon_ticks": 72000
+    }
+  ],
+  "scope": "Executed transfer, exact restore, continuation cadence, production windows, receipts and native archive hashes; training release audit remains separate."
+}

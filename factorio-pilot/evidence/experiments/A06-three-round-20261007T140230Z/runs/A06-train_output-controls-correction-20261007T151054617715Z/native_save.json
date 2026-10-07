@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_train_output_correction_20261007T151054617715Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-train_output-controls-correction-20261007T151054617715Z/initial.zip",
+  "sha256": "b17d588a299255576cf60e571e831e5575ff36f560338f013ac5325b01b60398",
+  "bytes": 1087330,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

@@ -1,0 +1,10 @@
+{
+  "job": {
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z",
+    "condition": "unchanged_4bit",
+    "purpose": "train-diagnostic"
+  },
+  "run": "/home/osci2/factorio-pilot/runs/A06-episode-train_furnace-unchanged_4bit-20261007T140409622086Z",
+  "exit_code": 0,
+  "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"
+}

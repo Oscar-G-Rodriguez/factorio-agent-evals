@@ -1,0 +1,172 @@
+{
+  "controller": "candidate",
+  "expected": {
+    "tick": 27219,
+    "paused": true,
+    "ticks_to_run": 0,
+    "speed": 10,
+    "actor_position": {
+      "y": 72.5,
+      "x": 17.5
+    },
+    "actor_inventory": {
+      "wooden-chest": 9,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 382
+    },
+    "entities": [
+      {
+        "name": "burner-mining-drill",
+        "position": {
+          "y": 71,
+          "x": 16
+        },
+        "direction": 4,
+        "status": 1,
+        "coal": 2,
+        "burning_joules": 250000,
+        "burning_item": "coal",
+        "burner_heat": 2666.6666666666665,
+        "mining_progress": 0.2458333333331427,
+        "drop_position": {
+          "y": 70.5,
+          "x": 17.296875
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "y": 71,
+          "x": 18
+        },
+        "direction": 0,
+        "status": 27,
+        "coal": 3,
+        "burning_joules": 1739500,
+        "burning_item": "coal",
+        "burner_heat": 100,
+        "crafting_progress": 1,
+        "products_finished": 97,
+        "input_inventory": {
+          "iron-ore": 22
+        },
+        "plates": 100,
+        "free_plates": 0
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "y": 67.5,
+          "x": 12.5
+        },
+        "direction": 0,
+        "status": 2,
+        "plates": 0,
+        "free_plates": 1600
+      }
+    ]
+  },
+  "actual": {
+    "tick": 27219,
+    "paused": true,
+    "ticks_to_run": 0,
+    "speed": 10,
+    "actor_position": {
+      "y": 72.5,
+      "x": 17.5
+    },
+    "actor_inventory": {
+      "wooden-chest": 9,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 382
+    },
+    "entities": [
+      {
+        "name": "burner-mining-drill",
+        "position": {
+          "y": 71,
+          "x": 16
+        },
+        "direction": 4,
+        "status": 1,
+        "coal": 2,
+        "burning_joules": 250000,
+        "burning_item": "coal",
+        "burner_heat": 2666.6666666666665,
+        "mining_progress": 0.2458333333331427,
+        "drop_position": {
+          "y": 70.5,
+          "x": 17.296875
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "y": 71,
+          "x": 18
+        },
+        "direction": 0,
+        "status": 27,
+        "coal": 3,
+        "burning_joules": 1739500,
+        "burning_item": "coal",
+        "burner_heat": 100,
+        "crafting_progress": 1,
+        "products_finished": 97,
+        "input_inventory": {
+          "iron-ore": 22
+        },
+        "plates": 100,
+        "free_plates": 0
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "y": 67.5,
+          "x": 12.5
+        },
+        "direction": 0,
+        "status": 2,
+        "plates": 0,
+        "free_plates": 1600
+      }
+    ]
+  },
+  "exact_match": true
+}

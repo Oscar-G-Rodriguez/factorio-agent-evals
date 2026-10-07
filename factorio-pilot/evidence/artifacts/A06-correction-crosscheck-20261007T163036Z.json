@@ -1,0 +1,46 @@
+{
+  "independently_checked": 5,
+  "verified_actions": [
+    {
+      "run": "A06-train_drill-controls-correction-20261007T161352601988Z",
+      "fixture": "train_drill",
+      "step": 0,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T161654686233Z",
+      "fixture": "train_drill",
+      "step": 54,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_furnace-controls-correction-20261007T162001476964Z",
+      "fixture": "train_furnace",
+      "step": 17,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_output-controls-correction-20261007T162258834657Z",
+      "fixture": "train_output",
+      "step": 0,
+      "tool": "collect_output",
+      "transferred": 90,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_output-controls-correction-20261007T162606899468Z",
+      "fixture": "train_output",
+      "step": 28,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    }
+  ],
+  "scope": "Executed transfer, exact restore, continuation cadence, production windows, receipts and native archive hashes; training release audit remains separate."
+}

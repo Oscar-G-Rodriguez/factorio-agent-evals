@@ -1,0 +1,48 @@
+{
+  "experiment_id": "a06-three-round-v1",
+  "parent_protocol": "a06-qwen-sft-v1",
+  "rounds": 3,
+  "seed": 42,
+  "training": {
+    "rank": 8, "alpha": 16, "dropout": 0, "target_modules": "all-linear",
+    "quantization": "nf4_double_quant", "compute_dtype": "bfloat16", "attention": "sdpa",
+    "micro_batch_size": 1, "gradient_accumulation": 8, "learning_rate": 0.0002,
+    "weight_decay": 0.01, "max_gradient_norm": 1.0,
+    "max_training_sequence_tokens": 2048, "optimizer_steps": 40,
+    "checkpoint_steps": [20, 40], "resume_checkpoint_interval": 5,
+    "gradient_checkpointing": true, "custom_rmsnorm": false,
+    "loss": "mean assistant target token loss per example, equal example weighting",
+    "cuda_cache_policy": "release unused cached allocations after each microbatch"
+  },
+  "round1": {"dataset": "A06-scripted-train-v1-20261007-r3", "sample_order": "one seeded permutation of all 320 rows"},
+  "corrections": {
+    "partition": "train", "max_candidates_per_fixture": 4,
+    "minimum_distinct_rows": 8, "minimum_fixtures": 2,
+    "priority": ["invalid action", "blocked transfer", "fuel neglect", "verified harmful wait"],
+    "acceptance": "exact pre-action native save, successful corrective action, observed problem addressed, original-horizon scripted continuation without sustained failure",
+    "history": "actual prior model actions only",
+    "mixture": "160 original rows without replacement plus 160 current-round verified corrections with replacement",
+    "insufficient_data": "stop incomplete; do not manufacture labels or repeat unchanged-data training"
+  },
+  "selection": {"fixtures": ["validation_fuel", "validation_storage"], "criteria": ["highest mean restricted survival", "highest total new plates", "earliest checkpoint"]},
+  "final_evaluation": {
+    "conditions": ["unchanged_bf16", "unchanged_4bit", "round1_4bit", "round2_4bit", "round3_4bit"],
+    "fixtures": ["test_drill_storage", "test_furnace_output", "test_reserve_storage"],
+    "episodes": 15, "planned_model_episodes_total": 41,
+    "test_opening_gate": "all three selected adapters and experiment sources/settings hashed before any final test",
+    "custom_rmsnorm": false
+  },
+  "limits": {"total_wall_seconds": 43200, "worker_wall_seconds": 7200, "episode_wall_seconds": 600, "automatic_retries_per_failed_stage": 1, "one_gpu_worker": true},
+  "fixtures": {
+    "train_drill": "A06-train_drill-controls-20261006T211921Z",
+    "train_furnace": "A06-train_furnace-controls-20261006T223803Z",
+    "train_output": "A06-train_output-controls-20261007T022345Z",
+    "train_carry": "A06-train_carry-controls-20261007T022727Z",
+    "validation_fuel": "A06-validation_fuel-controls-20261007T023116Z",
+    "validation_storage": "A06-validation_storage-controls-20261007T023455Z",
+    "test_drill_storage": "A06-test_drill_storage-controls-20261007T023821Z",
+    "test_furnace_output": "A06-test_furnace_output-controls-20261007T025317Z",
+    "test_reserve_storage": "A06-test_reserve_storage-controls-20261007T024515Z"
+  },
+  "claims": "Single-seed, same-geometry maintenance pilot. Training loss and teacher disagreement alone are not gameplay improvement. Preserve worse rounds, timeouts and failed attempts. No custom-kernel training or new whole-model speed claim."
+}

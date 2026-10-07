@@ -1,0 +1,27 @@
+[
+  {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r2-train_drill-0.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"
+  },
+  {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r2-train_drill-54.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_drill-controls-20261006T211921Z"
+  },
+  {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r2-train_furnace-17.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_furnace-controls-20261006T223803Z"
+  },
+  {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r2-train_output-0.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"
+  },
+  {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r2-train_output-28.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_output-controls-20261007T022345Z"
+  }
+]

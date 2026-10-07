@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-round2_4bit-20261007T160355713894Z",
+  "fixture_id": "train_output",
+  "step": 28,
+  "target_action": {
+    "tool": "fuel",
+    "args": {
+      "building_handle": "e2",
+      "coal_count": 3
+    }
+  },
+  "problem": "fuel neglect",
+  "semantic_key": "1d3cd9cd791c8f249fed72ab4982cb3586e70611a4e8d00576f0d3918c9ef9d6",
+  "trace_sha256": "4e5ca447097faa535f6fc780092b387f5d62af3e5b9bd29f5cfbd7e7f899a8ba"
+}

@@ -1,0 +1,93 @@
+{
+  "experiment_id": "a06-two-round-v2",
+  "parent_protocol": "a06-qwen-sft-v1",
+  "scope": "Two successive adapters, executed held-out gameplay; original protocol remains immutable",
+  "seed": 42,
+  "training": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0,
+    "target_modules": "all-linear",
+    "quantization": "nf4_double_quant",
+    "compute_dtype": "bfloat16",
+    "attention": "sdpa",
+    "micro_batch_size": 1,
+    "gradient_accumulation": 8,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "max_gradient_norm": 1.0,
+    "max_training_sequence_tokens": 2048,
+    "optimizer_steps": 40,
+    "checkpoint_steps": [
+      20,
+      40
+    ],
+    "gradient_checkpointing": true,
+    "custom_rmsnorm": false,
+    "loss": "mean assistant target token loss per example, equal example weighting",
+    "cuda_cache_policy": "release unused cached allocations after each microbatch to avoid measured WDDM memory pressure"
+  },
+  "round1": {
+    "dataset": "A06-scripted-train-v1-20261007-r3",
+    "sample_order": "one seeded permutation of all 320 rows"
+  },
+  "round2": {
+    "initialization": "selected round1 adapter",
+    "correction_source": "round1 executed episodes on four train fixtures only",
+    "acceptance": "different corrective action executed from exact pre-action native state and successful scripted continuation through original full horizon",
+    "history": "actual round1 attempted actions, never replaced by teacher history",
+    "mixture": "160 original rows and 160 verified correction rows; seeded sampling with replacement if fewer corrections",
+    "zero_verified_corrections": "stop as blocked; never substitute a repeated unchanged-data pass"
+  },
+  "selection": {
+    "fixtures": [
+      "validation_fuel",
+      "validation_storage"
+    ],
+    "criteria": [
+      "highest mean restricted survival",
+      "highest new plates",
+      "earliest checkpoint"
+    ],
+    "checkpoints_per_round": 2
+  },
+  "final_evaluation": {
+    "conditions": [
+      "unchanged_bf16",
+      "unchanged_4bit",
+      "round1_4bit",
+      "round2_4bit"
+    ],
+    "fixtures": [
+      "test_drill_storage",
+      "test_furnace_output",
+      "test_reserve_storage"
+    ],
+    "episodes": 12,
+    "primary_comparison": [
+      "unchanged_4bit",
+      "round1_4bit",
+      "round2_4bit"
+    ],
+    "test_opening_gate": "both selected adapters and configurations hashed and locked before any final test episode",
+    "custom_rmsnorm": false,
+    "metrics": [
+      "restricted survival seconds",
+      "new plates",
+      "failed action rate",
+      "wait during predefined maintenance opportunity",
+      "input/output tokens",
+      "response latency",
+      "GPU memory",
+      "training loss and time"
+    ]
+  },
+  "limits": {
+    "one_gpu_worker": true,
+    "automatic_retries_per_failed_stage": 1,
+    "worker_wall_seconds": 7200,
+    "episode_wall_seconds": 600
+  },
+  "claims": "Training loss alone is not improvement; report unchanged or worse gameplay results honestly. Single training seed, small same-geometry fixture pilot.",
+  "supersedes": "a06-two-round-v1: interrupted first attempt; unchanged learning settings, explicit cache management"
+}

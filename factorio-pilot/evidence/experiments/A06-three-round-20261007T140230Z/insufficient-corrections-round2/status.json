@@ -1,0 +1,13 @@
+{
+  "accepted_for_training": false,
+  "verified_rows": 5,
+  "minimum_required": 8,
+  "fixtures": [
+    "train_drill",
+    "train_furnace",
+    "train_output"
+  ],
+  "reason": "Insufficient verified corrective data",
+  "round3_launched": false,
+  "final_tests_opened": false
+}

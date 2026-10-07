@@ -1,0 +1,66 @@
+{
+  "condition": "round2_4bit",
+  "purpose": "validation",
+  "fixture": {
+    "id": "validation_fuel",
+    "partition": "validation",
+    "presets": {
+      "drill_coal": 0,
+      "drill_burning_joules": 3000000,
+      "furnace_coal": 0,
+      "furnace_burning_joules": 3000000,
+      "output_plates": 30,
+      "carried_plates": 0,
+      "chest_plates": 200,
+      "reserve_coal": 300
+    },
+    "preset_sha256": "94ff1c5076b2772db34154c940e0374a14196426b2ca7ba1c559f259fcb36cdc"
+  },
+  "fixture_control_run": "/home/osci2/factorio-pilot/runs/A06-validation_fuel-controls-20261007T023116Z",
+  "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round2-20261007T140230Z-attempt0/checkpoint-40",
+  "adapter_sha256": {
+    "adapter_config.json": "c0190605d6441931f01e7a48d21d7d30bc265f88b9a0661055931ec37a120765",
+    "adapter_model.safetensors": "167357455d646b2ba44bd044c0224df0a6fe73237ffac82c32fb16b8bc13c695"
+  },
+  "protocol_sha256": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+  "source_hashes": {
+    "a06_episode.py": "eedd9732b3beb49010306dfd1e1fa45be49a6b58e88e05852cc60cf7f47d0741",
+    "a06_context.py": "f753e354c6ff64bdd6a79837d519418cbd3118ecef74fe8c2f2f1bb19ff0b997",
+    "a06_fixture_controls.py": "ca53099ddd7ace815f29b9692c181535bbb63c436e452c02e54c78a967ed266d",
+    "observation_policy.py": "73526da19ff240d4c52ce796b33009761197f567c3c1470cb673476451cb3c7e",
+    "maintenance_tools.py": "97f69b690b1011a8cf71fbe6adb834c2ca41b91430c29882d1d131335c984723",
+    "logistics_tools.py": "94085725b67a7cbfd1b526ce903974c116be3f3b4592ed07df8996c8a150c00a",
+    "factory_agent_tools.py": "9bb4c497f6326f7b218d7192885aea2bf9da435775be4bb5ae91216b02b80c76",
+    "game_bridge.py": "45ac71b4d90fe6fac57e51a4b9c3d7d6c3cdab1c243914d38ecae51fcb834d71",
+    "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+    "a06_workflow.py": "f2eb3bec6d57d18acef7dd96e4d424313eb5a073a8b06c1be1557076c7d25ebb"
+  },
+  "native_source_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "task": {
+    "decision_interval_ticks": 900,
+    "window_ticks": 3600,
+    "target_new_plates_per_window": 16,
+    "consecutive_low_windows_to_fail": 2,
+    "max_simulated_seconds": 1200,
+    "max_decisions": 80,
+    "wall_time_limit_seconds": 600,
+    "game_speed": 10,
+    "carry_capacity": 100,
+    "furnace_capacity": 100,
+    "chest_capacity": 1600,
+    "max_refill_coal": 3,
+    "warmup_seconds": 60,
+    "min_warmup_new_plates": 16
+  },
+  "custom_cuda_used": false,
+  "attention": "sdpa",
+  "do_sample": false,
+  "three_round_protocol_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16",
+  "wait_opportunity_definition": "fuel stored <=1 OR carried plates >0 OR furnace output >=60; heuristic only"
+}

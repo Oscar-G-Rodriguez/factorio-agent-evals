@@ -1,0 +1,841 @@
+{
+  "scope": "Observed CPU wall intervals; time to first token includes prompt processing and first-token generation. No isolated prefill/decode GPU or acceleration claim.",
+  "episodes": [
+    {
+      "run": "A06-episode-train_carry-round1_4bit-20261007T143926951057Z",
+      "condition": "round1_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_carry",
+      "checkpoint_update": 40,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.004133132999868394,
+        "sum": 0.03993969299926903
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.29582580049986973,
+        "sum": 2.5730369999992035
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.6161028089998126,
+        "sum": 6.211522589999731
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 7.321699990825437e-05,
+        "sum": 0.006946585000150662
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 1.6647815105000063,
+        "sum": 13.614996424000765
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.9325502564997805,
+        "sum": 8.784559589998935
+      }
+    },
+    {
+      "run": "A06-episode-train_carry-round2_4bit-20261007T160854633607Z",
+      "condition": "round2_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_carry",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004090963499947975,
+        "sum": 0.33838188400022773
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.3343189449997226,
+        "sum": 26.984549987997525
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6569023000001835,
+        "sum": 74.25166368300142
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 6.808899979660055e-05,
+        "sum": 0.07925140200222813
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.7816679924999335,
+        "sum": 149.3455394590028
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 0.99814896900034,
+        "sum": 101.23621367099895
+      }
+    },
+    {
+      "run": "A06-episode-train_carry-unchanged_4bit-20261007T141023055260Z",
+      "condition": "unchanged_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_carry",
+      "checkpoint_update": null,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.003599957500000528,
+        "sum": 0.035208512000053815
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.20351981800001795,
+        "sum": 1.9011217859998624
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.6333328300000289,
+        "sum": 5.168211882000264
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 0.0022670645000744116,
+        "sum": 0.020511576000217246
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 1.7233878124999364,
+        "sum": 13.83416817900013
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.8343002820000152,
+        "sum": 7.069333668000127
+      }
+    },
+    {
+      "run": "A06-episode-train_drill-round1_4bit-20261007T143533341816Z",
+      "condition": "round1_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_drill",
+      "checkpoint_update": 40,
+      "decisions": 24,
+      "render_seconds": {
+        "count": 24,
+        "median": 0.003973726999902283,
+        "sum": 0.10376868800040029
+      },
+      "time_to_first_token_seconds": {
+        "count": 24,
+        "median": 0.3119633965002322,
+        "sum": 7.725643723001667
+      },
+      "remaining_generation_seconds": {
+        "count": 24,
+        "median": 0.569050983499892,
+        "sum": 17.85776592100001
+      },
+      "tool_seconds": {
+        "count": 24,
+        "median": 4.99029999900813e-05,
+        "sum": 0.017581446999884065
+      },
+      "game_seconds": {
+        "count": 24,
+        "median": 1.6882055700000365,
+        "sum": 40.875541188999705
+      },
+      "response_seconds": {
+        "count": 24,
+        "median": 0.8850315980000687,
+        "sum": 25.583409644001676
+      }
+    },
+    {
+      "run": "A06-episode-train_drill-round2_4bit-20261007T155357694563Z",
+      "condition": "round2_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_drill",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004160688500178367,
+        "sum": 0.34250820300258056
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.33528953700033526,
+        "sum": 26.95280489200013
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6630836249996719,
+        "sum": 75.8593255839969
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 8.715400008441065e-05,
+        "sum": 0.08724424300362443
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.8407745644999522,
+        "sum": 153.06566809700416
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.0118272729996534,
+        "sum": 102.81213047599704
+      }
+    },
+    {
+      "run": "A06-episode-train_drill-unchanged_4bit-20261007T140239834884Z",
+      "condition": "unchanged_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_drill",
+      "checkpoint_update": null,
+      "decisions": 24,
+      "render_seconds": {
+        "count": 24,
+        "median": 0.003994479999988698,
+        "sum": 0.10040455300008944
+      },
+      "time_to_first_token_seconds": {
+        "count": 24,
+        "median": 0.23579896550000967,
+        "sum": 5.999199798000234
+      },
+      "remaining_generation_seconds": {
+        "count": 24,
+        "median": 0.6143470979999961,
+        "sum": 15.048144800999921
+      },
+      "tool_seconds": {
+        "count": 24,
+        "median": 0.002464401000054295,
+        "sum": 0.06053117600015412
+      },
+      "game_seconds": {
+        "count": 24,
+        "median": 1.6858875485000056,
+        "sum": 40.64873897199993
+      },
+      "response_seconds": {
+        "count": 24,
+        "median": 0.8473752310000009,
+        "sum": 21.047344599000155
+      }
+    },
+    {
+      "run": "A06-episode-train_furnace-round1_4bit-20261007T143705029086Z",
+      "condition": "round1_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_furnace",
+      "checkpoint_update": 40,
+      "decisions": 24,
+      "render_seconds": {
+        "count": 24,
+        "median": 0.004009830999848418,
+        "sum": 0.10586812800011103
+      },
+      "time_to_first_token_seconds": {
+        "count": 24,
+        "median": 0.30363274849992195,
+        "sum": 7.613863307999054
+      },
+      "remaining_generation_seconds": {
+        "count": 24,
+        "median": 0.639395334000028,
+        "sum": 18.878039824001462
+      },
+      "tool_seconds": {
+        "count": 24,
+        "median": 6.451050012401538e-05,
+        "sum": 0.01705350899919722
+      },
+      "game_seconds": {
+        "count": 24,
+        "median": 1.713222678999955,
+        "sum": 42.6106964340006
+      },
+      "response_seconds": {
+        "count": 24,
+        "median": 0.9356848099998842,
+        "sum": 26.491903132000516
+      }
+    },
+    {
+      "run": "A06-episode-train_furnace-round2_4bit-20261007T155906228012Z",
+      "condition": "round2_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_furnace",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004087649499979307,
+        "sum": 0.3414905469990117
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.3347000440003285,
+        "sum": 27.113940852002997
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6208705845001532,
+        "sum": 72.22277741399648
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 8.158900027410709e-05,
+        "sum": 0.08119886799522646
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.7550971635000678,
+        "sum": 142.75555753700246
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 0.9643385920003311,
+        "sum": 99.33671826599948
+      }
+    },
+    {
+      "run": "A06-episode-train_furnace-unchanged_4bit-20261007T140409622086Z",
+      "condition": "unchanged_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_furnace",
+      "checkpoint_update": null,
+      "decisions": 76,
+      "render_seconds": {
+        "count": 76,
+        "median": 0.0041469315000313145,
+        "sum": 0.3269050699999525
+      },
+      "time_to_first_token_seconds": {
+        "count": 76,
+        "median": 0.2380234219999693,
+        "sum": 18.457236923999403
+      },
+      "remaining_generation_seconds": {
+        "count": 76,
+        "median": 0.7230242585000042,
+        "sum": 55.37200872199958
+      },
+      "tool_seconds": {
+        "count": 76,
+        "median": 0.0021604355000022224,
+        "sum": 0.1708057179998832
+      },
+      "game_seconds": {
+        "count": 76,
+        "median": 1.7360130849999678,
+        "sum": 133.95032660599918
+      },
+      "response_seconds": {
+        "count": 76,
+        "median": 0.9691680029999361,
+        "sum": 73.82924564599898
+      }
+    },
+    {
+      "run": "A06-episode-train_output-round1_4bit-20261007T143837860969Z",
+      "condition": "round1_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_output",
+      "checkpoint_update": 40,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.0038306040000861685,
+        "sum": 0.03783075700039262
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.29055674699998235,
+        "sum": 2.8116579520001324
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.6737827254999047,
+        "sum": 7.171203714999592
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 5.1743999847531086e-05,
+        "sum": 0.005338340000434982
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 2.1124283125000147,
+        "sum": 16.547886223000205
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.9717742770001223,
+        "sum": 9.982861666999725
+      }
+    },
+    {
+      "run": "A06-episode-train_output-round2_4bit-20261007T160355713894Z",
+      "condition": "round2_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_output",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004167417499957082,
+        "sum": 0.34117885600153386
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.33824568149975676,
+        "sum": 27.508580362998146
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6607415404996573,
+        "sum": 75.82080881400543
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 6.3829000282567e-05,
+        "sum": 0.08395141999153566
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.7790776050001114,
+        "sum": 148.77645311200013
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 0.9885569484999905,
+        "sum": 103.32938917700358
+      }
+    },
+    {
+      "run": "A06-episode-train_output-unchanged_4bit-20261007T140816912373Z",
+      "condition": "unchanged_4bit",
+      "purpose": "train-diagnostic",
+      "fixture": "train_output",
+      "checkpoint_update": null,
+      "decisions": 36,
+      "render_seconds": {
+        "count": 36,
+        "median": 0.004103878499961411,
+        "sum": 0.15861911700017117
+      },
+      "time_to_first_token_seconds": {
+        "count": 36,
+        "median": 0.23186128300000064,
+        "sum": 8.546922171000347
+      },
+      "remaining_generation_seconds": {
+        "count": 36,
+        "median": 0.7764623764999783,
+        "sum": 27.742134976000102
+      },
+      "tool_seconds": {
+        "count": 36,
+        "median": 0.0019019095000203379,
+        "sum": 0.06667643299988413
+      },
+      "game_seconds": {
+        "count": 36,
+        "median": 1.7393311494999466,
+        "sum": 63.300605669999754
+      },
+      "response_seconds": {
+        "count": 36,
+        "median": 0.9989366964999817,
+        "sum": 36.28905714700045
+      }
+    },
+    {
+      "run": "A06-episode-validation_fuel-round1_4bit-20261007T143147814234Z",
+      "condition": "round1_4bit",
+      "purpose": "validation",
+      "fixture": "validation_fuel",
+      "checkpoint_update": 20,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.003810982499999227,
+        "sum": 0.03588729900002363
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.294290185500131,
+        "sum": 2.546863387000485
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.6159769529999721,
+        "sum": 5.2391521649988135
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 5.446850013868243e-05,
+        "sum": 0.0005374830006985576
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 1.8330875725000624,
+        "sum": 15.436817229000098
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.8991986625001118,
+        "sum": 7.786015551999299
+      }
+    },
+    {
+      "run": "A06-episode-validation_fuel-round1_4bit-20261007T143318014792Z",
+      "condition": "round1_4bit",
+      "purpose": "validation",
+      "fixture": "validation_fuel",
+      "checkpoint_update": 40,
+      "decisions": 20,
+      "render_seconds": {
+        "count": 20,
+        "median": 0.0041318364999369805,
+        "sum": 0.08823262600117232
+      },
+      "time_to_first_token_seconds": {
+        "count": 20,
+        "median": 0.31231247250002525,
+        "sum": 6.464049274001354
+      },
+      "remaining_generation_seconds": {
+        "count": 20,
+        "median": 0.6043452210003579,
+        "sum": 15.997188570999697
+      },
+      "tool_seconds": {
+        "count": 20,
+        "median": 5.894099990655377e-05,
+        "sum": 0.019398788998387317
+      },
+      "game_seconds": {
+        "count": 20,
+        "median": 1.7717590279999058,
+        "sum": 36.06193094699984
+      },
+      "response_seconds": {
+        "count": 20,
+        "median": 0.934109494500035,
+        "sum": 22.46123784500105
+      }
+    },
+    {
+      "run": "A06-episode-validation_fuel-round2_4bit-20261007T153323847562Z",
+      "condition": "round2_4bit",
+      "purpose": "validation",
+      "fixture": "validation_fuel",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004228990499541396,
+        "sum": 0.3507527759984441
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.33837360400048055,
+        "sum": 27.60922415800087
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6922023765000631,
+        "sum": 76.17940489499688
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 9.959199996956158e-05,
+        "sum": 0.08081276100347168
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.8441085659997043,
+        "sum": 154.1530481679938
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.0694670155003223,
+        "sum": 103.78862905299775
+      }
+    },
+    {
+      "run": "A06-episode-validation_fuel-round2_4bit-20261007T154346373517Z",
+      "condition": "round2_4bit",
+      "purpose": "validation",
+      "fixture": "validation_fuel",
+      "checkpoint_update": 40,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004146213500007434,
+        "sum": 0.3461103549971085
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.34322114650012736,
+        "sum": 27.92026841200277
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6834993669999676,
+        "sum": 75.47814771100093
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 7.12669998392812e-05,
+        "sum": 0.08523524899828772
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.7808781930002624,
+        "sum": 147.18208229600077
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.042428140499851,
+        "sum": 103.3984161230037
+      }
+    },
+    {
+      "run": "A06-episode-validation_fuel-unchanged_4bit-20261007T141105668025Z",
+      "condition": "unchanged_4bit",
+      "purpose": "validation",
+      "fixture": "validation_fuel",
+      "checkpoint_update": null,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004191767999941476,
+        "sum": 0.344110538999189
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.23330359699997416,
+        "sum": 18.8484119889996
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.7350294860000304,
+        "sum": 59.27469622900003
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 0.0018074390000037965,
+        "sum": 0.14803147500026625
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.6917023595000273,
+        "sum": 142.96579881399896
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 0.9751925264999386,
+        "sum": 78.12310821799963
+      }
+    },
+    {
+      "run": "A06-episode-validation_storage-round1_4bit-20261007T143231970709Z",
+      "condition": "round1_4bit",
+      "purpose": "validation",
+      "fixture": "validation_storage",
+      "checkpoint_update": 20,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.003927814500002569,
+        "sum": 0.03559713299955547
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.29896144050007933,
+        "sum": 2.644928035000703
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.5827401760000157,
+        "sum": 6.067114893000053
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 5.0350500032436685e-05,
+        "sum": 0.0004291220002414775
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 1.7390614474998074,
+        "sum": 14.02881422999917
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.8756565380001575,
+        "sum": 8.712042928000756
+      }
+    },
+    {
+      "run": "A06-episode-validation_storage-round1_4bit-20261007T143445844239Z",
+      "condition": "round1_4bit",
+      "purpose": "validation",
+      "fixture": "validation_storage",
+      "checkpoint_update": 40,
+      "decisions": 8,
+      "render_seconds": {
+        "count": 8,
+        "median": 0.003866654499915967,
+        "sum": 0.03670391200012091
+      },
+      "time_to_first_token_seconds": {
+        "count": 8,
+        "median": 0.30291735150012755,
+        "sum": 2.6193211720001273
+      },
+      "remaining_generation_seconds": {
+        "count": 8,
+        "median": 0.6085314160000053,
+        "sum": 6.779026060000433
+      },
+      "tool_seconds": {
+        "count": 8,
+        "median": 6.280249999690568e-05,
+        "sum": 0.00831745300001785
+      },
+      "game_seconds": {
+        "count": 8,
+        "median": 1.8690564905000429,
+        "sum": 14.557933154000239
+      },
+      "response_seconds": {
+        "count": 8,
+        "median": 0.8972938800000065,
+        "sum": 9.39834723200056
+      }
+    },
+    {
+      "run": "A06-episode-validation_storage-round2_4bit-20261007T153829073824Z",
+      "condition": "round2_4bit",
+      "purpose": "validation",
+      "fixture": "validation_storage",
+      "checkpoint_update": 20,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004188031999547093,
+        "sum": 0.35217107399785164
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.3365303634996053,
+        "sum": 27.17403839599774
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.6975199275002524,
+        "sum": 82.16684232100033
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 0.00010292549995938316,
+        "sum": 0.09555122299934737
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.8750252424997598,
+        "sum": 156.33981801299706
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.0497215299997151,
+        "sum": 109.34088071699807
+      }
+    },
+    {
+      "run": "A06-episode-validation_storage-round2_4bit-20261007T154844885596Z",
+      "condition": "round2_4bit",
+      "purpose": "validation",
+      "fixture": "validation_storage",
+      "checkpoint_update": 40,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.0041479594997326785,
+        "sum": 0.3457233619992621
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.33060237099971346,
+        "sum": 26.959219054996538
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.706062653999652,
+        "sum": 80.62566919700112
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 0.00013440749989968026,
+        "sum": 0.09575309999854653
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.8208531145000961,
+        "sum": 150.80150372900152
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.040121055000327,
+        "sum": 107.58488825199765
+      }
+    },
+    {
+      "run": "A06-episode-validation_storage-unchanged_4bit-20261007T141527944768Z",
+      "condition": "unchanged_4bit",
+      "purpose": "validation",
+      "fixture": "validation_storage",
+      "checkpoint_update": null,
+      "decisions": 80,
+      "render_seconds": {
+        "count": 80,
+        "median": 0.004181523000056586,
+        "sum": 0.354662988001337
+      },
+      "time_to_first_token_seconds": {
+        "count": 80,
+        "median": 0.23829252850009652,
+        "sum": 19.20915789599985
+      },
+      "remaining_generation_seconds": {
+        "count": 80,
+        "median": 0.7745145669999829,
+        "sum": 60.58274354400078
+      },
+      "tool_seconds": {
+        "count": 80,
+        "median": 0.0020090184999617122,
+        "sum": 0.15859854300038023
+      },
+      "game_seconds": {
+        "count": 80,
+        "median": 1.7384399484999449,
+        "sum": 142.50908167100056
+      },
+      "response_seconds": {
+        "count": 80,
+        "median": 1.0132142625000142,
+        "sum": 79.79190144000063
+      }
+    }
+  ]
+}

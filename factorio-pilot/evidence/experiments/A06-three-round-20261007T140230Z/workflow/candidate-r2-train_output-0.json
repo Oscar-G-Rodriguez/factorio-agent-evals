@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_output-round2_4bit-20261007T160355713894Z",
+  "fixture_id": "train_output",
+  "step": 0,
+  "target_action": {
+    "tool": "collect_output",
+    "args": {
+      "furnace_handle": "e3",
+      "plate_count": 100
+    }
+  },
+  "problem": "blocked transfer",
+  "semantic_key": "d2be515f7c6877c48824489fd664664e2b999165d1b115d8cdf30a4754811f83",
+  "trace_sha256": "4e5ca447097faa535f6fc780092b387f5d62af3e5b9bd29f5cfbd7e7f899a8ba"
+}

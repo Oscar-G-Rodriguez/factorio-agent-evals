@@ -1,0 +1,27 @@
+{
+  "independently_checked": 3,
+  "verified_actions": [
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144009624336Z",
+      "fixture": "train_drill",
+      "step": 16,
+      "transferred": 95,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144309539609Z",
+      "fixture": "train_drill",
+      "step": 17,
+      "transferred": 99,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T144626212270Z",
+      "fixture": "train_drill",
+      "step": 18,
+      "transferred": 100,
+      "full_horizon_ticks": 72000
+    }
+  ],
+  "scope": "Executed transfer, exact restore, continuation cadence, production windows, receipts and native archive hashes; training release audit remains separate."
+}

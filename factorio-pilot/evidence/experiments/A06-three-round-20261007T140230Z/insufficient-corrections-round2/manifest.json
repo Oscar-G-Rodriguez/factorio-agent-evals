@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16",
+  "rows": 5,
+  "fixtures": [
+    "train_drill",
+    "train_furnace",
+    "train_output"
+  ],
+  "train_sha256": "1ddce98fd411250e634761db65374989a8fc7e4c74b68ac86d03bd6c54cc849c"
+}

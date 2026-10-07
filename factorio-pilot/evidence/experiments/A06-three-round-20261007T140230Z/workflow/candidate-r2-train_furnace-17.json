@@ -1,0 +1,15 @@
+{
+  "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_furnace-round2_4bit-20261007T155906228012Z",
+  "fixture_id": "train_furnace",
+  "step": 17,
+  "target_action": {
+    "tool": "fuel",
+    "args": {
+      "building_handle": "e2",
+      "coal_count": 3
+    }
+  },
+  "problem": "fuel neglect",
+  "semantic_key": "5bfff7240f3c4871ff92131d4cbb00d2df21d20bd2503d53a2c0b3354624c35f",
+  "trace_sha256": "1afd4c55ae4b139f0cf2358bd358d5d6a7934c470b150ce73195ccb9bf51aac2"
+}

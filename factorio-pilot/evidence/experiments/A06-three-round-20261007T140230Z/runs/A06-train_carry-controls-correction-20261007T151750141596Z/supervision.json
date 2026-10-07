@@ -1,0 +1,10 @@
+{
+  "job": {
+    "kind": "correction",
+    "candidate": "/home/osci2/factorio-pilot/workflows/A06-three-round-20261007T140230Z/candidate-r1-train_carry-2.json",
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-20261007T022727Z"
+  },
+  "run": "/home/osci2/factorio-pilot/runs/A06-train_carry-controls-correction-20261007T151750141596Z",
+  "exit_code": 0,
+  "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"
+}

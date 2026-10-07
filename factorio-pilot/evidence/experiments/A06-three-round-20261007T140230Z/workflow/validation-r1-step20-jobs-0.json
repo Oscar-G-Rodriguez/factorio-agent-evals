@@ -1,0 +1,14 @@
+[
+  {
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_fuel-controls-20261007T023116Z",
+    "condition": "round1_4bit",
+    "purpose": "validation",
+    "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-20"
+  },
+  {
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_storage-controls-20261007T023455Z",
+    "condition": "round1_4bit",
+    "purpose": "validation",
+    "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round1-20261007T140230Z-attempt0/checkpoint-20"
+  }
+]

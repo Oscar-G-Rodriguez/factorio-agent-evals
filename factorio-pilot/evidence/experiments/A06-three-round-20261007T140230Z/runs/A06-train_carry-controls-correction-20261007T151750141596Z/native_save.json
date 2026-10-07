@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_train_carry_correction_20261007T151750141596Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-train_carry-controls-correction-20261007T151750141596Z/initial.zip",
+  "sha256": "4bde14dbcd4865c6a9a880b31baa94b153f3f0c28ba661c3c9dea3a01014f1b3",
+  "bytes": 1079860,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

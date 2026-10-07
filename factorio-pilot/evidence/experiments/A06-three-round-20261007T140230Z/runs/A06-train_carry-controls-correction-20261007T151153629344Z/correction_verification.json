@@ -1,0 +1,238 @@
+{
+  "candidate": {
+    "episode": "/home/osci2/factorio-pilot/runs/A06-episode-train_carry-round1_4bit-20261007T143926951057Z",
+    "fixture_id": "train_carry",
+    "step": 0,
+    "target_action": {
+      "tool": "store_plates",
+      "args": {
+        "chest_handle": "e1",
+        "plate_count": 100
+      }
+    },
+    "problem": "blocked transfer",
+    "semantic_key": "1586c870dfd1789c3204b3cc65da3cd0a085aba8c4df3cc935aed247e51d9afc",
+    "trace_sha256": "27c522e5172c9938430452719351093f6ce570f9c6d3bb03a44f94e038021583"
+  },
+  "target_action": {
+    "tool": "store_plates",
+    "args": {
+      "chest_handle": "e1",
+      "plate_count": 100
+    }
+  },
+  "exact_pre_action_restore": true,
+  "corrective_action_executed": true,
+  "observed_problem_addressed": true,
+  "full_horizon_survived": true,
+  "accepted": true,
+  "stop_reason": "survived_simulation_limit",
+  "final_tick": 89319,
+  "origin_tick": 17319,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 17319,
+      "end_tick": 20919,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 1,
+      "start_tick": 20919,
+      "end_tick": 24519,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 2,
+      "start_tick": 24519,
+      "end_tick": 28119,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 3,
+      "start_tick": 28119,
+      "end_tick": 31719,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 4,
+      "start_tick": 31719,
+      "end_tick": 35319,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 5,
+      "start_tick": 35319,
+      "end_tick": 38919,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 6,
+      "start_tick": 38919,
+      "end_tick": 42519,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 7,
+      "start_tick": 42519,
+      "end_tick": 46119,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 8,
+      "start_tick": 46119,
+      "end_tick": 49719,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 9,
+      "start_tick": 49719,
+      "end_tick": 53319,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 10,
+      "start_tick": 53319,
+      "end_tick": 56919,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 11,
+      "start_tick": 56919,
+      "end_tick": 60519,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 12,
+      "start_tick": 60519,
+      "end_tick": 64119,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 13,
+      "start_tick": 64119,
+      "end_tick": 67719,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 14,
+      "start_tick": 67719,
+      "end_tick": 71319,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 15,
+      "start_tick": 71319,
+      "end_tick": 74919,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 16,
+      "start_tick": 74919,
+      "end_tick": 78519,
+      "actual_ticks": 3600,
+      "iron_plates": 18,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 17,
+      "start_tick": 78519,
+      "end_tick": 82119,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 18,
+      "start_tick": 82119,
+      "end_tick": 85719,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    },
+    {
+      "index": 19,
+      "start_tick": 85719,
+      "end_tick": 89319,
+      "actual_ticks": 3600,
+      "iron_plates": 19,
+      "target": 16,
+      "below_target": false,
+      "consecutive_low_windows": 0
+    }
+  ],
+  "continuation_sha256": "54fc01570f03bb244ec943fe79c2c6b626bdedad81f9b5661d2148a266cca874",
+  "action_receipt_sha256": "fea57c7ba19474bb62b44bca47ef63a948120497c8ca3b0a769803437e7cf3cb",
+  "candidate_restore_sha256": "70b4e699e5da02e99df73ebcaf521d5654dc3c802b187a649184b363ca4bdc51",
+  "native_save_sha256": "448fd3e3b269a96223917d1fd1bba00adcf3d9f69a578b711ecc339709ce478b"
+}

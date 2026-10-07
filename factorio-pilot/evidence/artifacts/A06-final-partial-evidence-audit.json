@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-07T16:39:53.587224+00:00",
+  "passed": true,
+  "command": "python scripts/verify_a06_three_round_evidence.py",
+  "verifier_sha256": "54ed3f4443d81f5c2a2ae0d2dd577734569233bbe96854fa67b6512fd0340fd3",
+  "manifest_sha256": "0a9e07a71be6e8385a7a902e9d259d9762fdab9eb1801297c9753e5aeff62120",
+  "report_sha256": "2fb4f0c6a8e65a12d64fc330c2988e622fd32231cfc7eb0dc2459102099f72c0",
+  "artifact_hashes": 1068,
+  "model_episodes": 22,
+  "correction_replays": 21,
+  "training_rounds": 2,
+  "final_test_episodes": 0,
+  "phase": "incomplete",
+  "goal_complete": false,
+  "additional_checks": [
+    "24 CPU workflow/context/fixture/execution tests passed",
+    "Historical maintenance evidence passed",
+    "A06 parent protocol design consistency passed; historical status labels are not current workflow state"
+  ]
+}

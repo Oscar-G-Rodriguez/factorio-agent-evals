@@ -1,0 +1,66 @@
+{
+  "protocol_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16",
+  "parent_protocol_sha256": "df03b851a25a890db62ae5f39ae4ef0c5464d38f63a158fb2cb58f9772dd712a",
+  "guide_sha256": "5574ed48855539d8e45f654da1894fab1ce929008c303643e71a1df4d8e4909a",
+  "cpu_tests_passed": 60,
+  "fixtures": [
+    {
+      "fixture": "train_drill",
+      "run": "A06-train_drill-controls-20261006T211921Z",
+      "native_sha256": "2af9c4226846876d83f228d0f2400ba6bf0b7b1e5b00b5bd1a272f0c75b917a2",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "train_furnace",
+      "run": "A06-train_furnace-controls-20261006T223803Z",
+      "native_sha256": "1d3948c9293e62eb1fae43bbd6a86265975a9c73b4b6ea6101fedf5744fbb548",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "train_output",
+      "run": "A06-train_output-controls-20261007T022345Z",
+      "native_sha256": "00cc151d73640ecc14d787a004547ca31656babba24fb10961e935b12f0eeddd",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "train_carry",
+      "run": "A06-train_carry-controls-20261007T022727Z",
+      "native_sha256": "ce1ec585b209cf1094a1f1ccfc605bacf50d440751a6b8631edb488305ad7747",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "validation_fuel",
+      "run": "A06-validation_fuel-controls-20261007T023116Z",
+      "native_sha256": "aaa1fb942783fbbd98081f658906a453d6e5991566d4c298f119fcf95fd135e7",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "validation_storage",
+      "run": "A06-validation_storage-controls-20261007T023455Z",
+      "native_sha256": "bde205ba7761f28b932d3270a9badf7978c57a3054c3b25a3af95f1853f79657",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "test_drill_storage",
+      "run": "A06-test_drill_storage-controls-20261007T023821Z",
+      "native_sha256": "a7e21a0fa4a933b592e46bb0be391221b857630800c7e6afa9af4a0c99c19405",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "test_furnace_output",
+      "run": "A06-test_furnace_output-controls-20261007T025317Z",
+      "native_sha256": "dc8a63e4334fe090979c8bfcdbe2ef43b22133eafe9c96437148a8406f93a2dc",
+      "archive_verified_now": true
+    },
+    {
+      "fixture": "test_reserve_storage",
+      "run": "A06-test_reserve_storage-controls-20261007T024515Z",
+      "native_sha256": "f4066b108d8ea8b2f2229321bb2bc6738ee58c298bf7876fb7281a2da4975fb0",
+      "archive_verified_now": true
+    }
+  ],
+  "preflight_run": "A06-training-preflight-three-round-20261007T1350",
+  "preflight_reload_verification_sha256": "be8bd4c0e49cef4e99d7976fc01c94921238e9ae0677a5370b3e2febc8d02793",
+  "preflight_resume_step3_mean_loss": 0.5446162219159305,
+  "scope": "Contract freeze and compatibility/reload/recovery checks; no completed production training round"
+}

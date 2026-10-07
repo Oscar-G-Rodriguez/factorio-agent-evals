@@ -1,0 +1,221 @@
+{
+  "action": {
+    "tool": "fuel",
+    "args": {
+      "building_handle": "e2",
+      "coal_count": 3
+    }
+  },
+  "before": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 385,
+      "iron-plate": 0,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "fuel": {
+          "iron-plate": 90
+        },
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 90,
+          "free_plate_capacity": 1510
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "fuel": "",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 750000,
+          "currently_burning": null
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.WORKING",
+        "fuel": "coal=3",
+        "furnace_source": "iron-ore=12",
+        "furnace_result": "iron-plate=9",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 9,
+          "free_plate_capacity": 91
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 3,
+          "remaining_burning_fuel_joules": 2050000,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 109,
+        "iron-plate": 96
+      },
+      "input": {
+        "coal": 20,
+        "iron-ore": 97
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 0,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4300,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 100
+    },
+    "goal_plates_per_minute": 16
+  },
+  "after": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 382,
+      "iron-plate": 0,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "fuel": {
+          "iron-plate": 90
+        },
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 90,
+          "free_plate_capacity": 1510
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "fuel": "coal=3",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 3,
+          "remaining_burning_fuel_joules": 750000,
+          "currently_burning": null
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.WORKING",
+        "fuel": "coal=3",
+        "furnace_source": "iron-ore=12",
+        "furnace_result": "iron-plate=9",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 9,
+          "free_plate_capacity": 91
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 3,
+          "remaining_burning_fuel_joules": 2050000,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 109,
+        "iron-plate": 96
+      },
+      "input": {
+        "coal": 20,
+        "iron-ore": 97
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 0,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4300,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 100
+    },
+    "goal_plates_per_minute": 16
+  },
+  "result": {
+    "handle": "e2",
+    "name": "burner-mining-drill",
+    "position": {
+      "x": 16.0,
+      "y": 71.0
+    },
+    "direction": "Direction.RIGHT",
+    "status": "EntityStatus.WORKING",
+    "inventory": {
+      "coal": 3
+    },
+    "fuel": "coal=3",
+    "warnings": "['output blocked by item on the ground. There is no sink entity in place to accept the output.']",
+    "drop_position": {
+      "x": 17.5,
+      "y": 70.5
+    },
+    "fuel_inventory": "[{'name': 'coal', 'count': 3}]",
+    "furnace_source": {}
+  },
+  "addressed": true
+}

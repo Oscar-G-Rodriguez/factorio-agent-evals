@@ -1,0 +1,1253 @@
+{
+  "paths": [
+    "storage.actions.can_place_entity",
+    "storage.actions.clear_collision_boxes",
+    "storage.actions.clear_entities",
+    "storage.actions.clear_harvest_queue",
+    "storage.actions.clear_walking_queue",
+    "storage.actions.connect_entities",
+    "storage.actions.craft_item",
+    "storage.actions.create_agent_characters",
+    "storage.actions.extend_collision_boxes",
+    "storage.actions.extract_item",
+    "storage.actions.get_entities",
+    "storage.actions.get_entity",
+    "storage.actions.get_factory_centroid",
+    "storage.actions.get_harvest_queue_length",
+    "storage.actions.get_path",
+    "storage.actions.get_prototype_recipe",
+    "storage.actions.get_research_progress",
+    "storage.actions.get_resource_name_at_position",
+    "storage.actions.get_resource_patch",
+    "storage.actions.get_walking_queue_length",
+    "storage.actions.harvest_resource",
+    "storage.actions.insert_item",
+    "storage.actions.inspect_inventory",
+    "storage.actions.launch_rocket",
+    "storage.actions.load_blueprint",
+    "storage.actions.load_entity_state",
+    "storage.actions.load_research_state",
+    "storage.actions.move_to",
+    "storage.actions.nearest",
+    "storage.actions.nearest_buildable",
+    "storage.actions.pickup_entity",
+    "storage.actions.place_entity",
+    "storage.actions.place_entity_next_to",
+    "storage.actions.print",
+    "storage.actions.production_stats",
+    "storage.actions.regenerate_resources",
+    "storage.actions.regenerate_resources2",
+    "storage.actions.render",
+    "storage.actions.render_message",
+    "storage.actions.render_simple",
+    "storage.actions.request_path",
+    "storage.actions.reset",
+    "storage.actions.reset_production_stats",
+    "storage.actions.rotate_entity",
+    "storage.actions.save_blueprint",
+    "storage.actions.save_entity_state",
+    "storage.actions.save_research_state",
+    "storage.actions.score",
+    "storage.actions.set_entity_recipe",
+    "storage.actions.set_inventory",
+    "storage.actions.set_research",
+    "storage.actions.sleep",
+    "storage.actions.update_walking_queues",
+    "storage.clear_lua_script_checksums",
+    "storage.get_alerts",
+    "storage.get_lua_script_checksums",
+    "storage.set_lua_script_checksum",
+    "storage.utils.avoid_entity",
+    "storage.utils.calculate_movement_ticks",
+    "storage.utils.can_place_entity",
+    "storage.utils.ensure_valid_character",
+    "storage.utils.entity_status_names",
+    "storage.utils.format_inventory_for_error",
+    "storage.utils.get_boiler_connection_points",
+    "storage.utils.get_chemical_plant_connection_points",
+    "storage.utils.get_chemical_plant_fluid_mappings",
+    "storage.utils.get_closest_entity",
+    "storage.utils.get_contents_compat",
+    "storage.utils.get_direction",
+    "storage.utils.get_direction_with_diagonals",
+    "storage.utils.get_entity_direction",
+    "storage.utils.get_generator_connection_positions",
+    "storage.utils.get_issues",
+    "storage.utils.get_offshore_pump_connection_points",
+    "storage.utils.get_pumpjack_connection_points",
+    "storage.utils.get_refinery_connection_points",
+    "storage.utils.get_refinery_fluid_mappings",
+    "storage.utils.get_storage_tank_connection_points",
+    "storage.utils.inspect",
+    "storage.utils.normalise_path",
+    "storage.utils.remove_enemies",
+    "storage.utils.serialize_entity",
+    "storage.utils.serialize_recipe"
+  ],
+  "tables": [
+    {
+      "path": "storage.created_items",
+      "scalar_count": 6,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.respawn_items",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_items",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_debris_items",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts.1",
+      "scalar_count": 5,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts.2",
+      "scalar_count": 6,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts.3",
+      "scalar_count": 7,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts.4",
+      "scalar_count": 5,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts.5",
+      "scalar_count": 4,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crashed_ship_parts",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 5
+    },
+    {
+      "path": "storage.silo_script.finished",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.silo_script",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.story.updates",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.story",
+      "scalar_count": 5,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.intro_entities",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.intro_entities2",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.goal_string",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.__lua_script_checksums",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.actions",
+      "scalar_count": 0,
+      "function_count": 53,
+      "table_count": 0
+    },
+    {
+      "path": "storage.utils",
+      "scalar_count": 0,
+      "function_count": 26,
+      "table_count": 0
+    },
+    {
+      "path": "storage.initial_score",
+      "scalar_count": 3,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.alerts",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.agent_characters",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.1.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.1",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.2.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.2",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.3.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.3",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.4.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.4",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.5.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.5",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.6.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.6",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.7.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.7",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.8.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.8",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.9.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.9",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.10.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.10",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.11.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.11",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.12.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.12",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.13.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.13",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.14.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.14",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.15.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.15",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.16.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.16",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.17.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.17",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.18.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.18",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.19.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.19",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.20.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.20",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.21.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.21",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.22.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.22",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.23.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.23",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.24.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.24",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.25.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.25",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.26.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.26",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.27.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.27",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.28.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.28",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.29.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.29",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.30.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.30",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.31.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.31",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.32.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.32",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.33.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.33",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.34.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.34",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.35.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.35",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.36.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.36",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.37.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.37",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.38.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.38",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.39.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.39",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.40.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.40",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.41.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.41",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.42.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.42",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.43.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.43",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.44.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.44",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.45.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.45",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.46.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.46",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.47.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.47",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.48.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.48",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.49.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.49",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.50.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.50",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.51.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.51",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.52.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.52",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.53.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.53",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.54.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.54",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.55.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.55",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.56.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.56",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.57.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.57",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.58.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.58",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.59.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.59",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.60.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.60",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.61.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.61",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.62.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.62",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.63.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.63",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.64.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.64",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.65.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.65",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.66.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.66",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.67.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.67",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.68.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.68",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.69.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.69",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.70.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.70",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.71.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.71",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.72.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.72",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.73.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.73",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.74.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.74",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.75.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.75",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.76.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.76",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.77.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.77",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.78.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.78",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.79.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.79",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1.80.position",
+      "scalar_count": 2,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.paths.1.80",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.paths.1",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 80
+    },
+    {
+      "path": "storage.paths",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.path_requests",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.harvested_items",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.crafted_items",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.walking_queues",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.debug",
+      "scalar_count": 1,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.clearance_entities.1",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage.clearance_entities",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 1
+    },
+    {
+      "path": "storage.crafting_queue",
+      "scalar_count": 0,
+      "function_count": 0,
+      "table_count": 0
+    },
+    {
+      "path": "storage",
+      "scalar_count": 5,
+      "function_count": 4,
+      "table_count": 24
+    }
+  ]
+}

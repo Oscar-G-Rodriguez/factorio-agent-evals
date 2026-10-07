@@ -1,0 +1,22 @@
+{
+  "independently_checked": 2,
+  "verified_actions": [
+    {
+      "run": "A06-train_drill-controls-correction-20261007T161352601988Z",
+      "fixture": "train_drill",
+      "step": 0,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    },
+    {
+      "run": "A06-train_drill-controls-correction-20261007T161654686233Z",
+      "fixture": "train_drill",
+      "step": 54,
+      "tool": "fuel",
+      "transferred": 3,
+      "full_horizon_ticks": 72000
+    }
+  ],
+  "scope": "Executed transfer, exact restore, continuation cadence, production windows, receipts and native archive hashes; training release audit remains separate."
+}

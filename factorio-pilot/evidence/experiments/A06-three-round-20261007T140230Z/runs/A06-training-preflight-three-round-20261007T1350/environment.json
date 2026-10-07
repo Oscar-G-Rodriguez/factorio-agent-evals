@@ -1,0 +1,17 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "executable": "/home/osci2/factorio-pilot/.venv-a06-train/bin/python",
+  "training_packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "accelerate": "1.15.0",
+    "peft": "0.18.1",
+    "bitsandbytes": "0.50.2",
+    "matplotlib": "3.11.2"
+  },
+  "base_dependency_path": "/home/osci2/factorio-pilot/.venv/lib/python3.12/site-packages",
+  "training_environment": "/home/osci2/factorio-pilot/.venv-a06-train",
+  "reuse": "Read-only inherited inference packages through explicit .pth; PEFT/bitsandbytes installed in training env with --no-deps",
+  "pip_check": "No broken requirements found."
+}

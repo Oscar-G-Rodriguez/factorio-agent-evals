@@ -1,0 +1,8 @@
+{
+  "master_archive": "native-fixtures/A06-train_carry-controls-correction-20261007T151750141596Z/initial.zip",
+  "master_sha256": "4bde14dbcd4865c6a9a880b31baa94b153f3f0c28ba661c3c9dea3a01014f1b3",
+  "working_directory": "native-work/A06-train_carry-controls-correction-20261007T151750141596Z/20261007T151800069007Z",
+  "working_copy_sha256": "4bde14dbcd4865c6a9a880b31baa94b153f3f0c28ba661c3c9dea3a01014f1b3",
+  "master_is_game_mount": false,
+  "source_sha256": "8aba963b70678b506d63e508dd59a47fca51a54dd888226decaa6ff1a9a8b400"
+}

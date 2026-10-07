@@ -1,0 +1,11 @@
+{
+  "step": 15,
+  "round": 2,
+  "files": {
+    "README.md": "c253772b8a08ad9c1d5fb4307565ea716b884877ce54f31cc96aa7a3516c4f40",
+    "adapter_config.json": "c0190605d6441931f01e7a48d21d7d30bc265f88b9a0661055931ec37a120765",
+    "adapter_model.safetensors": "6b1b314298b6edef743e931275c0ba39605d8728ec28d5f660884eb19581a01e",
+    "optimizer.pt": "e3602439f7b8c50b34286bf6aedd2dec7c1f0b1164c1f826f3003d0e79b7ac4d"
+  },
+  "config_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16"
+}

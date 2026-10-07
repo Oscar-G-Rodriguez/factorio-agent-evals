@@ -1,0 +1,11 @@
+{
+  "job": {
+    "fixture_run": "/home/osci2/factorio-pilot/runs/A06-validation_storage-controls-20261007T023455Z",
+    "condition": "round2_4bit",
+    "purpose": "validation",
+    "adapter": "/home/osci2/factorio-pilot/runs/A06-training-round2-20261007T140230Z-attempt0/checkpoint-20"
+  },
+  "run": "/home/osci2/factorio-pilot/runs/A06-episode-validation_storage-round2_4bit-20261007T153829073824Z",
+  "exit_code": 0,
+  "supervisor_sha256": "b3aa529eaa3f8d682d9a6b06fbd81bf67e72a9957f34da5f08ad69ffa298240e"
+}

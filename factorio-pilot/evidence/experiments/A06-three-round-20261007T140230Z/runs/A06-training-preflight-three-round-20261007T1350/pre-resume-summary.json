@@ -1,0 +1,65 @@
+{
+  "phase": "complete",
+  "pid": 553,
+  "process_start_ticks": "7280",
+  "started_utc": "2026-10-07T13:56:05.537435+00:00",
+  "round": 1,
+  "run": "/home/osci2/factorio-pilot/runs/A06-training-preflight-three-round-20261007T1350",
+  "source_hashes": {
+    "a06_train.py": "9b8fd0c8234fd8e23425795277ebe21471cf14447c145041a8f8bafaff4d9a9a",
+    "a06_context.py": "f753e354c6ff64bdd6a79837d519418cbd3118ecef74fe8c2f2f1bb19ff0b997",
+    "a06_dataset.py": "932de5a4fc64c82b1ef5fbb0e9ce682a3254c9ed1d80cb809430175d79d30b19",
+    "cuda_review.py": "50191948de35b289030ce8ad90910f2fcd70df98f13d649121ee7974902f661f",
+    "a06_workflow.py": "f2eb3bec6d57d18acef7dd96e4d424313eb5a073a8b06c1be1557076c7d25ebb",
+    "a06_corrections.py": "1a5bd612d791cbe0ee32fc165cf5e8284a359cde90ec08c02874faf3409f4ccb"
+  },
+  "native_source_hashes": {
+    "cuda/rmsnorm.cpp": "566fed2c0da73d12dca820a7cd727354942f302ca39b6c52fb966e08a15650b9",
+    "cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1",
+    "cuda/smoke.cu": "71c6b91dd610ca44be26ffdd9e900de1b41ea7224684d455f353c157e3a47b92",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cpp": "ef2aeab441329c53b5f793dd4f8968d47be689002820ba43f105ae6c991e318d",
+    "source-snapshots/context-pilot/cuda/rmsnorm.cu": "6e8f69612ac5537ae4781df3b7034e63c9c1b492e11c72f110f97449405466c1"
+  },
+  "config_sha256": "1ad712bf5e06225e0a4cbab80ea7a34f8325e672bb601d3dfa2fea9f34f7fb16",
+  "custom_cuda_used": false,
+  "probe_only": true,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "accelerate": "1.15.0",
+    "peft": "0.18.1",
+    "bitsandbytes": "0.50.2"
+  },
+  "trainable_parameters": 16515072,
+  "dataset_audit": {
+    "passed": true,
+    "release_id": "A06-scripted-train-v1-20261007-r3",
+    "rows_verified": 320,
+    "manifest_sha256": "e3bb79740e1601cbc89150ff9ecb590c88c6dbc6df7f97a4096dde740a46b71f",
+    "source_reconstruction_exact": true,
+    "executed_actions_and_full_horizon_verified": true,
+    "reserved_optimizer_rows": 0,
+    "prompt_and_target_budget_verified": true,
+    "loss_mask_verified": true
+  },
+  "micro_steps": 16,
+  "optimizer_steps": 2,
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "latest": {
+    "optimizer_step": 2,
+    "mean_loss": 0.7492315707728103,
+    "gradient_norm": 5.353629112243652,
+    "seconds": 16.49660268400001,
+    "peak_allocated_bytes": 8722112000,
+    "peak_reserved_bytes": 9206497280
+  },
+  "elapsed_seconds": 63.48352980999999,
+  "checkpoints": [
+    "/home/osci2/factorio-pilot/runs/A06-training-preflight-three-round-20261007T1350/checkpoint-2"
+  ],
+  "passed": true,
+  "mean_loss": 1.3261172396130778,
+  "first_group_mean_loss": 1.9030029084533453,
+  "last_group_mean_loss": 0.7492315707728103,
+  "scope": "Memory/runtime probe only; no saved adapter"
+}

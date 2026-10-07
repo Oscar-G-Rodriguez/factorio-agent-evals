@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "round": 2,
+  "optimizer_step": 5,
+  "checkpoint": "/home/osci2/factorio-pilot/runs/A06-training-round2-20261007T140230Z-attempt0/checkpoint-5",
+  "checkpoint_receipt_sha256": "13cb9e4994877442a2d8be22b51376b6dafdf6561c47ce16651f01ce843a52ab",
+  "file_checks": {
+    "README.md": true,
+    "adapter_config.json": true,
+    "adapter_model.safetensors": true,
+    "optimizer.pt": true
+  },
+  "scope": "CPU checksum verification of recovery checkpoint; no adapter reload, selection or gameplay claim"
+}

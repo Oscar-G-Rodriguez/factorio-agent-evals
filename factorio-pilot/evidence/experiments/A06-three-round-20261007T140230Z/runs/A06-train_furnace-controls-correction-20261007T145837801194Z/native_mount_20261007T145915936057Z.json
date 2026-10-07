@@ -1,0 +1,8 @@
+{
+  "master_archive": "native-fixtures/A06-train_furnace-controls-correction-20261007T145837801194Z/initial.zip",
+  "master_sha256": "a3a09f9bf76cb1e88d0c902e2d28418c90b274a95d19ca1816f038b83ce6cbd3",
+  "working_directory": "native-work/A06-train_furnace-controls-correction-20261007T145837801194Z/20261007T145915936057Z",
+  "working_copy_sha256": "a3a09f9bf76cb1e88d0c902e2d28418c90b274a95d19ca1816f038b83ce6cbd3",
+  "master_is_game_mount": false,
+  "source_sha256": "8aba963b70678b506d63e508dd59a47fca51a54dd888226decaa6ff1a9a8b400"
+}
