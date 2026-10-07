@@ -7,10 +7,11 @@ from pathlib import Path
 parser = argparse.ArgumentParser()
 parser.add_argument('--run', type=Path, required=True)
 parser.add_argument('--repo', type=Path, required=True)
+parser.add_argument('--include-rejected-control', action='store_true')
 args = parser.parse_args()
 run, repo = args.run.resolve(), args.repo.resolve()
 manifest = json.loads((run / 'control_manifest.json').read_text())
-if manifest['scripted_reachability_passed'] is not True or manifest['restores_exactly_matched'] is not True:
+if (manifest['scripted_reachability_passed'] is not True and not args.include_rejected_control) or manifest['restores_exactly_matched'] is not True:
     raise RuntimeError('Do not export incomplete controls as passed')
 destination = repo / 'factorio-pilot/evidence/runs' / run.name
 destination.mkdir(exist_ok=False)
@@ -42,10 +43,14 @@ if source_run != run:
             target.write_bytes(source.read_bytes())
             if target.read_bytes() != source.read_bytes():
                 raise RuntimeError('Preparation export bytes changed')
-source = source_run / 'source/a06_native_server.py'
+source = run / 'source/a06_native_server.py'
+if not source.exists():
+    source = source_run / 'source/a06_native_server.py'
 if source.read_bytes() != (repo / 'factorio-pilot/tools/a06_native_server.py').read_bytes():
     raise RuntimeError('Orchestration source changed since capture')
 (destination / 'source/a06_native_server.py').write_bytes(source.read_bytes())
+if manifest['scripted_reachability_passed'] is not True:
+    (destination / 'export_scope.json').write_text(json.dumps({'scope': 'rejected reference control; not a validated fixture or optimizer data', 'explicit_rejected_export': True}, indent=2) + '\n')
 hashes = {p.relative_to(destination).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
           for p in sorted(destination.rglob('*')) if p.is_file() and p != destination / 'export-sha256.json'}
 (destination / 'export-sha256.json').write_text(json.dumps(hashes, indent=2) + '\n')

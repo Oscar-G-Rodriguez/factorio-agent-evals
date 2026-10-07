@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_validation_fuel_20261007T023116Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-validation_fuel-controls-20261007T023116Z/initial.zip",
+  "sha256": "aaa1fb942783fbbd98081f658906a453d6e5991566d4c298f119fcf95fd135e7",
+  "bytes": 1079743,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

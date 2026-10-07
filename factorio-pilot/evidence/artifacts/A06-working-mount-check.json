@@ -1,0 +1,11 @@
+{
+  "observed_mount": {
+    "Type": "bind",
+    "Source": "/home/osci2/factorio-pilot/native-work/A06-test_furnace_output-controls-20261007T025317Z/20261007T025318429359Z",
+    "Destination": "/factorio/saves",
+    "Mode": "rw",
+    "RW": true,
+    "Propagation": "rprivate"
+  },
+  "master_archive_mounted": false
+}

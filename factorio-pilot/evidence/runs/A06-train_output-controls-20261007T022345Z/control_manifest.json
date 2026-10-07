@@ -1,0 +1,11 @@
+{
+  "fixture_id": "train_output",
+  "partition": "train",
+  "scripted_reachability_passed": true,
+  "idle_endpoint": "sustained_production_failure",
+  "idle_simulated_seconds": 120.0,
+  "native_save_filename": "a06_train_output_20261007T022345Z.zip",
+  "restores_exactly_matched": true,
+  "dataset_ready": false,
+  "other_fixtures_validated": false
+}

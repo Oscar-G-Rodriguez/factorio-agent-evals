@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_test_drill_storage_20261007T023821Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-test_drill_storage-controls-20261007T023821Z/initial.zip",
+  "sha256": "a7e21a0fa4a933b592e46bb0be391221b857630800c7e6afa9af4a0c99c19405",
+  "bytes": 1080936,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

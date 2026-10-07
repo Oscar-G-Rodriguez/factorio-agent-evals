@@ -1,0 +1,8 @@
+{
+  "master_archive": "native-fixtures/A06-test_furnace_output-controls-20261007T024151Z/initial.zip",
+  "master_sha256": "dc8a63e4334fe090979c8bfcdbe2ef43b22133eafe9c96437148a8406f93a2dc",
+  "working_directory": "native-work/A06-test_furnace_output-controls-20261007T025317Z/20261007T025318429359Z",
+  "working_copy_sha256": "dc8a63e4334fe090979c8bfcdbe2ef43b22133eafe9c96437148a8406f93a2dc",
+  "master_is_game_mount": false,
+  "source_sha256": "8aba963b70678b506d63e508dd59a47fca51a54dd888226decaa6ff1a9a8b400"
+}

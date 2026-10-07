@@ -1,0 +1,140 @@
+{
+  "mode": "restore",
+  "physical_snapshot": {
+    "tick": 50866,
+    "paused": true,
+    "ticks_to_run": 0,
+    "speed": 10,
+    "actor_position": {
+      "y": 72.5,
+      "x": 17.5
+    },
+    "actor_inventory": {
+      "wooden-chest": 9,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 200,
+      "iron-plate": 100
+    },
+    "entities": [
+      {
+        "name": "burner-mining-drill",
+        "position": {
+          "y": 71,
+          "x": 16
+        },
+        "direction": 4,
+        "status": 1,
+        "coal": 0,
+        "burning_joules": 3000000,
+        "burning_item": "coal",
+        "burner_heat": 2666.6666666666665,
+        "mining_progress": 0.9958333333333,
+        "drop_position": {
+          "y": 70.5,
+          "x": 17.296875
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "y": 71,
+          "x": 18
+        },
+        "direction": 0,
+        "status": 1,
+        "coal": 1,
+        "burning_joules": 1500000,
+        "burning_item": "coal",
+        "burner_heat": 1600,
+        "crafting_progress": 0.22951388888885793,
+        "products_finished": 17,
+        "input_inventory": {
+          "iron-ore": 1
+        },
+        "plates": 85,
+        "free_plates": 15
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "y": 67.5,
+          "x": 12.5
+        },
+        "direction": 0,
+        "status": 2,
+        "plates": 600,
+        "free_plates": 1000
+      }
+    ]
+  },
+  "restored_from_installed_sources": true,
+  "tool_names": [
+    "can_place_entity",
+    "clear_collision_boxes",
+    "clear_entities",
+    "connect_entities",
+    "craft_item",
+    "create_agent_characters",
+    "extend_collision_boxes",
+    "extract_item",
+    "get_connection_amount",
+    "get_entities",
+    "get_entity",
+    "get_factory_centroid",
+    "get_path",
+    "get_production_stats",
+    "get_prototype_recipe",
+    "get_research_progress",
+    "get_resource_patch",
+    "harvest_resource",
+    "insert_item",
+    "inspect_inventory",
+    "launch_rocket",
+    "load_blueprint",
+    "load_entity_state",
+    "load_research_state",
+    "move_to",
+    "nearest",
+    "nearest_buildable",
+    "pickup_entity",
+    "place_entity",
+    "place_entity_next_to",
+    "print",
+    "regenerate_resources",
+    "render",
+    "render_message",
+    "render_simple",
+    "request_path",
+    "reset",
+    "rotate_entity",
+    "save_blueprint",
+    "save_entity_state",
+    "save_research_state",
+    "score",
+    "send_message",
+    "set_entity_recipe",
+    "set_inventory",
+    "set_research",
+    "sleep"
+  ],
+  "source_sha256": "be3a894f53c107a42592a37fe3a6abf2410ab72794f64537e80c3400276aca4f",
+  "source_snapshot": "source/a06_save_helpers-be3a894f53c107a42592a37fe3a6abf2410ab72794f64537e80c3400276aca4f.py"
+}

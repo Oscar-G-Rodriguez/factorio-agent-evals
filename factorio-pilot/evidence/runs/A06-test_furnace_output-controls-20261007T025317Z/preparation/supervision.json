@@ -1,0 +1,6 @@
+{
+  "fixture": "test_furnace_output",
+  "run": "/home/osci2/factorio-pilot/runs/A06-test_furnace_output-controls-20261007T024151Z",
+  "exit_code": 1,
+  "supervisor_sha256": "8be47ca5b5bca76667778997e08eec6fd25ea8a28b6af12a07ab8d8be733b22e"
+}

@@ -1,0 +1,243 @@
+{
+  "kind": "scripted_setup_excluded_from_model",
+  "events": [
+    {
+      "action": {
+        "tool": "find_iron",
+        "args": {}
+      },
+      "result": {
+        "x": 15.5,
+        "y": 70.5
+      },
+      "tick": 35633
+    },
+    {
+      "action": {
+        "tool": "move",
+        "args": {
+          "position": {
+            "x": 15.5,
+            "y": 70.5
+          }
+        }
+      },
+      "result": {
+        "x": 15.5,
+        "y": 70.5
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "place_drill",
+        "args": {
+          "position": {
+            "x": 15.5,
+            "y": 70.5
+          },
+          "direction": "RIGHT"
+        }
+      },
+      "result": {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.NO_FUEL",
+        "inventory": {},
+        "fuel": "",
+        "warnings": "['nothing to mine', 'out of fuel']",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "fuel_inventory": {},
+        "furnace_source": {}
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "place_furnace_at_output",
+        "args": {
+          "drill_handle": "e1"
+        }
+      },
+      "result": {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_FUEL",
+        "inventory": {},
+        "fuel": "",
+        "warnings": "['out of fuel', 'no ingredients to smelt']",
+        "fuel_inventory": {},
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "place_storage",
+        "args": {
+          "position": {
+            "x": 12.5,
+            "y": 67.5
+          }
+        }
+      },
+      "result": {
+        "handle": "e3",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "inventory": "",
+        "fuel": {},
+        "warnings": "[]"
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "fuel",
+        "args": {
+          "building_handle": "e1",
+          "coal_count": 3
+        }
+      },
+      "result": {
+        "handle": "e1",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.WORKING",
+        "inventory": {
+          "coal": 3
+        },
+        "fuel": "coal=3",
+        "warnings": "['nothing to mine']",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "fuel_inventory": "[{'name': 'coal', 'count': 3}]",
+        "furnace_source": {}
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "fuel",
+        "args": {
+          "building_handle": "e2",
+          "coal_count": 3
+        }
+      },
+      "result": {
+        "handle": "e2",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NO_INGREDIENTS",
+        "inventory": {
+          "coal": 3
+        },
+        "fuel": "coal=3",
+        "warnings": "['no ingredients to smelt']",
+        "fuel_inventory": "[{'name': 'coal', 'count': 3}]",
+        "furnace_source": "",
+        "furnace_result": ""
+      },
+      "tick": 36049
+    },
+    {
+      "action": {
+        "tool": "wait",
+        "args": {
+          "seconds": 60
+        }
+      },
+      "result": {
+        "seconds": 60,
+        "ticks": 3600,
+        "iron_plates": 17
+      },
+      "tick": 39649
+    }
+  ],
+  "warmup": {
+    "seconds": 60,
+    "ticks": 3600,
+    "iron_plates": 17
+  },
+  "initial_fuel_per_machine": 3,
+  "fixture_entities": [
+    {
+      "handle": "e1",
+      "name": "burner-mining-drill",
+      "position": {
+        "x": 16.0,
+        "y": 71.0
+      },
+      "direction": "Direction.RIGHT",
+      "status": "EntityStatus.NO_FUEL",
+      "inventory": {},
+      "fuel": "",
+      "warnings": "['nothing to mine', 'out of fuel']",
+      "drop_position": {
+        "x": 17.5,
+        "y": 70.5
+      },
+      "fuel_inventory": {},
+      "furnace_source": {}
+    },
+    {
+      "handle": "e2",
+      "name": "stone-furnace",
+      "position": {
+        "x": 18.0,
+        "y": 71.0
+      },
+      "direction": "Direction.UP",
+      "status": "EntityStatus.NO_FUEL",
+      "inventory": {},
+      "fuel": "",
+      "warnings": "['out of fuel', 'no ingredients to smelt']",
+      "fuel_inventory": {},
+      "furnace_source": "",
+      "furnace_result": ""
+    },
+    {
+      "handle": "e3",
+      "name": "wooden-chest",
+      "position": {
+        "x": 12.5,
+        "y": 67.5
+      },
+      "direction": "Direction.UP",
+      "status": "EntityStatus.NORMAL",
+      "inventory": "",
+      "fuel": {},
+      "warnings": "[]"
+    }
+  ]
+}

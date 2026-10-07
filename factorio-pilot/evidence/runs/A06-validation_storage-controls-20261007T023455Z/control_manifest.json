@@ -1,0 +1,11 @@
+{
+  "fixture_id": "validation_storage",
+  "partition": "validation",
+  "scripted_reachability_passed": true,
+  "idle_endpoint": "sustained_production_failure",
+  "idle_simulated_seconds": 120.0,
+  "native_save_filename": "a06_validation_storage_20261007T023455Z.zip",
+  "restores_exactly_matched": true,
+  "dataset_ready": false,
+  "other_fixtures_validated": false
+}

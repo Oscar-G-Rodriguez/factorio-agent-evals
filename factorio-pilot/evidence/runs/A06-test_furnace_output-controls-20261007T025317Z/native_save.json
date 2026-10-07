@@ -1,0 +1,8 @@
+{
+  "native_save_filename": "a06_test_furnace_output_20261007T024151Z.zip",
+  "archive_relative_to_runtime": "native-fixtures/A06-test_furnace_output-controls-20261007T024151Z/initial.zip",
+  "sha256": "dc8a63e4334fe090979c8bfcdbe2ef43b22133eafe9c96437148a8406f93a2dc",
+  "bytes": 1081189,
+  "zip_integrity_passed": true,
+  "original_compose_sha256": "fc8b7665a1e24caf64521b963a9475e96ec96c5fde3ab4a5d3ee6490fd6d8665"
+}

@@ -1,0 +1,95 @@
+{
+  "inventory": {
+    "burner-mining-drill": 49,
+    "stone-furnace": 9,
+    "coal": 200,
+    "iron-plate": 40,
+    "wooden-chest": 9
+  },
+  "equipment": [
+    {
+      "handle": "e1",
+      "name": "wooden-chest",
+      "position": {
+        "x": 12.5,
+        "y": 67.5
+      },
+      "direction": "Direction.UP",
+      "status": "EntityStatus.NORMAL",
+      "fuel": {
+        "iron-plate": 800
+      },
+      "output_storage": {
+        "slots": 16,
+        "iron_plates": 800,
+        "free_plate_capacity": 800
+      }
+    },
+    {
+      "handle": "e2",
+      "name": "burner-mining-drill",
+      "position": {
+        "x": 16.0,
+        "y": 71.0
+      },
+      "direction": "Direction.RIGHT",
+      "status": "EntityStatus.WORKING",
+      "fuel": "coal=2",
+      "drop_position": {
+        "x": 17.5,
+        "y": 70.5
+      },
+      "burner": {
+        "coal_in_fuel_inventory": 2,
+        "remaining_burning_fuel_joules": 3000000,
+        "currently_burning": null
+      }
+    },
+    {
+      "handle": "e3",
+      "name": "stone-furnace",
+      "position": {
+        "x": 18.0,
+        "y": 71.0
+      },
+      "direction": "Direction.UP",
+      "status": "EntityStatus.WORKING",
+      "fuel": "",
+      "furnace_source": "iron-ore=1",
+      "furnace_result": "iron-plate=98",
+      "output_storage": {
+        "slots": 1,
+        "iron_plates": 98,
+        "free_plate_capacity": 2
+      },
+      "burner": {
+        "coal_in_fuel_inventory": 0,
+        "remaining_burning_fuel_joules": 2000000,
+        "currently_burning": null
+      }
+    }
+  ],
+  "production": {
+    "output": {
+      "iron-ore": 19,
+      "iron-plate": 17
+    },
+    "input": {
+      "coal": 5,
+      "iron-ore": 18
+    },
+    "harvested": {},
+    "crafted": {}
+  },
+  "last_production_test": null,
+  "carrying": {
+    "agent_index": 1,
+    "carried_plates": 40,
+    "carried_chests": 9,
+    "inventory_slots": 90,
+    "physical_plate_space": 4660,
+    "benchmark_carried_plate_limit": 100,
+    "available_carry_space": 60
+  },
+  "goal_plates_per_minute": 16
+}

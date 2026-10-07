@@ -1,0 +1,11 @@
+{
+  "fixture_id": "train_carry",
+  "partition": "train",
+  "scripted_reachability_passed": true,
+  "idle_endpoint": "sustained_production_failure",
+  "idle_simulated_seconds": 120.0,
+  "native_save_filename": "a06_train_carry_20261007T022727Z.zip",
+  "restores_exactly_matched": true,
+  "dataset_ready": false,
+  "other_fixtures_validated": false
+}

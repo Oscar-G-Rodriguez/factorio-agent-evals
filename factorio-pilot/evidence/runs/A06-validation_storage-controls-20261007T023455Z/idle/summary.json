@@ -1,0 +1,216 @@
+{
+  "controller": "idle",
+  "stop_reason": "sustained_production_failure",
+  "steps": 8,
+  "simulated_seconds": 120.0,
+  "wall_seconds": 15.21627303699995,
+  "failed_actions": 0,
+  "measurement_windows": [
+    {
+      "index": 0,
+      "start_tick": 39649,
+      "end_tick": 43249,
+      "actual_ticks": 3600,
+      "iron_plates": 5,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 1
+    },
+    {
+      "index": 1,
+      "start_tick": 43249,
+      "end_tick": 46849,
+      "actual_ticks": 3600,
+      "iron_plates": 0,
+      "target": 16,
+      "below_target": true,
+      "consecutive_low_windows": 2
+    }
+  ],
+  "new_iron_plates": 5,
+  "new_ore_mined": 27,
+  "new_ore_consumed": 5,
+  "final_observation": {
+    "inventory": {
+      "burner-mining-drill": 49,
+      "stone-furnace": 9,
+      "coal": 300,
+      "iron-plate": 100,
+      "wooden-chest": 9
+    },
+    "equipment": [
+      {
+        "handle": "e1",
+        "name": "wooden-chest",
+        "position": {
+          "x": 12.5,
+          "y": 67.5
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.NORMAL",
+        "fuel": {
+          "iron-plate": 400
+        },
+        "output_storage": {
+          "slots": 16,
+          "iron_plates": 400,
+          "free_plate_capacity": 1200
+        }
+      },
+      {
+        "handle": "e2",
+        "name": "burner-mining-drill",
+        "position": {
+          "x": 16.0,
+          "y": 71.0
+        },
+        "direction": "Direction.RIGHT",
+        "status": "EntityStatus.NO_FUEL",
+        "fuel": "",
+        "drop_position": {
+          "x": 17.5,
+          "y": 70.5
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 0,
+          "remaining_burning_fuel_joules": 0,
+          "currently_burning": false
+        }
+      },
+      {
+        "handle": "e3",
+        "name": "stone-furnace",
+        "position": {
+          "x": 18.0,
+          "y": 71.0
+        },
+        "direction": "Direction.UP",
+        "status": "EntityStatus.FULL_OUTPUT",
+        "fuel": "coal=2",
+        "furnace_source": "iron-ore=23",
+        "furnace_result": "iron-plate=100",
+        "output_storage": {
+          "slots": 1,
+          "iron_plates": 100,
+          "free_plate_capacity": 0
+        },
+        "burner": {
+          "coal_in_fuel_inventory": 2,
+          "remaining_burning_fuel_joules": 1339500,
+          "currently_burning": null
+        }
+      }
+    ],
+    "production": {
+      "output": {
+        "iron-ore": 46,
+        "iron-plate": 22
+      },
+      "input": {
+        "coal": 7,
+        "iron-ore": 23
+      },
+      "harvested": {},
+      "crafted": {}
+    },
+    "last_production_test": null,
+    "carrying": {
+      "agent_index": 1,
+      "carried_plates": 100,
+      "carried_chests": 9,
+      "inventory_slots": 90,
+      "physical_plate_space": 4400,
+      "benchmark_carried_plate_limit": 100,
+      "available_carry_space": 0
+    },
+    "goal_plates_per_minute": 16
+  },
+  "final_physical_snapshot": {
+    "tick": 46849,
+    "paused": true,
+    "ticks_to_run": 0,
+    "speed": 10,
+    "actor_position": {
+      "y": 72.5,
+      "x": 17.5
+    },
+    "actor_inventory": {
+      "wooden-chest": 9,
+      "storage-tank": 10,
+      "transport-belt": 500,
+      "underground-belt": 100,
+      "burner-inserter": 50,
+      "inserter": 50,
+      "medium-electric-pole": 500,
+      "pipe": 500,
+      "pipe-to-ground": 100,
+      "boiler": 2,
+      "steam-engine": 2,
+      "burner-mining-drill": 49,
+      "electric-mining-drill": 50,
+      "offshore-pump": 2,
+      "pumpjack": 10,
+      "stone-furnace": 9,
+      "electric-furnace": 10,
+      "assembling-machine-2": 10,
+      "oil-refinery": 5,
+      "chemical-plant": 5,
+      "coal": 300,
+      "iron-plate": 100
+    },
+    "entities": [
+      {
+        "name": "burner-mining-drill",
+        "position": {
+          "y": 71,
+          "x": 16
+        },
+        "direction": 4,
+        "status": 53,
+        "coal": 0,
+        "burning_joules": 0,
+        "burning_item": false,
+        "burner_heat": 0,
+        "mining_progress": 0.33361111111103786,
+        "drop_position": {
+          "y": 70.5,
+          "x": 17.296875
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "y": 71,
+          "x": 18
+        },
+        "direction": 0,
+        "status": 27,
+        "coal": 2,
+        "burning_joules": 1339500,
+        "burning_item": "coal",
+        "burner_heat": 100,
+        "crafting_progress": 1,
+        "products_finished": 22,
+        "input_inventory": {
+          "iron-ore": 23
+        },
+        "plates": 100,
+        "free_plates": 0
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "y": 67.5,
+          "x": 12.5
+        },
+        "direction": 0,
+        "status": 2,
+        "plates": 400,
+        "free_plates": 1200
+      }
+    ]
+  },
+  "no_manual_ore_insertion": true,
+  "model_loaded": false,
+  "custom_cuda_used": false
+}

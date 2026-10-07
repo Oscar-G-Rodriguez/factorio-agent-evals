@@ -1,0 +1,56 @@
+[
+  {
+    "run": "A06-test_drill_storage-controls-20261007T023821Z",
+    "archive": "native-fixtures/A06-test_drill_storage-controls-20261007T023821Z/initial.zip",
+    "recorded_sha256": "a7e21a0fa4a933b592e46bb0be391221b857630800c7e6afa9af4a0c99c19405",
+    "mutated_sha256": "a430ec9de727f93e2a1fa017b981ef9cea62ddad6d1c658b826caee4ff3cb169",
+    "preserved_mutated_archive": "native-fixtures/A06-test_drill_storage-controls-20261007T023821Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/home/osci2/factorio-pilot/native-fixtures/A06-validation_storage-controls-20261007T023455Z/a06_test_drill_storage_20261007T023821Z.zip",
+    "exact_original_recovered": true
+  },
+  {
+    "run": "A06-test_furnace_output-controls-20261007T024151Z",
+    "archive": "native-fixtures/A06-test_furnace_output-controls-20261007T024151Z/initial.zip",
+    "recorded_sha256": "dc8a63e4334fe090979c8bfcdbe2ef43b22133eafe9c96437148a8406f93a2dc",
+    "mutated_sha256": "17992a006ce48450324036254447af7e87c23e9b8311c333406ff515f8737b46",
+    "preserved_mutated_archive": "native-fixtures/A06-test_furnace_output-controls-20261007T024151Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/home/osci2/factorio-pilot/native-fixtures/A06-test_drill_storage-controls-20261007T023821Z/a06_test_furnace_output_20261007T024151Z.zip",
+    "exact_original_recovered": true
+  },
+  {
+    "run": "A06-train_carry-controls-20261007T022727Z",
+    "archive": "native-fixtures/A06-train_carry-controls-20261007T022727Z/initial.zip",
+    "recorded_sha256": "ce1ec585b209cf1094a1f1ccfc605bacf50d440751a6b8631edb488305ad7747",
+    "mutated_sha256": "e6382a2541de6ae028611e125f5a1e0c0de8d9840323e4622b8c94b9d16454e7",
+    "preserved_mutated_archive": "native-fixtures/A06-train_carry-controls-20261007T022727Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/home/osci2/factorio-pilot/native-fixtures/A06-train_output-controls-20261007T022345Z/a06_train_carry_20261007T022727Z.zip",
+    "exact_original_recovered": true
+  },
+  {
+    "run": "A06-train_output-controls-20261007T022345Z",
+    "archive": "native-fixtures/A06-train_output-controls-20261007T022345Z/initial.zip",
+    "recorded_sha256": "00cc151d73640ecc14d787a004547ca31656babba24fb10961e935b12f0eeddd",
+    "mutated_sha256": "5bf1005ca1bc11f9b99f9813ee97d08f905bdcb0ebbfef32bd9a8b044b25ac86",
+    "preserved_mutated_archive": "native-fixtures/A06-train_output-controls-20261007T022345Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/var/lib/docker/volumes/2d366b27e5cd197bd9c6bd1428cef286dc48cd6cd46439a9075d3b80fe99df94/_data/saves/a06_train_output_20261007T022345Z.zip",
+    "exact_original_recovered": true
+  },
+  {
+    "run": "A06-validation_fuel-controls-20261007T023116Z",
+    "archive": "native-fixtures/A06-validation_fuel-controls-20261007T023116Z/initial.zip",
+    "recorded_sha256": "aaa1fb942783fbbd98081f658906a453d6e5991566d4c298f119fcf95fd135e7",
+    "mutated_sha256": "045f68f6651f3695d778c1d335ce25146c4aff434975ce383ac8ab74f87925ad",
+    "preserved_mutated_archive": "native-fixtures/A06-validation_fuel-controls-20261007T023116Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/home/osci2/factorio-pilot/native-fixtures/A06-train_carry-controls-20261007T022727Z/a06_validation_fuel_20261007T023116Z.zip",
+    "exact_original_recovered": true
+  },
+  {
+    "run": "A06-validation_storage-controls-20261007T023455Z",
+    "archive": "native-fixtures/A06-validation_storage-controls-20261007T023455Z/initial.zip",
+    "recorded_sha256": "bde205ba7761f28b932d3270a9badf7978c57a3054c3b25a3af95f1853f79657",
+    "mutated_sha256": "933b90f38af08023397a928d3062d951e1607e044828e3aaea3171ce2599eaf5",
+    "preserved_mutated_archive": "native-fixtures/A06-validation_storage-controls-20261007T023455Z/mutated-initial-20261007T025204Z.zip",
+    "recovery_source": "/home/osci2/factorio-pilot/native-fixtures/A06-validation_fuel-controls-20261007T023116Z/a06_validation_storage_20261007T023455Z.zip",
+    "exact_original_recovered": true
+  }
+]

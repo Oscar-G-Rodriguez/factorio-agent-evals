@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 
@@ -10,7 +11,9 @@ def plate_inventory(observation: dict) -> int:
         e['output_storage']['iron_plates'] for e in observation['equipment'] if 'output_storage' in e)
 
 
-def verify_run(run: Path, root: Path) -> dict:
+def verify_run(run: Path, root: Path, require_reachability: bool = True) -> dict:
+    prefix=chr(92)*2+'?'+chr(92)
+    if sys.platform=='win32' and not str(run).startswith(prefix):run=Path(prefix+str(run.resolve()))
     exported = json.loads((run / 'export-sha256.json').read_text())
     for name, digest in exported.items():
         if hashlib.sha256((run / name).read_bytes()).hexdigest() != digest:
@@ -79,21 +82,25 @@ def verify_run(run: Path, root: Path) -> dict:
             raise RuntimeError('Incorrect survival or production summary')
         if summary['model_loaded'] or summary['custom_cuda_used']:
             raise RuntimeError('These must be CPU environment controls')
-        if controller == 'scripted' and (len(windows) != 20 or any(w['iron_plates'] < 16 for w in windows) or summary['stop_reason'] != 'survived_simulation_limit'):
+        if controller == 'scripted' and require_reachability and (len(windows) != 20 or any(w['iron_plates'] < 16 for w in windows) or summary['stop_reason'] != 'survived_simulation_limit'):
             raise RuntimeError('Reachability control failed')
         if controller == 'idle' and (summary['stop_reason'] != 'sustained_production_failure' or len(windows) < 2 or any(w['iron_plates'] >= 16 for w in windows[-2:])):
             raise RuntimeError('Idle failure was not demonstrated')
         controls[controller] = {'steps': len(steps), 'seconds': summary['simulated_seconds'],
             'plate_windows': [w['iron_plates'] for w in windows], 'failed_actions': summary['failed_actions'],
             'new_ore_mined': summary['new_ore_mined'], 'new_ore_consumed': summary['new_ore_consumed']}
-    return {'run': run.name, 'export_files_verified': len(exported), 'snapshot_exact_for_both_controls': True,
+    actual_pass = len(controls['scripted']['plate_windows']) == 20 and all(n >= 16 for n in controls['scripted']['plate_windows']) and controls['scripted']['failed_actions'] == 0
+    if manifest['scripted_reachability_passed'] != actual_pass:
+        raise RuntimeError('Reference pass label disagrees with observed windows')
+    return {'run': run.name, 'reference_reachability_passed': actual_pass, 'export_files_verified': len(exported), 'snapshot_exact_for_both_controls': True,
             'step_plate_conservation_verified': True, 'controls': controls,
-            'scope': 'One training fixture; no Qwen, training data or adapter evaluation'}
+            'scope': 'One fixture; no Qwen, training data or adapter evaluation'}
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('run_id')
+    parser.add_argument('--allow-rejected-control', action='store_true')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    print(json.dumps(verify_run(root / 'factorio-pilot/evidence/runs' / args.run_id, root), indent=2))
+    print(json.dumps(verify_run(root / 'factorio-pilot/evidence/runs' / args.run_id, root, require_reachability=not args.allow_rejected_control), indent=2))

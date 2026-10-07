@@ -1,6 +1,6 @@
 import copy
 import unittest
-from a06_fixture_controls import scripted_action, verify_presets
+from a06_fixture_controls import scripted_action, verify_presets, control_action
 
 
 class FixtureControlTests(unittest.TestCase):
@@ -51,6 +51,20 @@ class FixtureControlTests(unittest.TestCase):
         self.assertEqual(scripted_action(observation)['tool'], 'store_plates')
         observation['carrying']['carried_plates'] = 0
         self.assertEqual(scripted_action(observation)['tool'], 'collect_output')
+
+
+    def test_congestion_control_preserves_default_and_obeys_carry_capacity(self):
+        observation = {'equipment': [
+            {'name': 'burner-mining-drill', 'handle': 'drill', 'burner': {'coal_in_fuel_inventory': 2}},
+            {'name': 'stone-furnace', 'handle': 'furnace', 'burner': {'coal_in_fuel_inventory': 0},
+             'output_storage': {'iron_plates': 98}},
+            {'name': 'wooden-chest', 'handle': 'chest'}], 'carrying': {'carried_plates': 40}}
+        self.assertEqual(control_action(observation)['tool'], 'fuel')
+        self.assertEqual(control_action(observation, 'congestion-control')['tool'], 'collect_output')
+        observation['carrying']['carried_plates'] = 100
+        self.assertEqual(control_action(observation, 'congestion-control')['tool'], 'store_plates')
+        observation['equipment'][1]['output_storage']['iron_plates'] = 20
+        self.assertEqual(control_action(observation, 'congestion-control')['tool'], 'fuel')
 
 
 if __name__ == '__main__':

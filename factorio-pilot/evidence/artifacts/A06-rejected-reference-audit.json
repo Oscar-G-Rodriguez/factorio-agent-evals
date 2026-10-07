@@ -1,0 +1,50 @@
+{
+  "run": "A06-test_furnace_output-controls-20261007T024151Z",
+  "reference_reachability_passed": false,
+  "export_files_verified": 30,
+  "snapshot_exact_for_both_controls": true,
+  "step_plate_conservation_verified": true,
+  "controls": {
+    "scripted": {
+      "steps": 80,
+      "seconds": 1200.0,
+      "plate_windows": [
+        7,
+        19,
+        19,
+        18,
+        19,
+        19,
+        19,
+        18,
+        19,
+        19,
+        19,
+        18,
+        19,
+        19,
+        19,
+        18,
+        19,
+        19,
+        19,
+        18
+      ],
+      "failed_actions": 0,
+      "new_ore_mined": 420,
+      "new_ore_consumed": 363
+    },
+    "idle": {
+      "steps": 8,
+      "seconds": 120.0,
+      "plate_windows": [
+        2,
+        0
+      ],
+      "failed_actions": 0,
+      "new_ore_mined": 27,
+      "new_ore_consumed": 2
+    }
+  },
+  "scope": "One fixture; no Qwen, training data or adapter evaluation"
+}
